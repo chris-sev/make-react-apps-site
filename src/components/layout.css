@@ -3,3 +3,9 @@
 @tailwind components;
 
 @tailwind utilities;
+
+body {
+  border: 20px solid #363f66;
+  background: #00afef;
+  min-height: 100vh;
+}
