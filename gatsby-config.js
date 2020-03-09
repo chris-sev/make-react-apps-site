@@ -19,7 +19,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `20 React Apps`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
@@ -43,6 +43,14 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-146126191-3",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        google: {
+          families: ["Orbitron"],
+        },
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

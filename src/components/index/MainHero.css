@@ -1,0 +1,13 @@
+.newsletter-blurb span:before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  z-index: -1;
+  margin-top: 8px;
+  margin-left: 8px;
+  background: #f8c0c0;
+  height: 20px;
+  width: 92%;
+  top: 5px;
+  left: -3px;
+}
