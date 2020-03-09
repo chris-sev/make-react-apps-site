@@ -49,6 +49,7 @@ export default function Walkthrough() {
       <div className="flex justify-center mb-10">
         {[0, 1, 2, 3, 4].map((num, index) => (
           <button
+            key={index}
             onClick={() => setMessageToShow(num)}
             className={`w-3 h-3 rounded-full mr-2 ${
               messageToShow === index ? "bg-blue-100" : "bg-blue-400"
@@ -58,21 +59,31 @@ export default function Walkthrough() {
       </div>
 
       {/* faces and messages */}
-      <div className="mb-20">
+      <div className="mb-20 h-64">
         <div className="flex">
-          <Img className="w-56" fluid={data.kapehe.childImageSharp.fluid} />
-          {isEven(messageToShow) && (
-            <Message>{messages[messageToShow].text}</Message>
+          <Img
+            className="block w-1/3 h-50 ml-10 border-4 border-white"
+            fluid={data.kapehe.childImageSharp.fluid}
+          />
+          {isEven(messageToShow) ? (
+            <Message className="w-2/3">{messages[messageToShow].text}</Message>
+          ) : (
+            <></>
           )}
         </div>
       </div>
 
       <div className="text-right flex items-end flex-col">
         <div className="flex">
-          {!isEven(messageToShow) && (
-            <Message>{messages[messageToShow].text}</Message>
+          {!isEven(messageToShow) ? (
+            <Message className="w-2/3">{messages[messageToShow].text}</Message>
+          ) : (
+            <></>
           )}
-          <Img className="w-56" fluid={data.chris.childImageSharp.fluid} />
+          <Img
+            className="block w-1/3 h-50 mr-10 border-4 border-white"
+            fluid={data.chris.childImageSharp.fluid}
+          />
         </div>
       </div>
     </div>

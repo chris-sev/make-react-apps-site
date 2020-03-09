@@ -8,26 +8,26 @@
 import React from "react"
 import Header from "./header"
 import PropTypes from "prop-types"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import "./fontawesome"
 import "./layout.css"
 
 const Layout = ({ children }) => {
   return (
     <>
-      {/* <svg
-        className="fixed pointer-events-none"
-        width="100%"
-        height="300px"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="none"
-      >
-        <polygon fill="#23B0E7" points="0 0,100 100,100 50,0 100"></polygon>
-      </svg> */}
-      <Header />
-      <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+      <div className="min-h-screen">
+        {/* header */}
+        <Header />
+
+        {/* main */}
+        <main>{children}</main>
+      </div>
+
+      {/* footer */}
+      <footer className="text-center py-8 text-xs text-blue-500">
+        {/* show 20 vue apps, 20 node apps, 20 css apps, 20 javascript apps */}©
+        2057. I'm from the future. Built with{" "}
+        <FontAwesomeIcon icon={["far", "grin-hearts"]} />
       </footer>
     </>
   )
