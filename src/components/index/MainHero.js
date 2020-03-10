@@ -94,8 +94,12 @@ function ReactIcons() {
           className="absolute"
           style={{
             zIndex: "-1",
-            top: Math.random() * window.innerHeight,
-            left: Math.random() * window.innerWidth,
+            top:
+              Math.random() *
+              (typeof window !== `undefined` ? window.innerHeight : 0),
+            left:
+              Math.random() *
+              (typeof window !== `undefined` ? window.innerWidth : 0),
           }}
         />
       ))}
