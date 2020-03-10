@@ -34,7 +34,7 @@ export default function MainHero() {
             style={{ width: "400px" }}
           >
             <span
-              className="fugaz-one block text-4xl text-blue-500 mr-3 lg:absolute lg:top-0"
+              className="fugaz-one block text-4xl text-blue-500 mr-3 absolute top-0"
               style={{
                 transform: "rotate(-0.02turn)",
                 top: "25px",
@@ -53,7 +53,7 @@ export default function MainHero() {
               {count}
             </span>
             <span
-              className="fugaz-one block text-blue-500 text-4xl ml-3 lg:absolute lg:bottom-0"
+              className="fugaz-one block text-blue-500 text-4xl ml-3 absolute bottom-0"
               style={{
                 transform: "rotate(-0.02turn)",
                 right: "-30px",
@@ -63,7 +63,7 @@ export default function MainHero() {
             </span>
           </h2>
 
-          <div className="mt-12">
+          <div className="mt-16">
             <p className="text-2xl mb-2">
               Build your portfolio with fun projects.
             </p>
@@ -74,7 +74,7 @@ export default function MainHero() {
             <Newsletter />
           </div>
         </div>
-        <div className="lg:w-1/2 lg:justify-start lg:pl-20">
+        <div className="flex items-center justify-center lg:w-1/2 lg:justify-start lg:pl-20">
           <Walkthrough />
         </div>
       </div>

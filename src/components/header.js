@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Header() {
   return (
-    <header className="flex justify-end items-center pt-5 pr-10 text-sm text-purple-800">
+    <header className="flex justify-end items-center pt-5 pr-10 text-xs text-blue-800">
       <div className="mr-4">
         A{" "}
         <span
@@ -26,14 +26,14 @@ export default function Header() {
         by{" "}
         <a
           href="https://twitter.com/chrisoncode"
-          className="text-purple-400  hover:text-purple-200 hover:underline"
+          className="text-blue-500 underline hover:text-blue-200 hover:underline"
         >
           @ChrisOnCode
         </a>
         , the creator of{" "}
         <a
           href="https://scotch.io"
-          className="text-purple-400 hover:text-purple-200 hover:underline"
+          className="text-blue-500 underline hover:text-blue-200 hover:underline"
         >
           Scotch.io
         </a>
