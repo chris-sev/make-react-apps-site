@@ -1,7 +1,8 @@
-import React, { Fragment, useState } from "react"
+import React, { useState } from "react"
 import useInterval from "@use-it/interval"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import "./Walkthrough.css"
 
 const messages = [
   { text: "How do I get better at React?" },
@@ -9,6 +10,8 @@ const messages = [
   { text: "OK! What should I build?" },
   { text: "Iono. Just Google it?" },
   { text: "Oh! This 20 React Apps course looks cool!" },
+  { text: "Send me the link?!" },
+  { text: "20ReactApps.com bro" },
 ]
 
 function isEven(number) {
@@ -37,56 +40,76 @@ export default function Walkthrough() {
   `)
 
   useInterval(() => {
-    if (messageToShow === messages.length - 1) {
-      return setMessageToShow(0)
-    }
+    // if (messageToShow === messages.length - 1) return
     setMessageToShow(messageToShow => messageToShow + 1)
-  }, 8000)
+  }, 2000)
 
   return (
-    <>
-      <div className="grid grid-cols-5 gap-3">
+    <div
+      className="bg-gray-900 rounded-lg shadow-lg mt-10 lg:mt-0"
+      style={{ minWidth: "473px" }}
+    >
+      <div className="px-6 pt-10">
         {messages.map((message, index) => {
           const even = isEven(index)
 
+          // placeholder
+          if (messageToShow + 1 === index) {
+            return (
+              <div className="flex mb-3" key={index}>
+                <div style={{ width: "55px" }} />
+                <div className={`loader ${even ? "mr-auto" : "ml-auto"}`}>
+                  <div />
+                  <div />
+                  <div />
+                </div>
+                <div style={{ width: "55px" }} />
+              </div>
+            )
+          }
+
+          if (index > messageToShow) return <div key={index} />
+
           return (
-            <Fragment key={index}>
-              <div>
+            <div className="flex mb-3" key={index}>
+              <div className="w-12 flex items-center">
                 {even && (
                   <Img
-                    className="max-w-full ml-auto"
+                    className="max-w-full"
                     style={{ width: "40px" }}
                     fluid={data.kapehe.childImageSharp.fluid}
                   />
                 )}
               </div>
-              <div className="col-span-3">
+              <div className="flex-grow mx-2">
                 <Message isEven={even}>{message.text}</Message>
               </div>
-              <div>
+              <div className="w-12">
                 {!even && (
                   <Img
-                    className="max-w-full"
+                    className="max-w-full ml-auto"
                     style={{ width: "40px" }}
                     fluid={data.chris.childImageSharp.fluid}
                   />
                 )}
               </div>
-            </Fragment>
+            </div>
           )
         })}
       </div>
-    </>
+      <div className="px-6 pb-6 pt-3">
+        <div className="h-12 w-full bg-gray-700 rounded-lg"></div>
+      </div>
+    </div>
   )
 }
 
 function Message({ children, isEven }) {
-  console.log(isEven)
   return (
     <div
-      className={`p-4 rounded-lg ${
+      className={`p-3 rounded-lg ${
         isEven
-          ? "bg-red-400 text-red-100 text-left"
+          ? "bg-blue-500 text-blue-100 text-left"
           : "bg-blue-700 text-blue-100 text-right"
       }`}
     >

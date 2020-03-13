@@ -28,7 +28,7 @@ export default function MainHero() {
 
       {/* columns */}
       <div className="lg:flex">
-        <div className="lg:w-1/2">
+        <div className="lg:flex-grow">
           <h2
             className="relative text-2xl leading-tight"
             style={{ width: "400px" }}
@@ -63,7 +63,7 @@ export default function MainHero() {
             </span>
           </h2>
 
-          <div className="mt-16">
+          <div className="mt-12">
             <p className="text-2xl mb-2">
               Build your portfolio with fun projects.
             </p>
@@ -74,7 +74,7 @@ export default function MainHero() {
             <Newsletter />
           </div>
         </div>
-        <div className="flex items-center justify-center lg:w-1/2 lg:justify-start lg:pl-20">
+        <div className="flex items-center justify-center lg:flex-shrink lg:pl-20">
           <Walkthrough />
         </div>
       </div>
@@ -95,10 +95,10 @@ function ReactIcons() {
           style={{
             zIndex: "-1",
             top:
-              Math.random() *
+              (Math.random() - 0.1) *
               (typeof window !== `undefined` ? window.innerHeight : 0),
             left:
-              Math.random() *
+              (Math.random() - 0.1) *
               (typeof window !== `undefined` ? window.innerWidth : 0),
           }}
         />
