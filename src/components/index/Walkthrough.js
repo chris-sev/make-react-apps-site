@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import useInterval from "@use-it/interval"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import { motion } from "framer-motion"
 import "./Walkthrough.css"
 
 const messages = [
@@ -46,17 +47,22 @@ export default function Walkthrough() {
 
   return (
     <div
-      className="bg-gray-900 rounded-lg shadow-lg mt-10 lg:mt-0"
-      style={{ minWidth: "473px" }}
+      className="flex items-center bg-gray-900 rounded-lg shadow-lg mt-10 lg:mt-0 px-6 py-10"
+      style={{ minWidth: "473px", minHeight: "544px" }}
     >
-      <div className="px-6 pt-10">
+      <div className="w-full">
         {messages.map((message, index) => {
           const even = isEven(index)
 
           // placeholder
           if (messageToShow + 1 === index) {
             return (
-              <div className="flex mb-3" key={index}>
+              <motion.div
+                className="flex mb-3"
+                key={index}
+                initial={{ rotate: 10, scale: 0 }}
+                animate={{ rotate: 0, scale: 1 }}
+              >
                 <div style={{ width: "55px" }} />
                 <div className={`loader ${even ? "mr-auto" : "ml-auto"}`}>
                   <div />
@@ -64,7 +70,7 @@ export default function Walkthrough() {
                   <div />
                 </div>
                 <div style={{ width: "55px" }} />
-              </div>
+              </motion.div>
             )
           }
 
@@ -97,23 +103,22 @@ export default function Walkthrough() {
           )
         })}
       </div>
-      <div className="px-6 pb-6 pt-3">
-        <div className="h-12 w-full bg-gray-700 rounded-lg"></div>
-      </div>
     </div>
   )
 }
 
 function Message({ children, isEven }) {
   return (
-    <div
+    <motion.div
       className={`p-3 rounded-lg ${
         isEven
           ? "bg-blue-500 text-blue-100 text-left"
           : "bg-blue-700 text-blue-100 text-right"
       }`}
+      initial={{ rotate: -5, scale: 0 }}
+      animate={{ rotate: 0, scale: 1 }}
     >
       {children}
-    </div>
+    </motion.div>
   )
 }
