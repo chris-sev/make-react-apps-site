@@ -1,9 +1,6 @@
 import React from "react"
 
 export default function Newsletter() {
-  // POST to:
-  // https://courses.chrisoncode.io/email_lists/37562/subscriptions
-
   return (
     <form
       action="https://courses.chrisoncode.io/email_lists/37562/subscriptions"

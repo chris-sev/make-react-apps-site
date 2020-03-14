@@ -6,7 +6,7 @@ import MainHero from "../components/index/MainHero"
 export default function IndexPage() {
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Make 20 React Apps" />
       <MainHero />
     </Layout>
   )
