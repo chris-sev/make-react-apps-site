@@ -8,6 +8,11 @@ export default function IndexPage() {
     <Layout>
       <SEO title="Make 20 React Apps" />
       <MainHero />
+      {/* <div className="bg-black py-56">
+        what you'll get + what you'll learn + intro video
+      </div>
+      <div className="bg-red-400 py-56">20 apps</div>
+      <div className="bg-yellow-400 py-56">faq</div> */}
     </Layout>
   )
 }

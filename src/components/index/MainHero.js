@@ -22,7 +22,7 @@ export default function MainHero() {
   }, 70)
 
   return (
-    <section className="p-10 lg:p-24 relative">
+    <section className="p-10 lg:px-24 lg:py-32 relative">
       {/* react icons */}
       <ReactIcons />
 
@@ -30,11 +30,11 @@ export default function MainHero() {
       <div className="lg:flex">
         <div className="lg:flex-grow">
           <h2
-            className="relative text-2xl leading-tight"
+            className="main-title relative text-2xl leading-tight"
             style={{ width: "400px" }}
           >
             <span
-              className="fugaz-one block text-4xl text-blue-500 mr-3 absolute top-0"
+              className="fugaz-one block text-4xl text-yellow-200 mr-3 absolute top-0"
               style={{
                 transform: "rotate(-0.02turn)",
                 top: "25px",
@@ -43,17 +43,15 @@ export default function MainHero() {
               Make
             </span>
             <span
-              className="block text-white"
+              className="main-title-number block text-white"
               style={{
-                fontSize: "250px",
-                fontVariantNumeric: "tabular-nums",
                 textShadow: `8px 8px 0 ${getRandomColor()}`,
               }}
             >
               {count}
             </span>
             <span
-              className="fugaz-one block text-blue-500 text-4xl ml-3 absolute bottom-0"
+              className="fugaz-one block text-yellow-200 text-4xl ml-3 absolute bottom-0"
               style={{
                 transform: "rotate(-0.02turn)",
                 right: "-30px",
@@ -74,7 +72,7 @@ export default function MainHero() {
             <Newsletter />
           </div>
         </div>
-        <div className="flex items-center justify-center lg:flex-shrink lg:pl-20">
+        <div className="flex items-center justify-center lg:flex-shrink lg:pl-10">
           <Walkthrough />
         </div>
       </div>
@@ -90,7 +88,7 @@ function ReactIcons() {
           key={index}
           icon={["fab", "react"]}
           size="8x"
-          color="#87CEE9"
+          color="#46C4F6"
           className="absolute"
           style={{
             zIndex: "-1",

@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 body {
-  background: #8dd4f0;
-  min-height: 100vh;
+  @apply min-h-screen;
+  background: #19beff;
 }
 
 h1,

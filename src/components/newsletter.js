@@ -9,7 +9,7 @@ export default function Newsletter() {
     >
       <input name="utf8" type="hidden" value="✓" />
       <input
-        className="py-6 px-6 text-xl bg-white rounded-lg shadow-lg w-full mr-4"
+        className="p-4 xl:p-6 xl:text-xl bg-white rounded-lg shadow-lg w-full mr-4"
         type="email"
         name="email"
         required="required"
@@ -18,7 +18,7 @@ export default function Newsletter() {
       <input
         type="submit"
         value="Get Updates"
-        className="text-lg w-auto bg-red-600 text-red-100 shadow-lg rounded-lg py-6 px-6 cursor-pointer hover:bg-red-400"
+        className="xl:text-lg w-auto bg-red-600 text-red-100 shadow-lg rounded-lg px-10 py-4 xl:px-12 xl:py-6 cursor-pointer hover:bg-red-400"
       />
     </form>
   )

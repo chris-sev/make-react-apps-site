@@ -2,23 +2,23 @@ import React from "react"
 
 export default function Header() {
   return (
-    <header className="flex justify-end items-center pt-5 pr-10 text-xs text-blue-800">
+    <header className="flex justify-end items-center pt-5 pr-10 text-xs text-blue-900">
       <div className="mr-4">
         A{" "}
         <span
-          className="inline-block text-yellow-600"
+          className="inline-block text-yellow-700"
           style={{ transform: "rotate(-27deg)" }}
         >
           real
         </span>{" "}
         <span
-          className="inline-block text-red-600"
+          className="inline-block text-red-700"
           style={{ transform: "rotate(-67deg)" }}
         >
           fun
         </span>{" "}
         <span
-          className="inline-block text-blue-600"
+          className="inline-block text-blue-700"
           style={{ transform: "rotate(-17deg)" }}
         >
           course
@@ -26,14 +26,14 @@ export default function Header() {
         by{" "}
         <a
           href="https://twitter.com/chrisoncode"
-          className="text-blue-500 underline hover:text-blue-200 hover:underline"
+          className="text-blue-800 underline hover:text-blue-200 hover:underline"
         >
           @ChrisOnCode
         </a>
         , the creator of{" "}
         <a
           href="https://scotch.io"
-          className="text-blue-500 underline hover:text-blue-200 hover:underline"
+          className="text-blue-800 underline hover:text-blue-200 hover:underline"
         >
           Scotch.io
         </a>

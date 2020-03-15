@@ -1,6 +1,5 @@
 .loader {
-  display: flex;
-  justify-content: space-between;
+  @apply flex justify-between;
   background: #63b4ed;
   padding: 10px;
   border-radius: 50px;
@@ -10,10 +9,9 @@
 }
 
 .loader div {
-  display: block;
+  @apply block rounded-full;
   height: 10px;
   width: 10px;
-  border-radius: 50%;
   background: #277ab6;
   animation: loader 1s infinite;
 }

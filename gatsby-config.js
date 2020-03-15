@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Make 20 React Apps | Coming Soonish`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Build real things to learn React. Practice makes a better dev!`,
     author: `@chrisoncode`,
   },
   plugins: [

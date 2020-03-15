@@ -1,3 +1,21 @@
+.main-title {
+  width: auto;
+}
+
+.main-title-number {
+  font-size: 200px;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (min-width: 1280px) {
+  .main-title {
+    width: 400px;
+  }
+  .main-title-number {
+    font-size: 250px;
+  }
+}
+
 .newsletter-blurb span:before {
   display: inline-block;
   position: absolute;

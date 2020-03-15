@@ -11,7 +11,7 @@ import PropTypes from "prop-types"
 import "./fontawesome"
 import "./layout.css"
 
-const Layout = ({ children }) => {
+export default function Layout({ children }) {
   return (
     <>
       <div className="overflow-x-hidden">
@@ -20,6 +20,8 @@ const Layout = ({ children }) => {
 
         {/* main */}
         <main>{children}</main>
+
+        <footer>footer</footer>
       </div>
     </>
   )
@@ -28,5 +30,3 @@ const Layout = ({ children }) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
-
-export default Layout
