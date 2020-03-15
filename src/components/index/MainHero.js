@@ -24,7 +24,7 @@ export default function MainHero() {
   return (
     <section className="p-10 lg:px-24 lg:py-32 relative">
       {/* react icons */}
-      <ReactIcons />
+      <ReactIcons count={count} />
 
       {/* columns */}
       <div className="lg:flex">
@@ -80,27 +80,26 @@ export default function MainHero() {
   )
 }
 
-function ReactIcons() {
+function ReactIcons({ count }) {
   return (
-    <>
-      {Array.apply(null, Array(30)).map((value, index) => (
-        <FontAwesomeIcon
-          key={index}
-          icon={["fab", "react"]}
-          size="8x"
-          color="#46C4F6"
-          className="absolute"
-          style={{
-            zIndex: "-1",
-            top:
-              (Math.random() - 0.1) *
-              (typeof window !== `undefined` ? window.innerHeight : 0),
-            left:
-              (Math.random() - 0.1) *
-              (typeof window !== `undefined` ? window.innerWidth : 0),
-          }}
-        />
+    <div
+      className="fixed left-0 right-0 top-0 bottom-0 z-0 grid grid-cols-4 grid-cols-4 pointer-events-none"
+      style={{ zIndex: "-1" }}
+    >
+      {Array.apply(null, Array(20)).map((value, index) => (
+        <div
+          className={`flex items-center justify-center p-4 ${
+            index > count ? "opacity-0" : ""
+          }`}
+        >
+          <FontAwesomeIcon
+            key={index}
+            icon={["fab", "react"]}
+            size="8x"
+            color="#46C4F6"
+          />
+        </div>
       ))}
-    </>
+    </div>
   )
 }
