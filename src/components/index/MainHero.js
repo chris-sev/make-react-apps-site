@@ -22,7 +22,7 @@ export default function MainHero() {
   }, 70)
 
   return (
-    <section className="p-10 lg:px-24 lg:py-32 relative">
+    <section className="p-10 lg:px-24 lg:py-20 relative">
       {/* react icons */}
       <ReactIcons count={count} />
 
@@ -95,7 +95,7 @@ function ReactIcons({ count }) {
           <FontAwesomeIcon
             key={index}
             icon={["fab", "react"]}
-            size="8x"
+            size="9x"
             color="#46C4F6"
           />
         </div>
