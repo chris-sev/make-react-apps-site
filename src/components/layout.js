@@ -21,7 +21,7 @@ export default function Layout({ children }) {
         {/* main */}
         <main>{children}</main>
 
-        <footer>footer</footer>
+        {/* <footer>footer</footer> */}
       </div>
     </>
   )
