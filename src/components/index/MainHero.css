@@ -1,10 +1,16 @@
 .main-title {
-  width: auto;
+  width: 400px;
 }
 
 .main-title-number {
   font-size: 200px;
   font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 480px) {
+  .main-title {
+    width: 320px !important;
+  }
 }
 
 @media (min-width: 1280px) {

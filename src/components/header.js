@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Header() {
   return (
-    <header className="flex justify-end items-center pt-5 pr-10 text-blue-900">
+    <header className="text-xs md:text-md text-right justify-end items-center pt-5 px-10 text-blue-900">
       <div className="mr-4">
         A{" "}
         <span

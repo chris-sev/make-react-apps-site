@@ -22,7 +22,7 @@ export default function MainHero() {
   }, 70)
 
   return (
-    <section className="p-10 lg:px-24 lg:py-20 relative">
+    <section className="px-6 py-10 lg:px-24 lg:py-20 relative">
       {/* react icons */}
       <ReactIcons count={count} />
 
