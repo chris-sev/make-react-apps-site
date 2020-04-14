@@ -28,7 +28,9 @@ export default function WhoAmI() {
             </a>
           </div>
           <div>
-            <h2 className="text-2xl lg:text-4xl mb-4">Meet Chris on Code</h2>
+            <h2 className="fugaz-one text-2xl lg:text-4xl mb-4">
+              Meet Chris on Code
+            </h2>
             <p className="mb-6">
               Chris on Code is the founder of{" "}
               <a
