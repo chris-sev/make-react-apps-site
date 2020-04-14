@@ -19,7 +19,7 @@ export default function Newsletter() {
       action="https://courses.chrisoncode.io/email_lists/37562/subscriptions"
       onSubmit={handleSubmit}
       method="post"
-      className="flex"
+      className="flex w-full"
     >
       <input name="utf8" type="hidden" value="✓" />
       <input
