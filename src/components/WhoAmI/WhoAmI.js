@@ -4,7 +4,7 @@ import "./WhoAmI.css"
 export default function WhoAmI() {
   return (
     <div className="who-am-i text-gray-300 p-16 lg:p-24">
-      <div className="container flex">
+      <div className="container mx-auto flex">
         <div
           className="flex-shrink flex flex-col justify-between z-10"
           style={{ marginRight: "-25px" }}
@@ -14,7 +14,7 @@ export default function WhoAmI() {
           <img src="https://i.imgur.com/ly8m0ac.png" className="mb-3" />
           <img src="https://i.imgur.com/9HKkggh.png" className="lg:hidden" />
         </div>
-        <div className="bg-blue-900 rounded-lg shadow-lg px-20 lg:px-24 py-12 lg:py-16 flex-grow lg:text-lg text- leading-relaxed lg:flex">
+        <div className="bg-blue-900 rounded-lg shadow-lg px-20 lg:px-24 py-12 lg:py-16 flex-grow lg:text-lg leading-relaxed lg:flex">
           <div className="flex-shrink mr-8 mb-8 lg:mb-0">
             <img
               src="https://i.imgur.com/pS80qXV.jpg"

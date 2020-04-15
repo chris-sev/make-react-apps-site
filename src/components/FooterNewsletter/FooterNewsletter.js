@@ -6,7 +6,7 @@ import "./FooterNewsletter.css"
 export default function FooterNewsletter() {
   return (
     <div className="bg-gray-900 text-gray-300 p-16 lg:p-24 pt-12 lg:pt-20">
-      <div className="container hidden md:flex">
+      <div className="container mx-auto hidden md:flex">
         <div>
           <img src={logo} className="logo" alt="Footer Logo" />
         </div>
