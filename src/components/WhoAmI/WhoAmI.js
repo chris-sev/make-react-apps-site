@@ -9,16 +9,21 @@ export default function WhoAmI() {
           className="flex-shrink flex flex-col justify-between z-10"
           style={{ marginRight: "-25px" }}
         >
-          <img src="https://i.imgur.com/oTvm7ml.png" className="mb-3" />
-          <img src="https://i.imgur.com/2AwXK8Q.png" className="mb-3" />
-          <img src="https://i.imgur.com/ly8m0ac.png" className="mb-3" />
-          <img src="https://i.imgur.com/9HKkggh.png" className="lg:hidden" />
+          <img src="https://i.imgur.com/oTvm7ml.png" alt="" className="mb-3" />
+          <img src="https://i.imgur.com/2AwXK8Q.png" alt="" className="mb-3" />
+          <img src="https://i.imgur.com/ly8m0ac.png" alt="" className="mb-3" />
+          <img
+            src="https://i.imgur.com/9HKkggh.png"
+            alt=""
+            className="lg:hidden"
+          />
         </div>
         <div className="bg-blue-900 rounded-lg shadow-lg px-20 lg:px-24 py-12 lg:py-16 flex-grow lg:text-lg leading-relaxed lg:flex">
           <div className="flex-shrink mr-8 mb-8 lg:mb-0">
             <img
               src="https://i.imgur.com/pS80qXV.jpg"
               className="rounded shadow mb-2 w-48 lg:w-64"
+              alt="Chris Avatar"
             />
             <a
               href="https://twitter.com/chrisoncode"
@@ -72,10 +77,14 @@ export default function WhoAmI() {
           className="flex-shrink ml-10 flex flex-col justify-between z-10"
           style={{ marginLeft: "-25px" }}
         >
-          <img src="https://i.imgur.com/oTvm7ml.png" className="mb-3" />
-          <img src="https://i.imgur.com/2AwXK8Q.png" className="mb-3" />
-          <img src="https://i.imgur.com/ly8m0ac.png" className="mb-3" />
-          <img src="https://i.imgur.com/9HKkggh.png" className="lg:hidden" />
+          <img src="https://i.imgur.com/oTvm7ml.png" alt="" className="mb-3" />
+          <img src="https://i.imgur.com/2AwXK8Q.png" alt="" className="mb-3" />
+          <img src="https://i.imgur.com/ly8m0ac.png" alt="" className="mb-3" />
+          <img
+            src="https://i.imgur.com/9HKkggh.png"
+            alt=""
+            className="lg:hidden"
+          />
         </div>
       </div>
     </div>
