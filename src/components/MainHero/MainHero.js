@@ -88,6 +88,7 @@ function ReactIcons({ count }) {
     >
       {Array.apply(null, Array(20)).map((value, index) => (
         <div
+          key={index}
           className={`flex items-center justify-center p-4 ${
             index > count ? "opacity-0" : ""
           }`}

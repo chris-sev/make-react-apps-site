@@ -1,11 +1,25 @@
 import React from "react"
+import { trackCustomEvent } from "gatsby-plugin-google-analytics"
 
 export default function Newsletter() {
+  function handleSubmit(e) {
+    e.preventDefault()
+
+    trackCustomEvent({
+      category: "newsletter",
+      action: "signup",
+      label: "Get Updates",
+    })
+
+    e.target.submit()
+  }
+
   return (
     <form
       action="https://courses.chrisoncode.io/email_lists/37562/subscriptions"
+      onSubmit={handleSubmit}
       method="post"
-      className="flex"
+      className="flex w-full"
     >
       <input name="utf8" type="hidden" value="✓" />
       <input
