@@ -5,6 +5,7 @@
 body {
   @apply min-h-screen;
   background: #45bff1;
+  border: 22px solid black;
 }
 
 h1,

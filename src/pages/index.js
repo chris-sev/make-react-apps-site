@@ -7,7 +7,8 @@ import FooterNewsletter from "../components/FooterNewsletter/FooterNewsletter"
 import FAQ from "../components/FAQ/FAQ"
 import CourseOverview from "../components/CourseOverview/CourseOverview"
 import Footer from "../components/footer"
-import CourseStats from "../components/CourseOverview/CourseStats"
+// import CourseStats from "../components/CourseOverview/CourseStats"
+import WhatWellBuild from "../components/WhatWellBuild/WhatWellBuild"
 
 export default function IndexPage() {
   return (
@@ -15,11 +16,7 @@ export default function IndexPage() {
       <SEO title="Make 20 React Apps" />
       <MainHero />
       <CourseOverview />
-      {/* <div className="bg-black py-56">
-        what you'll get + what you'll learn + intro video
-      </div>
-      <div className="bg-red-400 py-56">20 apps</div>
-      <div className="bg-yellow-400 py-56">faq</div> */}
+      <WhatWellBuild />
       <WhoAmI />
       <FAQ />
       {/* <CourseStats /> */}

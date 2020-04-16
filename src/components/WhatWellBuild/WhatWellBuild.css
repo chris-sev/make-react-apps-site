@@ -1,0 +1,73 @@
+.what-well-build {
+  position: relative;
+  background-color: transparent;
+}
+
+.what-well-build .container {
+  position: relative;
+  z-index: 1;
+}
+
+.what-well-build .background-block::before {
+  background: rgb(216, 71, 71);
+}
+
+.what-well-build::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 100px);
+  clip-path: polygon(0% 0%, 100% 50px, 100% 100%, 0% calc(100% - 50px));
+
+  background-color: black;
+}
+
+.number-container {
+  min-width: 300px;
+}
+
+.number {
+  font-size: 60px;
+  height: 300px;
+}
+
+.number text {
+  stroke-width: 0.5px;
+  fill: transparent;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+}
+
+.number .number-colored {
+  stroke: #ffde40;
+  stroke-dashoffset: 1000;
+}
+
+.number .number-gray {
+  stroke: #444;
+}
+
+.app-container:hover .number .number-colored {
+  animation: dash 5s linear infinite;
+}
+
+.app-container .demo-button {
+  transition: 1.5s ease all;
+}
+
+.app-container:hover .demo-button {
+  background: #f6e05e !important;
+  color: #744210 !important;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}

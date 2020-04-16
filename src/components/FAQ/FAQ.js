@@ -55,9 +55,9 @@ export default function FAQ() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className={`mb-8 bg-white rounded shadow-lg p-12 w-2/3 ${index %
-                2 ===
-                0 && "ml-auto"}`}
+              className={`mb-8 bg-white rounded shadow-lg p-12 w-2/3 mx-auto ${
+                index % 2 === 0 ? "ml-32" : "mr-32"
+              }`}
             >
               <h4 className="fugaz-one text-2xl mb-3 text-gray-800 leading-snug">
                 {faq.question}
