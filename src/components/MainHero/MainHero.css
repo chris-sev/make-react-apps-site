@@ -21,17 +21,3 @@
     font-size: 250px;
   }
 }
-
-.newsletter-blurb span:before {
-  display: inline-block;
-  position: absolute;
-  content: "";
-  z-index: -1;
-  margin-top: 2px;
-  margin-left: 10px;
-  background: #daeeff;
-  height: 20px;
-  width: 92%;
-  top: 5px;
-  left: -3px;
-}

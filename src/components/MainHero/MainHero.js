@@ -22,12 +22,12 @@ export default function MainHero() {
   }, 70)
 
   return (
-    <section className="px-6 py-10 lg:px-24 lg:py-20 relative">
+    <section className="px-6 pt-10 pb-16 lg:px-24 lg:pt-20 lg:pb-32 relative">
       {/* react icons */}
       <ReactIcons count={count} />
 
       {/* columns */}
-      <div className="lg:flex">
+      <div className="container mx-auto lg:flex">
         <div className="lg:flex-grow">
           <h2
             className="main-title relative text-2xl leading-tight"
@@ -66,7 +66,7 @@ export default function MainHero() {
               Build your portfolio with fun projects.
             </p>
             <p className="newsletter-blurb text-xl text-blue-800 mb-8">
-              Coming <span className="relative">soon</span>! Sign up for
+              Coming <span className="background-block">soon</span>! Sign up for
               updates.
             </p>
             <Newsletter />

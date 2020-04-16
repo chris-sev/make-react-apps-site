@@ -22,7 +22,7 @@ export default function IndexPage() {
       <div className="bg-yellow-400 py-56">faq</div> */}
       <WhoAmI />
       <FAQ />
-      <CourseStats />
+      {/* <CourseStats /> */}
       <FooterNewsletter />
       <Footer />
     </Layout>

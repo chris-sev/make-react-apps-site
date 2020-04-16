@@ -23,7 +23,7 @@ export default function Newsletter() {
     >
       <input name="utf8" type="hidden" value="✓" />
       <input
-        className="p-4 xl:p-6 xl:text-xl bg-white rounded-lg shadow-lg w-full mr-4"
+        className="gradient-border p-4 xl:p-6 xl:text-xl bg-white rounded-lg shadow-lg w-full mr-4"
         type="email"
         name="email"
         required="required"

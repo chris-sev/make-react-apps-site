@@ -3,7 +3,7 @@ import "./WhoAmI.css"
 
 export default function WhoAmI() {
   return (
-    <div className="who-am-i text-gray-300 p-16 lg:p-24">
+    <div className="who-am-i text-gray-300 p-16 lg:p-24 lg:pb-32">
       <div className="container mx-auto flex">
         <div
           className="flex-shrink flex flex-col justify-between z-10"
@@ -18,7 +18,7 @@ export default function WhoAmI() {
             className="lg:hidden"
           />
         </div>
-        <div className="bg-blue-900 rounded-lg shadow-lg px-20 lg:px-24 py-12 lg:py-16 flex-grow lg:text-lg leading-relaxed lg:flex">
+        <div className="bg-gray-900 rounded-lg shadow-lg px-20 lg:px-24 py-12 lg:py-16 flex-grow lg:text-lg leading-relaxed lg:flex">
           <div className="flex-shrink mr-8 mb-8 lg:mb-0">
             <img
               src="https://i.imgur.com/pS80qXV.jpg"
@@ -27,9 +27,9 @@ export default function WhoAmI() {
             />
             <a
               href="https://twitter.com/chrisoncode"
-              className="mb-2 text-center block bg-blue-700 rounded py-2 px-4 text-blue-200 hover:text-blue-100 hover:bg-blue-600 text-sm"
+              className="mb-2 text-center block bg-blue-700 rounded py-2 px-4 text-blue-200 hover:text-blue-100 hover:bg-blue-600 text-xs"
             >
-              @chrisoncode
+              Follow @chrisoncode
             </a>
           </div>
           <div>
