@@ -3,19 +3,19 @@ import "./WhatWellBuild.css"
 
 const apps = [
   {
-    title: "Pomodoro App",
+    title: "Moving Link Across <canvas>",
     links: {
       demo: "https://example.com",
     },
   },
   {
-    title: "Pomodoro App",
+    title: "Pomodoro",
     links: {
       demo: "https://example.com",
     },
   },
   {
-    title: "Pomodoro App",
+    title: "Markdown Editor",
     links: {
       demo: "https://example.com",
     },
@@ -66,22 +66,22 @@ function App({ app, number }) {
         <img
           src="http://placekitten.com/g/1920/1080"
           className="flex-shrink border-2 border-gray-700 shadow-lg mr-12 mb-4 md:mb-0"
-          style={{ minWidth: "500px" }}
+          style={{ minWidth: "400px" }}
         />
-        <div>
+        <div className="flex flex-col justify-center">
           <h2 className="fugaz-one text-4xl mb-2 text-white">Pomodoro App</h2>
           <p className="text-gray-400 text-xl mb-6">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et eveniet
             nisi, facere quam corrupti amet
           </p>
-          <div className="flex mb-8 text-center text-xl">
+          <div className="flex justify-around mb-8 text-center text-2xl">
             <div className="mr-8">
-              <span className="block mb">😍</span>
+              <span className="block mb">🎬</span>
               <span className="text-gray-700">3 videos</span>
             </div>
             <div>
-              <span className="block mb">😩</span>
-              <span className="text-gray-700">4 hours 3 min</span>
+              <span className="block mb">🎤</span>
+              <span className="text-gray-700">4.25 hours</span>
             </div>
           </div>
 
@@ -89,7 +89,7 @@ function App({ app, number }) {
             href="https://example.com"
             target="_blank"
             rel="noopener nofollow"
-            className="demo-button inline-block border border-yellow-400 text-yellow-400 leading-none py-4 px-12 rounded shadow"
+            className="demo-button inline-block border border-yellow-400 text-yellow-400 leading-none py-4 px-12 rounded shadow text-center"
           >
             View the Demo
           </a>
