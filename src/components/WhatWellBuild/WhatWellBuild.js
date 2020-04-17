@@ -3,40 +3,45 @@ import "./WhatWellBuild.css"
 
 const apps = [
   {
-    title: "Moving Link Across <canvas>",
-    links: {
-      demo: "https://example.com",
-    },
+    title: "Moving Link Across a <canvas>",
+    videoSrc: "https://i.imgur.com/CA5KIIo.mp4",
+    numberOfVideos: 3,
+    timeToComplete: "4.25 hours",
+    demoLink: "https://405hq.codesandbox.io/",
   },
   {
-    title: "Pomodoro",
-    links: {
-      demo: "https://example.com",
-    },
+    title: "Pomodoro Timer",
+    videoSrc: "https://i.imgur.com/idgK9Qr.mp4",
+    numberOfVideos: 3,
+    timeToComplete: "4.25 hours",
+    demoLink: "https://391jg.codesandbox.io/",
+  },
+  {
+    title: "Paper Rock Scissors",
+    videoSrc: "https://i.imgur.com/odxxUYF.mp4",
+    numberOfVideos: 3,
+    timeToComplete: "4.25 hours",
+    demoLink: "https://njpw4.codesandbox.io/",
   },
   {
     title: "Markdown Editor",
-    links: {
-      demo: "https://example.com",
-    },
+    videoSrc: "https://i.imgur.com/jnRKgEh.mp4",
+    numberOfVideos: 1,
+    timeToComplete: "4.25 hours",
+    demoLink: "https://391jg.codesandbox.io/",
   },
   {
-    title: "Pomodoro App",
-    links: {
-      demo: "https://example.com",
-    },
-  },
-  {
-    title: "Pomodoro App",
-    links: {
-      demo: "https://example.com",
-    },
+    title: "Browser Tabs and Routing",
+    videoSrc: "https://i.imgur.com/0pGu5gy.mp4",
+    numberOfVideos: 3,
+    timeToComplete: "4.25 hours",
+    demoLink: "https://yyhfg.codesandbox.io/",
   },
 ]
 
 export default function WhatWellBuild() {
   return (
-    <div className="what-well-build bg-black text-gray-200 p-16 lg:p-24">
+    <div className="what-well-build bg-black text-gray-200 px-2s py-16 lg:py-24">
       <div className="container mx-auto flex flex-col">
         {/* header */}
         <div className="text-center">
@@ -47,48 +52,74 @@ export default function WhatWellBuild() {
         </div>
 
         {/* list of apps */}
-        {apps && apps.map((app, index) => <App app={app} number={index + 1} />)}
+        {apps &&
+          apps.map((app, index) => (
+            <App
+              app={app}
+              number={index + 1}
+              isLast={index + 1 === apps.length}
+            />
+          ))}
       </div>
     </div>
   )
 }
 
-function App({ app, number }) {
+function App({ app, number, isLast }) {
   return (
-    <div className="app-container pt-12 pb-20 mb-12 border-b border-gray-900 flex items-center">
+    <div
+      className={`app-container pt-8 pb-12 mb-6 lg:pt-12 lg:pb-20 lg:mb-12 flex items-center ${!isLast &&
+        "border-b border-gray-900"} `}
+    >
+      {/* number */}
       <div
         className="flex-shrink mr-16 hidden md:block"
         style={{ maxWidth: "200px" }}
       >
         <Number number={number} />
       </div>
-      <div className="xl:flex">
-        <img
-          src="http://placekitten.com/g/1920/1080"
-          className="flex-shrink border-2 border-gray-700 shadow-lg mr-12 mb-4 md:mb-0"
-          style={{ minWidth: "400px" }}
-        />
-        <div className="flex flex-col justify-center">
-          <h2 className="fugaz-one text-4xl mb-2 text-white">Pomodoro App</h2>
-          <p className="text-gray-400 text-xl mb-6">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et eveniet
-            nisi, facere quam corrupti amet
-          </p>
-          <div className="flex justify-around mb-8 text-center text-2xl">
+      <div className="block xl:flex lg:flex-grow">
+        {/* video */}
+        <video
+          autoPlay
+          loop
+          className="flex-shrink shadow-lg mr-12 mb-4 md:mb-0 w-full"
+          style={{ maxWidth: "600px" }}
+        >
+          <source src={app.videoSrc} type="video/mp4" />
+        </video>
+
+        {/* content */}
+        <div className="lg:flex flex-col justify-center w-full text-center">
+          <h2 className="fugaz-one text-4xl mb-4 text-white">{app.title}</h2>
+          {app.description && (
+            <p className="text-gray-400 text-xl mb-6">{app.description}</p>
+          )}
+
+          {/* icons */}
+          <div className="flex justify-center mb-6 text-center text-xl lg:text-2xl">
             <div className="mr-8">
-              <span className="block mb">🎬</span>
-              <span className="text-gray-700">3 videos</span>
+              <span className="block mb" role="img" aria-label="Videos">
+                🎬
+              </span>
+              <span className="text-gray-700">
+                {app.numberOfVideos}{" "}
+                {app.numberOfVideos === 1 ? "Video" : "Videos"}
+              </span>
             </div>
             <div>
-              <span className="block mb">🎤</span>
-              <span className="text-gray-700">4.25 hours</span>
+              <span className="block mb" role="img" aria-label="Hours">
+                🎤
+              </span>
+              <span className="text-gray-700">{app.timeToComplete}</span>
             </div>
           </div>
 
+          {/* demo button */}
           <a
-            href="https://example.com"
+            href={app.demoLink}
+            rel="noopener noreferrer"
             target="_blank"
-            rel="noopener nofollow"
             className="demo-button inline-block border border-yellow-400 text-yellow-400 leading-none py-4 px-12 rounded shadow text-center"
           >
             View the Demo
