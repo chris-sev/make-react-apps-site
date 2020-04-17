@@ -16,7 +16,7 @@ export default function IndexPage() {
       <SEO title="Make 20 React Apps" />
       <MainHero />
       <CourseOverview />
-      {/* <WhatWellBuild /> */}
+      <WhatWellBuild />
       <WhoAmI />
       <FAQ />
       {/* <CourseStats /> */}

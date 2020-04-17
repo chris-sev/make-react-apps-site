@@ -50,7 +50,7 @@
 }
 
 .app-container:hover .number .number-colored {
-  animation: dash 5s linear infinite;
+  animation: dash 4s linear infinite;
 }
 
 .app-container .demo-button {
