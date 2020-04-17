@@ -42,7 +42,7 @@ const faqs = [
 
 export default function FAQ() {
   return (
-    <div className="faq text-gray-300 p-16 lg:p-24">
+    <div className="faq text-gray-300 py-16 px-8 lg:p-24">
       <div className="container mx-auto flex flex-col xl:w-2/3">
         <div className="text-center">
           <h2 className="fugaz-one mb text-5xl">FAQs</h2>
@@ -55,15 +55,15 @@ export default function FAQ() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className={`mb-8 bg-white rounded shadow-lg p-12 w-2/3 mx-auto ${
-                index % 2 === 0 ? "ml-32" : "mr-32"
+              className={`mb-4 lg:mb-8 bg-white rounded shadow-lg p-6 lg:p-12 lg:w-2/3 mx-auto ${
+                index % 2 === 0 ? "lg:ml-32" : "lg:mr-32"
               }`}
             >
-              <h4 className="fugaz-one text-2xl mb-3 text-gray-800 leading-snug">
+              <h4 className="fugaz-one text-xl lg:text-2xl mb-3 text-gray-800 leading-snug">
                 {faq.question}
               </h4>
               <p
-                className="text-gray-700 text-lg leading-relaxed"
+                className="text-gray-700 lg:text-lg leading-relaxed"
                 dangerouslySetInnerHTML={{ __html: faq.answer }}
               />
             </div>
