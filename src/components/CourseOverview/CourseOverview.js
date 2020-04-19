@@ -65,7 +65,7 @@ export default function CourseOverview() {
                   projects, and any React apps.
                 </p>
                 <p className="mb-6">
-                  We're putting a focus on building something fun quickly. Each
+                  We're putting a focus on building something fun, quickly. Each
                   app could take from 15 minutes to an hour so there's a lot of
                   building to dig through.
                 </p>
@@ -73,7 +73,7 @@ export default function CourseOverview() {
               <div className="bg-indigo-100 rounded p-4 mt-auto">
                 <p>
                   Not sure if you'll like the course? Full refund if you end up
-                  not liking anyting.
+                  not liking anything.
                 </p>
               </div>
             </div>
