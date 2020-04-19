@@ -45,7 +45,7 @@ export default function WhoAmI() {
                 scotch.io
               </a>
               , a popular web dev tutorial site. Scotch reaches 2,500,000
-              readers monthly and $350,000 in annual revenue.
+              readers monthly and $30,000/mo in revenue.
             </p>
 
             <p className="mb-6">

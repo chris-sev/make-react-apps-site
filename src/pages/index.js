@@ -7,6 +7,7 @@ import FooterNewsletter from "../components/FooterNewsletter/FooterNewsletter"
 import FAQ from "../components/FAQ/FAQ"
 import CourseOverview from "../components/CourseOverview/CourseOverview"
 import Footer from "../components/footer"
+import Pricing from "../components/Pricing/Pricing"
 // import CourseStats from "../components/CourseOverview/CourseStats"
 import WhatWellBuild from "../components/WhatWellBuild/WhatWellBuild"
 
@@ -18,6 +19,7 @@ export default function IndexPage() {
       <CourseOverview />
       <WhatWellBuild />
       <WhoAmI />
+      <Pricing />
       <FAQ />
       {/* <CourseStats /> */}
       <FooterNewsletter />

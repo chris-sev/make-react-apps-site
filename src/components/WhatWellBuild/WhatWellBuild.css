@@ -53,13 +53,19 @@
   animation: dash 4s linear infinite;
 }
 
-.app-container .demo-button {
+.app-container .demo-button,
+.app-container .preview-button {
   transition: 1.5s ease all;
+}
+
+.app-container:hover .preview-button {
+  background: #ed8936 !important;
+  color: #f8ddae !important;
 }
 
 .app-container:hover .demo-button {
   background: #f6e05e !important;
-  color: #744210 !important;
+  color: #865625 !important;
 }
 
 @keyframes dash {

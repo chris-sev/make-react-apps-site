@@ -14,8 +14,21 @@ export default function FooterNewsletter() {
           <p className="text-gray-100 text-2xl mb-2">
             Build your portfolio with fun projects.
           </p>
-          <p className="newsletter-blurb text-xl text-gray-500 mb-8">
+          {/* <p className="newsletter-blurb text-xl text-gray-500 mb-8">
             Coming <span className="relative">soon</span>! Sign up for updates.
+          </p> */}
+
+          <a
+            href="#pricing"
+            className="text-center xl:text-lg bg-red-600 text-red-100 shadow-lg rounded-lg px-6 py-6 cursor-pointer hover:bg-red-400 mb-10 w-1/2"
+          >
+            Get the Course for{" "}
+            <strong className="font-bold underline">50% Off</strong>
+          </a>
+
+          <p className="text-blue-300 mb-3">
+            Or get updates on when more apps come out and the course is
+            finished...
           </p>
           <Newsletter />
         </div>
