@@ -19,11 +19,11 @@ export default function Newsletter() {
       action="https://courses.chrisoncode.io/email_lists/37562/subscriptions"
       onSubmit={handleSubmit}
       method="post"
-      className="flex w-full"
+      className="flex w-full shadow-lg"
     >
       <input name="utf8" type="hidden" value="✓" />
       <input
-        className="gradient-border p-4 xl:p-6 xl:text-xl bg-white rounded-lg shadow-lg w-full mr-4"
+        className="gradient-border px-4 py-3 xl:px-6 xl:py-4 xl:text-xl bg-white rounded-l-lg w-full"
         type="email"
         name="email"
         required="required"
@@ -32,7 +32,7 @@ export default function Newsletter() {
       <input
         type="submit"
         value="Get Updates"
-        className="xl:text-lg w-auto bg-red-600 text-red-100 shadow-lg rounded-lg px-10 py-4 xl:px-12 xl:py-6 cursor-pointer hover:bg-red-400"
+        className="xl:text-lg w-auto bg-blue-700 text-blue-100 rounded-r-lg px-10 py-3 xl:px-12 xl:py-4 cursor-pointer hover:bg-blue-600"
       />
     </form>
   )

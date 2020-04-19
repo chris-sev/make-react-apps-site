@@ -13,8 +13,6 @@ import "./fontawesome"
 import "./layout.css"
 
 export default function Layout({ children }) {
-  usePodia()
-
   return (
     <>
       <div className="overflow-x-hidden">
