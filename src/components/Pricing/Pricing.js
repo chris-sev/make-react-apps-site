@@ -32,14 +32,12 @@ export default function Pricing() {
 
             {/* main info */}
             <p className="leading-loose mb-8 lg:text-xl">
-              ✅ All <strong className="font-bold">20 React Apps</strong> when
-              they are released
+              ✅ All <strong>20 React Apps</strong> when they are released
               <br />✅ Final and starter code for 20 React Apps
               <br />✅ Stream from any device
               <br />✅ Unlimited updates, never expires
               <br />
-              😍 <strong className="font-bold">50% off</strong> while course is
-              in-progress
+              😍 <strong>50% off</strong> while course is in-progress
             </p>
             <a
               href="https://courses.chrisoncode.io/make-20-react-apps"

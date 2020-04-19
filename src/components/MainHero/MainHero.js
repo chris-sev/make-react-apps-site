@@ -75,7 +75,7 @@ export default function MainHero() {
 
             <a
               href="#pricing"
-              className="flex items-center justify-center xl:text-lg bg-red-600 text-red-100 shadow-lg rounded-lg px-6 py-6 cursor-pointer hover:bg-red-500 mb-10 w-full lg:w-1/2"
+              className="flex items-center justify-center xl:text-xl bg-red-600 text-red-100 shadow-lg rounded-lg px-6 py-8 cursor-pointer hover:bg-red-500 mb-10 w-full lg:w-1/2"
             >
               Get the Course for{" "}
               <strong className="font-bold ml-2 underline">50% Off</strong>
