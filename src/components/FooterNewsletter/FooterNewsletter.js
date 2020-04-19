@@ -1,5 +1,5 @@
 import React from "react"
-import Newsletter from "../Newsletter"
+import Newsletter from "../newsletter"
 import logo from "../../images/logo.svg"
 import "./FooterNewsletter.css"
 

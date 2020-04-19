@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import useInterval from "@use-it/interval"
-import Newsletter from "../Newsletter"
+import Newsletter from "../newsletter"
 import Walkthrough from "./Walkthrough"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "./MainHero.css"
