@@ -55,6 +55,7 @@ export default function WhatWellBuild() {
         {apps &&
           apps.map((app, index) => (
             <App
+              key={index}
               app={app}
               number={index + 1}
               isLast={index + 1 === apps.length}

@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import useInterval from "@use-it/interval"
-import Newsletter from "../newsletter"
+import Newsletter from "../Newsletter"
 import Walkthrough from "./Walkthrough"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "./MainHero.css"
@@ -69,6 +69,14 @@ export default function MainHero() {
               Coming <span className="background-block">soon</span>! Sign up for
               updates.
             </p>
+
+            <a
+              href="https://courses.chrisoncode.io/make-20-react-apps"
+              data-podia-embed="link"
+              className="flex items-center justify-center xl:text-lg bg-red-600 text-red-100 shadow-lg rounded-lg px-6 py-6 cursor-pointer hover:bg-red-400 mb-8 w-1/3"
+            >
+              Get the Course for 50% Off
+            </a>
             <Newsletter />
           </div>
         </div>
