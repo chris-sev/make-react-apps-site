@@ -8,7 +8,6 @@
 import React from "react"
 import Header from "./header"
 import PropTypes from "prop-types"
-import usePodia from "./usePodia"
 import "./fontawesome"
 import "./layout.css"
 

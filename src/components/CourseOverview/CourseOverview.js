@@ -1,6 +1,8 @@
 import React from "react"
 import "./CourseOverview.css"
 
+// https://scotch-res.cloudinary.com/video/upload/v1587318970/Hello_Teaser_yr1idk.mp4
+
 export default function CourseOverview() {
   return (
     <div className="course-overview bg-indigo-700 text-gray-300 py-32 px-10 lg:px-24 lg:pt-32 lg:pb-40">

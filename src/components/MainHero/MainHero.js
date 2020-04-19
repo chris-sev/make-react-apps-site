@@ -70,7 +70,7 @@ export default function MainHero() {
             </p>
             <p className="newsletter-blurb text-xl text-red-800 mb-3">
               <span className="background-block">50% off</span> while course is
-              still being made. 5/20 apps done so far.
+              still being made. 6/20 apps done so far.
             </p>
 
             <a
