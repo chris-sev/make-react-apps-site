@@ -53,6 +53,12 @@
   animation: dash 4s linear infinite;
 }
 
+@media screen and (min-width: 1280px) {
+  .app-video {
+    max-width: 600px;
+  }
+}
+
 .app-container .demo-button,
 .app-container .preview-button {
   transition: 1.5s ease all;

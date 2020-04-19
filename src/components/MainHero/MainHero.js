@@ -22,7 +22,7 @@ export default function MainHero() {
   }, 70)
 
   return (
-    <section className="px-6 pt-10 pb-16 lg:px-24 lg:pt-20 lg:pb-32 relative">
+    <section className="px-6 pt-10 pb-16 xl:px-24 lg:pt-20 lg:pb-32 relative">
       {/* react icons */}
       <ReactIcons count={count} />
 
@@ -69,13 +69,13 @@ export default function MainHero() {
               20 fun projects to learn new skills and add to your portfolio.
             </p>
             <p className="newsletter-blurb md:text-lg text-red-800 mb-3">
-              <span className="background-block">50% off</span> while course is
-              still being made. 6/20 apps done so far.
+              <strong>50% off</strong> while course is still being made. 6/20
+              apps done so far.
             </p>
 
             <a
               href="#pricing"
-              className="flex items-center justify-center lg:text-lg bg-red-600 text-red-100 shadow-lg rounded-lg px-3 py-6 cursor-pointer hover:bg-red-500 mb-10 w-full lg:w-1/2"
+              className="flex items-center justify-center lg:text-lg bg-red-600 text-red-100 shadow-lg rounded-lg px-3 py-6 cursor-pointer hover:bg-red-500 mb-10 w-full xl:w-1/2"
             >
               Get the Course for{" "}
               <strong className="font-bold ml-2 underline">50% Off</strong>

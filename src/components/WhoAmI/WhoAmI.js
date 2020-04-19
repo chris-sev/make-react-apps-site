@@ -3,10 +3,10 @@ import "./WhoAmI.css"
 
 export default function WhoAmI() {
   return (
-    <div className="who-am-i text-gray-300 p-16 lg:p-24 lg:pb-32">
+    <div className="who-am-i text-gray-300 px-4 py-16 lg:py-24 lg:pb-32">
       <div className="container mx-auto flex">
         <div
-          className="flex-shrink flex flex-col justify-between z-10"
+          className="flex-shrink flex flex-col justify-between z-10 hidden lg:flex"
           style={{ marginRight: "-25px" }}
         >
           <img src="https://i.imgur.com/oTvm7ml.png" alt="" className="mb-3" />
@@ -18,7 +18,7 @@ export default function WhoAmI() {
             className="lg:hidden"
           />
         </div>
-        <div className="bg-gray-900 rounded-lg shadow-lg px-20 lg:px-24 py-12 lg:py-16 flex-grow lg:text-lg leading-relaxed lg:flex">
+        <div className="bg-gray-900 rounded-lg shadow-lg px-8 lg:px-16 py-12 lg:py-16 flex-grow lg:text-lg leading-relaxed lg:flex">
           <div className="flex-shrink mr-8 mb-8 lg:mb-0">
             <img
               src="https://i.imgur.com/pS80qXV.jpg"
@@ -74,7 +74,7 @@ export default function WhoAmI() {
           </div>
         </div>
         <div
-          className="flex-shrink ml-10 flex flex-col justify-between z-10"
+          className="flex-shrink ml-10 flex flex-col justify-between z-10 hidden lg:flex"
           style={{ marginLeft: "-25px" }}
         >
           <img src="https://i.imgur.com/oTvm7ml.png" alt="" className="mb-3" />

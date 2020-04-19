@@ -32,7 +32,7 @@ export default function Newsletter() {
       <input
         type="submit"
         value="Get Updates"
-        className="xl:text-lg w-auto bg-blue-700 text-blue-100 rounded-r-lg px-10 py-3 xl:px-12 cursor-pointer hover:bg-blue-600"
+        className="xl:text-lg w-auto bg-blue-700 text-blue-100 rounded-r-lg px-4 py-3 xl:px-10 cursor-pointer hover:bg-blue-600"
       />
     </form>
   )

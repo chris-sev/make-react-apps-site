@@ -60,7 +60,7 @@ const apps = [
 
 export default function WhatWellBuild() {
   return (
-    <div className="what-well-build bg-black text-gray-200 px-2s py-16 lg:py-24">
+    <div className="what-well-build bg-black text-gray-200 px-2 py-16 lg:py-24">
       <div className="container mx-auto flex flex-col">
         {/* header */}
         <div className="text-center">
@@ -108,8 +108,7 @@ function App({ app, number, isLast }) {
           controls
           autoPlay
           loop
-          className="flex-shrink shadow-lg mr-12 mb-4 md:mb-0 w-full"
-          style={{ maxWidth: "600px" }}
+          className="app-video flex-shrink shadow-lg md:mx-auto lg:mr-12 mb-6 xl:mb-0 w-full"
         >
           <source src={app.videoSrc} type="video/mp4" />
         </video>

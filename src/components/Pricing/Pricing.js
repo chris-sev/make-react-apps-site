@@ -11,8 +11,8 @@ export default function Pricing() {
     >
       <div className="container mx-auto">
         {/* pricing box */}
-        <div className="bg-white rounded-lg shadow-lg w-full lg:w-1/2 mx-auto text-gray-900">
-          <h3 className="fugaz-one bg-green-200 w-full py-10 px-4 text-center text-3xl lg:text-5xl text-green-700 font-bold uppercase rounded-t-lg">
+        <div className="bg-white rounded-lg shadow-lg w-full lg:w-4/5 mx-auto text-gray-900">
+          <h3 className="fugaz-one bg-green-200 w-full pt-6 pb-4 lg:pt-8 lg:pb-6 px-4 text-center text-2xl lg:text-4xl text-green-700 font-bold uppercase rounded-t-lg">
             Get the Course
           </h3>
 

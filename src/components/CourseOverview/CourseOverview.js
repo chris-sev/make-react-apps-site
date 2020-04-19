@@ -5,16 +5,16 @@ import "./CourseOverview.css"
 
 export default function CourseOverview() {
   return (
-    <div className="course-overview bg-indigo-700 text-gray-300 py-32 px-4 lg:px-24 lg:pt-32 lg:pb-40">
+    <div className="course-overview bg-indigo-700 text-gray-300 py-32 px-4 xl:px-16 lg:pt-32 lg:pb-40">
       <div className="container mx-auto">
         <div className="lg:flex w-full">
           <div className="lg:w-1/2 lg:pr-8 flex flex-col">
-            <h2 className="fugaz-one text-2xl lg:text-5xl mb-4 text-center uppercase flex-shrink">
+            <h2 className="fugaz-one text-3xl xl:text-4xl mb-4 text-center uppercase flex-shrink">
               What will you learn?
             </h2>
 
             <div
-              className="text-gray-900 bg-white rounded-lg border border-indigo p-6 lg:p-8 lg:text-lg leading-relaxed h-full mb-12 lg:mb-0"
+              className="text-gray-900 bg-white rounded-lg border border-indigo p-6 lg:p-8 xl:text-lg leading-relaxed h-full mb-12 lg:mb-0"
               style={{ boxShadow: "8px 8px 0 #2D329E" }}
             >
               <p className="mb-6">
@@ -47,11 +47,11 @@ export default function CourseOverview() {
             </div>
           </div>
           <div className="lg:w-1/2 lg:pl-8 flex flex-col">
-            <h2 className="fugaz-one text-2xl lg:text-5xl mb-4 text-center uppercase flex-shrink">
+            <h2 className="fugaz-one text-3xl xl:text-4xl mb-4 text-center uppercase flex-shrink">
               Who is this for?
             </h2>
             <div
-              className="text-gray-900 bg-white rounded-lg border border-indigo p-6 lg:p-8 lg:text-lg leading-relaxed h-full flex flex-col"
+              className="text-gray-900 bg-white rounded-lg border border-indigo p-6 lg:p-8 xl:text-lg leading-relaxed h-full flex flex-col"
               style={{ boxShadow: "8px 8px 0 #2D329E" }}
             >
               <div>
