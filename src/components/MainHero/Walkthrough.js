@@ -46,10 +46,7 @@ export default function Walkthrough() {
   }, 2000)
 
   return (
-    <div
-      className="flex items-center bg-gray-900 rounded-lg shadow-lg mt-10 lg:mt-0 px-6 py-10"
-      style={{ minWidth: "473px", minHeight: "544px" }}
-    >
+    <div className="walkthrough flex items-center bg-gray-900 rounded-lg shadow-lg mt-10 lg:mt-0 px-6 py-10">
       <div className="w-full">
         {messages.map((message, index) => {
           const even = isEven(index)

@@ -23,7 +23,7 @@ export default function Newsletter() {
     >
       <input name="utf8" type="hidden" value="✓" />
       <input
-        className="gradient-border px-4 py-3 xl:px-6 xl:py-4 xl:text-xl bg-white rounded-l-lg w-full"
+        className="gradient-border px-4 py-3 xl:text-lg bg-white rounded-l-lg w-full"
         type="email"
         name="email"
         required="required"
@@ -32,7 +32,7 @@ export default function Newsletter() {
       <input
         type="submit"
         value="Get Updates"
-        className="xl:text-lg w-auto bg-blue-700 text-blue-100 rounded-r-lg px-10 py-3 xl:px-12 xl:py-4 cursor-pointer hover:bg-blue-600"
+        className="xl:text-lg w-auto bg-blue-700 text-blue-100 rounded-r-lg px-10 py-3 xl:px-12 cursor-pointer hover:bg-blue-600"
       />
     </form>
   )

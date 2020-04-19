@@ -62,20 +62,20 @@ export default function MainHero() {
           </h2>
 
           <div className="mt-12">
-            <p className="text-2xl mb-2 text-blue-800">
+            <p className="md:text-xl mb-2 text-blue-800">
               Build more than just the basic "hello world" or "to-do app".
             </p>
-            <p className="text-xl text-blue-700 mb-8">
+            <p className="md:text-lg text-blue-700 mb-8">
               20 fun projects to learn new skills and add to your portfolio.
             </p>
-            <p className="newsletter-blurb text-xl text-red-800 mb-3">
+            <p className="newsletter-blurb md:text-lg text-red-800 mb-3">
               <span className="background-block">50% off</span> while course is
               still being made. 6/20 apps done so far.
             </p>
 
             <a
               href="#pricing"
-              className="flex items-center justify-center xl:text-xl bg-red-600 text-red-100 shadow-lg rounded-lg px-6 py-8 cursor-pointer hover:bg-red-500 mb-10 w-full lg:w-1/2"
+              className="flex items-center justify-center lg:text-lg bg-red-600 text-red-100 shadow-lg rounded-lg px-3 py-6 cursor-pointer hover:bg-red-500 mb-10 w-full lg:w-1/2"
             >
               Get the Course for{" "}
               <strong className="font-bold ml-2 underline">50% Off</strong>

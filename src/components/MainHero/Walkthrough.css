@@ -1,3 +1,13 @@
+.walkthrough {
+  min-height: 544px;
+}
+
+@media screen and (min-width: 768px) {
+  .walkthrough {
+    min-width: 473px;
+  }
+}
+
 .loader {
   @apply flex justify-between;
   background: #63b4ed;

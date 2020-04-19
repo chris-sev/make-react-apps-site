@@ -7,7 +7,7 @@ export default function Pricing() {
   return (
     <div
       id="pricing"
-      className="bg-green-600 text-gray-300 py-32 px-10 lg:px-24 lg:pt-32 lg:pb-40"
+      className="bg-green-600 text-gray-300 py-32 px-6 lg:px-24 lg:pt-32 lg:pb-40"
     >
       <div className="container mx-auto">
         {/* pricing box */}
@@ -16,9 +16,9 @@ export default function Pricing() {
             Get the Course
           </h3>
 
-          <div className="pt-10 pb-12 px-10 lg:px-16">
+          <div className="pt-10 pb-12 px-6 lg:px-16">
             {/* price info */}
-            <div className="mb-8 text-green-800 text-3xl flex items-center justify-center leading-none">
+            <div className="mb-8 text-green-800 text-xl md:text-3xl flex items-center justify-center leading-none">
               <div className="has-dollar-sign flex items-center line-through text-gray-600">
                 <span className="text-xl mr-2">$</span>
                 <span>127</span>
@@ -42,7 +42,7 @@ export default function Pricing() {
             <a
               href="https://courses.chrisoncode.io/make-20-react-apps"
               data-podia-embed="link"
-              className="flex items-center justify-center xl:text-2xl bg-red-600 text-red-100 shadow-lg rounded-lg px-6 py-8 cursor-pointer hover:bg-red-500 w-full"
+              className="flex items-center justify-center xl:text-2xl bg-red-600 text-red-100 shadow-lg rounded-lg px-6 py-6 cursor-pointer hover:bg-red-500 w-full"
             >
               Get the Course for{" "}
               <strong className="font-bold ml-2 underline">50% Off</strong>

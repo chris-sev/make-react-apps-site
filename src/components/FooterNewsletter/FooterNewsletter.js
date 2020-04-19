@@ -5,7 +5,7 @@ import "./FooterNewsletter.css"
 
 export default function FooterNewsletter() {
   return (
-    <div className="bg-gray-900 text-gray-300 p-16 lg:p-24 pt-12 lg:pt-20">
+    <div className="bg-gray-900 text-gray-300 px-6 py-16 lg:p-24 pt-12 lg:pt-20">
       <div className="container mx-auto md:flex">
         <div className="hidden md:block">
           <img src={logo} className="logo" alt="Footer Logo" />
@@ -20,7 +20,7 @@ export default function FooterNewsletter() {
 
           <a
             href="#pricing"
-            className="text-center xl:text-lg bg-red-600 text-red-100 shadow-lg rounded-lg px-6 py-6 cursor-pointer hover:bg-red-400 mb-10 w-1/2"
+            className="text-center xl:text-lg bg-red-600 text-red-100 shadow-lg rounded-lg px-6 py-6 cursor-pointer hover:bg-red-400 mb-10 w-full lg:w-1/2"
           >
             Get the Course for{" "}
             <strong className="font-bold underline">50% Off</strong>
