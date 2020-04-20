@@ -16,7 +16,7 @@ const apps = [
     videoSrc: "https://i.imgur.com/idgK9Qr.mp4",
     numberOfVideos: 3,
     timeToComplete: "26 minutes",
-    demoLink: "https://391jg.codesandbox.io/",
+    demoLink: "https://r36qd.codesandbox.io/",
     previewLink:
       "https://courses.chrisoncode.io/courses/make-20-react-apps/249106-pomodoro/748623-00-pomodoro-preview",
   },
