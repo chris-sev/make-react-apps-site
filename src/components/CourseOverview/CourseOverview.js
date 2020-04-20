@@ -13,7 +13,10 @@ export default function CourseOverview() {
               loop
               className="rounded-lg shadow-lg md:mx-auto lg:mr-12 mb-6 xl:mb-0 w-full"
             >
-              <source src="https://i.imgur.com/AybV1an.mp4" type="video/mp4" />
+              <source
+                src="https://scotch-res.cloudinary.com/video/upload/v1587400137/Hello_Teaser_tbx5fp.mp4"
+                type="video/mp4"
+              />
             </video>
           </div>
           <div className="lg:w-1/3 flex flex-col">
