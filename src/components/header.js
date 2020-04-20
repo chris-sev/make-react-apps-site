@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Header() {
   return (
-    <header className="text-sm lg:text-lg text-right justify-end items-center pt-5 px-2 text-blue-900">
+    <header className="text-right justify-end items-center pt-5 px-2 text-blue-900">
       <div className="mr-4">
         A{" "}
         <span
@@ -37,7 +37,6 @@ export default function Header() {
         >
           Scotch.io
         </a>
-        .
       </div>
       {/* <a href="https://courses.chrisoncode.io/">Purchase</a> */}
       {/* <div className="bg-blue-300 text-blue-600 py-2 px-3 rounded-md flex items-center">
