@@ -1,12 +1,44 @@
 import React from "react"
 import "./CourseOverview.css"
 
-// https://scotch-res.cloudinary.com/video/upload/v1587318970/Hello_Teaser_yr1idk.mp4
-
 export default function CourseOverview() {
   return (
     <div className="course-overview bg-indigo-700 text-gray-300 py-32 px-4 xl:px-16 lg:pt-32 lg:pb-40">
       <div className="container mx-auto">
+        {/* video section ---------------------------------------------- */}
+        <div className="lg:flex w-full mb-10 lg:mb-20">
+          <div className="lg:w-2/3 lg:pr-8 flex flex-col">
+            <video
+              controls
+              loop
+              className="rounded-lg shadow-lg md:mx-auto lg:mr-12 mb-6 xl:mb-0 w-full"
+            >
+              <source src="https://i.imgur.com/AybV1an.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div className="lg:w-1/3 flex flex-col">
+            <h3 className="fugaz-one text-purple-100 text-3xl mb-6 uppercase">
+              There's no better feeling than finishing a project!
+            </h3>
+            <div className="bg-purple-900 text-purple-200 p-8 rounded shadow text-xl h-full">
+              <p className="mb-6">
+                Wouldn't it be awesome if we could finish all the great ideas
+                and side projects we come up with?!
+              </p>
+              <p className="mb-6">
+                Join me in this course and{" "}
+                <strong>
+                  let's put a focus on finishing coding these apps
+                </strong>
+                . <span className="italic">No overengineering</span>.{" "}
+                <span className="italic">No</span> overthinking.
+              </p>
+              <p>Let's code and complete. It's better to do than to debate.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* 2 columns section ---------------------------------------------- */}
         <div className="lg:flex w-full">
           <div className="lg:w-1/2 lg:pr-8 flex flex-col">
             <h2 className="fugaz-one text-3xl xl:text-4xl mb-4 text-center uppercase flex-shrink">

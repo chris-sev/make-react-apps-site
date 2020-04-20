@@ -106,9 +106,8 @@ function App({ app, number, isLast }) {
         {/* video */}
         <video
           controls
-          autoPlay
           loop
-          className="app-video flex-shrink shadow-lg md:mx-auto lg:mr-12 mb-6 xl:mb-0 w-full"
+          className="app-video flex-shrink rounded-lg shadow-lg md:mx-auto lg:mr-12 mb-6 xl:mb-0 w-full"
         >
           <source src={app.videoSrc} type="video/mp4" />
         </video>
