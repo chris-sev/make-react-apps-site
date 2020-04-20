@@ -4,11 +4,11 @@ import "./FAQ.css"
 const faqs = [
   {
     question: `Do these videos expire? Is there a monthly subscription?`,
-    answer: `Pay once and have access <strong class="font-bold">forever</strong>. Updates are free and you'll always get them.`,
+    answer: `Pay once and <strong class="font-bold">have access forever</strong>. Updates are free and you'll always get them.`,
   },
   {
     question: `Is this for people that have never used React?`,
-    answer: `This course is for beginners to intermediate devs that are familiar with React. I'll be creating a beginner React course shortly for those looking to learn React from scratch!`,
+    answer: `This course is for beginners to intermediate devs that are familiar with and have used React. I'll be creating a beginner React course shortly for those looking to learn React from scratch!`,
   },
   {
     question: `Can I use these apps in my portfolio?`,
@@ -16,11 +16,11 @@ const faqs = [
   },
   {
     question: `Does this course use React Hooks?`,
-    answer: `Yup! This course is a great way to learn the nuances of hooks and how they help simplify our React apps.`,
+    answer: `Yup! This course is made for best practices of React in 2020 and beyond. A great way to learn the nuances of hooks and how they help simplify our React apps.`,
   },
   {
     question: `What other courses do you have?`,
-    answer: `All my courses will be found on my Courses site. <a class="text-blue-600 underline" href="https://courses.chrisoncode.io">courses.chrisoncode.io</a>`,
+    answer: `All my courses will be found on my Courses site. <a class="text-blue-600 underline" href="https://courses.chrisoncode.io">courses.chrisoncode.io</a>.`,
   },
   {
     question: `How do I login and view the course?`,
