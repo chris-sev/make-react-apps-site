@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Make 20 React Apps | Coming Soonish`,
+    title: ``,
     description: `Build real things to learn React. Practice makes a better dev!`,
     author: `@chrisoncode`,
   },
