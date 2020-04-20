@@ -10,4 +10,4 @@ Making this a public repo so you can take a look at how I made the site. It uses
 
 Love this stack. Most everything is default Tailwind classes with a few custom things going on.
 
-![](https://scotch-res.cloudinary.com/video/upload/v1587343472/20-site_oaqcz8.mp4)
+![](https://i.imgur.com/jowksyq.png)
