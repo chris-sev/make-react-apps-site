@@ -127,7 +127,7 @@ function App({ app, number, isLast }) {
               </span>
               <span className="text-gray-700">
                 {app.numberOfVideos}{" "}
-                {app.numberOfVideos === 1 ? "Video" : "Videos"}
+                {app.numberOfVideos === 1 ? "video" : "videos"}
               </span>
             </div>
             <div>
