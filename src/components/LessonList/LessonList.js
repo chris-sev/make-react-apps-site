@@ -23,6 +23,7 @@ const lessonSections = [
   },
   {
     sectionTitle: "Pomodoro",
+    demoLink: "https://r36qd.codesandbox.io/",
     lessons: [
       {
         lessonTitle: "00 - Pomodoro [PREVIEW]",
@@ -36,6 +37,7 @@ const lessonSections = [
   },
   {
     sectionTitle: "Markdown Editor",
+    demoLink: "https://391jg.codesandbox.io/",
     lessons: [
       {
         lessonTitle: "00 - Markdown Editor [PREVIEW]",
@@ -48,6 +50,7 @@ const lessonSections = [
   },
   {
     sectionTitle: "Browser Tabs",
+    demoLink: "https://yyhfg.codesandbox.io/",
     lessons: [
       {
         lessonTitle: "00 - Browser Tabs [PREVIEW]",
@@ -62,6 +65,7 @@ const lessonSections = [
   },
   {
     sectionTitle: "Paper Rock Scissors",
+    demoLink: "https://njpw4.codesandbox.io/",
     lessons: [
       {
         lessonTitle: "00 - Paper Rock Scissors [PREVIEW]",
@@ -76,6 +80,7 @@ const lessonSections = [
   },
   {
     sectionTitle: "Moving Boxes and Zelda",
+    demoLink: "https://405hq.codesandbox.io/",
     lessons: [
       {
         lessonTitle: " 00 - Moving Boxes and Link [PREVIEW]",
@@ -91,6 +96,7 @@ const lessonSections = [
   },
   {
     sectionTitle: "Infinite Image Gallery",
+    demoLink: "https://e9ucz.csb.app/",
     lessons: [
       {
         lessonTitle: "00 - Infinite Image Gallery [PREVIEW]",
@@ -135,9 +141,21 @@ export default function LessonList() {
 function LessonSection({ section }) {
   return (
     <div className="bg-white text-gray-600 rounded-lg shadow mb-8 w-full lg:w-4/5 lg:w-1/2 mx-auto leading-relaxed">
-      <h4 className="fugaz-one text-gray-700 text-lg bg-gray-200 p-4 border rounded-t-lg">
-        {section.sectionTitle}
-      </h4>
+      <div className="flex justify-between bg-gray-200 p-4 border rounded-t-lg">
+        <h4 className="fugaz-one text-gray-700 text-lg flex items-center">
+          {section.sectionTitle}
+        </h4>
+        {section.demoLink && (
+          <a
+            href={section.demoLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="py-2 px-4 rounded bg-purple-200 hover:bg-purple-100 text-purple-500 text-sm md:text-base"
+          >
+            View Demo
+          </a>
+        )}
+      </div>
       {section.lessons.map((lesson, index) => (
         <div
           key={index}
