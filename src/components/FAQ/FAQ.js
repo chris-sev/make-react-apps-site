@@ -35,6 +35,10 @@ const faqs = [
     answer: `Yup <strong class="font-bold">50% off</strong>! Email me at <a class="text-blue-600 underline" href="mailto:chris.sevilleja@gmail.com">chris.sevilleja@gmail.com</a> with your student id and I'll send you a discount code.`,
   },
   {
+    question: `Is there an affiliate program?`,
+    answer: `Yup! You get 50% of every sale that you bring in. You can sign up for a course and turn on affiliate mode from your dashboard at <a class="text-blue-600 underline" href="https://courses.chrisoncode.io">courses.chrisoncode.io</a>. Or you can email me at <a class="text-blue-600 underline" href="mailto:chris.sevilleja@gmail.com">chris.sevilleja@gmail.com</a>.`,
+  },
+  {
     question: `I have more questions!`,
     answer: `I've got a chat box over at <a class="text-blue-600 underline" href="https://courses.chrisoncode.io">courses.chrisoncode.io</a>. Let's chat.`,
   },
