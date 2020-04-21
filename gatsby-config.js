@@ -51,13 +51,13 @@ module.exports = {
         pixelId: "992053144150851",
       },
     },
-    {
-      resolve: `gatsby-plugin-hotjar`,
-      options: {
-        id: 1777232,
-        sv: 6,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-hotjar`,
+    //   options: {
+    //     id: 1777232,
+    //     sv: 6,
+    //   },
+    // },
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
