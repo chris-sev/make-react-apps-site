@@ -51,6 +51,12 @@ module.exports = {
         pixelId: "992053144150851",
       },
     },
+    {
+      resolve: `gatsby-plugin-drip-widget`,
+      options: {
+        account: "1221429",
+      },
+    },
     // {
     //   resolve: `gatsby-plugin-hotjar`,
     //   options: {
