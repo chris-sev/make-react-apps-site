@@ -28,19 +28,19 @@ const faqs = [
   },
   {
     question: `Are there refunds?`,
-    answer: `Yup! I want to stand by the quality of these courses. If you don't feel they gave you value and were not up to par, I'm happy to provide a refund. Email me at <a class="text-blue-600 underline" href="mailto:chris.sevilleja@gmail.com">chris.sevilleja@gmail.com</a>.`,
+    answer: `Yup! I want to stand by the quality of these courses. If you don't feel they gave you value and were not up to par, I'm happy to provide a refund. Email me at <a class="text-blue-600 underline" href="mailto:hey@chrisoncode.io">hey@chrisoncode.io</a>.`,
   },
   {
     question: `Is there a student discount?`,
-    answer: `Yup <strong class="font-bold">50% off</strong>! Email me at <a class="text-blue-600 underline" href="mailto:chris.sevilleja@gmail.com">chris.sevilleja@gmail.com</a> with your student id and I'll send you a discount code.`,
+    answer: `Yup <strong class="font-bold">50% off</strong>! Email me at <a class="text-blue-600 underline" href="mailto:hey@chrisoncode.io">hey@chrisoncode.io</a> with your student id and I'll send you a discount code.`,
   },
   {
     question: `Is there an affiliate program?`,
-    answer: `Yup! You get 50% of every sale that you bring in. You can sign up for a course and turn on affiliate mode from your dashboard at <a class="text-blue-600 underline" href="https://courses.chrisoncode.io">courses.chrisoncode.io</a>. Or you can email me at <a class="text-blue-600 underline" href="mailto:chris.sevilleja@gmail.com">chris.sevilleja@gmail.com</a>.`,
+    answer: `Yup! You get 50% of every sale that you bring in. You can sign up for a course and turn on affiliate mode from your dashboard at <a class="text-blue-600 underline" href="https://courses.chrisoncode.io">courses.chrisoncode.io</a>. Or you can email me at <a class="text-blue-600 underline" href="mailto:hey@chrisoncode.io">hey@chrisoncode.io</a>.`,
   },
   {
     question: `I have more questions!`,
-    answer: `I've got a chat box over at <a class="text-blue-600 underline" href="https://courses.chrisoncode.io">courses.chrisoncode.io</a>. Let's chat.`,
+    answer: `Drop me an email at <a class="text-blue-600 underline" href="mailto:hey@chrisoncode.io">hey@chrisoncode.io</a>. Let's chat.`,
   },
 ]
 
