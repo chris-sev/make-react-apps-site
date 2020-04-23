@@ -10,7 +10,6 @@ export default function CourseOverview() {
           <div className="lg:w-2/3 lg:pr-8 flex flex-col">
             <video
               controls
-              loop
               className="rounded-lg shadow-lg md:mx-auto lg:mr-12 mb-6 xl:mb-0 w-full"
             >
               <source

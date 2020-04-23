@@ -51,3 +51,12 @@ strong {
   top: 5px;
   left: -3px;
 }
+
+.floating-buy-button {
+  transform: translateX(200%);
+  transition: 0.3s cubic-bezier(0.38, 0.38, 0, 1.61) all;
+}
+
+.floating-buy-button.dab-on-em {
+  transform: none;
+}
