@@ -23,7 +23,6 @@ export default function IndexPage() {
       <LessonList />
       <Pricing />
       <FAQ />
-
       {/* <CourseStats /> */}
       <FooterNewsletter />
       <Footer />
