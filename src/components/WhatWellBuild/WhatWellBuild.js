@@ -114,18 +114,18 @@ function App({ app, number, isLast }) {
 
         {/* content */}
         <div className="lg:flex flex-col justify-center w-full text-center">
-          <h2 className="fugaz-one text-4xl mb-4 text-white">{app.title}</h2>
+          <h2 className="fugaz-one text-3xl mb-6 text-white">{app.title}</h2>
           {app.description && (
             <p className="text-gray-400 text-xl mb-6">{app.description}</p>
           )}
 
           {/* icons */}
-          <div className="flex justify-center mb-6 text-center text-xl lg:text-2xl">
+          <div className="flex justify-center mb-6 text-center text-lg lg:text-xl">
             <div className="mr-8">
               <span className="block mb" role="img" aria-label="Videos">
                 🎬
               </span>
-              <span className="text-gray-700">
+              <span className="text-gray-600">
                 {app.numberOfVideos}{" "}
                 {app.numberOfVideos === 1 ? "video" : "videos"}
               </span>
@@ -134,7 +134,7 @@ function App({ app, number, isLast }) {
               <span className="block mb" role="img" aria-label="Hours">
                 🎤
               </span>
-              <span className="text-gray-700">{app.timeToComplete}</span>
+              <span className="text-gray-600">{app.timeToComplete}</span>
             </div>
           </div>
 

@@ -22,7 +22,7 @@ export default function MainHero() {
   }, 70)
 
   return (
-    <section className="px-6 pt-10 pb-16 xl:px-24 lg:pt-20 lg:pb-32 relative">
+    <section className="pt-4 pb-16 lg:pt-10 lg:pb-24 relative">
       {/* react icons */}
       <ReactIcons count={count} />
 
@@ -62,7 +62,7 @@ export default function MainHero() {
           </h2>
 
           <div className="mt-12">
-            <p className="md:text-xl mb-2 text-blue-800">
+            <p className="md:text-xl mb-1 text-blue-800">
               Build more than just the basic "hello world" or "to-do app".
             </p>
             <p className="md:text-lg text-blue-700 mb-8">

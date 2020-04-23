@@ -1,5 +1,5 @@
 .checkout-button {
-  transition: 0.3s cubic-bezier(0.51, -0.65, 0.44, 1.55) all;
+  transition: 0.3s cubic-bezier(0.38, 0.38, 0, 1.61) all;
 }
 
 .checkout-button:hover {

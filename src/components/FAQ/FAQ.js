@@ -63,11 +63,11 @@ export default function FAQ() {
                 index % 2 === 0 ? "lg:ml-32" : "lg:mr-32"
               }`}
             >
-              <h4 className="fugaz-one text-lg lg:text-2xl mb-3 text-gray-800 leading-snug">
+              <h4 className="fugaz-one text-lg lg:text-xl mb-4 text-gray-800 leading-snug">
                 {faq.question}
               </h4>
               <p
-                className="text-gray-700 lg:text-lg leading-relaxed"
+                className="text-gray-700 leading-relaxed"
                 dangerouslySetInnerHTML={{ __html: faq.answer }}
               />
             </div>

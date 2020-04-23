@@ -20,10 +20,10 @@ export default function CourseOverview() {
             </video>
           </div>
           <div className="lg:w-1/3 flex flex-col">
-            <h3 className="fugaz-one text-purple-100 text-3xl mb-6 uppercase">
+            <h3 className="fugaz-one text-purple-100 text-2xl mb-6 uppercase">
               There's no better feeling than finishing a project!
             </h3>
-            <div className="bg-purple-900 text-purple-200 p-8 rounded shadow text-xl h-full">
+            <div className="bg-purple-900 text-purple-200 p-8 rounded shadow text-lg h-full">
               <p className="mb-6">
                 Wouldn't it be awesome if we could finish all the great ideas
                 and side projects we come up with?!
@@ -44,12 +44,12 @@ export default function CourseOverview() {
         {/* 2 columns section ---------------------------------------------- */}
         <div className="lg:flex w-full">
           <div className="lg:w-1/2 lg:pr-8 flex flex-col">
-            <h2 className="fugaz-one text-3xl xl:text-4xl mb-4 text-center uppercase flex-shrink">
+            <h2 className="fugaz-one text-3xl mb-4 text-center uppercase flex-shrink">
               What will you learn?
             </h2>
 
             <div
-              className="text-gray-900 bg-white rounded-lg border border-indigo p-6 lg:p-8 xl:text-lg leading-relaxed h-full mb-12 lg:mb-0"
+              className="text-gray-900 bg-white rounded-lg border border-indigo p-6 lg:p-8 leading-relaxed h-full mb-12 lg:mb-0"
               style={{ boxShadow: "8px 8px 0 #2D329E" }}
             >
               <p className="mb-6">
@@ -82,11 +82,11 @@ export default function CourseOverview() {
             </div>
           </div>
           <div className="lg:w-1/2 lg:pl-8 flex flex-col">
-            <h2 className="fugaz-one text-3xl xl:text-4xl mb-4 text-center uppercase flex-shrink">
+            <h2 className="fugaz-one text-3xl mb-4 text-center uppercase flex-shrink">
               Who is this for?
             </h2>
             <div
-              className="text-gray-900 bg-white rounded-lg border border-indigo p-6 lg:p-8 xl:text-lg leading-relaxed h-full flex flex-col"
+              className="text-gray-900 bg-white rounded-lg border border-indigo p-6 lg:p-8 leading-relaxed h-full flex flex-col"
               style={{ boxShadow: "8px 8px 0 #2D329E" }}
             >
               <div>
