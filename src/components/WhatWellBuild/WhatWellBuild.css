@@ -24,15 +24,6 @@
   background-color: black;
 }
 
-.number-container {
-  min-width: 300px;
-}
-
-.number {
-  font-size: 60px;
-  height: 300px;
-}
-
 .number text {
   stroke-width: 0.5px;
   fill: transparent;
@@ -55,7 +46,7 @@
 
 @media screen and (min-width: 1280px) {
   .app-video {
-    max-width: 600px;
+    max-width: 500px;
   }
 }
 

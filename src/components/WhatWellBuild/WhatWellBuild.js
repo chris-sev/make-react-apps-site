@@ -92,13 +92,13 @@ export default function WhatWellBuild() {
 function App({ app, number, isLast }) {
   return (
     <div
-      className={`app-container pt-8 pb-12 mb-6 lg:pt-12 lg:pb-20 lg:mb-12 flex items-center ${!isLast &&
+      className={`app-container pt-8 pb-12 mb-6 lg:pt-6 lg:pb-10 lg:mb-6 flex items-center ${!isLast &&
         "border-b border-gray-900"} `}
     >
       {/* number */}
       <div
         className="flex-shrink mr-16 hidden md:block"
-        style={{ maxWidth: "200px" }}
+        style={{ maxWidth: "100px" }}
       >
         <Number number={number} />
       </div>
@@ -107,7 +107,7 @@ function App({ app, number, isLast }) {
         <video
           controls
           loop
-          className="app-video flex-shrink rounded-lg shadow-lg md:mx-auto lg:mr-12 mb-6 xl:mb-0 w-full"
+          className="app-video rounded-lg shadow-lg md:mx-auto lg:mr-12 mb-6 xl:mb-0 w-full"
         >
           <source src={app.videoSrc} type="video/mp4" />
         </video>
@@ -167,11 +167,15 @@ function App({ app, number, isLast }) {
 function Number({ number }) {
   return (
     <div className="number-container flex-shrink">
-      <svg className="number fugaz-one" viewBox="0 0 120 50">
-        <text className="number-gray" x="0" y="45">
+      <svg
+        className="number fugaz-one"
+        viewBox="0 0 100 40"
+        style={{ fontSize: "40px", height: "200px" }}
+      >
+        <text className="number-gray" x="0" y="30">
           {number}
         </text>
-        <text className="number-colored" x="0" y="45">
+        <text className="number-colored" x="0" y="30">
           {number}
         </text>
       </svg>
