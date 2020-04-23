@@ -113,6 +113,41 @@ export default function CourseOverview() {
             </div>
           </div>
         </div>
+
+        {/* 1 column section ---------------------------------------------- */}
+        <div
+          className="bg-white rounded-lg shadow-lg w-full lg:w-2/3 xl:w-1/2 mx-auto text-gray-900 leading-relaxed mt-10"
+          style={{ boxShadow: "8px 8px 0 #2D329E" }}
+        >
+          <h3 className="fugaz-one bg-purple-200 w-full pt-3 pb-2 px-4 text-center text-2xl text-purple-700 font-bold uppercase rounded-t-lg">
+            Pre-release schedule
+          </h3>
+          <div className="p-6 lg:p-8">
+            <p className="mb-4">
+              I'm releasing this course as I build. This means you can influence
+              what apps I build next and I can get some good feedback!
+            </p>
+            <p className="mb-4">
+              As we march closer to the full 20 apps, the price will increase.
+              <br />
+              <span className="text-purple-600">
+                The earlier you buy, the better deal you get.
+              </span>
+            </p>
+
+            <p className="mb-4">This is our pricing schedule:</p>
+
+            <p>
+              <strong>Now</strong>: 50% off
+              <br />
+              <strong>When 10 apps are done</strong>: 40% off
+              <br />
+              <strong>When 15 apps are done</strong>: 30% off
+              <br />
+              <strong>When 20 apps are done</strong>: Full price
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   )
