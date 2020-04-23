@@ -141,10 +141,13 @@ export default function LessonList() {
 function LessonSection({ section }) {
   return (
     <div className="bg-white text-gray-600 rounded-lg shadow mb-8 w-full lg:w-4/5 lg:w-1/2 mx-auto leading-relaxed">
-      <div className="flex justify-between bg-gray-200 p-4 border rounded-t-lg">
+      <div className="flex justify-between bg-gray-200 py-3 px-4 border rounded-t-lg">
+        {/* section title */}
         <h4 className="fugaz-one text-gray-700 text-lg flex items-center">
           {section.sectionTitle}
         </h4>
+
+        {/* demo link */}
         {section.demoLink && (
           <a
             href={section.demoLink}
@@ -156,10 +159,12 @@ function LessonSection({ section }) {
           </a>
         )}
       </div>
+
+      {/* lesson list */}
       {section.lessons.map((lesson, index) => (
         <div
           key={index}
-          className={`p-6 flex justify-between ${index % 2 === 1 &&
+          className={`py-3 px-4 flex justify-between ${index % 2 === 1 &&
             "bg-gray-100"}`}
         >
           <div className="w-6/12 lg:w-5/12">{lesson.lessonTitle}</div>
@@ -172,7 +177,7 @@ function LessonSection({ section }) {
                 href={lesson.previewLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="py-2 px-4 rounded shadow bg-blue-400 hover:bg-blue-300 text-blue-100 w-full text-sm md:text-base"
+                className="py-2 px-4 rounded shadow bg-blue-400 hover:bg-blue-300 text-blue-100 w-full text-xs md:text-sm"
               >
                 Watch
               </a>
@@ -180,7 +185,7 @@ function LessonSection({ section }) {
             {!lesson.previewLink && (
               <a
                 href="#pricing"
-                className="py-2 px-4 rounded shadow bg-gray-400 hover:bg-gray-300 text-white w-full text-sm md:text-base"
+                className="py-2 px-4 rounded shadow bg-gray-400 hover:bg-gray-300 text-white w-full text-xs md:text-sm"
               >
                 Get Access
               </a>
