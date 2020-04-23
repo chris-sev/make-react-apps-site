@@ -1,5 +1,6 @@
 import React from "react"
 import usePodia from "../usePodia"
+import "./Pricing.css"
 
 export default function Pricing() {
   usePodia()
@@ -17,7 +18,7 @@ export default function Pricing() {
     >
       <div className="container mx-auto">
         {/* pricing box */}
-        <div className="bg-white rounded-lg shadow-lg w-full lg:w-4/5 mx-auto text-gray-900">
+        <div className="bg-white rounded-lg shadow-lg w-full lg:w-2/3 xl:w-1/2 mx-auto text-gray-900">
           <h3 className="fugaz-one bg-green-200 w-full pt-6 pb-4 lg:pt-8 lg:pb-6 px-4 text-center text-2xl lg:text-4xl text-green-700 font-bold uppercase rounded-t-lg">
             Get the Course
           </h3>
@@ -40,7 +41,7 @@ export default function Pricing() {
             <p className="leading-loose mb-8 lg:text-xl">
               ✅ All <strong>20 React Apps</strong> when they are released
               <br />✅ Final and starter code for 20 React Apps
-              <br />✅ Stream from any device
+              <br />✅ Access to chat box to chat with me
               <br />✅ Unlimited updates, never expires
               <br />
               😍 <strong>50% off</strong> while course is in-progress
@@ -49,10 +50,15 @@ export default function Pricing() {
               href="https://courses.chrisoncode.io/make-20-react-apps"
               onClick={handleClick}
               data-podia-embed="link"
-              className="flex items-center justify-center xl:text-2xl bg-red-600 text-red-100 shadow-lg rounded-lg px-6 py-6 cursor-pointer hover:bg-red-500 w-full"
+              className="checkout-button flex items-center justify-between xl:text-2xl bg-red-600 text-red-100 shadow-lg rounded-lg px-6 py-6 cursor-pointer hover:bg-red-500 w-full"
             >
-              Get the Course for{" "}
-              <strong className="font-bold ml-2 underline">50% Off</strong>
+              <div>Get the Course</div>
+              <div className="flex items-center">
+                <span className="line-through text-red-300 mr-3 text-base">
+                  $127
+                </span>
+                <span className="text-red-100">$63</span>
+              </div>
             </a>
           </div>
         </div>
