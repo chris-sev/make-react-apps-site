@@ -5,12 +5,6 @@ import "./Pricing.css"
 export default function Pricing() {
   usePodia()
 
-  function handleClick() {
-    // tracking for drip. trackers suck. im sorry.
-    window._dcq = window._dcq || []
-    window._dcq.push(["track", "Started a purchase", { value: 6300 }])
-  }
-
   return (
     <div
       id="pricing"
@@ -38,17 +32,26 @@ export default function Pricing() {
             </div>
 
             {/* main info */}
-            <p className="leading-loose mb-8 lg:text-xl">
+            <p className="leading-loose mb-8 lg:text-xl font-normal">
               ✅ All <strong>20 React Apps</strong> when they are released
               <br />✅ Final and starter code for 20 React Apps
               <br />✅ Access to chat box to chat with me
               <br />✅ Unlimited updates, never expires
               <br />
-              😍 <strong>50% off</strong> while course is in-progress
+              <br />
+              ⚛️ <strong>Discount for pre-release</strong>: 6 of 20 apps done
+              <br />
+              😍 Now:{" "}
+              <strong className="text-green-600 font-extrabold">50% off</strong>
+              <br />
+              <span className="text-gray-600 leading-normal">
+                @ 10 Apps Done: <strong>40% off</strong>
+                <br />@ 15 Apps Done: <strong>30% off</strong>
+                <br />@ 20 Apps Done: <strong>Full price</strong>
+              </span>
             </p>
             <a
               href="https://courses.chrisoncode.io/make-20-react-apps"
-              onClick={handleClick}
               data-podia-embed="link"
               className="checkout-button flex items-center justify-between xl:text-2xl bg-red-600 text-red-100 shadow-lg rounded-lg px-6 py-6 cursor-pointer hover:bg-red-500 w-full"
             >
