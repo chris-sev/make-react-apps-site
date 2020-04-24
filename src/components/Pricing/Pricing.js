@@ -8,7 +8,7 @@ export default function Pricing() {
   function handleClick() {
     // tracking for drip. trackers suck. im sorry.
     window._dcq = window._dcq || []
-    window._dcq.push(["track", "Started a purchase", { value: 6300 }])
+    window._dcq.push(["track", "Started a purchase"])
   }
 
   return (
