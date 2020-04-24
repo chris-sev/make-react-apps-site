@@ -11,10 +11,26 @@ import Footer from "../components/footer"
 import Pricing from "../components/Pricing/Pricing"
 import LessonList from "../components/LessonList/LessonList"
 import WhatWellBuild from "../components/WhatWellBuild/WhatWellBuild"
+import { useEffect } from "react"
 
 export default function IndexPage() {
   const [topRef, topInView] = useInView()
   const showFloatingButton = !topInView
+
+  useEffect(() => {
+    window._dcq = window._dcq || []
+    window._dcq.push([
+      "track",
+      "Viewed a Product",
+      {
+        product_id: "make-20-react-apps",
+        name: "Make 20 React Apps",
+        categories: "React",
+        price: 63.0,
+        currency: "USD",
+      },
+    ])
+  })
 
   return (
     <Layout>
