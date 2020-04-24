@@ -5,6 +5,12 @@ import "./Pricing.css"
 export default function Pricing() {
   usePodia()
 
+  function handleClick() {
+    // tracking for drip. trackers suck. im sorry.
+    window._dcq = window._dcq || []
+    window._dcq.push(["track", "Started a purchase", { value: 6300 }])
+  }
+
   return (
     <div
       id="pricing"
@@ -52,6 +58,7 @@ export default function Pricing() {
             </p>
             <a
               href="https://courses.chrisoncode.io/make-20-react-apps"
+              onClick={handleClick}
               data-podia-embed="link"
               className="checkout-button flex items-center justify-between xl:text-2xl bg-red-600 text-red-100 shadow-lg rounded-lg px-6 py-6 cursor-pointer hover:bg-red-500 w-full"
             >
