@@ -21,7 +21,7 @@ export default function IndexPage() {
     window._dcq = window._dcq || []
     window._dcq.push([
       "track",
-      "Viewed a Product",
+      "Viewed a product",
       {
         product_id: "make-20-react-apps",
         name: "Make 20 React Apps",
