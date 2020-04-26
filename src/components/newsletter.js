@@ -1,23 +1,9 @@
 import React from "react"
-import { trackCustomEvent } from "gatsby-plugin-google-analytics"
 
 export default function Newsletter() {
-  function handleSubmit(e) {
-    e.preventDefault()
-
-    trackCustomEvent({
-      category: "newsletter",
-      action: "signup",
-      label: "Get Updates",
-    })
-
-    e.target.submit()
-  }
-
   return (
     <form
       action="https://chrisoncode.us4.list-manage.com/subscribe/post?u=eefebc8a03f849b48c627f84d&amp;id=1862cc74bc"
-      onSubmit={handleSubmit}
       method="post"
       className="flex w-full shadow-lg"
     >
