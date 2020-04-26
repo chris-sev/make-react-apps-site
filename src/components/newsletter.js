@@ -16,9 +16,8 @@ export default function Newsletter() {
 
   return (
     <form
-      action="https://www.getdrip.com/forms/202548794/submissions"
+      action="https://chrisoncode.us4.list-manage.com/subscribe/post?u=eefebc8a03f849b48c627f84d&amp;id=1862cc74bc"
       onSubmit={handleSubmit}
-      data-drip-embedded-form="202548794"
       method="post"
       className="flex w-full shadow-lg"
     >
@@ -26,7 +25,7 @@ export default function Newsletter() {
       <input
         className="gradient-border px-4 py-3 xl:text-lg bg-white rounded-l-lg w-full"
         type="email"
-        name="fields[email]"
+        name="EMAIL"
         required="required"
         placeholder="Email"
       />

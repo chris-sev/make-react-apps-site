@@ -52,19 +52,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-drip-widget`,
-      options: {
-        account: "1221429",
-      },
-    },
-    // {
-    //   resolve: `gatsby-plugin-hotjar`,
-    //   options: {
-    //     id: 1777232,
-    //     sv: 6,
-    //   },
-    // },
-    {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
