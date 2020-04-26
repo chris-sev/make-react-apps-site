@@ -17,7 +17,7 @@ export default function HTML(props) {
         <script
           id="mcjs"
           dangerouslySetInnerHTML={{
-            __html: `!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/eefebc8a03f849b48c627f84d/ef1446ed24416099ee0d4a62a.js");`,
+            __html: `!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/eefebc8a03f849b48c627f84d/8a34894b031a650103ff0194d.js");`,
           }}
         />
       </head>
