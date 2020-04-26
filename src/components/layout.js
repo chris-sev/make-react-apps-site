@@ -10,11 +10,8 @@ import Header from "./header"
 import PropTypes from "prop-types"
 import "./fontawesome"
 import "./layout.css"
-import useMailchimp from "../useMailchimp"
 
 export default function Layout({ children }) {
-  useMailchimp()
-
   return (
     <>
       <div className="overflow-x-hidden">
