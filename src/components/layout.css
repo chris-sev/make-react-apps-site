@@ -12,6 +12,12 @@ body {
   border: 22px solid black;
 }
 
+@media (max-width: 780px) {
+  body {
+    border: none;
+  }
+}
+
 h1,
 h2,
 h3,
