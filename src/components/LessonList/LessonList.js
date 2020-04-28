@@ -131,19 +131,27 @@ export default function LessonList() {
           The Apps &amp; Videos
         </h2>
         {lessonSections.map((section, index) => (
-          <LessonSection key={index} section={section} />
+          <LessonSection
+            key={index}
+            section={section}
+            index={index}
+            isLast={index + 1 === lessonSections.length}
+          />
         ))}
       </div>
     </div>
   )
 }
 
-function LessonSection({ section }) {
+function LessonSection({ section, index, isLast }) {
   return (
     <div className="bg-white text-gray-600 rounded-lg shadow mb-8 w-full lg:w-4/5 lg:w-1/2 mx-auto leading-relaxed">
       <div className="flex justify-between bg-gray-200 py-3 px-4 border rounded-t-lg">
         {/* section title */}
         <h4 className="fugaz-one text-gray-700 text-lg flex items-center">
+          {index !== 0 && !isLast && (
+            <span className="mr-1 text-gray-400">#{index}</span>
+          )}
           {section.sectionTitle}
         </h4>
 
