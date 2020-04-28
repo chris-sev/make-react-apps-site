@@ -20,6 +20,18 @@ export default function HTML(props) {
             __html: `!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/eefebc8a03f849b48c627f84d/8a34894b031a650103ff0194d.js");`,
           }}
         />
+
+        {/* google analytics linker */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if (window.ga) {
+                ga('require', 'linker');
+                ga('linker:autoLink', ['courses.chrisoncode.io']);
+              }
+            `,
+          }}
+        />
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
