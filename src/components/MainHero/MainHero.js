@@ -22,7 +22,7 @@ export default function MainHero() {
   }, 70)
 
   return (
-    <section className="pt-4 pb-16 lg:pt-10 lg:pb-24 relative">
+    <section className="px-4 lg:px-0 pt-4 pb-16 lg:pt-10 lg:pb-24 relative">
       {/* react icons */}
       <ReactIcons count={count} />
 
@@ -61,34 +61,35 @@ export default function MainHero() {
             </span>
           </h2>
 
-          <div className="mt-12">
-            <p className="md:text-xl mb-1 text-blue-800">
-              Build more than just the basic "hello world" or "to-do app".
+          <div className="mt-16">
+            <p className="md:text-3xl mb-1 text-blue-900">
+              Don't waste time searching for React tutorials.
             </p>
-            <p className="md:text-lg text-blue-700 mb-8">
-              20 fun projects to learn new skills and add to your portfolio.
-            </p>
-            <p className="newsletter-blurb md:text-lg text-red-800 mb-3">
-              <strong>50% off</strong> while course is still being made. 6/20
-              apps done so far.
+            <p className="md:text-xl text-blue-700 mb-2">
+              Here's 20 fun apps to learn new skills and add to your portfolio.
             </p>
 
             <a
               href="#pricing"
-              className="flex items-center justify-center lg:text-lg bg-red-600 text-red-100 shadow-lg rounded-lg px-3 py-6 cursor-pointer hover:bg-red-500 mb-10 w-full xl:w-1/2"
+              className="flex items-center justify-between lg:text-lg bg-red-600 hover:bg-red-500 text-red-100 shadow-lg rounded-lg p-6 cursor-pointer w-full xl:w-1/2"
             >
-              Get the Course for{" "}
-              <strong className="font-bold ml-2 underline">50% Off</strong>
+              <div>🖖 Get the Course</div>
+              <div className="flex items-center">
+                <span className="line-through text-red-300 mr-2 text-base">
+                  $127
+                </span>
+                <span className="text-red-100">$63</span>
+              </div>
             </a>
 
-            <p className="text-blue-600 mb-3">
+            <p className="text-blue-600 mb-1 mt-12">
               Or get updates on when more apps come out and the course is
               finished...
             </p>
             <Newsletter />
           </div>
         </div>
-        <div className="flex items-center justify-center lg:flex-shrink lg:pl-12">
+        <div className="flex items-center justify-center lg:flex-shrink lg:pl-20">
           <Walkthrough />
         </div>
       </div>
