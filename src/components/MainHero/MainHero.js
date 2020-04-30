@@ -63,15 +63,15 @@ export default function MainHero() {
 
           <div className="mt-16">
             <p className="md:text-3xl mb-1 text-blue-900">
-              Don't waste time searching for React tutorials.
+              Build more than "hello world" or a "to-do app"
             </p>
-            <p className="md:text-xl text-blue-700 mb-2">
-              Here's 20 fun apps to learn new skills and add to your portfolio.
+            <p className="md:text-xl text-blue-700 mb-3">
+              Here's 20 fun apps to learn new skills and add to your portfolio
             </p>
 
             <a
               href="#pricing"
-              className="flex items-center justify-between lg:text-lg bg-red-600 hover:bg-red-500 text-red-100 shadow-lg rounded-lg p-6 cursor-pointer w-full xl:w-1/2"
+              className="flex items-center justify-between lg:text-xl bg-red-600 hover:bg-red-500 text-red-100 shadow-lg rounded-lg p-6 cursor-pointer w-full xl:w-1/2"
             >
               <div>🖖 Get the Course</div>
               <div className="flex items-center">

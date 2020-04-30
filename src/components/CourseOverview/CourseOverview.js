@@ -25,17 +25,21 @@ export default function CourseOverview() {
             <div className="bg-purple-900 text-purple-200 p-8 rounded shadow text-lg h-full">
               <p className="mb-6">
                 Wouldn't it be awesome if we could finish all the great ideas
-                and side projects we come up with?!
+                and side projects we come up with?
               </p>
               <p className="mb-6">
                 Join me in this course and{" "}
-                <strong>
+                <strong className="text-yellow-400">
                   let's put a focus on finishing coding these apps
                 </strong>
                 . <span className="italic">No overengineering</span>.{" "}
                 <span className="italic">No</span> overthinking.
               </p>
-              <p>Let's code and complete. It's better to do than to debate.</p>
+              <p>
+                Let's code and complete. It's better to{" "}
+                <strong className="text-blue-400">do</strong> than to{" "}
+                <strong className="text-blue-400">debate</strong>.
+              </p>
             </div>
           </div>
         </div>
@@ -48,7 +52,7 @@ export default function CourseOverview() {
             </h2>
 
             <div
-              className="text-gray-900 bg-white rounded-lg border border-indigo p-6 lg:p-8 leading-relaxed h-full mb-12 lg:mb-0"
+              className="text-gray-900 bg-white rounded-lg border border-indigo p-6 lg:p-8 leading-snug h-full mb-12 lg:mb-0"
               style={{ boxShadow: "8px 8px 0 #2D329E" }}
             >
               <p className="mb-6">
@@ -71,7 +75,7 @@ export default function CourseOverview() {
                 </a>{" "}
                 so you'll get a stronger understanding of:
               </p>
-              <p className="mb-6 leading-loose">
+              <p className="leading-loose">
                 ✅ React Hooks like useState and useEffect
                 <br />✅ Doing real-world things like routing, auth, JSX
                 <br />✅ State management
@@ -85,7 +89,7 @@ export default function CourseOverview() {
               Who is this for?
             </h2>
             <div
-              className="text-gray-900 bg-white rounded-lg border border-indigo p-6 lg:p-8 leading-relaxed h-full flex flex-col"
+              className="text-gray-900 bg-white rounded-lg border border-indigo p-6 lg:p-8 leading-snug h-full flex flex-col"
               style={{ boxShadow: "8px 8px 0 #2D329E" }}
             >
               <div>
