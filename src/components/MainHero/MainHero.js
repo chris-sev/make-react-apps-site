@@ -82,9 +82,9 @@ export default function MainHero() {
               </div>
             </a>
 
-            <p className="text-blue-600 mb-1 mt-12">
-              Or get updates on when more apps come out and the course is
-              finished...
+            <p className="text-blue-800 mb-1 mt-12">
+              Sign up to the newsletter and get <strong>1 free app</strong> and{" "}
+              <strong>5 free videos</strong>.
             </p>
             <Newsletter />
           </div>
