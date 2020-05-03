@@ -38,11 +38,11 @@ export default function Header() {
           Scotch.io
         </a>
       </div>
-      {/* <a href="https://courses.chrisoncode.io/">Purchase</a> */}
+      {/* <a href="https://learn.chrisoncode.io/">Purchase</a> */}
       {/* <div className="bg-blue-300 text-blue-600 py-2 px-3 rounded-md flex items-center">
         <span>Already purchased?</span>
         <a
-          href="https://courses.chrisoncode.io/"
+          href="https://learn.chrisoncode.io/"
           className="ml-3 bg-blue-700 text-blue-200 rounded shadow py-2 px-3 hover:bg-blue-600"
         >
           Login

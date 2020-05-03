@@ -20,11 +20,11 @@ const faqs = [
   },
   {
     question: `What other courses do you have?`,
-    answer: `All my courses will be found on my Courses site. <a class="text-blue-600 underline" href="https://courses.chrisoncode.io">courses.chrisoncode.io</a>.`,
+    answer: `All my courses will be found on my Courses site. <a class="text-blue-600 underline" href="https://learn.chrisoncode.io">learn.chrisoncode.io</a>.`,
   },
   {
     question: `How do I login and view the course?`,
-    answer: `You can login at <a class="text-blue-600 underline" href="https://courses.chrisoncode.io">courses.chrisoncode.io</a>. Use the login button in the top right.`,
+    answer: `You can login at <a class="text-blue-600 underline" href="https://learn.chrisoncode.io">learn.chrisoncode.io</a>. Use the login button in the top right.`,
   },
   {
     question: `Are there refunds?`,
@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     question: `Is there an affiliate program?`,
-    answer: `Yup! You get 50% of every sale that you bring in. You can sign up for a course and turn on affiliate mode from your dashboard at <a class="text-blue-600 underline" href="https://courses.chrisoncode.io">courses.chrisoncode.io</a>. Or you can email me at <a class="text-blue-600 underline" href="mailto:hey@chrisoncode.io">hey@chrisoncode.io</a>.`,
+    answer: `Yup! You get 50% of every sale that you bring in. You can sign up for a course and turn on affiliate mode from your dashboard at <a class="text-blue-600 underline" href="https://learn.chrisoncode.io">learn.chrisoncode.io</a>. Or you can email me at <a class="text-blue-600 underline" href="mailto:hey@chrisoncode.io">hey@chrisoncode.io</a>.`,
   },
   {
     question: `I have more questions!`,

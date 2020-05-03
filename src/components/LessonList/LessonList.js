@@ -9,13 +9,13 @@ const lessonSections = [
         lessonTitle: "Hello!",
         time: 1,
         previewLink:
-          "https://courses.chrisoncode.io/courses/make-20-react-apps/249711-getting-started/748466-hello",
+          "https://learn.chrisoncode.io/courses/make-20-react-apps/249711-getting-started/748466-hello",
       },
       {
         lessonTitle: "VS Code Setup",
         time: 20,
         previewLink:
-          "https://courses.chrisoncode.io/courses/make-20-react-apps/249711-getting-started/746204-vs-code-setup",
+          "https://learn.chrisoncode.io/courses/make-20-react-apps/249711-getting-started/746204-vs-code-setup",
       },
       { lessonTitle: "Terminal Setup (npm vs yarn)", time: 6 },
       { lessonTitle: "Starter and Final Files in GitHub", time: 5 },
@@ -29,7 +29,7 @@ const lessonSections = [
         lessonTitle: "00 - Pomodoro [PREVIEW]",
         time: 2,
         previewLink:
-          "https://courses.chrisoncode.io/courses/make-20-react-apps/249106-pomodoro/748623-00-pomodoro-preview",
+          "https://learn.chrisoncode.io/courses/make-20-react-apps/249106-pomodoro/748623-00-pomodoro-preview",
       },
       { lessonTitle: "01 - Time and Start", time: 11 },
       { lessonTitle: "02 - Stop and Reset", time: 13 },
@@ -43,7 +43,7 @@ const lessonSections = [
         lessonTitle: "00 - Markdown Editor [PREVIEW]",
         time: 2,
         previewLink:
-          "https://courses.chrisoncode.io/courses/make-20-react-apps/249710-markdown-editor/748732-00-markdown-editor-preview",
+          "https://learn.chrisoncode.io/courses/make-20-react-apps/249710-markdown-editor/748732-00-markdown-editor-preview",
       },
       { lessonTitle: "01 - Markdown Editor", time: 15 },
     ],
@@ -56,7 +56,7 @@ const lessonSections = [
         lessonTitle: "00 - Browser Tabs [PREVIEW]",
         time: 2,
         previewLink:
-          "https://courses.chrisoncode.io/courses/make-20-react-apps/249108-browser-tabs/748775-00-browser-tabs-preview",
+          "https://learn.chrisoncode.io/courses/make-20-react-apps/249108-browser-tabs/748775-00-browser-tabs-preview",
       },
       { lessonTitle: "01 - Tab Highlight", time: 20 },
       { lessonTitle: " 02 - React Router", time: 17 },
@@ -71,7 +71,7 @@ const lessonSections = [
         lessonTitle: "00 - Paper Rock Scissors [PREVIEW]",
         time: 2,
         previewLink:
-          "https://courses.chrisoncode.io/courses/make-20-react-apps/249667-paper-rock-scissors/748691-00-paper-rock-scissors-preview",
+          "https://learn.chrisoncode.io/courses/make-20-react-apps/249667-paper-rock-scissors/748691-00-paper-rock-scissors-preview",
       },
       { lessonTitle: "01 - Intro + Handling Choices", time: 11 },
       { lessonTitle: "02 - Displaying Game State", time: 13 },
@@ -86,7 +86,7 @@ const lessonSections = [
         lessonTitle: " 00 - Moving Boxes and Link [PREVIEW]",
         time: 2,
         previewLink:
-          "https://courses.chrisoncode.io/courses/make-20-react-apps/250927-moving-boxes-and-zelda/748714-00-moving-boxes-and-link-preview",
+          "https://learn.chrisoncode.io/courses/make-20-react-apps/250927-moving-boxes-and-zelda/748714-00-moving-boxes-and-link-preview",
       },
       { lessonTitle: "01 - Setting Up Canvas and Box", time: 10 },
       { lessonTitle: "02 - Keyboard Arrows", time: 8 },
@@ -102,7 +102,7 @@ const lessonSections = [
         lessonTitle: "00 - Infinite Image Gallery [PREVIEW]",
         time: 2,
         previewLink:
-          "https://courses.chrisoncode.io/courses/make-20-react-apps/257611-infinite-image-gallery/748761-00-infinite-image-gallery-preview",
+          "https://learn.chrisoncode.io/courses/make-20-react-apps/257611-infinite-image-gallery/748761-00-infinite-image-gallery-preview",
       },
       { lessonTitle: "01 - Getting Images from Unsplash", time: 18 },
       { lessonTitle: "02 - Infinite Scroll", time: 11 },
@@ -117,7 +117,7 @@ const lessonSections = [
         lessonTitle: "Updates Are Coming",
         time: 1,
         previewLink:
-          "https://courses.chrisoncode.io/courses/make-20-react-apps/258990-more-apps-on-the-way/748573-updates-are-coming",
+          "https://learn.chrisoncode.io/courses/make-20-react-apps/258990-more-apps-on-the-way/748573-updates-are-coming",
       },
     ],
   },

@@ -25,7 +25,7 @@ export default function Confirmed() {
           <ul className="leading-loose">
             <li>
               <a
-                href="https://courses.chrisoncode.io/courses/make-20-react-apps/249711-getting-started/746204-vs-code-setup"
+                href="https://learn.chrisoncode.io/courses/make-20-react-apps/249711-getting-started/746204-vs-code-setup"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline text-blue-500 hover:text-blue-700"
@@ -35,7 +35,7 @@ export default function Confirmed() {
             </li>
             <li>
               <a
-                href="https://courses.chrisoncode.io/courses/make-20-react-apps/249711-getting-started/748437-terminal-setup-npm-vs-yarn"
+                href="https://learn.chrisoncode.io/courses/make-20-react-apps/249711-getting-started/748437-terminal-setup-npm-vs-yarn"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline text-blue-500 hover:text-blue-700"
@@ -45,7 +45,7 @@ export default function Confirmed() {
             </li>
             <li>
               <a
-                href="https://courses.chrisoncode.io/courses/make-20-react-apps/249106-pomodoro/748623-00-pomodoro-preview"
+                href="https://learn.chrisoncode.io/courses/make-20-react-apps/249106-pomodoro/748623-00-pomodoro-preview"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline text-blue-500 hover:text-blue-700"
@@ -55,7 +55,7 @@ export default function Confirmed() {
             </li>
             <li>
               <a
-                href="https://courses.chrisoncode.io/courses/make-20-react-apps/249106-pomodoro/717359-01-time-and-start"
+                href="https://learn.chrisoncode.io/courses/make-20-react-apps/249106-pomodoro/717359-01-time-and-start"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline text-blue-500 hover:text-blue-700"
@@ -65,7 +65,7 @@ export default function Confirmed() {
             </li>
             <li>
               <a
-                href="https://courses.chrisoncode.io/courses/make-20-react-apps/249106-pomodoro/717360-02-stop-and-reset"
+                href="https://learn.chrisoncode.io/courses/make-20-react-apps/249106-pomodoro/717360-02-stop-and-reset"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline text-blue-500 hover:text-blue-700"
@@ -75,7 +75,7 @@ export default function Confirmed() {
             </li>
             <li>
               <a
-                href="https://courses.chrisoncode.io/courses/make-20-react-apps/249106-pomodoro/783754-03-restarting-the-timer-fix"
+                href="https://learn.chrisoncode.io/courses/make-20-react-apps/249106-pomodoro/783754-03-restarting-the-timer-fix"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline text-blue-500 hover:text-blue-700"

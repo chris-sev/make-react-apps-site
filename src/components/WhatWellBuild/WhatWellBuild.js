@@ -9,7 +9,7 @@ const apps = [
     timeToComplete: "32 minutes",
     demoLink: "https://405hq.codesandbox.io/",
     previewLink:
-      "https://courses.chrisoncode.io/courses/make-20-react-apps/250927-moving-boxes-and-zelda/748714-00-moving-boxes-and-link-preview",
+      "https://learn.chrisoncode.io/courses/make-20-react-apps/250927-moving-boxes-and-zelda/748714-00-moving-boxes-and-link-preview",
   },
   {
     title: "Pomodoro Timer",
@@ -18,7 +18,7 @@ const apps = [
     timeToComplete: "26 minutes",
     demoLink: "https://r36qd.codesandbox.io/",
     previewLink:
-      "https://courses.chrisoncode.io/courses/make-20-react-apps/249106-pomodoro/748623-00-pomodoro-preview",
+      "https://learn.chrisoncode.io/courses/make-20-react-apps/249106-pomodoro/748623-00-pomodoro-preview",
   },
   {
     title: "Paper Rock Scissors",
@@ -27,7 +27,7 @@ const apps = [
     timeToComplete: "39 minutes",
     demoLink: "https://njpw4.codesandbox.io/",
     previewLink:
-      "https://courses.chrisoncode.io/courses/make-20-react-apps/249667-paper-rock-scissors/748691-00-paper-rock-scissors-preview",
+      "https://learn.chrisoncode.io/courses/make-20-react-apps/249667-paper-rock-scissors/748691-00-paper-rock-scissors-preview",
   },
   {
     title: "Markdown Editor",
@@ -36,7 +36,7 @@ const apps = [
     timeToComplete: "17 minutes",
     demoLink: "https://391jg.codesandbox.io/",
     previewLink:
-      "https://courses.chrisoncode.io/courses/make-20-react-apps/249710-markdown-editor/748732-00-markdown-editor-preview",
+      "https://learn.chrisoncode.io/courses/make-20-react-apps/249710-markdown-editor/748732-00-markdown-editor-preview",
   },
   {
     title: "Browser Tabs and Routing",
@@ -45,7 +45,7 @@ const apps = [
     timeToComplete: "43 minutes",
     demoLink: "https://yyhfg.codesandbox.io/",
     previewLink:
-      "https://courses.chrisoncode.io/courses/make-20-react-apps/249108-browser-tabs/748775-00-browser-tabs-preview",
+      "https://learn.chrisoncode.io/courses/make-20-react-apps/249108-browser-tabs/748775-00-browser-tabs-preview",
   },
   {
     title: "Infinite Image Gallery",
@@ -54,7 +54,7 @@ const apps = [
     timeToComplete: "52 minutes",
     demoLink: "https://e9ucz.csb.app/",
     previewLink:
-      "https://courses.chrisoncode.io/courses/make-20-react-apps/257611-infinite-image-gallery/748761-00-infinite-image-gallery-preview",
+      "https://learn.chrisoncode.io/courses/make-20-react-apps/257611-infinite-image-gallery/748761-00-infinite-image-gallery-preview",
   },
 ]
 

@@ -51,7 +51,7 @@ export default function Pricing() {
               </span>
             </p>
             <a
-              href="https://courses.chrisoncode.io/make-20-react-apps"
+              href="https://learn.chrisoncode.io/make-20-react-apps"
               data-podia-embed="link"
               className="checkout-button flex items-center justify-between xl:text-2xl bg-red-600 text-red-100 shadow-lg rounded-lg px-6 py-6 cursor-pointer hover:bg-red-500 w-full"
             >
