@@ -11,12 +11,12 @@ import PropTypes from "prop-types"
 import "./fontawesome"
 import "./layout.css"
 
-export default function Layout({ children }) {
+export default function Layout({ children, showHeader = true }) {
   return (
     <>
       <div className="overflow-x-hidden">
         {/* header */}
-        <Header />
+        {showHeader && <Header />}
 
         {/* main */}
         <main>{children}</main>
