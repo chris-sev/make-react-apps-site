@@ -1,9 +1,10 @@
 import React from "react"
 import SEO from "../components/seo"
+import Layout from "../components/layout"
 
 export default function ThankYou() {
   return (
-    <>
+    <Layout>
       <SEO title="Thanks" />
       <div className="thanks flex min-h-screen w-full items-center justify-center text-left text-gray-600 leading-normal text-lg p-10">
         <div className="bg-white p-12 rounded-lg shadow-lg w-full lg:w-1/2">
@@ -28,6 +29,6 @@ export default function ThankYou() {
           </p>
         </div>
       </div>
-    </>
+    </Layout>
   )
 }
