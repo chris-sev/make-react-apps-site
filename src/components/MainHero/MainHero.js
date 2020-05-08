@@ -3,6 +3,7 @@ import useInterval from "@use-it/interval"
 import Newsletter from "../newsletter"
 import Walkthrough from "./Walkthrough"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import Countdown from "react-countdown"
 import "./MainHero.css"
 
 function getRandomColor() {
@@ -65,7 +66,7 @@ export default function MainHero() {
             <p className="md:text-3xl mb-1 text-blue-900">
               Build more than "hello world" or a "to-do app"
             </p>
-            <p className="md:text-xl text-blue-700 mb-3">
+            <p className="md:text-xl text-blue-700 mb-6">
               Here's 20 fun apps to learn new skills and add to your portfolio
             </p>
 
@@ -82,11 +83,33 @@ export default function MainHero() {
               </div>
             </a>
 
-            <p className="text-blue-800 mb-1 mt-12">
+            <Countdown
+              date={"2020-05-11T00:00:00"}
+              renderer={({ days, hours, minutes, seconds, completed }) => {
+                if (completed) return <div />
+
+                return (
+                  <div className="mt-6 text-red-800">
+                    <p className="opacity-75">Price increases to $77 in...</p>
+                    <div className="flex text-xl opacity-75">
+                      <span className="mr-1">{days} days,</span>
+                      <span className="mr-1">{hours} hours,</span>
+                      <span className="mr-1">{minutes} mins,</span>
+                      <span className="mr-1">
+                        {seconds.toString().padStart(2, "0")}{" "}
+                        {seconds === 1 ? "second" : "seconds"}!
+                      </span>
+                    </div>
+                  </div>
+                )
+              }}
+            />
+
+            {/* <p className="text-blue-800 mb-1 mt-12">
               Sign up to the newsletter and get <strong>1 free app</strong> and{" "}
               <strong>5 free videos</strong>.
             </p>
-            <Newsletter />
+            <Newsletter /> */}
           </div>
         </div>
         <div className="flex items-center justify-center lg:flex-shrink lg:pl-20">

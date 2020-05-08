@@ -1,4 +1,5 @@
 import React from "react"
+import Countdown from "react-countdown"
 import usePodia from "../usePodia"
 import "./Pricing.css"
 
@@ -63,6 +64,28 @@ export default function Pricing() {
                 <span className="text-red-100">$63</span>
               </div>
             </a>
+
+            <Countdown
+              date={"2020-05-11T00:00:00"}
+              renderer={({ days, hours, minutes, seconds, completed }) => {
+                if (completed) return <div />
+
+                return (
+                  <div className="mt-6 text-red-800">
+                    <p className="opacity-75">Price increases to $77 in...</p>
+                    <div className="flex text-xl opacity-75">
+                      <span className="mr-1">{days} days,</span>
+                      <span className="mr-1">{hours} hours,</span>
+                      <span className="mr-1">{minutes} mins,</span>
+                      <span className="mr-1">
+                        {seconds.toString().padStart(2, "0")}{" "}
+                        {seconds === 1 ? "second" : "seconds"}!
+                      </span>
+                    </div>
+                  </div>
+                )
+              }}
+            />
           </div>
         </div>
       </div>
