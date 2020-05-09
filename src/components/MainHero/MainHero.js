@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import useInterval from "@use-it/interval"
-import Newsletter from "../newsletter"
+// import Newsletter from "../newsletter"
 import Walkthrough from "./Walkthrough"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Countdown from "react-countdown"
@@ -74,7 +74,12 @@ export default function MainHero() {
               href="#pricing"
               className="flex items-center justify-between lg:text-xl bg-red-600 hover:bg-red-500 text-red-100 shadow-lg rounded-lg p-6 cursor-pointer w-full xl:w-1/2"
             >
-              <div>🖖 Get the Course</div>
+              <div>
+                <span role="img" aria-label="Spock Hand">
+                  🖖
+                </span>{" "}
+                Get the Course
+              </div>
               <div className="flex items-center">
                 <span className="line-through text-red-300 mr-2 text-base">
                   $127

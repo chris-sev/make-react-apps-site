@@ -111,6 +111,56 @@ const lessonSections = [
     ],
   },
   {
+    sectionTitle: "Trivia App",
+    demoLink: "https://qlb3o.csb.app/",
+    lessons: [
+      {
+        lessonTitle: "00 - Trivia [PREVIEW]",
+        time: 2,
+        previewLink:
+          "https://learn.chrisoncode.io/courses/make-20-react-apps/271017-07-trivia/783724-00-trivia-preview",
+      },
+      { lessonTitle: "01 - Getting and Displaying a Question", time: 16 },
+      { lessonTitle: "02 - Selecting a Category", time: 14 },
+      { lessonTitle: "03 - Handling Right and Wrong", time: 11 },
+      { lessonTitle: `04 - Scoreboard`, time: 8 },
+      { lessonTitle: `05 - useTrivia Custom React Hook`, time: 8 },
+    ],
+  },
+  {
+    sectionTitle: "Authentication",
+    demoLink: undefined,
+    lessons: [
+      {
+        lessonTitle: "00 - Authentication [PREVIEW]",
+        time: 2,
+        previewLink:
+          "https://learn.chrisoncode.io/courses/make-20-react-apps/284972-08-authentication/821360-00-authentication-preview",
+      },
+      { lessonTitle: "01 - Setting up Auth0", time: 10 },
+      { lessonTitle: "02 - Starting the Auth0 SPA SDK", time: 7 },
+      { lessonTitle: "03 - Starting React Context", time: 7 },
+      { lessonTitle: `04 - Adding Auth0 to Context`, time: 17 },
+      { lessonTitle: `05 - PrivateRoute`, time: 8 },
+      { lessonTitle: `06 - Getting a Token`, time: 4 },
+    ],
+  },
+  {
+    sectionTitle: "Web Speech and Timers",
+    demoLink: "https://4jfqj.csb.app/",
+    lessons: [
+      {
+        lessonTitle: "00 - Web Speech [PREVIEW]",
+        time: 1,
+        previewLink:
+          "https://learn.chrisoncode.io/courses/make-20-react-apps/286509-09-web-speech-and-timers/825083-00-web-speech-and-timers-preview",
+      },
+      { lessonTitle: "01 - Creating Timer Forms", time: 11 },
+      { lessonTitle: "02 - Adding a Stopwatch", time: 9 },
+      { lessonTitle: "03 - Adding Speech", time: 10 },
+    ],
+  },
+  {
     sectionTitle: "😁 More Apps On the Way",
     lessons: [
       {

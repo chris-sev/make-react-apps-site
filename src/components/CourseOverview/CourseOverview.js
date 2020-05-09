@@ -56,7 +56,10 @@ export default function CourseOverview() {
               style={{ boxShadow: "8px 8px 0 #2D329E" }}
             >
               <p className="mb-6">
-                🧐 They always say "build to learn". They never say{" "}
+                <span role="img" aria-label="Thinking">
+                  🧐
+                </span>{" "}
+                They always say "build to learn". They never say{" "}
                 <strong>what to build</strong>!
               </p>
               <p className="mb-6">
@@ -76,11 +79,30 @@ export default function CourseOverview() {
                 so you'll get a stronger understanding of:
               </p>
               <p className="leading-loose">
-                ✅ React Hooks like useState and useEffect
-                <br />✅ Doing real-world things like routing, auth, JSX
-                <br />✅ State management
-                <br />✅ Rendering in React
-                <br />✅ Component communication
+                <span role="img" aria-label="Check">
+                  ✅
+                </span>{" "}
+                React Hooks like useState and useEffect
+                <br />
+                <span role="img" aria-label="Check">
+                  ✅
+                </span>{" "}
+                Doing real-world things like routing, auth, JSX
+                <br />
+                <span role="img" aria-label="Check">
+                  ✅
+                </span>{" "}
+                State management
+                <br />
+                <span role="img" aria-label="Check">
+                  ✅
+                </span>{" "}
+                Rendering in React
+                <br />
+                <span role="img" aria-label="Check">
+                  ✅
+                </span>{" "}
+                Component communication
               </p>
             </div>
           </div>

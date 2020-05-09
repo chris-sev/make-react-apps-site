@@ -34,15 +34,36 @@ export default function Pricing() {
 
             {/* main info */}
             <p className="leading-loose mb-8 lg:text-xl font-normal">
-              ✅ All <strong>20 React Apps</strong> when they are released
-              <br />✅ Final and starter code for 20 React Apps
-              <br />✅ Access to chat box to chat with me
-              <br />✅ Unlimited updates, never expires
+              <span role="img" aria-label="Check">
+                ✅
+              </span>{" "}
+              All <strong>20 React Apps</strong> when they are released
+              <br />
+              <span role="img" aria-label="Check">
+                ✅
+              </span>{" "}
+              Final and starter code for 20 React Apps
+              <br />
+              <span role="img" aria-label="Check">
+                ✅
+              </span>{" "}
+              Access to chat box to chat with me
+              <br />
+              <span role="img" aria-label="Check">
+                ✅
+              </span>{" "}
+              Unlimited updates, never expires
               <br />
               <br />
-              ⚛️ <strong>Discount for pre-release</strong>: 6 of 20 apps done
+              <span role="img" aria-label="React">
+                ⚛️
+              </span>{" "}
+              <strong>Discount for pre-release</strong>: 10 of 20 apps done
               <br />
-              😍 Now:{" "}
+              <span role="img" aria-label="Heart eyes">
+                😍
+              </span>{" "}
+              Now:{" "}
               <strong className="text-green-600 font-extrabold">50% off</strong>
               <br />
               <span className="text-gray-600 leading-normal">

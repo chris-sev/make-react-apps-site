@@ -3,17 +3,8 @@ import "./WhatWellBuild.css"
 
 const apps = [
   {
-    title: "Moving Link Across a <canvas>",
-    videoSrc: "https://i.imgur.com/CA5KIIo.mp4",
-    numberOfVideos: 5,
-    timeToComplete: "32 minutes",
-    demoLink: "https://405hq.codesandbox.io/",
-    previewLink:
-      "https://learn.chrisoncode.io/courses/make-20-react-apps/250927-moving-boxes-and-zelda/748714-00-moving-boxes-and-link-preview",
-  },
-  {
     title: "Pomodoro Timer",
-    videoSrc: "https://i.imgur.com/idgK9Qr.mp4",
+    videoSrc: "https://i.imgur.com/W2ER8xN.mp4",
     numberOfVideos: 3,
     timeToComplete: "26 minutes",
     demoLink: "https://r36qd.codesandbox.io/",
@@ -21,17 +12,8 @@ const apps = [
       "https://learn.chrisoncode.io/courses/make-20-react-apps/249106-pomodoro/748623-00-pomodoro-preview",
   },
   {
-    title: "Paper Rock Scissors",
-    videoSrc: "https://i.imgur.com/odxxUYF.mp4",
-    numberOfVideos: 4,
-    timeToComplete: "39 minutes",
-    demoLink: "https://njpw4.codesandbox.io/",
-    previewLink:
-      "https://learn.chrisoncode.io/courses/make-20-react-apps/249667-paper-rock-scissors/748691-00-paper-rock-scissors-preview",
-  },
-  {
     title: "Markdown Editor",
-    videoSrc: "https://i.imgur.com/Jf42bFp.mp4",
+    videoSrc: "https://i.imgur.com/o0CIPZy.mp4",
     numberOfVideos: 2,
     timeToComplete: "17 minutes",
     demoLink: "https://391jg.codesandbox.io/",
@@ -40,7 +22,7 @@ const apps = [
   },
   {
     title: "Browser Tabs and Routing",
-    videoSrc: "https://i.imgur.com/0pGu5gy.mp4",
+    videoSrc: "https://i.imgur.com/QMeUIeo.mp4",
     numberOfVideos: 4,
     timeToComplete: "43 minutes",
     demoLink: "https://yyhfg.codesandbox.io/",
@@ -48,13 +30,66 @@ const apps = [
       "https://learn.chrisoncode.io/courses/make-20-react-apps/249108-browser-tabs/748775-00-browser-tabs-preview",
   },
   {
+    title: "Paper Rock Scissors",
+    videoSrc: "https://i.imgur.com/29grDOl.mp4",
+    numberOfVideos: 4,
+    timeToComplete: "39 minutes",
+    demoLink: "https://njpw4.codesandbox.io/",
+    previewLink:
+      "https://learn.chrisoncode.io/courses/make-20-react-apps/249667-paper-rock-scissors/748691-00-paper-rock-scissors-preview",
+  },
+  {
+    title: "Moving Link Across a <canvas>",
+    videoSrc: "https://i.imgur.com/9ZbDms6.mp4",
+    numberOfVideos: 5,
+    timeToComplete: "32 minutes",
+    demoLink: "https://405hq.codesandbox.io/",
+    previewLink:
+      "https://learn.chrisoncode.io/courses/make-20-react-apps/250927-moving-boxes-and-zelda/748714-00-moving-boxes-and-link-preview",
+  },
+  {
     title: "Infinite Image Gallery",
-    videoSrc: "https://i.imgur.com/XAA4asd.mp4",
+    videoSrc: "https://i.imgur.com/Q13oJyv.mp4",
     numberOfVideos: 5,
     timeToComplete: "52 minutes",
     demoLink: "https://e9ucz.csb.app/",
     previewLink:
       "https://learn.chrisoncode.io/courses/make-20-react-apps/257611-infinite-image-gallery/748761-00-infinite-image-gallery-preview",
+  },
+  {
+    title: "Trivia",
+    videoSrc: "https://i.imgur.com/NrTcWBm.mp4",
+    numberOfVideos: 6,
+    timeToComplete: "57 minutes",
+    demoLink: "https://qlb3o.csb.app/",
+    previewLink:
+      "https://learn.chrisoncode.io/courses/make-20-react-apps/271017-07-trivia/783724-00-trivia-preview",
+  },
+  {
+    title: "Authentication",
+    videoSrc: "https://i.imgur.com/5VtzUpY.mp4",
+    numberOfVideos: 7,
+    timeToComplete: "54 minutes",
+    demoLink: undefined, // auth doesnt work in codesandbox
+    previewLink:
+      "https://learn.chrisoncode.io/courses/make-20-react-apps/284972-08-authentication/821360-00-authentication-preview",
+  },
+  {
+    title: "Web Speech and Timers",
+    videoSrc: "https://i.imgur.com/vCM4Fbq.mp4",
+    numberOfVideos: 4,
+    timeToComplete: "30 minutes",
+    demoLink: "https://4jfqj.csb.app/",
+    previewLink:
+      "https://learn.chrisoncode.io/courses/make-20-react-apps/286509-09-web-speech-and-timers/825083-00-web-speech-and-timers-preview",
+  },
+  {
+    title: "Calendar Picker",
+    videoSrc: "https://i.imgur.com/pH45X9C.mp4",
+    numberOfVideos: 5,
+    timeToComplete: "",
+    demoLink: "https://d4vfr.csb.app/",
+    previewLink: "",
   },
 ]
 
@@ -105,7 +140,7 @@ function App({ app, number, isLast }) {
       <div className="block xl:flex lg:flex-grow">
         {/* video */}
         <video
-          controls
+          autoPlay
           loop
           className="app-video rounded-lg shadow-lg md:mx-auto lg:mr-12 mb-6 xl:mb-0 w-full"
         >

@@ -31,7 +31,10 @@ export default function Confirmed() {
                 rel="noopener noreferrer"
                 className="hover:underline text-blue-500 hover:text-blue-700"
               >
-                🤖 My VS Code Setup
+                <span role="img" aria-label="thingy">
+                  🤖
+                </span>{" "}
+                My VS Code Setup
               </a>
             </li>
             <li>
@@ -41,7 +44,10 @@ export default function Confirmed() {
                 rel="noopener noreferrer"
                 className="hover:underline text-blue-500 hover:text-blue-700"
               >
-                🤖 Terminal Setup (npm vs yarn)
+                <span role="img" aria-label="thingy">
+                  🤖
+                </span>{" "}
+                Terminal Setup (npm vs yarn)
               </a>
             </li>
             <li>
@@ -51,7 +57,10 @@ export default function Confirmed() {
                 rel="noopener noreferrer"
                 className="hover:underline text-blue-500 hover:text-blue-700"
               >
-                ⚛️ Pomodoro App: <strong>What We'll Build</strong>
+                <span role="img" aria-label="thingy">
+                  ⚛️
+                </span>{" "}
+                Pomodoro App: <strong>What We'll Build</strong>
               </a>
             </li>
             <li>
@@ -61,7 +70,10 @@ export default function Confirmed() {
                 rel="noopener noreferrer"
                 className="hover:underline text-blue-500 hover:text-blue-700"
               >
-                ⚛️ Pomodoro App: <strong>Time and Start</strong>
+                <span role="img" aria-label="thingy">
+                  ⚛️
+                </span>{" "}
+                Pomodoro App: <strong>Time and Start</strong>
               </a>
             </li>
             <li>
@@ -71,7 +83,10 @@ export default function Confirmed() {
                 rel="noopener noreferrer"
                 className="hover:underline text-blue-500 hover:text-blue-700"
               >
-                ⚛️ Pomodoro App: <strong>Stop and Reset</strong>
+                <span role="img" aria-label="thingy">
+                  ⚛️
+                </span>{" "}
+                Pomodoro App: <strong>Stop and Reset</strong>
               </a>
             </li>
             <li>
@@ -81,7 +96,10 @@ export default function Confirmed() {
                 rel="noopener noreferrer"
                 className="hover:underline text-blue-500 hover:text-blue-700"
               >
-                ⚛️ Pomodoro App: <strong>Restarting the Timer [FIX]</strong>
+                <span role="img" aria-label="thingy">
+                  ⚛️
+                </span>{" "}
+                Pomodoro App: <strong>Restarting the Timer [FIX]</strong>
               </a>
             </li>
           </ul>
