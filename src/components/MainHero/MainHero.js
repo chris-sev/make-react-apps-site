@@ -28,7 +28,7 @@ export default function MainHero() {
       <ReactIcons count={count} />
 
       {/* columns */}
-      <div className="container mx-auto lg:flex">
+      <div className="container mx-auto lg:flex lg:px-8">
         <div className="lg:flex-grow">
           <h2
             className="main-title relative text-2xl leading-tight"
