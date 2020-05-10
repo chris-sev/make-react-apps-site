@@ -90,14 +90,13 @@ export default function MainHero() {
 
             <Countdown
               date={"2020-05-11T00:00:00"}
-              renderer={({ days, hours, minutes, seconds, completed }) => {
+              renderer={({ hours, minutes, seconds, completed }) => {
                 if (completed) return <div />
 
                 return (
                   <div className="mt-6 text-red-800">
                     <p className="opacity-75">Price increases to $77 in...</p>
                     <div className="flex text-xl opacity-75">
-                      <span className="mr-1">{days} days,</span>
                       <span className="mr-1">{hours} hours,</span>
                       <span className="mr-1">{minutes} mins,</span>
                       <span className="mr-1">
