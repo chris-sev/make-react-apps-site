@@ -89,7 +89,7 @@ export default function MainHero() {
             </a>
 
             <Countdown
-              date={"2020-05-11T00:00:00"}
+              date={"2020-05-12T00:00:00"}
               renderer={({ hours, minutes, seconds, completed }) => {
                 if (completed) return <div />
 
