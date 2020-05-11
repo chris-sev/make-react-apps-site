@@ -4,7 +4,7 @@ import "./WhatWellBuild.css"
 const apps = [
   {
     title: "Pomodoro Timer",
-    videoSrc: "https://i.imgur.com/W2ER8xN.mp4",
+    videoSrc: "https://i.imgur.com/QA6K6A9.gif",
     numberOfVideos: 3,
     timeToComplete: "26 minutes",
     demoLink: "https://r36qd.codesandbox.io/",
@@ -13,7 +13,7 @@ const apps = [
   },
   {
     title: "Markdown Editor",
-    videoSrc: "https://i.imgur.com/o0CIPZy.mp4",
+    videoSrc: "https://i.imgur.com/RO8X4a3.gif",
     numberOfVideos: 2,
     timeToComplete: "17 minutes",
     demoLink: "https://391jg.codesandbox.io/",
@@ -22,7 +22,7 @@ const apps = [
   },
   {
     title: "Browser Tabs and Routing",
-    videoSrc: "https://i.imgur.com/QMeUIeo.mp4",
+    videoSrc: "https://i.imgur.com/UBSHkRB.gif",
     numberOfVideos: 4,
     timeToComplete: "43 minutes",
     demoLink: "https://yyhfg.codesandbox.io/",
@@ -31,7 +31,7 @@ const apps = [
   },
   {
     title: "Paper Rock Scissors",
-    videoSrc: "https://i.imgur.com/29grDOl.mp4",
+    videoSrc: "https://i.imgur.com/0XZBLkn.gif",
     numberOfVideos: 4,
     timeToComplete: "39 minutes",
     demoLink: "https://njpw4.codesandbox.io/",
@@ -40,7 +40,7 @@ const apps = [
   },
   {
     title: "Moving Link Across a <canvas>",
-    videoSrc: "https://i.imgur.com/9ZbDms6.mp4",
+    videoSrc: "https://i.imgur.com/YDrXwvU.gif",
     numberOfVideos: 5,
     timeToComplete: "32 minutes",
     demoLink: "https://405hq.codesandbox.io/",
@@ -49,7 +49,7 @@ const apps = [
   },
   {
     title: "Infinite Image Gallery",
-    videoSrc: "https://i.imgur.com/Q13oJyv.mp4",
+    videoSrc: "https://i.imgur.com/B5ICxNS.gif",
     numberOfVideos: 5,
     timeToComplete: "52 minutes",
     demoLink: "https://e9ucz.csb.app/",
@@ -58,7 +58,7 @@ const apps = [
   },
   {
     title: "Trivia",
-    videoSrc: "https://i.imgur.com/NrTcWBm.mp4",
+    videoSrc: "https://i.imgur.com/JYYjGZO.gif",
     numberOfVideos: 6,
     timeToComplete: "57 minutes",
     demoLink: "https://qlb3o.csb.app/",
@@ -67,7 +67,7 @@ const apps = [
   },
   {
     title: "Authentication",
-    videoSrc: "https://i.imgur.com/5VtzUpY.mp4",
+    videoSrc: "https://i.imgur.com/f9d7122.gif",
     numberOfVideos: 7,
     timeToComplete: "54 minutes",
     demoLink: undefined, // auth doesnt work in codesandbox
@@ -76,7 +76,7 @@ const apps = [
   },
   {
     title: "Web Speech and Timers",
-    videoSrc: "https://i.imgur.com/vCM4Fbq.mp4",
+    videoSrc: "https://i.imgur.com/citY7Hq.gif",
     numberOfVideos: 4,
     timeToComplete: "30 minutes",
     demoLink: "https://4jfqj.csb.app/",
@@ -85,7 +85,7 @@ const apps = [
   },
   {
     title: "Calendar Picker",
-    videoSrc: "https://i.imgur.com/pH45X9C.mp4",
+    videoSrc: "https://i.imgur.com/jaNoYzU.gif",
     numberOfVideos: 5,
     timeToComplete: "",
     demoLink: "https://d4vfr.csb.app/",
@@ -139,13 +139,11 @@ function App({ app, number, isLast }) {
       </div>
       <div className="block xl:flex lg:flex-grow">
         {/* video */}
-        <video
-          autoPlay
-          loop
+        <img
           className="app-video rounded-lg shadow-lg md:mx-auto lg:mr-12 mb-6 xl:mb-0 w-full"
-        >
-          <source src={app.videoSrc} type="video/mp4" />
-        </video>
+          src={app.videoSrc}
+          loading="lazy"
+        />
 
         {/* content */}
         <div className="lg:flex flex-col justify-center w-full text-center">
