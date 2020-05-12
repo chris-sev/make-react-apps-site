@@ -1,5 +1,4 @@
 import React from "react"
-import Countdown from "react-countdown"
 import usePodia from "../usePodia"
 import "./Pricing.css"
 
@@ -27,7 +26,7 @@ export default function Pricing() {
               </div>
               <div className="has-dollar-sign flex items-center text-6xl mx-8 pb-2">
                 <span className="text-3xl mr-2">$</span>
-                <span>63</span>
+                <span>77</span>
               </div>
               <div className="flex items-center text-gray-600">USD</div>
             </div>
@@ -64,12 +63,12 @@ export default function Pricing() {
                 😍
               </span>{" "}
               Now:{" "}
-              <strong className="text-green-600 font-extrabold">50% off</strong>
-              <br />
+              <strong className="text-green-600 font-extrabold">40% off</strong>
               <span className="text-gray-600 leading-normal">
-                @ 10 Apps Done: <strong>40% off</strong>
-                <br />@ 15 Apps Done: <strong>30% off</strong>
-                <br />@ 20 Apps Done: <strong>Full price</strong>
+                <br />
+                @15 Apps Done: <strong>30% off</strong>
+                <br />
+                @20 Apps Done: <strong>Full price</strong>
               </span>
             </p>
             <a
@@ -82,30 +81,9 @@ export default function Pricing() {
                 <span className="line-through text-red-300 mr-2 text-base">
                   $127
                 </span>
-                <span className="text-red-100">$63</span>
+                <span className="text-red-100">$77</span>
               </div>
             </a>
-
-            <Countdown
-              date={"2020-05-12T00:00:00"}
-              renderer={({ hours, minutes, seconds, completed }) => {
-                if (completed) return <div />
-
-                return (
-                  <div className="mt-6 text-red-800">
-                    <p className="opacity-75">Price increases to $77 in...</p>
-                    <div className="flex text-xl opacity-75">
-                      <span className="mr-1">{hours} hours,</span>
-                      <span className="mr-1">{minutes} mins,</span>
-                      <span className="mr-1">
-                        {seconds.toString().padStart(2, "0")}{" "}
-                        {seconds === 1 ? "second" : "seconds"}!
-                      </span>
-                    </div>
-                  </div>
-                )
-              }}
-            />
           </div>
         </div>
       </div>

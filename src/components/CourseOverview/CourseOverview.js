@@ -164,9 +164,7 @@ export default function CourseOverview() {
             <p className="mb-4">This is our pricing schedule:</p>
 
             <p>
-              <strong>Now</strong>: 50% off
-              <br />
-              <strong>When 10 apps are done</strong>: 40% off
+              <strong>Now</strong>: 40% off
               <br />
               <strong>When 15 apps are done</strong>: 30% off
               <br />

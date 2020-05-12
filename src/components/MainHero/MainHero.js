@@ -1,9 +1,8 @@
 import React, { useState } from "react"
 import useInterval from "@use-it/interval"
-// import Newsletter from "../newsletter"
+import Newsletter from "../newsletter"
 import Walkthrough from "./Walkthrough"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import Countdown from "react-countdown"
 import "./MainHero.css"
 
 function getRandomColor() {
@@ -72,7 +71,7 @@ export default function MainHero() {
 
             <a
               href="#pricing"
-              className="flex items-center justify-between lg:text-xl bg-red-600 hover:bg-red-500 text-red-100 shadow-lg rounded-lg p-6 cursor-pointer w-full xl:w-1/2"
+              className="flex items-center justify-between lg:text-xl bg-red-600 hover:bg-red-500 text-red-100 shadow-2xl rounded-lg p-6 cursor-pointer w-full xl:w-1/2"
             >
               <div>
                 <span role="img" aria-label="Spock Hand">
@@ -84,36 +83,15 @@ export default function MainHero() {
                 <span className="line-through text-red-300 mr-2 text-base">
                   $127
                 </span>
-                <span className="text-red-100">$63</span>
+                <span className="text-red-100">$77</span>
               </div>
             </a>
 
-            <Countdown
-              date={"2020-05-12T00:00:00"}
-              renderer={({ hours, minutes, seconds, completed }) => {
-                if (completed) return <div />
-
-                return (
-                  <div className="mt-6 text-red-800">
-                    <p className="opacity-75">Price increases to $77 in...</p>
-                    <div className="flex text-xl opacity-75">
-                      <span className="mr-1">{hours} hours,</span>
-                      <span className="mr-1">{minutes} mins,</span>
-                      <span className="mr-1">
-                        {seconds.toString().padStart(2, "0")}{" "}
-                        {seconds === 1 ? "second" : "seconds"}!
-                      </span>
-                    </div>
-                  </div>
-                )
-              }}
-            />
-
-            {/* <p className="text-blue-800 mb-1 mt-12">
+            <p className="text-blue-800 mb-1 mt-12">
               Sign up to the newsletter and get <strong>1 free app</strong> and{" "}
               <strong>5 free videos</strong>.
             </p>
-            <Newsletter /> */}
+            <Newsletter />
           </div>
         </div>
         <div className="flex items-center justify-center lg:flex-shrink lg:pl-20">
