@@ -1,4 +1,5 @@
 import React from "react"
+import Countdown from "../Countdown"
 import usePodia from "../usePodia"
 import "./Pricing.css"
 
@@ -84,6 +85,8 @@ export default function Pricing() {
                 <span className="text-red-100">$77</span>
               </div>
             </a>
+
+            <Countdown />
           </div>
         </div>
       </div>
