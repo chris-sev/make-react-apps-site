@@ -4,7 +4,7 @@
 
 @media screen and (min-width: 768px) {
   .walkthrough {
-    min-width: 473px;
+    min-width: 500px;
   }
 }
 
@@ -52,4 +52,21 @@
     opacity: 0.7;
     transform: scale(0.8);
   }
+}
+
+.message {
+  display: grid;
+  grid-template-columns: 55px auto 55px;
+}
+
+.message:last-child {
+  margin-bottom: 0;
+}
+
+.message:nth-child(even) > div:first-child {
+  opacity: 0;
+}
+
+.message:nth-child(odd) > div:last-child {
+  opacity: 0;
 }

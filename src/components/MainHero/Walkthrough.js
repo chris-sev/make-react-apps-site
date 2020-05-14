@@ -10,7 +10,7 @@ const messages = [
   { text: "Just build something!" },
   { text: "OK! What should I build?" },
   { text: "Iono. Just Google it?" },
-  { text: "Oh! This 20 React Apps course looks cool!" },
+  { text: "Oooh! This course looks cool!" },
   { text: "Send me the link?!" },
   { text: "20ReactApps.com!" },
 ]
@@ -46,76 +46,69 @@ export default function Walkthrough() {
   }, 2000)
 
   return (
-    <div className="walkthrough flex items-center bg-gray-900 rounded-lg shadow-lg mt-10 lg:mt-0 px-6 py-10">
-      <div className="w-full">
-        {messages.map((message, index) => {
-          const even = isEven(index)
+    <div className="walkthrough bg-gray-900 rounded-lg shadow-lg mt-10 lg:mt-0 px-6 py-10">
+      {messages.map((message, index) => {
+        const even = isEven(index)
 
-          // placeholder
-          if (messageToShow + 1 === index) {
-            return (
-              <motion.div
-                className="flex mb-3"
-                key={index}
-                initial={{ rotate: 10, scale: 0 }}
-                animate={{ rotate: 0, scale: 1 }}
-              >
-                <div style={{ width: "55px" }} />
-                <div className={`loader ${even ? "mr-auto" : "ml-auto"}`}>
-                  <div />
-                  <div />
-                  <div />
-                </div>
-                <div style={{ width: "55px" }} />
-              </motion.div>
-            )
-          }
+        // placeholder
+        if (messageToShow + 1 === index)
+          return <Loader key={index} even={even} />
 
-          if (index > messageToShow) return <div key={index} />
+        // we shouldnt show these yet
+        if (index > messageToShow) return <div key={index} />
 
-          return (
-            <div className="flex mb-3" key={index}>
-              <div className="w-12 flex items-center">
-                {even && (
-                  <Img
-                    className="max-w-full"
-                    style={{ width: "40px" }}
-                    fluid={data.kapehe.childImageSharp.fluid}
-                  />
-                )}
-              </div>
-              <div className="flex-grow mx-2">
-                <Message isEven={even}>{message.text}</Message>
-              </div>
-              <div className="w-12">
-                {!even && (
-                  <Img
-                    className="max-w-full ml-auto"
-                    style={{ width: "40px" }}
-                    fluid={data.chris.childImageSharp.fluid}
-                  />
-                )}
-              </div>
-            </div>
-          )
-        })}
-      </div>
+        return <Message key={index} data={data} message={message} even={even} />
+      })}
     </div>
   )
 }
 
-function Message({ children, isEven }) {
+function Loader({ even }) {
   return (
     <motion.div
-      className={`p-3 rounded-lg ${
-        isEven
-          ? "bg-blue-500 text-blue-100 text-left"
-          : "bg-blue-700 text-blue-100 text-right"
-      }`}
+      className="flex mb-3"
+      initial={{ rotate: 10, scale: 0 }}
+      animate={{ rotate: 0, scale: 1 }}
+    >
+      <div style={{ width: "55px" }} />
+      <div className={`loader ${even ? "ml-3 mr-auto" : "mr-3 ml-auto"}`}>
+        <div />
+        <div />
+        <div />
+      </div>
+      <div style={{ width: "55px" }} />
+    </motion.div>
+  )
+}
+
+function Message({ data, even, message }) {
+  return (
+    <motion.div
+      className="message mb-3"
       initial={{ rotate: -5, scale: 0 }}
       animate={{ rotate: 0, scale: 1 }}
     >
-      {children}
+      <div>
+        <Img
+          style={{ width: "45px" }}
+          fluid={data.kapehe.childImageSharp.fluid}
+        />
+      </div>
+      <div
+        className={`py-2 px-4 mx-3 rounded-lg flex items-center ${
+          even
+            ? "bg-blue-500 text-blue-100"
+            : "bg-blue-700 text-blue-100 justify-end"
+        }`}
+      >
+        {message.text}
+      </div>
+      <div>
+        <Img
+          style={{ width: "45px" }}
+          fluid={data.chris.childImageSharp.fluid}
+        />
+      </div>
     </motion.div>
   )
 }
