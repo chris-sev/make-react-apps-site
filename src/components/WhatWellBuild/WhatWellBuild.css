@@ -52,7 +52,7 @@
 
 .app-container .demo-button,
 .app-container .preview-button {
-  transition: 1.5s ease all;
+  transition: 0.3s ease all;
 }
 
 .app-container:hover .preview-button {

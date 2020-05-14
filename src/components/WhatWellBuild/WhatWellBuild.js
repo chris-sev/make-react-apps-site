@@ -106,15 +106,19 @@ export default function WhatWellBuild() {
         </div>
 
         {/* list of apps */}
-        {apps &&
-          apps.map((app, index) => (
-            <App
-              key={index}
-              app={app}
-              number={index + 1}
-              isLast={index + 1 === apps.length}
-            />
-          ))}
+        {apps && (
+          <div className="flex flex-wrap">
+            {apps.map((app, index) => (
+              <div key={index} className="w-full md:w-1/2 xl:w-1/3 px-4">
+                <App
+                  app={app}
+                  number={index + 1}
+                  isLast={index + 1 === apps.length}
+                />
+              </div>
+            ))}
+          </div>
+        )}
 
         <div className="mb-16 text-3xl text-gray-700 text-center">
           More Apps Coming Soon
@@ -126,71 +130,62 @@ export default function WhatWellBuild() {
 
 function App({ app, number, isLast }) {
   return (
-    <div
-      className={`app-container pt-8 pb-12 mb-6 lg:pt-6 lg:pb-10 lg:mb-6 flex items-center ${!isLast &&
-        "border-b border-gray-900"} `}
-    >
+    <div className="app-container pt-8 pb-12 mb-6 lg:pt-6 lg:pb-10 lg:mb-6 relative">
       {/* number */}
-      <div
-        className="flex-shrink mr-16 hidden md:block"
-        style={{ maxWidth: "100px" }}
-      >
-        <Number number={number} />
-      </div>
-      <div className="block xl:flex lg:flex-grow">
-        {/* video */}
-        <img
-          className="app-video rounded-lg shadow-lg md:mx-auto lg:mr-12 mb-6 xl:mb-0 w-full"
-          src={app.videoSrc}
-          loading="lazy"
-        />
+      <Number number={number} />
 
-        {/* content */}
-        <div className="lg:flex flex-col justify-center w-full text-center">
-          <h2 className="fugaz-one text-3xl mb-6 text-white">{app.title}</h2>
-          {app.description && (
-            <p className="text-gray-400 text-xl mb-6">{app.description}</p>
-          )}
+      {/* video */}
+      <img
+        className="app-video rounded-lg shadow-lg md:mx-auto lg:mr-12 mb-6 xl:mb-0 w-full"
+        src={app.videoSrc}
+        loading="lazy"
+      />
 
-          {/* icons */}
-          <div className="flex justify-center mb-6 text-center text-lg lg:text-xl">
-            <div className="mr-8">
-              <span className="block mb" role="img" aria-label="Videos">
-                🎬
-              </span>
-              <span className="text-gray-600">
-                {app.numberOfVideos}{" "}
-                {app.numberOfVideos === 1 ? "video" : "videos"}
-              </span>
-            </div>
-            <div>
-              <span className="block mb" role="img" aria-label="Hours">
-                🎤
-              </span>
-              <span className="text-gray-600">{app.timeToComplete}</span>
-            </div>
+      {/* content */}
+      <div className="mt-6 w-full">
+        <h2 className="fugaz-one text-xl mb-1 text-gray-400">{app.title}</h2>
+        {app.description && (
+          <p className="text-gray-400 text-xl mb-6">{app.description}</p>
+        )}
+
+        {/* icons */}
+        <div className="flex mb-3">
+          <div className="mr-8">
+            <span className="mr-1" role="img" aria-label="Videos">
+              🎬
+            </span>
+            <span className="text-gray-600">
+              {app.numberOfVideos}{" "}
+              {app.numberOfVideos === 1 ? "video" : "videos"}
+            </span>
           </div>
-
-          <div className="flex leading-loose">
-            {/* preview button */}
-            <a
-              href={app.previewLink}
-              rel="noopener noreferrer"
-              target="_blank"
-              className="preview-button inline-block border border-orange-400 text-orange-400 leading-none py-3 px-12 rounded shadow text-center mr-4 w-1/2"
-            >
-              Preview
-            </a>
-            {/* demo button */}
-            <a
-              href={app.demoLink}
-              rel="noopener noreferrer"
-              target="_blank"
-              className="demo-button inline-block border border-yellow-400 text-yellow-400 leading-none py-3 px-12 rounded shadow text-center w-1/2"
-            >
-              Demo
-            </a>
+          <div>
+            <span className="mr-1" role="img" aria-label="Hours">
+              🎤
+            </span>
+            <span className="text-gray-600">{app.timeToComplete}</span>
           </div>
+        </div>
+
+        <div className="flex leading-loose">
+          {/* preview button */}
+          <a
+            href={app.previewLink}
+            rel="noopener noreferrer"
+            target="_blank"
+            className="preview-button border border-gray-700 text-gray-700 leading-none py-2 px-12 rounded shadow text-center mr-4 w-1/2"
+          >
+            Preview
+          </a>
+          {/* demo button */}
+          <a
+            href={app.demoLink}
+            rel="noopener noreferrer"
+            target="_blank"
+            className="demo-button border border-gray-700 text-gray-700 leading-none py-2 px-12 rounded shadow text-center w-1/2"
+          >
+            Demo
+          </a>
         </div>
       </div>
     </div>
@@ -199,11 +194,14 @@ function App({ app, number, isLast }) {
 
 function Number({ number }) {
   return (
-    <div className="number-container flex-shrink">
+    <div
+      className="number-container hidden md:block absolute top-0 left-0 pointer-events-none w-20"
+      style={{ top: "-100px", left: "-30px" }}
+    >
       <svg
         className="number fugaz-one"
         viewBox="0 0 100 40"
-        style={{ fontSize: "40px", height: "200px" }}
+        style={{ fontSize: "20px", height: "250px" }}
       >
         <text className="number-gray" x="0" y="30">
           {number}
