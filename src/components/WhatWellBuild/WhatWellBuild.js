@@ -86,10 +86,11 @@ const apps = [
   {
     title: "Calendar Picker",
     videoSrc: "https://i.imgur.com/jaNoYzU.gif",
-    numberOfVideos: 5,
-    timeToComplete: "",
+    numberOfVideos: 4,
+    timeToComplete: "33 minutes",
     demoLink: "https://d4vfr.csb.app/",
-    previewLink: "",
+    previewLink:
+      "https://learn.chrisoncode.io/courses/make-20-react-apps/302585-10-calendar-picker/864913-00-calendar-picker-preview",
   },
 ]
 
