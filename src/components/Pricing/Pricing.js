@@ -15,7 +15,7 @@ export default function Pricing() {
         {/* pricing box */}
         <div className="bg-white rounded-lg shadow-lg w-full lg:w-2/3 xl:w-1/2 mx-auto text-gray-900">
           <h3 className="fugaz-one bg-green-200 w-full pt-6 pb-4 lg:pt-8 lg:pb-6 px-4 text-center text-2xl lg:text-4xl text-green-700 font-bold uppercase rounded-t-lg">
-            Get the Course
+            Buy the Course
           </h3>
 
           <div className="pt-10 pb-12 px-6 lg:px-16">
@@ -77,7 +77,7 @@ export default function Pricing() {
               data-podia-embed="link"
               className="checkout-button flex items-center justify-between xl:text-2xl bg-red-600 text-red-100 shadow-lg rounded-lg px-6 py-6 cursor-pointer hover:bg-red-500 w-full"
             >
-              <div>Get the Course</div>
+              <div>Buy the Course</div>
               <div className="flex items-center">
                 <span className="line-through text-red-300 mr-2 text-base">
                   $127

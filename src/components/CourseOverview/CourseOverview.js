@@ -141,7 +141,7 @@ export default function CourseOverview() {
         </div>
 
         {/* 1 column section ---------------------------------------------- */}
-        <div
+        {/* <div
           className="bg-white rounded-lg shadow-lg w-full lg:w-2/3 xl:w-1/2 mx-auto text-gray-900 leading-relaxed mt-10"
           style={{ boxShadow: "8px 8px 0 #2D329E" }}
         >
@@ -171,7 +171,7 @@ export default function CourseOverview() {
               <strong>When 20 apps are done</strong>: Full price
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )

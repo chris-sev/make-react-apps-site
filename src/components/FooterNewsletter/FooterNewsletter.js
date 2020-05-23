@@ -22,7 +22,7 @@ export default function FooterNewsletter() {
             href="#pricing"
             className="text-center xl:text-lg bg-red-600 text-red-100 shadow-lg rounded-lg px-6 py-6 cursor-pointer hover:bg-red-400 mb-10 w-full lg:w-1/2"
           >
-            Get the Course for{" "}
+            Buy the Course for{" "}
             <strong className="font-bold underline">50% Off</strong>
           </a> */}
 

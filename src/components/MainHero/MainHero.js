@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import useInterval from "@use-it/interval"
-import Newsletter from "../newsletter"
+// import Newsletter from "../newsletter"
 import Walkthrough from "./Walkthrough"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "./MainHero.css"
@@ -77,7 +77,7 @@ export default function MainHero() {
                 <span role="img" aria-label="Spock Hand">
                   🖖
                 </span>{" "}
-                Get the Course
+                Buy the Course
               </div>
               <div className="flex items-center">
                 <span className="line-through text-red-300 mr-2 text-base">
@@ -87,11 +87,11 @@ export default function MainHero() {
               </div>
             </a>
 
-            <p className="text-blue-800 mb-1 mt-12">
+            {/* <p className="text-blue-800 mb-1 mt-12">
               Sign up to the newsletter and get <strong>1 free app</strong> and{" "}
               <strong>5 free videos</strong>.
             </p>
-            <Newsletter />
+            <Newsletter /> */}
           </div>
         </div>
         <div className="flex items-center justify-center lg:flex-shrink lg:pl-20">

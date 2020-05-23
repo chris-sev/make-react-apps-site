@@ -32,7 +32,7 @@ export default function IndexPage() {
           <span role="img" aria-label="Spock Hand">
             🖖
           </span>{" "}
-          Get the Course
+          Buy the Course
         </a>
       </div>
 
