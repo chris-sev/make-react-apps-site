@@ -36,7 +36,7 @@ export default function Footer() {
           href="https://github.com/chris-on-code/20-react-apps-site"
           className="underline hover:text-yellow-700 text-yellow-900"
         >
-          View the GitHub repo and see my ugly code.
+          View the GitHub repo and see how I built this site.
         </a>
       </div>
       <div>

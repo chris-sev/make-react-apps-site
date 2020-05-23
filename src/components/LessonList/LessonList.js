@@ -161,6 +161,21 @@ const lessonSections = [
     ],
   },
   {
+    sectionTitle: "Calendar Picker",
+    demoLink: "https://d4vfr.csb.app/",
+    lessons: [
+      {
+        lessonTitle: "00 - Calendar Picker [PREVIEW]",
+        time: 2,
+        previewLink:
+          "https://learn.chrisoncode.io/courses/make-20-react-apps/302585-10-calendar-picker/864913-00-calendar-picker-preview",
+      },
+      { lessonTitle: "01 - Choosing a Date", time: 10 },
+      { lessonTitle: "02 - Styled Components", time: 13 },
+      { lessonTitle: "03 - Hovering Days", time: 8 },
+    ],
+  },
+  {
     sectionTitle: "😁 More Apps On the Way",
     lessons: [
       {
