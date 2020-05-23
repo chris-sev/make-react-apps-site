@@ -27,8 +27,8 @@ export default function FooterNewsletter() {
           </a> */}
 
           <p className="text-blue-300 mb-3">
-            Not ready to purchase? Get updates on when more apps come out and
-            the course is finished...
+            Sign up to the newsletter and get <strong>1 free app</strong> and{" "}
+            <strong>5 free videos</strong>.
           </p>
           <Newsletter />
         </div>

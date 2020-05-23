@@ -24,21 +24,19 @@ export default function CourseOverview() {
             </h3>
             <div className="bg-purple-900 text-purple-200 p-8 rounded shadow text-lg h-full">
               <p className="mb-6">
-                Wouldn't it be awesome if we could finish all the great ideas
-                and side projects we come up with?
-              </p>
-              <p className="mb-6">
                 Join me in this course and{" "}
                 <strong className="text-yellow-400">
-                  let's put a focus on finishing coding these apps
+                  let's put a focus on learning new skills and building our
+                  portfolio
                 </strong>
-                . <span className="italic">No overengineering</span>.{" "}
-                <span className="italic">No</span> overthinking.
+                .
               </p>
               <p>
-                Let's code and complete. It's better to{" "}
-                <strong className="text-blue-400">do</strong> than to{" "}
-                <strong className="text-blue-400">debate</strong>.
+                All of the code and the things you'll build in this course are
+                yours to use. You can take the apps, tweak them, add them to
+                your own projects, use the code in your next business, anything!
+                Honestly, that would make me very happy to see you create
+                something amazing from what you learned here.
               </p>
             </div>
           </div>

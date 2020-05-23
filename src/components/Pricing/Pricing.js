@@ -58,19 +58,13 @@ export default function Pricing() {
               <span role="img" aria-label="React">
                 ⚛️
               </span>{" "}
-              <strong>Discount for pre-release</strong>: 10 of 20 apps done
-              <br />
-              <span role="img" aria-label="Heart eyes">
-                😍
-              </span>{" "}
-              Now:{" "}
-              <strong className="text-green-600 font-extrabold">40% off</strong>
-              <span className="text-gray-600 leading-normal">
-                <br />
-                @15 Apps Done: <strong>30% off</strong>
-                <br />
-                @20 Apps Done: <strong>Full price</strong>
-              </span>
+              <strong>
+                <strong className="text-green-600 font-extrabold">
+                  40% off
+                </strong>{" "}
+                for pre-release
+              </strong>
+              : 10 of 20 apps done
             </p>
             <a
               href="https://learn.chrisoncode.io/make-20-react-apps"
