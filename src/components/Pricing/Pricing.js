@@ -23,11 +23,11 @@ export default function Pricing() {
             <div className="mb-8 text-green-800 text-xl md:text-3xl flex items-center justify-center leading-none">
               <div className="has-dollar-sign flex items-center line-through text-gray-600">
                 <span className="text-xl mr-2">$</span>
-                <span>127</span>
+                <span>130</span>
               </div>
               <div className="has-dollar-sign flex items-center text-6xl mx-8 pb-2">
                 <span className="text-3xl mr-2">$</span>
-                <span>77</span>
+                <span>79</span>
               </div>
               <div className="flex items-center text-gray-600">USD</div>
             </div>
