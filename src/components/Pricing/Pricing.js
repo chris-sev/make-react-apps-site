@@ -74,9 +74,9 @@ export default function Pricing() {
               <div>Buy the Course</div>
               <div className="flex items-center">
                 <span className="line-through text-red-300 mr-2 text-base">
-                  $127
+                  $130
                 </span>
-                <span className="text-red-100">$77</span>
+                <span className="text-red-100">$79</span>
               </div>
             </a>
 
