@@ -40,7 +40,7 @@ export default function IndexPage() {
         <MainHero />
       </div>
 
-      {/* <CourseOverview /> */}
+      <CourseOverview />
       <WhatWellBuild />
       <WhoAmI />
       <LessonList />

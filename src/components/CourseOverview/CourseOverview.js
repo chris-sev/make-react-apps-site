@@ -7,7 +7,7 @@ export default function CourseOverview() {
       <div className="container mx-auto">
         {/* video section ---------------------------------------------- */}
         <div className="lg:flex w-full mb-10 lg:mb-20">
-          <div className="lg:w-2/3 lg:pr-8 flex flex-col">
+          <div className="lg:w-1/2 lg:pr-8 flex flex-col justify-center">
             <video
               controls
               className="rounded-lg shadow-lg md:mx-auto lg:mr-12 mb-6 xl:mb-0 w-full"
@@ -18,27 +18,10 @@ export default function CourseOverview() {
               />
             </video>
           </div>
-          <div className="lg:w-1/3 flex flex-col">
-            <h3 className="fugaz-one text-purple-100 text-2xl mb-6 uppercase">
-              There's no better feeling than finishing a project!
+          <div className="lg:w-1/2 lg:pl-8 flex flex-col justify-center">
+            <h3 className="fugaz-one text-purple-100 text-2xl lg:text-6xl mb-6 uppercase text-center lg:text-right">
+              The best way to learn is to code{" "}
             </h3>
-            <div className="bg-purple-900 text-purple-200 p-8 rounded shadow text-lg h-full">
-              <p className="mb-6">
-                Join me in this course and{" "}
-                <strong className="text-yellow-400">
-                  let's put a focus on learning new skills and building our
-                  portfolio
-                </strong>
-                .
-              </p>
-              <p>
-                All of the code and the things you'll build in this course are
-                yours to use. You can take the apps, tweak them, add them to
-                your own projects, use the code in your next business, anything!
-                Honestly, that would make me very happy to see you create
-                something amazing from what you learned here.
-              </p>
-            </div>
           </div>
         </div>
 
@@ -50,21 +33,9 @@ export default function CourseOverview() {
             </h2>
 
             <div
-              className="text-gray-900 bg-white rounded-lg border border-indigo p-6 lg:p-8 leading-snug h-full mb-12 lg:mb-0"
+              className="text-gray-900 bg-white rounded-lg border border-indigo p-6 lg:p-8 leading-relaxed h-full mb-12 lg:mb-0"
               style={{ boxShadow: "8px 8px 0 #2D329E" }}
             >
-              <p className="mb-6">
-                <span role="img" aria-label="Thinking">
-                  🧐
-                </span>{" "}
-                They always say "build to learn". They never say{" "}
-                <strong>what to build</strong>!
-              </p>
-              <p className="mb-6">
-                This course is for those that have some React knowledge under
-                their belt but want some <strong>real world code</strong> to
-                write.
-              </p>
               <p className="mb-6">
                 This course is built fully in{" "}
                 <a
@@ -74,13 +45,13 @@ export default function CourseOverview() {
                 >
                   React Hooks
                 </a>{" "}
-                so you'll get a stronger understanding of:
+                for React in 2020 so you'll get a stronger understanding of:
               </p>
               <p className="leading-loose">
                 <span role="img" aria-label="Check">
                   ✅
                 </span>{" "}
-                React Hooks like useState and useEffect
+                React Hooks like useState, useEffect, useCallback
                 <br />
                 <span role="img" aria-label="Check">
                   ✅
@@ -90,7 +61,12 @@ export default function CourseOverview() {
                 <span role="img" aria-label="Check">
                   ✅
                 </span>{" "}
-                State management
+                Custom React Hooks
+                <br />
+                <span role="img" aria-label="Check">
+                  ✅
+                </span>{" "}
+                State management with React Context
                 <br />
                 <span role="img" aria-label="Check">
                   ✅
@@ -102,6 +78,12 @@ export default function CourseOverview() {
                 </span>{" "}
                 Component communication
               </p>
+
+              <p className="mt-6">
+                  We're putting a focus on building something fun, quickly. Each
+                  app could take from 15 minutes to an hour so there's a lot of
+                  building to dig through.
+                </p>
             </div>
           </div>
           <div className="lg:w-1/2 lg:pl-8 flex flex-col">
@@ -109,23 +91,29 @@ export default function CourseOverview() {
               Who is this for?
             </h2>
             <div
-              className="text-gray-900 bg-white rounded-lg border border-indigo p-6 lg:p-8 leading-snug h-full flex flex-col"
+              className="text-gray-900 bg-white rounded-lg border border-indigo p-6 lg:p-8 leading-relaxed h-full flex flex-col"
               style={{ boxShadow: "8px 8px 0 #2D329E" }}
             >
               <div>
                 <p className="mb-6">
                   This course is for anyone that wants to{" "}
-                  <strong>learn by building</strong>.
+                  <strong>learn by building</strong>. It's great for those that
+                  have some React knowledge but want to create{" "}
+                  <strong>real-world code</strong>.
                 </p>
+
+                <p className="mb-6">
+                  <span role="img" aria-label="Thinking">
+                    🧐
+                  </span>{" "}
+                  They always say "build to learn". They never say{" "}
+                  <strong>what to build</strong>!
+                </p>
+
                 <p className="mb-6">
                   These 20 apps are fun projects that will introduce us to
                   coding scenarios that we'll encounter in our day jobs, side
                   projects, and any React apps.
-                </p>
-                <p className="mb-6">
-                  We're putting a focus on building something fun, quickly. Each
-                  app could take from 15 minutes to an hour so there's a lot of
-                  building to dig through.
                 </p>
               </div>
               <div className="bg-indigo-100 rounded p-4 mt-auto">

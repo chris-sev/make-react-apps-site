@@ -22,7 +22,7 @@ export default function MainHero() {
   }, 70)
 
   return (
-    <section className="px-4 lg:px-0 pt-4 pb-16 lg:pt-10 lg:pb-32 relative">
+    <section className="px-4 lg:px-0 pt-4 pb-16 lg:pt-20 lg:pb-40 relative">
       {/* react icons */}
       <ReactIcons count={count} />
 
@@ -63,27 +63,22 @@ export default function MainHero() {
 
           <div className="mt-16">
             <p className="md:text-3xl mb-1 text-blue-900">
-              Build more than "hello world" or a "to-do app"
+              Build more than a to-do app.
             </p>
-            <p className="md:text-xl text-blue-700 mb-6">
-              Here's 20 fun apps to learn new skills and add to your portfolio
+            <p className="md:text-xl text-blue-800 mb-6">
+              Learn React best practices and concepts that you can use on the job, in side
+              projects, and in any React app.
             </p>
 
             <a
               href="#pricing"
-              className="flex items-center justify-between lg:text-xl bg-red-600 hover:bg-red-500 text-red-100 shadow-2xl rounded-lg p-6 cursor-pointer w-full xl:w-1/2"
+              className="flex items-center justify-center lg:text-xl bg-red-600 hover:bg-red-500 text-red-100 shadow-2xl rounded-lg p-6 cursor-pointer w-full xl:w-1/3"
             >
               <div>
                 <span role="img" aria-label="Spock Hand">
                   🖖
                 </span>{" "}
-                Buy the Course
-              </div>
-              <div className="flex items-center">
-                <span className="line-through text-red-300 mr-2 text-base">
-                  $130
-                </span>
-                <span className="text-red-100">$79</span>
+                Buy Now
               </div>
             </a>
 
