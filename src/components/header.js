@@ -2,20 +2,20 @@ import React from "react"
 
 export default function Header() {
   return (
-    <header className="text-right justify-end items-center pt-5 px-2 text-blue-900">
+    <header className="text-right justify-end items-center pt-5 px-2 text-blue-900 text-sm">
       <div className="mr-4">
         A{" "}
         <span
           className="inline-block text-yellow-400"
           style={{ transform: "rotate(-27deg)" }}
         >
-          real
+          fun
         </span>{" "}
         <span
           className="inline-block text-red-600"
           style={{ transform: "rotate(-67deg)" }}
         >
-          fun
+          video
         </span>{" "}
         <span
           className="inline-block text-blue-600"

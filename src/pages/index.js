@@ -20,6 +20,16 @@ export default function IndexPage() {
     <Layout>
       <SEO title="Make 20 React Apps" />
 
+      {/* floating bar */}
+      <div className="fixed top-0 left-0 right-0 z-10" style={{ height: "40px" }}>
+        <a
+          href="#pricing"
+          className="flex items-center md:justify-center h-full w-full p-4 text-md bg-yellow-400 hover:bg-yellow-300 text-yellow-800 hover:text-yellow-900"
+        >
+          40% off now for a limited time
+        </a>
+      </div>
+
       {/* floating button */}
       <div
         className={`floating-buy-button ${showFloatingButton &&
