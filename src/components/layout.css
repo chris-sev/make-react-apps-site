@@ -9,13 +9,6 @@ html {
 body {
   @apply min-h-screen;
   background: #45bff1;
-  padding-top: 40px;
-}
-
-@media (max-width: 780px) {
-  body {
-    border: none;
-  }
 }
 
 h1,
