@@ -45,45 +45,31 @@ export default function CourseOverview() {
                 >
                   React Hooks
                 </a>{" "}
-                for React in 2020 so you'll get a stronger understanding of:
+                for <strong>React in {new Date().getFullYear()}</strong> and
+                beyond. You'll work with:
               </p>
               <p className="leading-loose">
-                <span role="img" aria-label="Check">
-                  ✅
-                </span>{" "}
-                React Hooks like useState, useEffect, useCallback
-                <br />
-                <span role="img" aria-label="Check">
-                  ✅
-                </span>{" "}
-                Doing real-world things like routing, auth, JSX
-                <br />
-                <span role="img" aria-label="Check">
-                  ✅
-                </span>{" "}
-                Custom React Hooks
-                <br />
-                <span role="img" aria-label="Check">
-                  ✅
-                </span>{" "}
-                State management with React Context
-                <br />
-                <span role="img" aria-label="Check">
-                  ✅
-                </span>{" "}
-                Rendering in React
-                <br />
-                <span role="img" aria-label="Check">
-                  ✅
-                </span>{" "}
-                Component communication
+                <Check showBr={false}>React templating with JSX</Check>
+                <Check>
+                  React Hooks:
+                  <Code>useState()</Code>
+                  <Code>useEffect()</Code>
+                  <Code>useCallback()</Code>
+                  <Code>useContext()</Code>
+                  <Code>useReducer()</Code>
+                </Check>
+                <Check>Custom React Hooks</Check>
+                <Check>Routing</Check>
+                <Check>Authentication</Check>
+                <Check>State management</Check>
+                <Check>Rendering</Check>
+                <Check>Component communication with props</Check>
               </p>
-
               <p className="mt-6">
-                  We're putting a focus on building something fun, quickly. Each
-                  app could take from 15 minutes to an hour so there's a lot of
-                  building to dig through.
-                </p>
+                You'll use all these concepts in your React applications. Each
+                app could take from 15 minutes to an hour so there's a lot of
+                building to dig through.
+              </p>
             </div>
           </div>
           <div className="lg:w-1/2 lg:pl-8 flex flex-col">
@@ -95,11 +81,15 @@ export default function CourseOverview() {
               style={{ boxShadow: "8px 8px 0 #2D329E" }}
             >
               <div>
+                <p className="text-2xl text-gray-700 mb-8 text-right">
+                  This course is for beginner-intermediate developers that want
+                  to <strong className="text-red-400">learn by building</strong>
+                  .{" "}
+                </p>
+
                 <p className="mb-6">
-                  This course is for anyone that wants to{" "}
-                  <strong>learn by building</strong>. It's great for those that
-                  have some React knowledge but want to create{" "}
-                  <strong>real-world code</strong>.
+                  It's great for those that have some React knowledge but want
+                  to create <strong>real-world code</strong>.
                 </p>
 
                 <p className="mb-6">
@@ -107,13 +97,9 @@ export default function CourseOverview() {
                     🧐
                   </span>{" "}
                   They always say "build to learn". They never say{" "}
-                  <strong>what to build</strong>!
-                </p>
-
-                <p className="mb-6">
-                  These 20 apps are fun projects that will introduce us to
-                  coding scenarios that we'll encounter in our day jobs, side
-                  projects, and any React apps.
+                  <strong>what to build</strong>! These 20 apps are fun projects
+                  that will introduce us to coding scenarios that we'll
+                  encounter in many React apps.
                 </p>
               </div>
               <div className="bg-indigo-100 rounded p-4 mt-auto">
@@ -125,40 +111,33 @@ export default function CourseOverview() {
             </div>
           </div>
         </div>
-
-        {/* 1 column section ---------------------------------------------- */}
-        {/* <div
-          className="bg-white rounded-lg shadow-lg w-full lg:w-2/3 xl:w-1/2 mx-auto text-gray-900 leading-relaxed mt-10"
-          style={{ boxShadow: "8px 8px 0 #2D329E" }}
-        >
-          <h3 className="fugaz-one bg-purple-200 w-full pt-3 pb-2 px-4 text-center text-2xl text-purple-700 font-bold uppercase rounded-t-lg">
-            Pre-release schedule
-          </h3>
-          <div className="p-6 lg:p-8">
-            <p className="mb-4">
-              I'm releasing this course as I build. This means you can influence
-              what apps I build next and I can get some good feedback!
-            </p>
-            <p className="mb-4">
-              As we march closer to the full 20 apps, the price will increase.
-              <br />
-              <span className="text-purple-600">
-                The earlier you buy, the better deal you get.
-              </span>
-            </p>
-
-            <p className="mb-4">This is our pricing schedule:</p>
-
-            <p>
-              <strong>Now</strong>: 40% off
-              <br />
-              <strong>When 15 apps are done</strong>: 30% off
-              <br />
-              <strong>When 20 apps are done</strong>: Full price
-            </p>
-          </div>
-        </div> */}
       </div>
     </div>
+  )
+}
+
+function Check({ showBr = true, children }) {
+  return (
+    <>
+      {showBr && <br />}
+      <span role="img" aria-label="Check" className="pr-2">
+        ✅
+      </span>{" "}
+      {children}
+    </>
+  )
+}
+
+function Code({ children }) {
+  return (
+    <>
+      <br />
+      <code
+        className="ml-12 mb-1 leading-none text-center inline-block text-xs font-mono text-red-700 bg-red-300 pt-3 pb-2 px-2 rounded"
+        style={{ minWidth: "100px" }}
+      >
+        {children}
+      </code>
+    </>
   )
 }

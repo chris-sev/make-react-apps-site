@@ -128,21 +128,18 @@ const lessonSections = [
     ],
   },
   {
-    sectionTitle: "Authentication",
-    demoLink: undefined,
+    sectionTitle: "Drag and Drop Math Card",
+    demoLink: "https://sj1bd.csb.app/",
     lessons: [
       {
-        lessonTitle: "00 - Authentication [PREVIEW]",
-        time: 2,
+        lessonTitle: "00 - Drag and Drop Math Card [PREVIEW]",
+        time: 1,
         previewLink:
-          "https://learn.chrisoncode.io/courses/make-20-react-apps/284972-08-authentication/821360-00-authentication-preview",
+          "https://learn.chrisoncode.io/courses/make-20-react-apps/329060-14-drag-and-drop-math-card/938167-00-drag-and-drop-math-card-preview",
       },
-      { lessonTitle: "01 - Setting up Auth0", time: 10 },
-      { lessonTitle: "02 - Starting the Auth0 SPA SDK", time: 7 },
-      { lessonTitle: "03 - Starting React Context", time: 7 },
-      { lessonTitle: `04 - Adding Auth0 to Context`, time: 17 },
-      { lessonTitle: `05 - PrivateRoute`, time: 8 },
-      { lessonTitle: `06 - Getting a Token`, time: 4 },
+      { lessonTitle: "01 - Handling Dragging", time: 11 },
+      { lessonTitle: "02 - Handling Dropping", time: 8 },
+      { lessonTitle: "03 - Storing Values in State", time: 10 },
     ],
   },
   {
@@ -173,6 +170,89 @@ const lessonSections = [
       { lessonTitle: "01 - Choosing a Date", time: 10 },
       { lessonTitle: "02 - Styled Components", time: 13 },
       { lessonTitle: "03 - Hovering Days", time: 8 },
+    ],
+  },
+  {
+    sectionTitle: "Animated Chat Box",
+    demoLink: "https://9lrdz.csb.app/",
+    lessons: [
+      {
+        lessonTitle: "00 - Chat Box [PREVIEW]",
+        time: 1,
+        previewLink:
+          "https://learn.chrisoncode.io/courses/make-20-react-apps/325003-11-animated-chat-box/927294-00-chat-box-preview",
+      },
+      { lessonTitle: "01 - Visualizing Messages", time: 8 },
+      { lessonTitle: "02 - Typing Indicator", time: 8 },
+      { lessonTitle: "03 - Adding Animations", time: 5 },
+    ],
+  },
+  {
+    sectionTitle: "Multi-Step Form w/ Context",
+    demoLink: "https://hbkbf.csb.app/",
+    lessons: [
+      {
+        lessonTitle: "00 - Multi-Step Form [PREVIEW]",
+        time: 2,
+        previewLink:
+          "https://learn.chrisoncode.io/courses/make-20-react-apps/325871-12-multi-step-form/929787-00-multi-step-form-preview",
+      },
+      { lessonTitle: "01 - Multi-Step with Router", time: 11 },
+      { lessonTitle: "02 - Forms and Validation", time: 12 },
+      { lessonTitle: "03 - Storing State with React Context", time: 13 },
+      { lessonTitle: "04 - Animating Routes", time: 8 },
+      { lessonTitle: "05 - Disabling Links", time: 6 },
+    ],
+  },
+  {
+    sectionTitle: "Memory Matching Game",
+    demoLink: "https://0dsop.csb.app/",
+    lessons: [
+      {
+        lessonTitle: "00 - Memory Matching Game [PREVIEW]",
+        time: 1,
+        previewLink:
+          "https://learn.chrisoncode.io/courses/make-20-react-apps/326011-13-memory-matching-game/930017-00-memory-matching-preview",
+      },
+      { lessonTitle: "01 - Displaying Pokemon", time: 8 },
+      { lessonTitle: "02 - Flipping Cards", time: 8 },
+      { lessonTitle: "03 - Handling Winning", time: 10 },
+    ],
+  },
+
+  {
+    sectionTitle: "Browser",
+    demoLink: "https://e7ws4.csb.app/",
+    lessons: [
+      {
+        lessonTitle: "00 - Preview",
+        time: 1,
+        previewLink:
+          "https://learn.chrisoncode.io/courses/make-20-react-apps/334917-15-browser/954260-00-browser-browser-preview",
+      },
+      { lessonTitle: "01 - Showing iframes", time: 7 },
+      { lessonTitle: "02 - Choosing and Adding", time: 6 },
+      { lessonTitle: "03 - Address Bar", time: 9 },
+      { lessonTitle: "04 - useReducer", time: 15 },
+      { lessonTitle: "05 - Closing Tabs", time: 14 },
+    ],
+  },
+  {
+    sectionTitle: "Authentication",
+    demoLink: undefined,
+    lessons: [
+      {
+        lessonTitle: "00 - Authentication [PREVIEW]",
+        time: 2,
+        previewLink:
+          "https://learn.chrisoncode.io/courses/make-20-react-apps/284972-08-authentication/821360-00-authentication-preview",
+      },
+      { lessonTitle: "01 - Setting up Auth0", time: 10 },
+      { lessonTitle: "02 - Starting the Auth0 SPA SDK", time: 7 },
+      { lessonTitle: "03 - Starting React Context", time: 7 },
+      { lessonTitle: `04 - Adding Auth0 to Context`, time: 17 },
+      { lessonTitle: `05 - PrivateRoute`, time: 8 },
+      { lessonTitle: `06 - Getting a Token`, time: 4 },
     ],
   },
   {

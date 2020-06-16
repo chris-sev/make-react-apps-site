@@ -66,14 +66,15 @@ const apps = [
       "https://learn.chrisoncode.io/courses/make-20-react-apps/271017-07-trivia/783724-00-trivia-preview",
   },
   {
-    title: "Authentication",
-    videoSrc: "https://i.imgur.com/f9d7122l.gif",
-    numberOfVideos: 7,
-    timeToComplete: "54 minutes",
-    demoLink: undefined, // auth doesnt work in codesandbox
+    title: "Drag and Drop Math Card",
+    videoSrc: "https://i.imgur.com/3PJ9wcam.gif",
+    numberOfVideos: 4,
+    timeToComplete: "30 minutes",
+    demoLink: "https://sj1bd.csb.app/",
     previewLink:
-      "https://learn.chrisoncode.io/courses/make-20-react-apps/284972-08-authentication/821360-00-authentication-preview",
+      "https://learn.chrisoncode.io/courses/make-20-react-apps/329060-14-drag-and-drop-math-card/938167-00-drag-and-drop-math-card-preview",
   },
+
   {
     title: "Web Speech and Timers",
     videoSrc: "https://i.imgur.com/citY7Hql.gif",
@@ -91,6 +92,51 @@ const apps = [
     demoLink: "https://d4vfr.csb.app/",
     previewLink:
       "https://learn.chrisoncode.io/courses/make-20-react-apps/302585-10-calendar-picker/864913-00-calendar-picker-preview",
+  },
+  {
+    title: "Chat Box",
+    videoSrc: "https://i.imgur.com/KF0xVNCm.gif",
+    numberOfVideos: 4,
+    timeToComplete: "22 minutes",
+    demoLink: "https://9lrdz.csb.app/",
+    previewLink:
+      "https://learn.chrisoncode.io/courses/make-20-react-apps/325003-11-animated-chat-box/927294-00-chat-box-preview",
+  },
+  {
+    title: "Multi-Step Form",
+    videoSrc: "https://i.imgur.com/XwxoBYhm.gif",
+    numberOfVideos: 6,
+    timeToComplete: "52 minutes",
+    demoLink: "https://9lrdz.csb.app/",
+    previewLink:
+      "https://learn.chrisoncode.io/courses/make-20-react-apps/325871-12-multi-step-form/929787-00-multi-step-form-preview",
+  },
+  {
+    title: "Memory Matching Game",
+    videoSrc: "https://i.imgur.com/5FVAinUm.gif",
+    numberOfVideos: 4,
+    timeToComplete: "27 minutes",
+    demoLink: "https://0dsop.csb.app/",
+    previewLink:
+      "https://learn.chrisoncode.io/courses/make-20-react-apps/326011-13-memory-matching-game/930017-00-memory-matching-preview",
+  },
+  {
+    title: "Browser",
+    videoSrc: "https://i.imgur.com/sRBwz5hm.gif",
+    numberOfVideos: 6,
+    timeToComplete: "53 minutes",
+    demoLink: "https://e7ws4.csb.app/",
+    previewLink:
+      "https://learn.chrisoncode.io/courses/make-20-react-apps/334917-15-browser/954260-00-browser-browser-preview",
+  },
+  {
+    title: "Authentication",
+    videoSrc: "https://i.imgur.com/f9d7122l.gif",
+    numberOfVideos: 7,
+    timeToComplete: "54 minutes",
+    demoLink: undefined, // auth doesnt work in codesandbox :shrug:
+    previewLink:
+      "https://learn.chrisoncode.io/courses/make-20-react-apps/284972-08-authentication/821360-00-authentication-preview",
   },
 ]
 

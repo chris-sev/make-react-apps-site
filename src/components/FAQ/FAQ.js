@@ -3,12 +3,12 @@ import "./FAQ.css"
 
 const faqs = [
   {
-    question: `Do these videos expire? Is there a monthly subscription?`,
-    answer: `Pay once and <strong class="font-bold">have access forever</strong>. Updates are free and you'll always get them.`,
-  },
-  {
     question: `Is this for people that have never used React?`,
     answer: `This course is for beginners to intermediate devs that are familiar with and have used React. I'll be creating a beginner React course shortly for those looking to learn React from scratch!`,
+  },
+  {
+    question: `Do these videos expire? Is there a monthly subscription?`,
+    answer: `Pay once and <strong class="font-bold">have access forever</strong>. Updates are free and you'll always get them.`,
   },
   {
     question: `Can I use these apps in my portfolio?`,

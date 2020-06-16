@@ -64,7 +64,7 @@ export default function Pricing() {
                 </strong>{" "}
                 for pre-release
               </strong>
-              : 10 of 20 apps done
+              : 15 of 20 apps done
             </p>
             <a
               href="https://learn.chrisoncode.io/make-20-react-apps"
