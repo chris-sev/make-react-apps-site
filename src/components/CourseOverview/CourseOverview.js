@@ -133,10 +133,8 @@ function Check({ showBr = true, children }) {
 
 function Code({ children }) {
   return (
-      <code
-        className="leading-none text-center inline-block text-xs font-mono text-red-700 bg-red-200 pt-3 pb-2 px-2 rounded"
-      >
-        {children}
-      </code>
+    <code className="leading-none text-center inline-block text-xs font-mono text-red-700 bg-red-200 pt-3 pb-2 px-2 rounded">
+      {children}
+    </code>
   )
 }
