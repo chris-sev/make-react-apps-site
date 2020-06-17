@@ -20,7 +20,7 @@ export default function CourseOverview() {
           </div>
           <div className="lg:w-1/2 lg:pl-8 flex flex-col justify-center">
             <h3 className="fugaz-one text-purple-100 text-2xl lg:text-5xl mb-6 uppercase text-center lg:text-right">
-              The best way to learn is to code{" "}
+              The best way to learn is to build{" "}
             </h3>
           </div>
         </div>
