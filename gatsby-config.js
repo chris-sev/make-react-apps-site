@@ -54,6 +54,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-hotjar`,
+      options: {
+        id: 1777232,
+        sv: 6,
+      },
+    },
+    {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
