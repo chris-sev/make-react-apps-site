@@ -42,10 +42,12 @@ export default function IndexPage() {
 
       <CourseOverview />
       <WhatWellBuild />
+
+      <Pricing />
+
       <WhoAmI />
       <LessonList />
 
-      <Pricing />
       <FAQ />
       <FooterNewsletter />
       <Footer />
