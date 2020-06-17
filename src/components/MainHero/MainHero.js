@@ -66,19 +66,19 @@ export default function MainHero() {
               Build more than a to-do app.
             </p>
             <p className="md:text-xl text-blue-800 mb-6">
-              Learn React best practices and concepts that you can use on the job, in side
-              projects, and in any React app.
+              Learn React best practices and concepts that you can use on the
+              job, in side projects, and in any React app.
             </p>
 
             <a
               href="#pricing"
-              className="flex items-center justify-center lg:text-xl bg-red-600 hover:bg-red-500 text-red-100 shadow-2xl rounded-lg p-6 cursor-pointer w-full xl:w-1/3"
+              className="flex items-center justify-center lg:text-xl bg-yellow-400 hover:bg-yellow-300 text-yellow-900 shadow-2xl rounded-lg p-6 cursor-pointer w-full xl:w-2/5 transition-colors"
             >
               <div>
-                <span role="img" aria-label="Spock Hand">
-                  🖖
+                <span role="img" aria-label="Spock Hand" className="mr-1">
+                  ⚛️
                 </span>{" "}
-                Buy Now
+                Buy the Course
               </div>
             </a>
 

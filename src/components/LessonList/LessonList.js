@@ -338,7 +338,7 @@ function LessonSection({ section, index, isLast }) {
             {!lesson.previewLink && (
               <a
                 href="#pricing"
-                className="py-2 px-4 rounded shadow bg-gray-400 hover:bg-gray-300 text-white w-full text-xs md:text-sm"
+                className="py-2 px-4 rounded shadow bg-gray-400 hover:bg-gray-300 text-white w-full text-xs md:text-sm transition-colors"
               >
                 Get Access
               </a>

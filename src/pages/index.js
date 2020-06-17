@@ -27,10 +27,10 @@ export default function IndexPage() {
       >
         <a
           href="#pricing"
-          className="inline-block bg-red-600 text-red-100 shadow-2xl rounded-lg py-3 px-6"
+          className="inline-block bg-yellow-400 hover:bg-yellow-300 text-yellow-900 shadow-2xl rounded-lg py-3 px-6 transition-colors"
         >
-          <span role="img" aria-label="Spock Hand">
-            🖖
+          <span role="img" aria-label="Spock Hand" className="mr-1">
+            ⚛️
           </span>{" "}
           Buy the Course
         </a>

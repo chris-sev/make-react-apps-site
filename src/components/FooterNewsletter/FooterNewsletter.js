@@ -20,10 +20,9 @@ export default function FooterNewsletter() {
 
           {/* <a
             href="#pricing"
-            className="text-center xl:text-lg bg-red-600 text-red-100 shadow-lg rounded-lg px-6 py-6 cursor-pointer hover:bg-red-400 mb-10 w-full lg:w-1/2"
+            className="text-center xl:text-lg bg-yellow-600 text-yellow-100 shadow-lg rounded-lg px-6 py-6 cursor-pointer hover:bg-yellow-400 mb-10 w-full lg:w-1/2"
           >
-            Buy the Course for{" "}
-            <strong className="font-bold underline">50% Off</strong>
+            Buy the Course
           </a> */}
 
           <p className="text-blue-300 mb-3">
