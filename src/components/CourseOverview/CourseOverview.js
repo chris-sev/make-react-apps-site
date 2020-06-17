@@ -52,13 +52,16 @@ export default function CourseOverview() {
                 <Check showBr={false}>React templating with JSX</Check>
                 <Check>
                   React Hooks:
-                  <Code>useState()</Code>
-                  <Code>useEffect()</Code>
-                  <Code>useCallback()</Code>
-                  <Code>useContext()</Code>
-                  <Code>useReducer()</Code>
+                  <div className="grid grid-cols-3 grid-rows-2 mb-1 gap-1">
+                    <Code>useState()</Code>
+                    <Code>useEffect()</Code>
+                    <Code>useCallback()</Code>
+                    <Code>useContext()</Code>
+                    <Code>useRef()</Code>
+                    <Code>useReducer()</Code>
+                  </div>
                 </Check>
-                <Check>Custom React Hooks</Check>
+                <Check showBr={false}>Custom React Hooks</Check>
                 <Check>Routing</Check>
                 <Check>Authentication</Check>
                 <Check>State management</Check>
@@ -130,14 +133,10 @@ function Check({ showBr = true, children }) {
 
 function Code({ children }) {
   return (
-    <>
-      <br />
       <code
-        className="ml-12 mb-1 leading-none text-center inline-block text-xs font-mono text-red-700 bg-red-300 pt-3 pb-2 px-2 rounded"
-        style={{ minWidth: "100px" }}
+        className="leading-none text-center inline-block text-xs font-mono text-red-700 bg-red-200 pt-3 pb-2 px-2 rounded"
       >
         {children}
       </code>
-    </>
   )
 }
