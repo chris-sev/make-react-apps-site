@@ -119,7 +119,7 @@ const apps = [
       "https://scotch-res.cloudinary.com/video/upload/v1592352064/12-multi-step-form_upxoym.mp4",
     numberOfVideos: 6,
     timeToComplete: "52 minutes",
-    demoLink: "https://9lrdz.csb.app/",
+    demoLink: "https://hbkbf.csb.app/",
     previewLink:
       "https://learn.chrisoncode.io/courses/make-20-react-apps/325871-12-multi-step-form/929787-00-multi-step-form-preview",
   },
