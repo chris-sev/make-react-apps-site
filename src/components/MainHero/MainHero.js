@@ -72,7 +72,7 @@ export default function MainHero() {
 
             <a
               href="#pricing"
-              className="flex items-center justify-center lg:text-xl bg-yellow-400 hover:bg-yellow-300 text-yellow-900 shadow-2xl rounded-lg p-6 cursor-pointer w-full xl:w-2/5 transition-colors"
+              className="flex items-center justify-center lg:text-xl bg-yellow-400 hover:bg-yellow-300 text-yellow-900 shadow-2xl rounded-lg p-6 cursor-pointer w-full xl:w-2/3 transition-colors"
             >
               <div>
                 <span role="img" aria-label="Spock Hand" className="mr-1">
