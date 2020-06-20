@@ -23,7 +23,7 @@ export default function Header() {
       <div className="bg-blue-300 text-blue-600 py-1 px-1 rounded-md flex items-center">
         <span className="pl-2">Already purchased?</span>
         <a
-          href="https://learn.chrisoncode.io/"
+          href="https://learn.chrisoncode.io/login"
           className="ml-3 bg-blue-700 text-blue-200 rounded shadow py-2 px-3 hover:bg-blue-600"
         >
           Login
