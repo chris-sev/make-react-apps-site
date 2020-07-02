@@ -29,12 +29,12 @@ export default function IndexPage() {
       {/* hero section */}
       <div className="hero-hero text-blue-100 min-h-screen p-10 flex items-center relative">
         {/* floaty logo */}
-        {/* <div className="icons">
+        <div className="icons">
           <ReactIcon />
           <ReactIcon />
           <ReactIcon />
           <ReactIcon />
-        </div> */}
+        </div>
 
         {/* content */}
         <div className="relative z-10">
