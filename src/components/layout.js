@@ -5,7 +5,7 @@ import "./layout.css"
 
 export default function Layout({ children }) {
   return (
-    <div className="layout">
+    <div>
       <div className="overflow-x-hidden">
         <main>{children}</main>
       </div>

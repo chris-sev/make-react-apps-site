@@ -53,7 +53,7 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ["Orbitron", "Fugaz One"],
+          families: ["Orbitron", "Russo One", "Fugaz One"],
         },
       },
     },
