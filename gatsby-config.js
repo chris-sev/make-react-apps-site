@@ -29,17 +29,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        // printRejected: true, // Print removed selectors and processed file names
-        // develop: true, // Enable while using `gatsby develop`
-        tailwind: true, // Enable tailwindcss support
-        // whitelist: ['whitelist'], // Don't remove this selector
-        // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
-        // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
-      },
-    },
-    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-146126191-1",
@@ -53,13 +42,13 @@ module.exports = {
         pixelId: "992053144150851",
       },
     },
-    {
-      resolve: `gatsby-plugin-hotjar`,
-      options: {
-        id: 1777232,
-        sv: 6,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-hotjar`,
+    //   options: {
+    //     id: 1777232,
+    //     sv: 6,
+    //   },
+    // },
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {

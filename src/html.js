@@ -19,7 +19,7 @@ export default function HTML(props) {
             __html: `
               if (window.ga) {
                 ga('require', 'linker');
-                ga('linker:autoLink', ['learn.chrisoncode.io', '20reactapps.com']);
+                ga('linker:autoLink', ['learn.chrisoncode.io', '20reactapps.com', 'makereactapps.com']);
               }
             `,
           }}
