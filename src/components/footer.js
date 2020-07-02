@@ -40,6 +40,12 @@ export default function Footer() {
         </a>
       </div>
       <div>
+        <a
+          href="https://www.podia.com/?via=chris-on-code"
+          className="underline text-yellow-900 hover:text-yellow-800 mr-2"
+        >
+          Powered by Podia
+        </a>
         CodeRight © CopyWrong ©{" "}
         <a
           href="https://twitter.com/chrisoncode"
