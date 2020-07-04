@@ -2,29 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  font-size: 16px;
-}
-
-body {
-  @apply min-h-screen;
-}
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Russo One";
+  font-family: 'Russo One';
 }
 
 .orbitron {
-  font-family: "Orbitron";
+  font-family: 'Orbitron';
 }
 
 .fugaz-one {
-  font-family: "Fugaz One";
+  font-family: 'Fugaz One';
 }
 
 .arial {
@@ -42,7 +34,7 @@ strong {
 .background-block::before {
   display: inline-block;
   position: absolute;
-  content: "";
+  content: '';
   z-index: -1;
   margin-top: 2px;
   margin-left: 10px;

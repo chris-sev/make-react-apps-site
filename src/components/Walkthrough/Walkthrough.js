@@ -1,18 +1,18 @@
-import React, { useState } from "react"
-import useInterval from "@use-it/interval"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-import { motion } from "framer-motion"
-import "./Walkthrough.css"
+import React, { useState } from 'react'
+import useInterval from '@use-it/interval'
+import { useStaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
+import { motion } from 'framer-motion'
+import './Walkthrough.css'
 
 const messages = [
-  { text: "How do I get better at React?" },
-  { text: "Just build something!" },
-  { text: "OK! What should I build?" },
-  { text: "Iono. Just Google it?" },
-  { text: "Oooh! This course looks cool!" },
-  { text: "Send me the link?!" },
-  { text: "20ReactApps.com!" },
+  { text: 'How do I get better at React?' },
+  { text: 'Just build something!' },
+  { text: 'OK! What should I build?' },
+  { text: 'Iono. Just Google it?' },
+  { text: 'Oooh! This course looks cool!' },
+  { text: 'Send me the link?!' },
+  { text: '20ReactApps.com!' },
 ]
 
 function isEven(number) {
@@ -42,7 +42,7 @@ export default function Walkthrough() {
 
   useInterval(() => {
     // if (messageToShow === messages.length - 1) return
-    setMessageToShow(messageToShow => messageToShow + 1)
+    setMessageToShow((messageToShow) => messageToShow + 1)
   }, 2000)
 
   return (
@@ -70,13 +70,13 @@ function Loader({ even }) {
       initial={{ rotate: 10, scale: 0 }}
       animate={{ rotate: 0, scale: 1 }}
     >
-      <div style={{ width: "55px" }} />
-      <div className={`loader ${even ? "ml-3 mr-auto" : "mr-3 ml-auto"}`}>
+      <div style={{ width: '55px' }} />
+      <div className={`loader ${even ? 'ml-3 mr-auto' : 'mr-3 ml-auto'}`}>
         <div />
         <div />
         <div />
       </div>
-      <div style={{ width: "55px" }} />
+      <div style={{ width: '55px' }} />
     </motion.div>
   )
 }
@@ -90,22 +90,22 @@ function Message({ data, even, message }) {
     >
       <div>
         <Img
-          style={{ width: "45px" }}
+          style={{ width: '45px' }}
           fluid={data.kapehe.childImageSharp.fluid}
         />
       </div>
       <div
         className={`py-2 px-4 mx-3 rounded-lg flex items-center ${
           even
-            ? "bg-blue-500 text-blue-100"
-            : "bg-blue-700 text-blue-100 justify-end"
+            ? 'bg-blue-700 text-blue-100'
+            : 'bg-blue-900 text-blue-100 justify-end'
         }`}
       >
         {message.text}
       </div>
       <div>
         <Img
-          style={{ width: "45px" }}
+          style={{ width: '45px' }}
           fluid={data.chris.childImageSharp.fluid}
         />
       </div>

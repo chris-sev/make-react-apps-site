@@ -1,6 +1,7 @@
 import React from 'react'
-import Walkthrough from './Walkthrough/Walkthrough'
 import styled from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Walkthrough from './Walkthrough/Walkthrough'
 
 export default function MainHero() {
   return (
@@ -17,13 +18,11 @@ export default function MainHero() {
       <div className="container mx-auto lg:flex relative z-10">
         <div className="lg:flex-grow">
           <h2 className="home-title relative text-2xl leading-none grid grid-cols-2 grid-rows-3">
-            <span className="make fugaz-one text-5xl text-blue-200 pl-2">
-              Make
-            </span>
-            <span className="react text-white row-start-2 col-span-2">
+            <span className="make fugaz-one text-5xl text-blue-200">Make</span>
+            <span className="react text-white row-start-2 col-span-2 leading-relaxed md:leading-none text-justify">
               React
             </span>
-            <span className="apps fugaz-one block w-full text-right text-purple-100 text-5xl pr-12 row-start-3 col-start-2">
+            <span className="apps fugaz-one block w-full text-right text-blue-200 text-5xl pr-12 row-start-3 col-start-2">
               Apps
             </span>
           </h2>
@@ -38,7 +37,7 @@ export default function MainHero() {
             </p>
 
             <a
-              href="#pricing"
+              href="#courses"
               className="block text-center lg:text-xl bg-yellow-400 hover:bg-yellow-300 text-yellow-900 shadow-2xl rounded-lg p-6 cursor-pointer w-full xl:w-2/3 transition-colors duration-300 ease-in"
             >
               <span role="img" aria-label="Spock Hand" className="mr-1">
@@ -53,16 +52,61 @@ export default function MainHero() {
         </div>
       </div>
 
+      {/* overlay thingy with reasons */}
       <div
-        className="absolute bottom-0 left-0 right-0 "
-        style={{ transform: 'translateY(50%)' }}
+        className="lg:absolute bottom-0 left-0 right-0 z-10"
+        style={{ transform: 'translateY(60%)' }}
       >
-        <div className="container mx-auto grid grid-cols-4 text-center bg-white rounded-lg gap-10 p-12">
-          <div><h3 className="text-gray-700 text-lg">Made w/ Modern React</h3></div>
-          <div><h3 className="text-gray-700 text-lg">Learn React Hooks</h3></div>
-          <div><h3 className="text-gray-700 text-lg">Projects for your Portfolio</h3></div>
-          <div><h3 className="text-gray-700 text-lg">Top Notch Tutorials</h3></div>
-        </div >
+        <div className="container mx-auto grid grid-cols-2 md:grid-cols-4 text-center bg-gray-200 rounded-lg shadow gap-4 p-4">
+          <div className="bg-gray-100 text-gray-600 p-4 rounded flex flex-col items-center justify-center">
+            <FontAwesomeIcon
+              icon={['fad', 'atom']}
+              size="3x"
+              className="mb-3"
+              style={{
+                '--fa-primary-color': '#4b5ed4',
+                '--fa-secondary-color': '#19b9ca',
+              }}
+            />
+            <p className="text-lg m-0">Made w/ Modern React</p>
+          </div>
+          <div className="bg-gray-100 text-gray-600 p-4 rounded flex flex-col items-center justify-center">
+            <FontAwesomeIcon
+              icon={['fad', 'field-hockey']}
+              size="3x"
+              className="mb-3"
+              style={{
+                '--fa-primary-color': '#764ea1',
+                '--fa-secondary-color': '#ff824b',
+              }}
+            />
+            <p className="text-lg m-0">Learn React Hooks</p>
+          </div>
+          <div className="bg-gray-100 text-gray-600 p-4 rounded flex flex-col items-center justify-center">
+            <FontAwesomeIcon
+              icon={['fad', 'treasure-chest']}
+              size="3x"
+              className="mb-3"
+              style={{
+                '--fa-primary-color': '#4c5dd4',
+                '--fa-secondary-color': '#89b9d4',
+              }}
+            />
+            <p className="text-lg m-0">Projects for your Portfolio</p>
+          </div>
+          <div className="bg-gray-100 text-gray-600 p-4 rounded flex flex-col items-center justify-center">
+            <FontAwesomeIcon
+              icon={['fad', 'film']}
+              size="3x"
+              className="mb-3"
+              style={{
+                '--fa-primary-color': '#fe535b',
+                '--fa-secondary-color': '#0c0710',
+              }}
+            />
+            <p className="text-lg m-0">High Quality Videos</p>
+          </div>
+        </div>
       </div>
     </SHomeHero>
   )
@@ -82,6 +126,10 @@ const SHomeHero = styled.section`
     .react {
       font-size: 200px;
       text-shadow: 5px 5px 0 rgb(10, 134, 254);
+
+      @media (max-width: 1280px) {
+        font-size: 100px;
+      }
     }
 
     .apps {
