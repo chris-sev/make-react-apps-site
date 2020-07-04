@@ -1,23 +1,10 @@
-import React from "react"
-import "./WhoAmI.css"
+import React from 'react'
+import './WhoAmI.css'
 
 export default function WhoAmI() {
   return (
     <div className="who-am-i text-gray-300 px-4 py-16 lg:py-24 lg:pb-32">
       <div className="container mx-auto flex">
-        <div
-          className="flex-shrink flex flex-col justify-between z-10 hidden lg:flex"
-          style={{ marginRight: "-25px" }}
-        >
-          <img src="https://i.imgur.com/oTvm7ml.png" alt="" className="mb-3" />
-          <img src="https://i.imgur.com/2AwXK8Q.png" alt="" className="mb-3" />
-          <img src="https://i.imgur.com/ly8m0ac.png" alt="" className="mb-3" />
-          <img
-            src="https://i.imgur.com/9HKkggh.png"
-            alt=""
-            className="lg:hidden"
-          />
-        </div>
         <div className="bg-gray-900 rounded-lg shadow-lg px-8 lg:px-16 py-12 lg:py-16 flex-grow lg:text-lg leading-relaxed lg:flex">
           <div className="flex-shrink mr-8 mb-8 lg:mb-0">
             <img
@@ -37,7 +24,7 @@ export default function WhoAmI() {
               Meet Chris on Code
             </h2>
             <p className="mb-6">
-              Chris on Code is the founder of{" "}
+              Chris on Code is the founder of{' '}
               <a
                 className="underline text-blue-200 hover:text-blue-300"
                 href="https://scotch.io"
@@ -49,42 +36,29 @@ export default function WhoAmI() {
             </p>
 
             <p className="mb-6">
-              Scotch.io was successfully acquired by{" "}
+              Scotch.io was successfully acquired by{' '}
               <a
                 className="underline text-blue-200 hover:text-blue-300"
                 href="https://www.digitalocean.com/"
               >
                 DigitalOcean
-              </a>{" "}
+              </a>{' '}
               in 2019. Chris now focuses on helping others code so they can
               build/sell their own businesses.
             </p>
 
             <p>
-              He's a{" "}
+              He's a{' '}
               <a
                 className="underline text-blue-200 hover:text-blue-300"
                 href="https://developers.google.com/community/experts/directory/profile/profile-chris_sevilleja"
               >
                 Google Developer Expert
-              </a>{" "}
+              </a>{' '}
               in Web Technologies and fights to keep coding simple and
               practical.
             </p>
           </div>
-        </div>
-        <div
-          className="flex-shrink ml-10 flex flex-col justify-between z-10 hidden lg:flex"
-          style={{ marginLeft: "-25px" }}
-        >
-          <img src="https://i.imgur.com/oTvm7ml.png" alt="" className="mb-3" />
-          <img src="https://i.imgur.com/2AwXK8Q.png" alt="" className="mb-3" />
-          <img src="https://i.imgur.com/ly8m0ac.png" alt="" className="mb-3" />
-          <img
-            src="https://i.imgur.com/9HKkggh.png"
-            alt=""
-            className="lg:hidden"
-          />
         </div>
       </div>
     </div>
