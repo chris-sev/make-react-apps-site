@@ -1,12 +1,12 @@
 import React from "react"
 import Header from "./header"
 import PropTypes from "prop-types"
+import styled from "styled-components"
 import "./fontawesome"
-import "./layout-10-react-apps.css"
 
 export default function Layout({ children, showHeader = true }) {
   return (
-    <div className="layout ">
+    <SLayout>
       <div className="overflow-x-hidden">
         {/* header */}
         {showHeader && <Header />}
@@ -16,10 +16,14 @@ export default function Layout({ children, showHeader = true }) {
 
         {/* <footer>footer</footer> */}
       </div>
-    </div>
+    </SLayout>
   )
 }
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
+
+const SLayout = styled.div`
+  background: #45bff1;
+`

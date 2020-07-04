@@ -1,16 +1,16 @@
-import React from "react"
-import { useInView } from "react-intersection-observer"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import MainHero from "../components/MainHero/MainHero"
-import WhoAmI from "../components/WhoAmI/WhoAmI"
-import FooterNewsletter from "../components/FooterNewsletter/FooterNewsletter"
-import FAQ from "../components/FAQ/FAQ"
-import CourseOverview from "../components/CourseOverview/CourseOverview"
-import Footer from "../components/footer"
-import Pricing from "../components/Pricing/Pricing"
-import LessonList from "../components/LessonList/LessonList"
-import WhatWellBuild from "../components/WhatWellBuild/WhatWellBuild"
+import React from 'react'
+import { useInView } from 'react-intersection-observer'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import MainHero from '../components/MainHero/MainHero'
+import WhoAmI from '../components/WhoAmI/WhoAmI'
+import FooterNewsletter from '../components/FooterNewsletter'
+import FAQ from '../components/FAQ/FAQ'
+import CourseOverview from '../components/CourseOverview/CourseOverview'
+import Footer from '../components/footer'
+import Pricing from '../components/Pricing/Pricing'
+import LessonList from '../components/LessonList/LessonList'
+import WhatWellBuild from '../components/WhatWellBuild/WhatWellBuild'
 
 export default function TenReactApps() {
   const [topRef, topInView] = useInView()
@@ -23,7 +23,7 @@ export default function TenReactApps() {
       {/* floating button */}
       <div
         className={`floating-buy-button ${
-          showFloatingButton && "dab-on-em"
+          showFloatingButton && 'dab-on-em'
         } fixed right-0 top-0 mt-4 mr-4 z-10`}
       >
         <a
@@ -32,7 +32,7 @@ export default function TenReactApps() {
         >
           <span role="img" aria-label="Spock Hand" className="mr-1">
             ⚛️
-          </span>{" "}
+          </span>{' '}
           Buy the Course
         </a>
       </div>

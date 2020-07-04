@@ -46,7 +46,7 @@ export default function Walkthrough() {
   }, 2000)
 
   return (
-    <div className="walkthrough bg-gray-900 rounded-lg shadow-lg mt-10 lg:mt-0 px-6 py-10">
+    <div className="walkthrough bg-black rounded-lg shadow-lg mt-10 lg:mt-0 px-6 py-10">
       {messages.map((message, index) => {
         const even = isEven(index)
 

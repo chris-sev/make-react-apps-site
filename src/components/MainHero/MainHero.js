@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 import useInterval from "@use-it/interval"
 // import Newsletter from "../newsletter"
-import Walkthrough from "./Walkthrough"
+import Walkthrough from "../Walkthrough/Walkthrough"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import "./MainHero.css"
+// import "./MainHero.css"
 
 function getRandomColor() {
   const letters = "0123456789ABCDEF"
@@ -18,7 +18,7 @@ export default function MainHero() {
   const [count, setCount] = useState(0)
 
   useInterval(() => {
-    if (count <= 19) setCount(count => count + 1)
+    if (count <= 19) setCount((count) => count + 1)
   }, 70)
 
   return (
