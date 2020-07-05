@@ -1,6 +1,5 @@
-import React from "react"
-import usePodia from "../usePodia"
-import "./Pricing.css"
+import React from 'react'
+import usePodia from '../usePodia'
 
 export default function Pricing() {
   usePodia()
@@ -33,17 +32,17 @@ export default function Pricing() {
               <p className="leading-loose mb-8 lg:text-xl font-normal opacity-75">
                 <span role="img" aria-label="Check">
                   ✔
-                </span>{" "}
+                </span>{' '}
                 <strong>The first 10 React Apps</strong>
                 <br />
                 <span role="img" aria-label="Check">
                   ✔
-                </span>{" "}
+                </span>{' '}
                 Code for the apps
                 <br />
                 <span role="img" aria-label="Check">
                   ✔
-                </span>{" "}
+                </span>{' '}
                 Unlimited updates
               </p>
               <a
@@ -84,22 +83,22 @@ export default function Pricing() {
             <p className="leading-loose mb-8 lg:text-xl font-normal">
               <span role="img" aria-label="Check">
                 ✅
-              </span>{" "}
+              </span>{' '}
               All <strong>20 React Apps</strong>
               <br />
               <span role="img" aria-label="Check">
                 ✅
-              </span>{" "}
+              </span>{' '}
               Code for the apps
               <br />
               <span role="img" aria-label="Check">
                 ✅
-              </span>{" "}
+              </span>{' '}
               Access to messaging me
               <br />
               <span role="img" aria-label="Check">
                 ✅
-              </span>{" "}
+              </span>{' '}
               Unlimited updates
             </p>
             <a

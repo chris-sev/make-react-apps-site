@@ -5,6 +5,20 @@ import {
   faFieldHockey,
   faTreasureChest,
   faFilm,
+  faCameraHome,
+  faWatch,
+  faPlus,
+  faEquals,
 } from '@fortawesome/pro-duotone-svg-icons'
 
-library.add(faReact, faAtom, faFieldHockey, faTreasureChest, faFilm)
+library.add(
+  faReact,
+  faAtom,
+  faFieldHockey,
+  faTreasureChest,
+  faFilm,
+  faCameraHome,
+  faWatch,
+  faPlus,
+  faEquals
+)

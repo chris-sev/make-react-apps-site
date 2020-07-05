@@ -1,5 +1,5 @@
-import React from "react"
-import "./FAQ.css"
+import React from 'react'
+import './FAQ.css'
 
 const faqs = [
   {
@@ -35,6 +35,10 @@ const faqs = [
     answer: `Yup <strong class="font-bold">50% off</strong>! Email me at <a class="text-blue-600 underline" href="mailto:hey@chrisoncode.io">hey@chrisoncode.io</a> with your student id and I'll send you a discount code.`,
   },
   {
+    question: `Is there purchase parity for my country?`,
+    answer: `Yup <strong class="font-bold">50% off</strong>! Email me at <a class="text-blue-600 underline" href="mailto:hey@chrisoncode.io">hey@chrisoncode.io</a> and I'll send you a discount code.`,
+  },
+  {
     question: `Is there an affiliate program?`,
     answer: `Yup! You get 50% of every sale that you bring in. You can sign up for a course and turn on affiliate mode from your dashboard at <a class="text-blue-600 underline" href="https://learn.chrisoncode.io">learn.chrisoncode.io</a>. Or you can email me at <a class="text-blue-600 underline" href="mailto:hey@chrisoncode.io">hey@chrisoncode.io</a>.`,
   },
@@ -47,23 +51,18 @@ const faqs = [
 export default function FAQ() {
   return (
     <div className="faq text-gray-300 py-16 px-8 lg:p-24">
-      <div className="container mx-auto flex flex-col xl:w-2/3">
+      <div className="container mx-auto">
         <div className="text-center">
           <h2 className="fugaz-one mb text-5xl">FAQs</h2>
           <h3 className="arial mb-20 text-xl text-gray-400">
-            (Frequently <span className="background-block">Answered</span>{" "}
+            (Frequently <span className="background-block">Answered</span>{' '}
             Questions)
           </h3>
         </div>
-        <div>
+        <div className="grid grid-cols-2 gap-4">
           {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className={`mb-4 lg:mb-8 bg-white rounded shadow-lg p-6 lg:p-12 lg:w-2/3 mx-auto ${
-                index % 2 === 0 ? "lg:ml-32" : "lg:mr-32"
-              }`}
-            >
-              <h4 className="fugaz-one text-lg lg:text-xl mb-4 text-gray-800 leading-snug">
+            <div key={index} className="bg-white rounded shadow-lg p-6 lg:p-12">
+              <h4 className="fugaz-one text-lg lg:text-xl mb-4 text-gray-800 leading-snug tracking-wide">
                 {faq.question}
               </h4>
               <p

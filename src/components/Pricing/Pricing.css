@@ -1,7 +1,1 @@
-.checkout-button {
-  transition: 0.3s cubic-bezier(0.38, 0.38, 0, 1.61) all;
-}
 
-.checkout-button:hover {
-  transform: translateY(-4px);
-}
