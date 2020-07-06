@@ -8,7 +8,7 @@ export default function WhoAmI() {
         <div className="bg-gray-900 rounded-lg shadow-lg px-8 lg:px-16 py-12 lg:py-16 flex-grow lg:text-lg leading-relaxed lg:flex">
           <div className="flex-shrink mr-8 mb-8 lg:mb-0">
             <img
-              src="https://i.imgur.com/pS80qXV.jpg"
+              src="https://scotch-res.cloudinary.com/image/upload/q_auto/v1594056697/gytymTwZ_400x400_qu49vx.jpg"
               className="rounded shadow mb-2 w-48 lg:w-64"
               alt="Chris Avatar"
             />
