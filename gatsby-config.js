@@ -6,6 +6,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-postcss`,
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -31,7 +32,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-146126191-1",
+        trackingId: 'UA-146126191-1',
         head: true,
         allowLinker: true,
       },
@@ -39,7 +40,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-facebook-pixel`,
       options: {
-        pixelId: "992053144150851",
+        pixelId: '992053144150851',
       },
     },
     // {
@@ -50,10 +51,10 @@ module.exports = {
     //   },
     // },
     {
-      resolve: "gatsby-plugin-web-font-loader",
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ["Orbitron", "Russo One", "Fugaz One"],
+          families: ['Orbitron', 'Russo One', 'Fugaz One'],
         },
       },
     },
