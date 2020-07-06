@@ -29,10 +29,12 @@ export default function Courses() {
                 color="#132b5b"
               />
               <h2 className="fugaz-one text-4xl leading-none text-blue-800">
-                Make 10 React Apps{' '}
-                <span className="block text-blue-600 opacity-75 mt-4 text-2xl">
-                  Series A
-                </span>
+                <a href="">
+                  Make 10 React Apps{' '}
+                  <span className="block text-blue-600 opacity-75 mt-4 text-2xl">
+                    Series A
+                  </span>
+                </a>
               </h2>
             </div>
 
@@ -60,34 +62,36 @@ export default function Courses() {
               </div>
               <div className="grid grid-cols-1 grid-rows-3 gap-8 leading-none">
                 <div className="text-4xl flex flex-col justify-center">
-                  48{' '}
-                  <strong className="block text-lg text-gray-400 mt-2">
+                  <div>
                     <FontAwesomeIcon
                       icon={['fad', 'camera-home']}
-                      className="opacity-75"
-                      size="xs"
+                      className="opacity-50 mr-3"
                       style={{
                         '--fa-primary-color': '#2c5282',
                         '--fa-secondary-color': '#19b9ca',
                       }}
-                    />{' '}
-                    videos
-                  </strong>
+                    />
+                    48
+                    <strong className="block text-lg text-gray-400 mt-2">
+                      videos
+                    </strong>
+                  </div>
                 </div>
                 <div className="text-4xl flex flex-col justify-center">
-                  6{' '}
-                  <strong className="block text-lg text-gray-400 mt-2">
+                  <div>
                     <FontAwesomeIcon
                       icon={['fad', 'watch']}
-                      className="opacity-75"
-                      size="xs"
+                      className="opacity-50 mr-3"
                       style={{
                         '--fa-primary-color': '#2c5282',
                         '--fa-secondary-color': '#19b9ca',
                       }}
-                    />{' '}
-                    hours
-                  </strong>
+                    />
+                    6
+                    <strong className="block text-lg text-gray-400 mt-2">
+                      hours
+                    </strong>
+                  </div>
                 </div>
                 <div>
                   <a
@@ -146,34 +150,36 @@ export default function Courses() {
               </div>
               <div className="grid grid-cols-1 grid-rows-3 gap-8 leading-none">
                 <div className="text-4xl flex flex-col justify-center">
-                  48{' '}
-                  <strong className="block text-lg text-gray-400 mt-2">
+                  <div>
                     <FontAwesomeIcon
                       icon={['fad', 'camera-home']}
-                      className="opacity-75"
-                      size="xs"
+                      className="opacity-50 mr-3"
                       style={{
                         '--fa-primary-color': '#2c5282',
                         '--fa-secondary-color': '#19b9ca',
                       }}
-                    />{' '}
-                    videos
-                  </strong>
+                    />
+                    48
+                    <strong className="block text-lg text-gray-400 mt-2">
+                      videos
+                    </strong>
+                  </div>
                 </div>
                 <div className="text-4xl flex flex-col justify-center">
-                  6{' '}
-                  <strong className="block text-lg text-gray-400 mt-2">
+                  <div>
                     <FontAwesomeIcon
                       icon={['fad', 'watch']}
-                      className="opacity-75"
-                      size="xs"
+                      className="opacity-50 mr-3"
                       style={{
                         '--fa-primary-color': '#2c5282',
                         '--fa-secondary-color': '#19b9ca',
                       }}
-                    />{' '}
-                    hours
-                  </strong>
+                    />
+                    6
+                    <strong className="block text-lg text-gray-400 mt-2">
+                      hours
+                    </strong>
+                  </div>
                 </div>
                 <div>
                   <a
