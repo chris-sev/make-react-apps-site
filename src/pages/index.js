@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useInView } from 'react-intersection-observer'
 import Layout from '../components/layout'
 import Courses from '../components/Courses'
@@ -13,6 +13,7 @@ import LessonList from '../components/LessonList/LessonList'
 import FloatingButton from '../components/FloatingButton'
 
 export default function IndexPage() {
+  const [whichSeriesToShow, setWhichSeriesToShow] = useState('a') // a or b, yes i know i should do an enum
   const [topRef, topInView] = useInView()
   const showFloatingButton = !topInView
 
@@ -28,8 +29,14 @@ export default function IndexPage() {
         <Courses />
       </div>
 
-      <WhatWellBuild />
-      <LessonList />
+      <WhatWellBuild
+        whichSeriesToShow={whichSeriesToShow}
+        setWhichSeriesToShow={setWhichSeriesToShow}
+      />
+      <LessonList
+        whichSeriesToShow={whichSeriesToShow}
+        setWhichSeriesToShow={setWhichSeriesToShow}
+      />
       <WhoAmI />
       <FAQ />
       <FooterNewsletter />

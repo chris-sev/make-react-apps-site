@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './WhatWellBuild.css'
 
 const firstSet = [
@@ -157,20 +157,21 @@ const secondSet = [
   },
 ]
 
-export default function WhatWellBuild() {
-  const [whichSetToShow, setWhichSetToShow] = useState('a')
-
+export default function WhatWellBuild({
+  whichSeriesToShow,
+  setWhichSeriesToShow,
+}) {
   return (
     <div
       id="apps"
       className={`what-well-build text-gray-200 px-2 py-16 lg:py-24 ${
-        whichSetToShow === 'a' ? 'bg-blue-900' : 'bg-purple-900'
+        whichSeriesToShow === 'a' ? 'bg-blue-900' : 'bg-purple-900'
       }`}
     >
       <div className="container mx-auto flex flex-col">
         {/* header */}
         <div className="flex flex-col justify-between mb-20">
-          <div className="mb-6 flex items-center">
+          <div className="mb-6 flex items-center justify-center">
             <h2 className="fugaz-one mb text-5xl mr-6">
               The Apps We&apos;ll Build
             </h2>
@@ -178,23 +179,23 @@ export default function WhatWellBuild() {
               <span className="background-block">Hover</span> to see previews
             </h3>
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center justify-center">
             <button
-              onClick={() => setWhichSetToShow('a')}
-              className={`text-2xl py-3 px-6 border-2 rounded mr-4 transition-all duration-150 ease-linear outline-none ${
-                whichSetToShow === 'a'
-                  ? 'bg-blue-400 border-blue-500 text-blue-800'
-                  : 'bg-transparent hover:bg-blue-800 border-blue-800 text-blue-100'
+              onClick={() => setWhichSeriesToShow('a')}
+              className={`text-2xl py-5 px-8 border-2 rounded-lg mr-4 transition-all duration-150 ease-linear outline-none ${
+                whichSeriesToShow === 'a'
+                  ? 'bg-blue-300 border-blue-500 text-blue-800 shadow-2xl'
+                  : 'bg-transparent hover:bg-blue-900 border-gray-400 text-blue-100'
               }`}
             >
               Apps in Series A
             </button>
             <button
-              onClick={() => setWhichSetToShow('b')}
-              className={`text-2xl py-3 px-6 border-2 rounded mr-4 transition-all duration-150 ease-linear outline-none ${
-                whichSetToShow === 'b'
-                  ? 'bg-purple-400 border-purple-500 text-purple-800'
-                  : 'bg-transparent hover:bg-purple-800 border-purple-800 text-purple-100'
+              onClick={() => setWhichSeriesToShow('b')}
+              className={`text-2xl py-5 px-8 border-2 rounded-lg mr-4 transition-all duration-150 ease-linear outline-none ${
+                whichSeriesToShow === 'b'
+                  ? 'bg-purple-300 border-purple-500 text-purple-800 shadow-2xl'
+                  : 'bg-transparent hover:bg-purple-900 border-gray-400 text-purple-100'
               }`}
             >
               Apps in Series B
@@ -204,20 +205,39 @@ export default function WhatWellBuild() {
 
         {/* list of apps */}
         <div className="flex flex-wrap">
-          {whichSetToShow === 'a' &&
+          {whichSeriesToShow === 'a' &&
             firstSet.map((app, index) => (
               <div key={index} className="w-full md:w-1/2 xl:w-1/3 px-4">
                 <App app={app} number={index + 1} isLast={index + 1 === 10} />
               </div>
             ))}
 
-          {whichSetToShow === 'b' &&
+          {whichSeriesToShow === 'b' &&
             secondSet.map((app, index) => (
               <div key={index} className="w-full md:w-1/2 xl:w-1/3 px-4">
                 <App app={app} number={index + 1} isLast={index + 1 === 10} />
               </div>
             ))}
         </div>
+
+        {/* showing both because podia needs both of these in dom to attach event listeners */}
+        <a
+          href="https://learn.chrisoncode.io/10-react-apps-series-a"
+          data-podia-embed="link"
+          className="mt-8 mb-10 mx-auto text-center text-lg bg-yellow-400 hover:bg-yellow-300 text-yellow-900 shadow-2xl rounded-lg p-5 cursor-pointer w-full xl:w-1/3 transition-colors duration-300 ease-in"
+          style={{ display: whichSeriesToShow === 'a' ? 'block' : 'none' }}
+        >
+          Buy 10 React Apps <strong>(Series A)</strong>
+        </a>
+
+        <a
+          href="https://learn.chrisoncode.io/10-react-apps-series-b"
+          data-podia-embed="link"
+          className="mt-8 mb-10 mx-auto text-center text-lg bg-yellow-400 hover:bg-yellow-300 text-yellow-900 shadow-2xl rounded-lg p-5 cursor-pointer w-full xl:w-1/3 transition-colors duration-300 ease-in"
+          style={{ display: whichSeriesToShow === 'b' ? 'block' : 'none' }}
+        >
+          Buy 10 React Apps <strong>(Series B)</strong>
+        </a>
       </div>
     </div>
   )
