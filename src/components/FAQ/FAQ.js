@@ -53,18 +53,19 @@ export default function FAQ() {
     <div className="faq text-gray-300 py-16 px-8 lg:p-24">
       <div className="container mx-auto">
         <div className="text-center">
-          <h2 className="fugaz-one mb text-5xl">FAQs</h2>
-          <h3 className="arial mb-20 text-xl text-gray-400">
+          <h2 className="fugaz-one mb-1 text-5xl">FAQs</h2>
+          <h3 className="arial mb-16 text-xl text-gray-400">
             (Frequently <span className="background-block">Answered</span>{' '}
             Questions)
           </h3>
         </div>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {faqs.map((faq, index) => (
             <div key={index} className="bg-white rounded shadow-lg p-6 lg:p-12">
-              <h4 className="fugaz-one text-lg lg:text-xl mb-4 text-gray-800 leading-snug tracking-wide">
+              <h4 className="russo text-lg lg:text-xl mb-2 text-gray-800 leading-snug tracking-wide">
                 {faq.question}
               </h4>
+
               <p
                 className="text-gray-700 leading-relaxed"
                 dangerouslySetInnerHTML={{ __html: faq.answer }}

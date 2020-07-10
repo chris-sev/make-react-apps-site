@@ -204,26 +204,26 @@ export default function WhatWellBuild({
         </div>
 
         {/* list of apps */}
-        <div className="flex flex-wrap">
-          <div
-            style={{ display: whichSeriesToShow === 'a' ? 'block' : 'none' }}
-          >
-            {firstSet.map((app, index) => (
-              <div key={index} className="w-full md:w-1/2 xl:w-1/3 px-4">
-                <App app={app} number={index + 1} isLast={index + 1 === 10} />
-              </div>
-            ))}
-          </div>
+        <div
+          className="grid grid-cols-1 lg:grid-cols-2 gap-6"
+          style={{ display: whichSeriesToShow === 'a' ? 'grid' : 'none' }}
+        >
+          {firstSet.map((app, index) => (
+            <div key={index}>
+              <App app={app} number={index + 1} isLast={index + 1 === 10} />
+            </div>
+          ))}
+        </div>
 
-          <div
-            style={{ display: whichSeriesToShow === 'a' ? 'block' : 'none' }}
-          >
-            {secondSet.map((app, index) => (
-              <div key={index} className="w-full md:w-1/2 xl:w-1/3 px-4">
-                <App app={app} number={index + 1} isLast={index + 1 === 10} />
-              </div>
-            ))}
-          </div>
+        <div
+          className="grid grid-cols-1 lg:grid-cols-2 gap-6"
+          style={{ display: whichSeriesToShow === 'b' ? 'grid' : 'none' }}
+        >
+          {secondSet.map((app, index) => (
+            <div key={index}>
+              <App app={app} number={index + 1} isLast={index + 1 === 10} />
+            </div>
+          ))}
         </div>
 
         {/* showing both because podia needs both of these in dom to attach event listeners */}
@@ -249,6 +249,9 @@ export default function WhatWellBuild({
   )
 }
 
+/**
+ * Each individual app
+ */
 function App({ app, number }) {
   return (
     <div className="app-container pt-8 pb-12 mb-6 lg:pt-6 lg:pb-10 lg:mb-6 relative">
@@ -333,7 +336,7 @@ function Number({ number }) {
 
 function Video({ url }) {
   // optimization thanks to cloudinary
-  const optimizedVideoUrl = url.replace('/upload/', '/upload/w_600,q_auto/')
+  const optimizedVideoUrl = url.replace('/upload/', '/upload/w_800,q_auto/')
 
   return (
     <video

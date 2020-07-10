@@ -31,11 +31,11 @@
   animation: dash 4s linear infinite;
 }
 
-@media screen and (min-width: 1280px) {
+/* @media screen and (min-width: 1280px) {
   .app-video {
     max-width: 500px;
   }
-}
+} */
 
 .app-container .demo-button,
 .app-container .preview-button {

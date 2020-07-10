@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import usePodia from '../components/usePodia'
 
 export default function Courses() {
-  usePodia();
+  usePodia()
 
   return (
     <SCourses id="courses" className="course-section pb-48 pt-48 px-10">
@@ -32,10 +32,10 @@ export default function Courses() {
                 color="#132b5b"
               />
               <h2 className="fugaz-one text-3xl leading-none text-blue-800">
-                  Make 10 React Apps{' '}
-                  <span className="block text-blue-600 opacity-75 mt-4 text-xl">
-                    Series A
-                  </span>
+                Make 10 React Apps{' '}
+                <span className="block text-blue-600 opacity-75 mt-4 text-xl">
+                  Series A
+                </span>
               </h2>
             </div>
 
@@ -218,7 +218,7 @@ export default function Courses() {
               </h2>
             </div>
 
-            <div className="grid grid-cols-11 gap-4 px-10 pb-10 text-lg text-gray-600 leading-snug relative z-10 text-center">
+            <div className="grid lg:grid-cols-11 gap-4 px-10 pb-10 text-lg text-gray-600 leading-snug relative z-10 text-center">
               <div className="col-span-3 bg-green-100 p-4 rounded-lg flex items-center justify-center">
                 <h2 className="arial text-green-600 text-xl">
                   10 React Apps{' '}
@@ -227,7 +227,7 @@ export default function Courses() {
                   </span>
                 </h2>
               </div>
-              <div className="flex items-center justify-center">
+              <div className="col-span-3 lg:col-span-1 flex items-center justify-center">
                 <FontAwesomeIcon icon={['fad', 'plus']} size="3x" />
               </div>
               <div className="col-span-3 bg-green-100 p-4 rounded-lg flex items-center justify-center">
@@ -238,7 +238,7 @@ export default function Courses() {
                   </span>
                 </h2>
               </div>
-              <div className="flex items-center justify-center">
+              <div className="col-span-3 lg:col-span-1 flex items-center justify-center">
                 <FontAwesomeIcon icon={['fad', 'equals']} size="3x" />
               </div>
               <a

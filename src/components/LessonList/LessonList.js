@@ -31,7 +31,7 @@ const firstSection = [
         lessonTitle: '00 - Pomodoro [PREVIEW]',
         time: 2,
         previewLink:
-          'https://learn.chrisoncode.io/courses/make-20-react-apps/249106-pomodoro/748623-00-pomodoro-preview',
+          'https://learn.chrisoncode.io/courses/10-react-apps-series-a/348620-01-pomodoro/992082-00-pomodoro-preview',
       },
       { lessonTitle: '01 - Time and Start', time: 11 },
       { lessonTitle: '02 - Stop and Reset', time: 13 },
@@ -45,7 +45,7 @@ const firstSection = [
         lessonTitle: '00 - Markdown Editor [PREVIEW]',
         time: 2,
         previewLink:
-          'https://learn.chrisoncode.io/courses/make-20-react-apps/249710-markdown-editor/748732-00-markdown-editor-preview',
+          'https://learn.chrisoncode.io/courses/10-react-apps-series-a/348621-02-markdown-editor/992079-00-markdown-editor-preview',
       },
       { lessonTitle: '01 - Markdown Editor', time: 15 },
     ],
@@ -58,7 +58,7 @@ const firstSection = [
         lessonTitle: '00 - Browser Tabs [PREVIEW]',
         time: 2,
         previewLink:
-          'https://learn.chrisoncode.io/courses/make-20-react-apps/249108-browser-tabs/748775-00-browser-tabs-preview',
+          'https://learn.chrisoncode.io/courses/10-react-apps-series-a/348622-03-highlight-tabs/992072-00-browser-tabs-preview',
       },
       { lessonTitle: '01 - Tab Highlight', time: 20 },
       { lessonTitle: ' 02 - React Router', time: 17 },
@@ -73,7 +73,7 @@ const firstSection = [
         lessonTitle: '00 - Paper Rock Scissors [PREVIEW]',
         time: 2,
         previewLink:
-          'https://learn.chrisoncode.io/courses/make-20-react-apps/249667-paper-rock-scissors/748691-00-paper-rock-scissors-preview',
+          'https://learn.chrisoncode.io/courses/10-react-apps-series-a/348623-04-paper-rock-scissors/992070-00-paper-rock-scissors-preview',
       },
       { lessonTitle: '01 - Intro + Handling Choices', time: 11 },
       { lessonTitle: '02 - Displaying Game State', time: 13 },
@@ -88,7 +88,7 @@ const firstSection = [
         lessonTitle: ' 00 - Moving Boxes and Link [PREVIEW]',
         time: 2,
         previewLink:
-          'https://learn.chrisoncode.io/courses/make-20-react-apps/250927-moving-boxes-and-zelda/748714-00-moving-boxes-and-link-preview',
+          'https://learn.chrisoncode.io/courses/10-react-apps-series-a/348624-05-moving-boxes-and-zelda/992093-00-moving-boxes-and-link-preview',
       },
       { lessonTitle: '01 - Setting Up Canvas and Box', time: 10 },
       { lessonTitle: '02 - Keyboard Arrows', time: 8 },
@@ -104,7 +104,7 @@ const firstSection = [
         lessonTitle: '00 - Infinite Image Gallery [PREVIEW]',
         time: 2,
         previewLink:
-          'https://learn.chrisoncode.io/courses/make-20-react-apps/257611-infinite-image-gallery/748761-00-infinite-image-gallery-preview',
+          'https://learn.chrisoncode.io/courses/10-react-apps-series-a/348625-06-infinite-image-gallery/992060-00-infinite-image-gallery-preview',
       },
       { lessonTitle: '01 - Getting Images from Unsplash', time: 18 },
       { lessonTitle: '02 - Infinite Scroll', time: 11 },
@@ -120,7 +120,7 @@ const firstSection = [
         lessonTitle: '00 - Trivia [PREVIEW]',
         time: 2,
         previewLink:
-          'https://learn.chrisoncode.io/courses/make-20-react-apps/271017-07-trivia/783724-00-trivia-preview',
+          'https://learn.chrisoncode.io/courses/10-react-apps-series-a/348626-07-trivia/992056-00-trivia-preview',
       },
       { lessonTitle: '01 - Getting and Displaying a Question', time: 16 },
       { lessonTitle: '02 - Selecting a Category', time: 14 },
@@ -130,18 +130,21 @@ const firstSection = [
     ],
   },
   {
-    sectionTitle: 'Drag and Drop Math Card',
-    demoLink: 'https://sj1bd.csb.app/',
+    sectionTitle: 'Authentication',
+    demoLink: undefined,
     lessons: [
       {
-        lessonTitle: '00 - Drag and Drop Math Card [PREVIEW]',
-        time: 1,
+        lessonTitle: '00 - Authentication [PREVIEW]',
+        time: 2,
         previewLink:
-          'https://learn.chrisoncode.io/courses/make-20-react-apps/329060-14-drag-and-drop-math-card/938167-00-drag-and-drop-math-card-preview',
+          'https://learn.chrisoncode.io/courses/10-react-apps-series-a/348627-08-authentication/992048-00-authentication-preview',
       },
-      { lessonTitle: '01 - Handling Dragging', time: 11 },
-      { lessonTitle: '02 - Handling Dropping', time: 8 },
-      { lessonTitle: '03 - Storing Values in State', time: 10 },
+      { lessonTitle: '01 - Setting up Auth0', time: 10 },
+      { lessonTitle: '02 - Starting the Auth0 SPA SDK', time: 7 },
+      { lessonTitle: '03 - Starting React Context', time: 7 },
+      { lessonTitle: `04 - Adding Auth0 to Context`, time: 17 },
+      { lessonTitle: `05 - PrivateRoute`, time: 8 },
+      { lessonTitle: `06 - Getting a Token`, time: 4 },
     ],
   },
   {
@@ -152,7 +155,7 @@ const firstSection = [
         lessonTitle: '00 - Web Speech [PREVIEW]',
         time: 1,
         previewLink:
-          'https://learn.chrisoncode.io/courses/make-20-react-apps/286509-09-web-speech-and-timers/825083-00-web-speech-and-timers-preview',
+          'https://learn.chrisoncode.io/courses/10-react-apps-series-a/348628-09-web-speech-and-timers/992042-00-web-speech-and-timers-preview',
       },
       { lessonTitle: '01 - Creating Timer Forms', time: 11 },
       { lessonTitle: '02 - Adding a Stopwatch', time: 9 },
@@ -167,7 +170,7 @@ const firstSection = [
         lessonTitle: '00 - Calendar Picker [PREVIEW]',
         time: 2,
         previewLink:
-          'https://learn.chrisoncode.io/courses/make-20-react-apps/302585-10-calendar-picker/864913-00-calendar-picker-preview',
+          'https://learn.chrisoncode.io/courses/10-react-apps-series-a/348629-10-calendar-picker/992041-00-calendar-picker-preview',
       },
       { lessonTitle: '01 - Choosing a Date', time: 10 },
       { lessonTitle: '02 - Styled Components', time: 13 },
@@ -186,7 +189,7 @@ const secondSection = [
         lessonTitle: '00 - Chat Box [PREVIEW]',
         time: 1,
         previewLink:
-          'https://learn.chrisoncode.io/courses/make-20-react-apps/325003-11-animated-chat-box/927294-00-chat-box-preview',
+          'https://learn.chrisoncode.io/courses/10-react-apps-series-b/365601-1-animated-chat-box/1041046-00-chat-box-preview',
       },
       { lessonTitle: '01 - Visualizing Messages', time: 8 },
       { lessonTitle: '02 - Typing Indicator', time: 8 },
@@ -201,7 +204,7 @@ const secondSection = [
         lessonTitle: '00 - Multi-Step Form [PREVIEW]',
         time: 2,
         previewLink:
-          'https://learn.chrisoncode.io/courses/make-20-react-apps/325871-12-multi-step-form/929787-00-multi-step-form-preview',
+          'https://learn.chrisoncode.io/courses/10-react-apps-series-b/365602-2-multi-step-form/1041044-00-multi-step-form-preview',
       },
       { lessonTitle: '01 - Multi-Step with Router', time: 11 },
       { lessonTitle: '02 - Forms and Validation', time: 12 },
@@ -218,14 +221,28 @@ const secondSection = [
         lessonTitle: '00 - Memory Matching Game [PREVIEW]',
         time: 1,
         previewLink:
-          'https://learn.chrisoncode.io/courses/make-20-react-apps/326011-13-memory-matching-game/930017-00-memory-matching-preview',
+          'https://learn.chrisoncode.io/courses/10-react-apps-series-b/365603-3-memory-matching-game/1041042-00-memory-matching-preview',
       },
       { lessonTitle: '01 - Displaying Pokemon', time: 8 },
       { lessonTitle: '02 - Flipping Cards', time: 8 },
       { lessonTitle: '03 - Handling Winning', time: 10 },
     ],
   },
-
+  {
+    sectionTitle: 'Drag and Drop Math Card',
+    demoLink: 'https://sj1bd.csb.app/',
+    lessons: [
+      {
+        lessonTitle: '00 - Drag and Drop Math Card [PREVIEW]',
+        time: 1,
+        previewLink:
+          'https://learn.chrisoncode.io/courses/make-20-react-apps/329060-14-drag-and-drop-math-card/938167-00-drag-and-drop-math-card-preview',
+      },
+      { lessonTitle: '01 - Handling Dragging', time: 11 },
+      { lessonTitle: '02 - Handling Dropping', time: 8 },
+      { lessonTitle: '03 - Storing Values in State', time: 10 },
+    ],
+  },
   {
     sectionTitle: 'Browser',
     demoLink: 'https://e7ws4.csb.app/',
@@ -234,7 +251,7 @@ const secondSection = [
         lessonTitle: '00 - Preview',
         time: 1,
         previewLink:
-          'https://learn.chrisoncode.io/courses/make-20-react-apps/334917-15-browser/954260-00-browser-browser-preview',
+          'https://learn.chrisoncode.io/courses/10-react-apps-series-b/365605-5-browser/1041032-00-browser-browser-preview',
       },
       { lessonTitle: '01 - Showing iframes', time: 7 },
       { lessonTitle: '02 - Choosing and Adding', time: 6 },
@@ -244,21 +261,33 @@ const secondSection = [
     ],
   },
   {
-    sectionTitle: 'Authentication',
-    demoLink: undefined,
+    sectionTitle: 'Real-Time Search',
+    demoLink: 'https://707yr.csb.app/',
     lessons: [
       {
-        lessonTitle: '00 - Authentication [PREVIEW]',
+        lessonTitle: '00 - Real-Time Search [PREVIEW]',
         time: 2,
         previewLink:
-          'https://learn.chrisoncode.io/courses/make-20-react-apps/284972-08-authentication/821360-00-authentication-preview',
+          'https://learn.chrisoncode.io/courses/10-react-apps-series-b/365606-6-real-time-search/1041031-00-real-time-search-preview',
       },
-      { lessonTitle: '01 - Setting up Auth0', time: 10 },
-      { lessonTitle: '02 - Starting the Auth0 SPA SDK', time: 7 },
-      { lessonTitle: '03 - Starting React Context', time: 7 },
-      { lessonTitle: `04 - Adding Auth0 to Context`, time: 17 },
-      { lessonTitle: `05 - PrivateRoute`, time: 8 },
-      { lessonTitle: `06 - Getting a Token`, time: 4 },
+      { lessonTitle: '01 - Algolia Setup', time: 10 },
+      { lessonTitle: '02 - React Algolia Components', time: 11 },
+    ],
+  },
+  {
+    sectionTitle: 'Charting the Weather',
+    demoLink: 'https://v2dmf.csb.app/',
+    lessons: [
+      {
+        lessonTitle: '00 - Charting the Weather [PREVIEW]',
+        time: 1,
+        previewLink:
+          'https://learn.chrisoncode.io/courses/10-react-apps-series-b/365607-7-charting-the-weather/1041029-00-weather-chart-preview',
+      },
+      { lessonTitle: '01 - High Level Strategy', time: 11 },
+      { lessonTitle: '02 - Geocoding Addresses', time: 15 },
+      { lessonTitle: '03 - Starting Charts', time: 13 },
+      { lessonTitle: '04 - Showing Weather Data', time: 11 },
     ],
   },
 ]
