@@ -18,27 +18,27 @@ export default function MainHero() {
       <div className="container mx-auto lg:flex relative z-10">
         <div className="lg:flex-grow">
           <h2 className="home-title relative text-2xl leading-none grid grid-cols-2 grid-rows-3">
-            <span className="make fugaz-one text-5xl text-blue-200">Make</span>
+            <span className="make fugaz-one text-4xl text-blue-200">Make</span>
             <span className="react text-white row-start-2 col-span-2 leading-relaxed md:leading-none text-justify">
               React
             </span>
-            <span className="apps fugaz-one block w-full text-right text-blue-200 text-5xl pr-12 row-start-3 col-start-2">
+            <span className="apps fugaz-one block w-full text-right text-blue-200 text-4xl pr-12 row-start-3 col-start-2">
               Apps
             </span>
           </h2>
 
           <div className="mt-12">
-            <p className="text-2xl md:text-3xl mb-2 text-blue-100">
+            <p className="text-xl md:text-2xl mb-2 text-blue-100">
               Build real-world React projects
             </p>
-            <p className="text-xl md:text-2xl text-blue-200 mb-6">
+            <p className="text-lg text-blue-200 mb-6">
               Learn React best practices and concepts that you can use on the
               job, in side projects, and in any React app.
             </p>
 
             <a
               href="#courses"
-              className="block text-center lg:text-xl bg-yellow-400 hover:bg-yellow-300 text-yellow-900 shadow-2xl rounded-lg p-6 cursor-pointer w-full xl:w-2/3 transition-colors duration-300 ease-in"
+              className="block text-center text-lg bg-yellow-400 hover:bg-yellow-300 text-yellow-900 shadow-2xl rounded-lg p-5 cursor-pointer w-full xl:w-2/3 transition-colors duration-300 ease-in"
             >
               <span role="img" aria-label="Spock Hand" className="mr-1">
                 ⚛️
@@ -61,50 +61,50 @@ export default function MainHero() {
           <div className="bg-gray-100 text-gray-600 p-4 rounded flex flex-col items-center justify-center">
             <FontAwesomeIcon
               icon={['fad', 'atom']}
-              size="3x"
-              className="mb-3"
+              size="2x"
+              className="mt-1 mb-3"
               style={{
                 '--fa-primary-color': '#4b5ed4',
                 '--fa-secondary-color': '#19b9ca',
               }}
             />
-            <p className="text-lg m-0">Made w/ Modern React</p>
+            <p className="m-0">Made w/ Modern React</p>
           </div>
           <div className="bg-gray-100 text-gray-600 p-4 rounded flex flex-col items-center justify-center">
             <FontAwesomeIcon
               icon={['fad', 'field-hockey']}
-              size="3x"
-              className="mb-3"
+              size="2x"
+              className="mt-1 mb-3"
               style={{
                 '--fa-primary-color': '#764ea1',
                 '--fa-secondary-color': '#ff824b',
               }}
             />
-            <p className="text-lg m-0">Learn React Hooks</p>
+            <p className="m-0">Learn React Hooks</p>
           </div>
           <div className="bg-gray-100 text-gray-600 p-4 rounded flex flex-col items-center justify-center">
             <FontAwesomeIcon
               icon={['fad', 'treasure-chest']}
-              size="3x"
-              className="mb-3"
+              size="2x"
+              className="mt-1 mb-3"
               style={{
                 '--fa-primary-color': '#4c5dd4',
                 '--fa-secondary-color': '#89b9d4',
               }}
             />
-            <p className="text-lg m-0">Projects for your Portfolio</p>
+            <p className="m-0">Projects for your Portfolio</p>
           </div>
           <div className="bg-gray-100 text-gray-600 p-4 rounded flex flex-col items-center justify-center">
             <FontAwesomeIcon
               icon={['fad', 'film']}
-              size="3x"
-              className="mb-3"
+              size="2x"
+              className="mt-1 mb-3"
               style={{
                 '--fa-primary-color': '#fe535b',
                 '--fa-secondary-color': '#0c0710',
               }}
             />
-            <p className="text-lg m-0">High Quality Videos</p>
+            <p className="m-0">High Quality Videos</p>
           </div>
         </div>
       </div>

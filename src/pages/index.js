@@ -1,4 +1,5 @@
 import React from 'react'
+import { useInView } from 'react-intersection-observer'
 import Layout from '../components/layout'
 import Courses from '../components/Courses'
 import FooterNewsletter from '../components/FooterNewsletter'
@@ -7,25 +8,28 @@ import Footer from '../components/footer'
 import HomeHero from '../components/HomeHero'
 import SEO from '../components/seo'
 import FAQ from '../components/FAQ/FAQ'
+import WhatWellBuild from '../components/WhatWellBuild/WhatWellBuild'
+import LessonList from '../components/LessonList/LessonList'
+import FloatingButton from '../components/FloatingButton'
 
 export default function IndexPage() {
+  const [topRef, topInView] = useInView()
+  const showFloatingButton = !topInView
+
   return (
     <Layout>
       <SEO title="Make React Apps - Practical React Learning" />
 
-      {/* hero section */}
-      <HomeHero />
+      {/* floating button */}
+      <FloatingButton isShowing={showFloatingButton} />
 
-      {/* courses */}
-      {/* 2 columns. right side is full bundle */}
-      <Courses />
+      <div ref={topRef}>
+        <HomeHero />
+        <Courses />
+      </div>
 
-      {/* free webinars */}
-      <div>free webinars</div>
-
-      {/* free resources */}
-      <div>free resources</div>
-
+      <WhatWellBuild />
+      <LessonList />
       <WhoAmI />
       <FAQ />
       <FooterNewsletter />
