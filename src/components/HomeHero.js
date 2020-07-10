@@ -6,6 +6,17 @@ import Walkthrough from './Walkthrough/Walkthrough'
 export default function MainHero() {
   return (
     <SHomeHero className="px-4 lg:px-0 pt-20 pb-16 lg:pt-48 lg:pb-48 relative">
+      {/* floating login button */}
+      <div className="bg-blue-300 text-blue-600 py-1 px-1 rounded-md flex items-center absolute top-0 right-0 mt-4 mr-4">
+        <span className="pl-2">Already purchased?</span>
+        <a
+          href="https://learn.chrisoncode.io/login"
+          className="ml-3 bg-blue-700 text-blue-200 rounded shadow py-2 px-3 hover:bg-blue-600"
+        >
+          Login
+        </a>
+      </div>
+
       <div id="stripes">
         <span className="opacity-0 lg:opacity-75"></span>
         <span className="opacity-0 lg:opacity-75"></span>
