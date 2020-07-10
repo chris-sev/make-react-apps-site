@@ -205,19 +205,25 @@ export default function WhatWellBuild({
 
         {/* list of apps */}
         <div className="flex flex-wrap">
-          {whichSeriesToShow === 'a' &&
-            firstSet.map((app, index) => (
+          <div
+            style={{ display: whichSeriesToShow === 'a' ? 'block' : 'none' }}
+          >
+            {firstSet.map((app, index) => (
               <div key={index} className="w-full md:w-1/2 xl:w-1/3 px-4">
                 <App app={app} number={index + 1} isLast={index + 1 === 10} />
               </div>
             ))}
+          </div>
 
-          {whichSeriesToShow === 'b' &&
-            secondSet.map((app, index) => (
+          <div
+            style={{ display: whichSeriesToShow === 'a' ? 'block' : 'none' }}
+          >
+            {secondSet.map((app, index) => (
               <div key={index} className="w-full md:w-1/2 xl:w-1/3 px-4">
                 <App app={app} number={index + 1} isLast={index + 1 === 10} />
               </div>
             ))}
+          </div>
         </div>
 
         {/* showing both because podia needs both of these in dom to attach event listeners */}
