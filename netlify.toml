@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/*"
+  to = "https://makereactapps.com"
+  status = 301
