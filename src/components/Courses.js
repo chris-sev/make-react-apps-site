@@ -7,7 +7,7 @@ export default function Courses() {
   usePodia()
 
   return (
-    <SCourses id="courses" className="course-section pb-48 pt-48 px-10">
+    <SCourses id="courses" className="course-section pb-48 pt-48 px-4 lg:px-0">
       <div className="container mx-auto">
         {/* the header  */}
         <div className="text-center mb-16">
@@ -20,7 +20,7 @@ export default function Courses() {
         {/* loop over the courses */}
         <div className="lg:grid grid-cols-2 gap-10 mb-10">
           {/* course 1 */}
-          <div className="bg-white shadow rounded overflow-hidden relative mb-8 lg:mb-0">
+          <div className="bg-white shadow rounded overflow-hidden relative mb-8 lg:mb-0 px-2 lg:px-0">
             <div className="absolute top-0 left-0 pointer-events-none bg-blue-300 transform -rotate-45 h-56 w-56 -translate-y-32 -translate-x-32"></div>
 
             {/* header */}
@@ -62,7 +62,7 @@ export default function Courses() {
                 </a>
               </div>
               <div className="grid grid-cols-1 grid-rows-3 gap-8 leading-none">
-                <div className="text-4xl flex flex-col justify-center">
+                <div className="text-2xl lg:text-4xl flex flex-col justify-center">
                   <div>
                     <FontAwesomeIcon
                       icon={['fad', 'camera-home']}
@@ -78,7 +78,7 @@ export default function Courses() {
                     </strong>
                   </div>
                 </div>
-                <div className="text-4xl flex flex-col justify-center">
+                <div className="text-2xl lg:text-4xl flex flex-col justify-center">
                   <div>
                     <FontAwesomeIcon
                       icon={['fad', 'watch']}
@@ -98,7 +98,7 @@ export default function Courses() {
                   <a
                     href="https://learn.chrisoncode.io/10-react-apps-series-a"
                     data-podia-embed="link"
-                    className="flex items-center justify-center h-full text-3xl lg:text-4xl border-2 border-blue-300 bg-blue-100 text-blue-900 rounded-lg px-6 py-6 cursor-pointer hover:bg-blue-200 w-full transition-colors duration-150"
+                    className="flex items-center justify-center h-full text-2xl lg:text-4xl border-2 border-blue-300 bg-blue-100 text-blue-900 rounded-lg px-6 py-6 cursor-pointer hover:bg-blue-200 w-full transition-colors duration-150"
                     style={{ boxShadow: '3px 3px 0 #90cdf4' }}
                   >
                     <span className="text-blue-900">$55</span>
@@ -109,7 +109,7 @@ export default function Courses() {
           </div>
 
           {/* course 2 */}
-          <div className="bg-white shadow rounded overflow-hidden relative mb-8 lg:mb-0">
+          <div className="bg-white shadow rounded overflow-hidden relative mb-8 lg:mb-0 px-2 lg:px-0">
             <div className="absolute top-0 left-0 pointer-events-none bg-purple-300 transform -rotate-45 h-56 w-56 -translate-y-32 -translate-x-32"></div>
 
             {/* header */}
@@ -151,7 +151,7 @@ export default function Courses() {
                 </a>
               </div>
               <div className="grid grid-cols-1 grid-rows-3 gap-8 leading-none">
-                <div className="text-4xl flex flex-col justify-center">
+                <div className="text-2xl lg:text-4xl flex flex-col justify-center">
                   <div>
                     <FontAwesomeIcon
                       icon={['fad', 'camera-home']}
@@ -167,7 +167,7 @@ export default function Courses() {
                     </strong>
                   </div>
                 </div>
-                <div className="text-4xl flex flex-col justify-center">
+                <div className="text-2xl lg:text-4xl flex flex-col justify-center">
                   <div>
                     <FontAwesomeIcon
                       icon={['fad', 'watch']}
@@ -187,7 +187,7 @@ export default function Courses() {
                   <a
                     href="https://learn.chrisoncode.io/10-react-apps-series-b"
                     data-podia-embed="link"
-                    className="flex items-center justify-center h-full text-3xl lg:text-4xl border-2 border-purple-300 bg-purple-100 text-purple-900 rounded-lg px-6 py-6 cursor-pointer hover:bg-purple-200 w-full transition-colors duration-150 cursor-pointer"
+                    className="flex items-center justify-center h-full text-2xl lg:text-4xl border-2 border-purple-300 bg-purple-100 text-purple-900 rounded-lg px-6 py-6 cursor-pointer hover:bg-purple-200 w-full transition-colors duration-150 cursor-pointer"
                     style={{ boxShadow: '3px 3px 0 #d6bcfa' }}
                   >
                     <span className="text-blue-900">$55</span>
