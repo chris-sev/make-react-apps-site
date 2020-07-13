@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useInView } from 'react-intersection-observer'
 import Layout from '../components/layout'
-import Courses from '../components/Courses'
+import Courses from '../components/Courses/Courses'
 import FooterNewsletter from '../components/FooterNewsletter'
 import WhoAmI from '../components/WhoAmI/WhoAmI'
 import Footer from '../components/footer'
@@ -11,6 +11,7 @@ import FAQ from '../components/FAQ/FAQ'
 import WhatWellBuild from '../components/WhatWellBuild/WhatWellBuild'
 import LessonList from '../components/LessonList/LessonList'
 import FloatingButton from '../components/FloatingButton'
+import Bundle from '../components/Bundle'
 
 export default function IndexPage() {
   const [whichSeriesToShow, setWhichSeriesToShow] = useState('a') // a or b, yes i know i should do an enum
@@ -29,7 +30,7 @@ export default function IndexPage() {
         <Courses />
       </div>
 
-      <WhatWellBuild
+      {/* <WhatWellBuild
         whichSeriesToShow={whichSeriesToShow}
         setWhichSeriesToShow={setWhichSeriesToShow}
       />
@@ -39,7 +40,8 @@ export default function IndexPage() {
       />
       <WhoAmI />
       <FAQ />
-      <FooterNewsletter />
+      <FooterNewsletter /> */}
+      <Bundle />
       <Footer />
     </Layout>
   )
