@@ -31,27 +31,6 @@
   animation: dash 4s linear infinite;
 }
 
-/* @media screen and (min-width: 1280px) {
-  .app-video {
-    max-width: 500px;
-  }
-} */
-
-.app-container .demo-button,
-.app-container .preview-button {
-  transition: 0.3s ease all;
-}
-
-.app-container:hover .preview-button {
-  background: #ed8936 !important;
-  color: #f8ddae !important;
-}
-
-.app-container:hover .demo-button {
-  background: #f6e05e !important;
-  color: #865625 !important;
-}
-
 @keyframes dash {
   from {
     stroke-dashoffset: 1000;

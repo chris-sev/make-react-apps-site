@@ -157,10 +157,7 @@ const secondSet = [
   },
 ]
 
-export default function WhatWellBuild({
-  whichSeriesToShow,
-  setWhichSeriesToShow,
-}) {
+export default function WhatWellBuild({ whichSeriesToShow = 'a' }) {
   return (
     <div
       id="apps"
@@ -179,33 +176,11 @@ export default function WhatWellBuild({
               <span className="background-block">Hover</span> to see previews
             </h3>
           </div>
-          <div className="flex items-center justify-center">
-            <button
-              onClick={() => setWhichSeriesToShow('a')}
-              className={`text-2xl py-5 px-8 border-2 rounded-lg mr-4 transition-all duration-150 ease-linear outline-none ${
-                whichSeriesToShow === 'a'
-                  ? 'bg-blue-300 border-blue-500 text-blue-800 shadow-2xl'
-                  : 'bg-transparent hover:bg-blue-900 border-gray-400 text-blue-100'
-              }`}
-            >
-              Apps in Series A
-            </button>
-            <button
-              onClick={() => setWhichSeriesToShow('b')}
-              className={`text-2xl py-5 px-8 border-2 rounded-lg mr-4 transition-all duration-150 ease-linear outline-none ${
-                whichSeriesToShow === 'b'
-                  ? 'bg-purple-300 border-purple-500 text-purple-800 shadow-2xl'
-                  : 'bg-transparent hover:bg-purple-900 border-gray-400 text-purple-100'
-              }`}
-            >
-              Apps in Series B
-            </button>
-          </div>
         </div>
 
         {/* list of apps */}
         <div
-          className="grid grid-cols-1 lg:grid-cols-2 gap-6"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-12"
           style={{ display: whichSeriesToShow === 'a' ? 'grid' : 'none' }}
         >
           {firstSet.map((app, index) => (
@@ -215,8 +190,9 @@ export default function WhatWellBuild({
           ))}
         </div>
 
+        {/* show set b */}
         <div
-          className="grid grid-cols-1 lg:grid-cols-2 gap-6"
+          className="grid grid-cols-1 lg:grid-cols-2 row-gap-2 col-gap-6"
           style={{ display: whichSeriesToShow === 'b' ? 'grid' : 'none' }}
         >
           {secondSet.map((app, index) => (
@@ -225,25 +201,6 @@ export default function WhatWellBuild({
             </div>
           ))}
         </div>
-
-        {/* showing both because podia needs both of these in dom to attach event listeners */}
-        <a
-          href="https://learn.chrisoncode.io/10-react-apps-series-a"
-          data-podia-embed="link"
-          className="mt-8 mb-10 mx-auto text-center text-lg bg-yellow-400 hover:bg-yellow-300 text-yellow-900 shadow-2xl rounded-lg p-5 cursor-pointer w-full xl:w-1/3 transition-colors duration-300 ease-in"
-          style={{ display: whichSeriesToShow === 'a' ? 'block' : 'none' }}
-        >
-          Buy 10 React Apps <strong>(Series A)</strong>
-        </a>
-
-        <a
-          href="https://learn.chrisoncode.io/10-react-apps-series-b"
-          data-podia-embed="link"
-          className="mt-8 mb-10 mx-auto text-center text-lg bg-yellow-400 hover:bg-yellow-300 text-yellow-900 shadow-2xl rounded-lg p-5 cursor-pointer w-full xl:w-1/3 transition-colors duration-300 ease-in"
-          style={{ display: whichSeriesToShow === 'b' ? 'block' : 'none' }}
-        >
-          Buy 10 React Apps <strong>(Series B)</strong>
-        </a>
       </div>
     </div>
   )
@@ -254,46 +211,41 @@ export default function WhatWellBuild({
  */
 function App({ app, number }) {
   return (
-    <div className="app-container pt-8 pb-12 mb-6 lg:pt-6 lg:pb-10 lg:mb-6 relative">
+    <div className="app-container pt-8 lg:pt-6 relative">
       {/* number */}
       <Number number={number} />
 
       {/* video */}
-      <Video url={app.videoSrc} />
-
-      {/* content */}
-      <div className="mt-6 w-full">
-        <h2 className="fugaz-one text-xl mb-2 text-gray-400">{app.title}</h2>
-        {app.description && (
-          <p className="text-gray-400 text-xl mb-6">{app.description}</p>
-        )}
+      <div className="relative">
+        <Video url={app.videoSrc} />
 
         {/* icons */}
-        <div className="flex mb-4">
-          <div className="mr-8">
+        <div className="absolute hidden lg:flex left-0 bottom-0 mb-2 ml-2 text-xs">
+          <div className="mr-2 inline-block py-2 px-3 bg-black bg-opacity-25 rounded text-gray-100">
             <span className="mr-2" role="img" aria-label="Videos">
               🎬
             </span>
-            <span className="text-gray-500">
+            <span>
               {app.numberOfVideos}{' '}
               {app.numberOfVideos === 1 ? 'video' : 'videos'}
             </span>
           </div>
-          <div>
+          <div className="inline-block py-2 px-3 bg-black bg-opacity-25 rounded text-gray-100">
             <span className="mr-2" role="img" aria-label="Hours">
               🎤
             </span>
-            <span className="text-gray-500">{app.timeToComplete}</span>
+            <span>{app.timeToComplete}</span>
           </div>
         </div>
 
-        <div className="flex leading-loose">
+        {/* action buttons (preview + demo) */}
+        <div className="absolute right-0 bottom-0 mb-2 mr-2 flex">
           {/* preview button */}
           <a
             href={app.previewLink}
             rel="noopener noreferrer"
             target="_blank"
-            className="preview-button bg-gray-800 text-gray-500 leading-none py-3 px-12 rounded shadow text-center mr-4 w-1/2"
+            className="bg-gray-800 hover:bg-orange-400 text-gray-500 hover:text-orange-800 leading-none py-2 px-4 rounded shadow text-center mr-2 transition-colors ease-in-out duration-150"
           >
             Preview
           </a>
@@ -302,11 +254,19 @@ function App({ app, number }) {
             href={app.demoLink}
             rel="noopener noreferrer"
             target="_blank"
-            className="demo-button bg-gray-800 text-gray-500 leading-none py-3 px-12 rounded shadow text-center w-1/2"
+            className="bg-gray-800 hover:bg-teal-400 text-gray-500 hover:text-teal-800 leading-none py-2 px-4 rounded shadow text-center transition-colors ease-in-out duration-150"
           >
             Demo
           </a>
         </div>
+      </div>
+
+      {/* content */}
+      <div className="mt-6 w-full">
+        <h2 className="fugaz-one text-2xl mb-2 text-gray-200">{app.title}</h2>
+        <p className="text-gray-400 text-xl mb-6">
+          This is a super cool thing where you learn useReducer().
+        </p>
       </div>
     </div>
   )
@@ -315,7 +275,7 @@ function App({ app, number }) {
 function Number({ number }) {
   return (
     <div
-      className="number-container hidden md:block absolute top-0 left-0 pointer-events-none w-20"
+      className="number-container hidden md:block absolute top-0 left-0 pointer-events-none w-20 z-20"
       style={{ top: '-100px', left: '-30px' }}
     >
       <svg

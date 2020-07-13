@@ -14,14 +14,14 @@ export default function Pricing() {
           {/* pricing boxes for 1-10 / 11-20 ==================================================== */}
           <div className="bg-white mb-6 rounded-lg md:rounded-l-lg md:rounded-r-none shadow-lg text-gray-900 w-full">
             <h3 className="fugaz-one bg-gray-200 w-full pt-6 pb-4 lg:pt-8 lg:pb-6 px-4 text-center text-xl text-gray-500 font-bold uppercase rounded-t-lg md:rounded-tl-lg md:rounded-tr-none">
-              Starter Apps
+              Buy Series A
             </h3>
             <div className="pt-6 pb-8 px-6 lg:px-10">
               {/* price info */}
               <div className="mb-6 text-gray-700 text-xl md:text-3xl flex items-center justify-center leading-none">
                 <div className="has-dollar-sign flex items-center text-5xl mx-3 pb-2">
                   <span className="text-2xl mr-3">$</span>
-                  <span>49</span>
+                  <span>55</span>
                 </div>
                 <div className="flex items-center text-gray-600 text-xl">
                   USD
@@ -50,9 +50,9 @@ export default function Pricing() {
                 data-podia-embed="link"
                 className="checkout-button flex items-center justify-between xl:text-lg bg-blue-300 text-blue-700 shadow rounded px-6 py-4 cursor-pointer hover:bg-blue-300 w-full transition-colors mb-2"
               >
-                <div>Get apps 1-10</div>
+                <div>Get the Series A Course</div>
                 <div className="flex items-center">
-                  <span className="text-blue-800">$49</span>
+                  <span className="text-blue-800">$55</span>
                 </div>
               </a>
             </div>
@@ -62,7 +62,7 @@ export default function Pricing() {
         {/* pricing box ==================================================== */}
         <div className="bg-white rounded-lg shadow-lg w-full lg:w-2/3 xl:w-2/5 text-gray-900">
           <h3 className="fugaz-one bg-green-200 w-full pt-6 pb-4 lg:pt-8 lg:pb-6 px-4 text-center text-2xl lg:text-4xl text-green-400 font-bold uppercase rounded-t-lg">
-            <strong className="text-green-700">Complete</strong> Package
+            <strong className="text-green-700">Bundle</strong> And Save
           </h3>
 
           <div className="pt-10 pb-12 px-6 lg:px-16">
@@ -84,7 +84,7 @@ export default function Pricing() {
               <span role="img" aria-label="Check">
                 ✅
               </span>{' '}
-              All <strong>20 React Apps</strong>
+              Buy <strong>Series A</strong> and <strong>Series B</strong>
               <br />
               <span role="img" aria-label="Check">
                 ✅
@@ -106,7 +106,7 @@ export default function Pricing() {
               data-podia-embed="link"
               className="checkout-button flex items-center justify-between xl:text-2xl bg-yellow-400 text-yellow-900 shadow rounded px-6 py-6 cursor-pointer hover:bg-yellow-400 w-full transition-colors transition-transform duration-150"
             >
-              <div>Get all 20 apps</div>
+              <div>Get both courses</div>
               <span className="text-yellow-900">$79</span>
             </a>
           </div>
