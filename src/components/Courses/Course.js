@@ -9,11 +9,14 @@ export default function Course({
   paragraph,
   price,
   color = 'blue',
+  className,
   primaryColor = '#2c5282',
   secondaryColor = '#19b9ca',
 }) {
   return (
-    <div className="bg-white shadow rounded overflow-hidden relative mb-8 lg:mb-0 px-2 lg:px-0">
+    <div
+      className={`bg-white shadow rounded overflow-hidden relative mb-8 lg:mb-0 px-2 lg:px-0 ${className}`}
+    >
       <Link to={link}>
         <img src={image} alt="Series A" />
       </Link>

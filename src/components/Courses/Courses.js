@@ -7,7 +7,7 @@ export default function Courses() {
   usePodia()
 
   return (
-    <SCourses id="courses" className="course-section pb-40 pt-48 px-4 lg:px-0">
+    <SCourses id="courses" className="course-section pb-40 pt-48 px-8">
       <div className="container mx-auto">
         {/* the header  */}
         <div className="text-center mb-16">
@@ -18,9 +18,10 @@ export default function Courses() {
         </div>
 
         {/* loop over the courses */}
-        <div className="lg:grid grid-cols-2 gap-10 mb-10">
+        <div className="flex mb-10">
           {/* course 1 */}
           <Course
+            className="mr-20 bg-black"
             link="/10-react-apps-series-a"
             title="Series A"
             image="https://scotch-res.cloudinary.com/image/upload/v1594571945/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7_evfnlk.png"
