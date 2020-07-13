@@ -38,17 +38,17 @@ function Hero() {
 
       <div className="container mx-auto lg:flex px-8 pt-16 pb-8 lg:py-32 justify-center">
         {/* left column */}
-        <div className="text-center lg:text-right lg:mr-20 mb-10 lg:mb-0">
-          <h1 className="text-black text-3xl lg:text-4xl mb-4">
+        <div className="flex flex-col justify-center items-center lg:items-end lg:text-right lg:mr-20 mb-10 lg:mb-0">
+          <h1 className="text-black text-3xl lg:text-5xl mb-4">
             Make 10 React Apps{' '}
-            <span className="text-2xl lg:text-3xl text-blue-800 block text-center lg:text-right">
+            <span className="text-2xl lg:text-4xl text-blue-800 block text-center lg:text-right">
               Series A
             </span>
           </h1>
 
-          <p className="lg:text-lg mb-2">Build more than a to-do app.</p>
+          <p className="lg:text-lg mb-2 text-blue-700">Build more than a to-do app.</p>
 
-          <p className="lg:text-lg mb-6">
+          <p className="lg:text-lg mb-6 text-blue-600">
             10 real-world and fun React apps to build. Grow your React
             knowledge!
           </p>
@@ -70,7 +70,7 @@ function Hero() {
         <div className="lg:w-1/2">
           {/* TODO: go get a random app from the list */}
           {/* randomly chosen gif teaser */}
-          <div className="bg-blue-300 border-2 border-blue-500 rounded shadow-lg p-4 bg-opacity-50">
+          <div className="bg-blue-400 bg-opacity-50 border-2 border-blue-500 rounded shadow-lg p-4">
             <p className="text-lg text-blue-900 mb-4">
               <strong className="block">
                 One of the apps we&apos;ll build:

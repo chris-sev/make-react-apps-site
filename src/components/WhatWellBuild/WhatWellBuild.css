@@ -13,7 +13,7 @@
 
 .number text {
   stroke-width: 0.5px;
-  fill: transparent;
+  fill: #333;
   stroke-dasharray: 1000;
   stroke-dashoffset: 0;
 }
@@ -24,7 +24,7 @@
 }
 
 .number .number-gray {
-  stroke: #fff;
+  stroke: #333;
 }
 
 .app-container:hover .number .number-colored {
