@@ -18,29 +18,19 @@ export default function Course({
         <img src={image} alt="Series A" />
       </Link>
 
-      <div className="p-6">
+      <div className="p-8">
         {/* header */}
-        <div className="flex items-center relative z-10 mb-8">
-          <FontAwesomeIcon
-            icon={['fab', 'react']}
-            size="6x"
-            className="mr-4"
-            color={primaryColor}
-          />
-          <h2 className={`fugaz-one text-3xl leading-none text-${color}-800`}>
-            <Link to={link}>
-              Make 10 React Apps{' '}
-              <span
-                className={`block text-${color}-600 opacity-75 mt-4 text-xl`}
-              >
-                {title}
-              </span>
-            </Link>
-          </h2>
-        </div>
+        <h2
+          className={`fugaz-one mb-4 text-2xl block text-center leading-none text-${color}-800`}
+        >
+          <Link to={link} className="block text-center">
+            Make 10 React Apps{' '}
+            <span className={`text-${color}-600 opacity-75 ml-2`}>{title}</span>
+          </Link>
+        </h2>
 
         {/* paragraph */}
-        <p className="text-lg mb-8 text-center text-gray-700">{paragraph}</p>
+        <p className="text-lg mb-10 text-center text-gray-700">{paragraph}</p>
 
         {/* icon grid */}
         <div className=" text-lg lg:text-xl grid grid-cols-5 gap-6 px-6 text-center text-gray-600 leading-none">

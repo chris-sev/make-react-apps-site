@@ -53,10 +53,13 @@ export default function Bundle() {
             data-podia-embed="link"
             className="col-span-3 flex flex-col items-center justify-center h-full text-3xl lg:text-4xl border-2 border-yellow-300 bg-yellow-300 text-yellow-800 rounded-lg px-6 py-6 cursor-pointer hover:bg-yellow-200 w-full transition-colors duration-150"
           >
-            <strong className="block text-lg mb-3 text-yellow-700">Buy the Bundle</strong>
+            <strong className="block text-lg mb-3 text-yellow-700">
+              Buy the Bundle
+            </strong>
             <span>
               <strong className="line-through opacity-25 mr-2">$110</strong>
               <span className="text-blue-900">$79</span>
+              arrow
             </span>
           </a>
         </div>
