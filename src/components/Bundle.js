@@ -10,9 +10,9 @@ export default function Bundle() {
           Purchase Multiple Courses. Save 30%
         </h2>
 
-        <div className="grid lg:grid-cols-11 gap-4 text-lg text-gray-600 leading-none relative z-10 text-center">
+        <div className="grid lg:grid-cols-11 gap-4 text-lg text-gray-600 leading-none relative z-10 text-center bg-green-200 p-8 rounded-lg shadow">
           {/* series a */}
-          <div className="col-span-3 bg-blue-100 mb-4 rounded-lg">
+          <div className="col-span-3 bg-blue-100 rounded-lg">
             <img
               src="https://scotch-res.cloudinary.com/image/upload/v1594571945/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7_evfnlk.png"
               alt="10 React Apps Series A"
@@ -30,7 +30,7 @@ export default function Bundle() {
           </div>
 
           {/* series b */}
-          <div className="col-span-3 bg-purple-100 mb-4 rounded-lg">
+          <div className="col-span-3 bg-purple-100 rounded-lg">
             <img
               src="https://scotch-res.cloudinary.com/image/upload/v1594571945/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7_1_nq11gx.png"
               alt="10 React Apps Series A"
