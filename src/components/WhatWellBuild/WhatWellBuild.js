@@ -1,7 +1,7 @@
 import React from 'react'
 import './WhatWellBuild.css'
 
-const firstSet = [
+export const seriesAApps = [
   {
     title: 'Pomodoro Timer',
     videoSrc:
@@ -104,7 +104,7 @@ const firstSet = [
   },
 ]
 
-const secondSet = [
+export const seriesBApps = [
   {
     title: 'Chat Box',
     videoSrc:
@@ -157,12 +157,12 @@ const secondSet = [
   },
 ]
 
-export default function WhatWellBuild({ whichSeriesToShow = 'a' }) {
+export default function WhatWellBuild({ whichCourse = 'a' }) {
   return (
     <div
       id="apps"
-      className={`what-well-build text-gray-200 px-2 py-16 lg:py-24 ${
-        whichSeriesToShow === 'a' ? 'bg-blue-900' : 'bg-purple-900'
+      className={`what-well-build text-gray-200 px-2 py-16 lg:py-24 lg:pb-40 ${
+        whichCourse === 'a' ? 'bg-blue-900' : 'bg-purple-900'
       }`}
     >
       <div className="container mx-auto flex flex-col">
@@ -181,9 +181,9 @@ export default function WhatWellBuild({ whichSeriesToShow = 'a' }) {
         {/* list of apps */}
         <div
           className="grid grid-cols-1 lg:grid-cols-2 gap-12"
-          style={{ display: whichSeriesToShow === 'a' ? 'grid' : 'none' }}
+          style={{ display: whichCourse === 'a' ? 'grid' : 'none' }}
         >
-          {firstSet.map((app, index) => (
+          {seriesAApps.map((app, index) => (
             <div key={index}>
               <App app={app} number={index + 1} isLast={index + 1 === 10} />
             </div>
@@ -193,9 +193,9 @@ export default function WhatWellBuild({ whichSeriesToShow = 'a' }) {
         {/* show set b */}
         <div
           className="grid grid-cols-1 lg:grid-cols-2 row-gap-2 col-gap-6"
-          style={{ display: whichSeriesToShow === 'b' ? 'grid' : 'none' }}
+          style={{ display: whichCourse === 'b' ? 'grid' : 'none' }}
         >
-          {secondSet.map((app, index) => (
+          {seriesBApps.map((app, index) => (
             <div key={index}>
               <App app={app} number={index + 1} isLast={index + 1 === 10} />
             </div>
@@ -221,7 +221,7 @@ function App({ app, number }) {
 
         {/* icons */}
         <div className="absolute hidden lg:flex left-0 bottom-0 mb-2 ml-2 text-xs">
-          <div className="mr-2 inline-block py-2 px-3 bg-black bg-opacity-25 rounded text-gray-100">
+          <div className="mr-2 inline-block py-2 px-3 bg-black bg-opacity-75 rounded text-gray-100">
             <span className="mr-2" role="img" aria-label="Videos">
               🎬
             </span>
@@ -230,7 +230,7 @@ function App({ app, number }) {
               {app.numberOfVideos === 1 ? 'video' : 'videos'}
             </span>
           </div>
-          <div className="inline-block py-2 px-3 bg-black bg-opacity-25 rounded text-gray-100">
+          <div className="inline-block py-2 px-3 bg-black bg-opacity-75 rounded text-gray-100">
             <span className="mr-2" role="img" aria-label="Hours">
               🎤
             </span>

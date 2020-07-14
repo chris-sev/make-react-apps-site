@@ -18,14 +18,14 @@ export default function Courses() {
         </div>
 
         {/* loop over the courses */}
-        <div className="flex mb-10">
+        <div className="lg:flex mb-10">
           {/* course 1 */}
           <Course
-            className="mr-20 bg-black"
+            className="mr-10 xl:mr-20 bg-black"
             link="/10-react-apps-series-a"
             title="Series A"
             image="https://scotch-res.cloudinary.com/image/upload/v1594571945/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7_evfnlk.png"
-            paragraph="Build 10 practical and real-world apps. Learn React by building."
+            paragraph="Build 10 practical and real-world apps."
             price="55"
             color="blue"
           />

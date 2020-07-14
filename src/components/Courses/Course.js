@@ -15,16 +15,16 @@ export default function Course({
 }) {
   return (
     <div
-      className={`bg-white shadow rounded overflow-hidden relative mb-8 lg:mb-0 px-2 lg:px-0 ${className}`}
+      className={`bg-white shadow rounded overflow-hidden relative mb-8 lg:mb-0 ${className}`}
     >
       <Link to={link}>
-        <img src={image} alt="Series A" />
+        <img src={image} alt="Course cover image" />
       </Link>
 
-      <div className="p-8">
+      <div className="p-6">
         {/* header */}
         <h2
-          className={`fugaz-one mb-4 text-2xl block text-center leading-none text-${color}-800`}
+          className={`fugaz-one mb-4 text-2xl block text-center leading-tight lg:leading-none text-${color}-800`}
         >
           <Link to={link} className="block text-center">
             Make 10 React Apps{' '}
@@ -33,7 +33,9 @@ export default function Course({
         </h2>
 
         {/* paragraph */}
-        <p className="text-lg mb-10 text-center text-gray-700">{paragraph}</p>
+        <p className="lg:text-lg mb-10 text-center text-gray-700">
+          {paragraph}
+        </p>
 
         {/* icon grid */}
         <div className=" text-lg lg:text-xl grid grid-cols-5 gap-6 px-6 text-center text-gray-600 leading-none">
