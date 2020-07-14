@@ -161,7 +161,7 @@ export default function WhatWellBuild({ whichCourse = 'a' }) {
   return (
     <div
       id="apps"
-      className={`what-well-build text-gray-200 px-10 lg:px-20 py-16 lg:py-24 lg:pb-40 ${
+      className={`what-well-build text-gray-200 px-10 lg:px-20 py-16 lg:py-40 ${
         whichCourse === 'a' ? 'bg-blue-900' : 'bg-purple-900'
       }`}
     >
@@ -245,7 +245,7 @@ function App({ app, number }) {
             href={app.previewLink}
             rel="noopener noreferrer"
             target="_blank"
-            className="bg-orange-800 text-orange-300 leading-none py-2 px-4 rounded shadow text-center mr-2"
+            className="bg-orange-800 hover:bg-orange-700 text-orange-300 leading-none py-2 px-4 rounded shadow text-center mr-2"
           >
             Preview
           </a>
@@ -254,7 +254,7 @@ function App({ app, number }) {
             href={app.demoLink}
             rel="noopener noreferrer"
             target="_blank"
-            className="bg-teal-800 text-teal-300 leading-none py-2 px-4 rounded shadow text-center"
+            className="bg-teal-800 hover:bg-teal-700 text-teal-300 leading-none py-2 px-4 rounded shadow text-center"
           >
             Demo
           </a>

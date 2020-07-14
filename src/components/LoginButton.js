@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 export default function LoginButton({ color = 'blue' }) {
   return (
     <div
-      className={`bg-${color}-300 bg-opacity-75 text-${color}-800 py-1 px-1 rounded-md flex items-center absolute top-0 right-0 mt-2 mr-2`}
+      className={`bg-${color}-900 bg-opacity-50 text-${color}-100 text-xs py-1 px-1 rounded-md flex items-center absolute top-0 right-0 mt-2 mr-2`}
     >
       <span className="pl-2">Already purchased?</span>
       <a
