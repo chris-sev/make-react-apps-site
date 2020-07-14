@@ -13,8 +13,8 @@ export default function Stripes({
       secondaryColor={secondaryColor}
     >
       <span className="opacity-75"></span>
-      <span className="opacity-0 md:opacity-75"></span>
-      <span className="opacity-0 md:opacity-75"></span>
+      <span className="opacity-0 lg:opacity-75"></span>
+      <span className="opacity-0 lg:opacity-75"></span>
       <span className="opacity-75"></span>
       <span className="opacity-75"></span>
     </SStripes>

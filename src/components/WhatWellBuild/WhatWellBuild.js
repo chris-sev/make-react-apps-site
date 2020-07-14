@@ -161,14 +161,14 @@ export default function WhatWellBuild({ whichCourse = 'a' }) {
   return (
     <div
       id="apps"
-      className={`what-well-build text-gray-200 px-2 py-16 lg:py-24 lg:pb-40 ${
+      className={`what-well-build text-gray-200 px-10 lg:px-20 py-16 lg:py-24 lg:pb-40 ${
         whichCourse === 'a' ? 'bg-blue-900' : 'bg-purple-900'
       }`}
     >
       <div className="container mx-auto flex flex-col">
         {/* header */}
-        <div className="flex flex-col justify-between mb-20">
-          <div className="mb-6 flex items-center justify-center">
+        <div className="flex flex-col justify-between mb-16">
+          <div className="flex items-center justify-center">
             <h2 className="fugaz-one mb text-5xl mr-6">
               The Apps We&apos;ll Build
             </h2>
@@ -180,7 +180,7 @@ export default function WhatWellBuild({ whichCourse = 'a' }) {
 
         {/* list of apps */}
         <div
-          className="grid grid-cols-1 lg:grid-cols-2 gap-12"
+          className="grid grid-cols-1 lg:grid-cols-2 row-gap-4 col-gap-12"
           style={{ display: whichCourse === 'a' ? 'grid' : 'none' }}
         >
           {seriesAApps.map((app, index) => (
@@ -245,7 +245,7 @@ function App({ app, number }) {
             href={app.previewLink}
             rel="noopener noreferrer"
             target="_blank"
-            className="bg-gray-800 hover:bg-orange-400 text-gray-500 hover:text-orange-800 leading-none py-2 px-4 rounded shadow text-center mr-2 transition-colors ease-in-out duration-150"
+            className="bg-orange-800 text-orange-300 leading-none py-2 px-4 rounded shadow text-center mr-2"
           >
             Preview
           </a>
@@ -254,7 +254,7 @@ function App({ app, number }) {
             href={app.demoLink}
             rel="noopener noreferrer"
             target="_blank"
-            className="bg-gray-800 hover:bg-teal-400 text-gray-500 hover:text-teal-800 leading-none py-2 px-4 rounded shadow text-center transition-colors ease-in-out duration-150"
+            className="bg-teal-800 text-teal-300 leading-none py-2 px-4 rounded shadow text-center"
           >
             Demo
           </a>

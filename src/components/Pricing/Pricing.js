@@ -28,7 +28,7 @@ export default function Pricing({ whichCourse = 'a' }) {
     >
       <div className="container mx-auto">
         {/* pricing box ==================================================== */}
-        <div className="bg-white rounded-lg shadow-lg w-4/5 lg:w-3/5 text-gray-900 mx-auto">
+        <div className="bg-white rounded-lg shadow-lg w-full md:w-4/5 xl:w-3/5 text-gray-900 mx-auto">
           {/* header */}
           <h3
             className={`fugaz-one  w-full pt-6 pb-4 lg:pt-8 lg:pb-6 px-4 text-center text-2xl lg:text-4xl font-bold uppercase rounded-t-lg bg-${color}-200 text-${color}-500`}

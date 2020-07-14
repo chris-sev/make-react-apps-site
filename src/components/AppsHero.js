@@ -14,6 +14,13 @@ export default function Hero({ whichCourse = 'a' }) {
     b: { background: '#d7bdfa', primary: '#80d7dd', secondary: '#285183' },
   }
 
+  function createGif(url) {
+    // optimization thanks to cloudinary
+    return url
+      .replace('/upload/', '/upload/w_800,fl_animated,f_auto/')
+      .replace('.mp4', '.gif')
+  }
+
   return (
     <div className="text-blue-800 relative">
       <Stripes
@@ -78,9 +85,10 @@ export default function Hero({ whichCourse = 'a' }) {
                 View the Demo
               </a>
             </p>
-            <video autoPlay controls className="rounded-lg">
-              <source src={randomApp.videoSrc} type="video/mp4" />
-            </video>
+
+            <a href={randomApp.demoLink}>
+              <img src={createGif(randomApp.videoSrc)} className="rounded" />
+            </a>
           </div>
         </div>
       </div>
