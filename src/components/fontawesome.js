@@ -10,6 +10,7 @@ import {
   faPlus,
   faEquals,
   faArrowRight,
+  faCheck,
 } from '@fortawesome/pro-duotone-svg-icons'
 
 library.add(
@@ -22,5 +23,6 @@ library.add(
   faWatch,
   faPlus,
   faEquals,
-  faArrowRight
+  faArrowRight,
+  faCheck
 )

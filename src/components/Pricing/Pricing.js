@@ -20,6 +20,16 @@ export default function Pricing({ whichCourse = 'a' }) {
   const { url } = wordsAreHard[whichCourse]
 
   const color = whichCourse === 'a' ? 'blue' : 'purple'
+  const iconColors =
+    whichCourse === 'a'
+      ? {
+          '--fa-primary-color': '#4b5ed4',
+          '--fa-secondary-color': '#19b9ca',
+        }
+      : {
+          '--fa-primary-color': '#91cef4',
+          '--fa-secondary-color': '#ff9676',
+        }
 
   return (
     <SPricing
@@ -31,49 +41,83 @@ export default function Pricing({ whichCourse = 'a' }) {
         <div className="bg-white rounded-lg shadow-lg w-full md:w-4/5 xl:w-3/5 text-gray-900 mx-auto">
           {/* header */}
           <h3
-            className={`fugaz-one  w-full pt-6 pb-4 lg:pt-8 lg:pb-6 px-4 text-center text-2xl lg:text-4xl font-bold uppercase rounded-t-lg bg-${color}-200 text-${color}-500`}
+            className={`fugaz-one w-full pt-6 pb-4 lg:pt-8 lg:pb-6 px-12 text-2xl lg:text-4xl font-bold uppercase rounded-t-lg bg-${color}-200 text-${color}-500`}
           >
             Start{' '}
             <strong className={`text-${color}-700`}>Creating React Apps</strong>
           </h3>
 
-          <div className="pt-10 pb-12 px-6 lg:px-12">
+          <div className="py-10 px-12">
             {/* price info */}
             <div
-              className={`mb-8 text-${color}-800 text-xl md:text-3xl flex items-center justify-center leading-none`}
+              className={`text-${color}-800 flex items-center leading-none text-6xl`}
             >
-              <div className="has-dollar-sign flex items-center text-6xl mx-8 pb-2">
-                <span className="text-4xl mr-2 opacity-75">$</span>
+              <div>
+                <span className="mr-1 opacity-50">$</span>
                 <span>55</span>
               </div>
             </div>
+            <p className="mt-6 text-lg text-gray-600">
+              All the React training to level up your skills.
+            </p>
+          </div>
 
+          <div className="bg-gray-100 text-gray-700 py-10 px-12">
             {/* main info */}
-            <p className="leading-loose mb-8 lg:text-xl font-normal">
-              <span role="img" aria-label="Check">
-                ✅
-              </span>{' '}
-              Get access to 49 videos
-              <br />
-              <span role="img" aria-label="Check">
-                ✅
-              </span>{' '}
-              6 hours of learning
-              <br />
-              <span role="img" aria-label="Check">
-                ✅
-              </span>{' '}
-              Source code for the apps
-              <br />
-              <span role="img" aria-label="Check">
-                ✅
-              </span>{' '}
-              Access to messaging me
-              <br />
-              <span role="img" aria-label="Check">
-                ✅
-              </span>{' '}
-              Unlimited updates
+            <p className="leading-loose mb-8 font-normal">
+              <div className="flex items-center">
+                <FontAwesomeIcon
+                  icon={['fad', 'check']}
+                  className="mr-3"
+                  style={iconColors}
+                />
+                Get access to 49 videos
+              </div>
+
+              <div className="flex items-center">
+                <FontAwesomeIcon
+                  icon={['fad', 'check']}
+                  className="mr-3"
+                  style={iconColors}
+                />
+                6 hours of learning
+              </div>
+
+              <div className="flex items-center">
+                <FontAwesomeIcon
+                  icon={['fad', 'check']}
+                  className="mr-3"
+                  style={iconColors}
+                />
+                Source code for the apps
+              </div>
+
+              <div className="flex items-center">
+                <FontAwesomeIcon
+                  icon={['fad', 'check']}
+                  className="mr-3"
+                  style={iconColors}
+                />
+                Access to messaging me
+              </div>
+
+              <div className="flex items-center">
+                <FontAwesomeIcon
+                  icon={['fad', 'check']}
+                  className="mr-3"
+                  style={iconColors}
+                />
+                Use the code for your own projects
+              </div>
+
+              <div className="flex items-center">
+                <FontAwesomeIcon
+                  icon={['fad', 'check']}
+                  className="mr-3"
+                  style={iconColors}
+                />
+                Unlimited updates
+              </div>
             </p>
 
             <SCheckoutButton

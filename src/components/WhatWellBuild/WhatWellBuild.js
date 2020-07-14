@@ -293,18 +293,18 @@ function Number({ number }) {
     </div>
   )
 }
+;``
 
 function Video({ url }) {
   // optimization thanks to cloudinary
-  const optimizedVideoUrl = url.replace('/upload/', '/upload/w_800,q_auto/')
+  const optimizedVideoUrl = url
+    .replace('/upload/', '/upload/w_800,fl_animated,f_auto,q_auto/')
+    .replace('.mp4', '.gif')
 
   return (
-    <video
+    <img
       className="app-video rounded-lg shadow-lg md:mx-auto lg:mr-12 mb-6 xl:mb-0 w-full"
-      onMouseOver={(e) => e.target.play()}
-      onMouseOut={(e) => e.target.pause()}
-    >
-      <source src={optimizedVideoUrl} type="video/mp4" />
-    </video>
+      src={optimizedVideoUrl}
+    />
   )
 }

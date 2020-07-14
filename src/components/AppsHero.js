@@ -2,6 +2,8 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Stripes from './Stripes'
 import { seriesAApps, seriesBApps } from './WhatWellBuild/WhatWellBuild'
+import BackHomeButton from './BackHomeButton'
+import LoginButton from './LoginButton'
 
 export default function Hero({ whichCourse = 'a' }) {
   const series = whichCourse === 'a' ? seriesAApps : seriesBApps
@@ -17,12 +19,15 @@ export default function Hero({ whichCourse = 'a' }) {
   function createGif(url) {
     // optimization thanks to cloudinary
     return url
-      .replace('/upload/', '/upload/w_800,fl_animated,f_auto/')
+      .replace('/upload/', '/upload/w_800,fl_animated,f_auto,q_auto/')
       .replace('.mp4', '.gif')
   }
 
   return (
     <div className="text-blue-800 relative">
+      <BackHomeButton />
+      <LoginButton color={whichCourse === 'a' ? 'blue' : 'purple'} />
+
       <Stripes
         bgColor={colors[whichCourse].background}
         primaryColor={colors[whichCourse].primary}
