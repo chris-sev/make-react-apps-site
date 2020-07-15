@@ -48,3 +48,7 @@ strong {
   top: 5px;
   left: -3px;
 }
+
+[data-reach-dialog-overlay] {
+  z-index: 10;
+}

@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+import { useEffect } from 'react'
 
 /**
  * Podia hosts my courses.
@@ -9,11 +9,11 @@ import { useEffect } from "react"
 
 export default function usePodia() {
   useEffect(() => {
-    if (document.getElementById("podia-script")) return
+    if (document.getElementById('podia-scrippp')) return
 
-    const script = document.createElement("script")
-    script.id = "podia-script"
-    script.src = "https://cdn.podia.com/embeds.js"
+    const script = document.createElement('script')
+    script.id = 'podia-scrippp'
+    script.src = 'https://cdn.podia.com/embeds.js'
     script.async = true
     document.body.appendChild(script)
 

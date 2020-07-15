@@ -56,7 +56,6 @@
 }
 
 .message {
-  display: grid;
   grid-template-columns: 55px auto 55px;
 }
 

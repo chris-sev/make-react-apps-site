@@ -2,35 +2,22 @@ import React from 'react'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Walkthrough from './Walkthrough/Walkthrough'
+import LoginButton from './LoginButton'
+import Stripes from './Stripes'
 
 export default function MainHero() {
   return (
-    <SHomeHero className="px-4 lg:px-0 pt-20 pb-16 lg:pt-48 lg:pb-48 relative">
-      {/* floating login button */}
-      <div className="bg-blue-300 text-blue-600 py-1 px-1 rounded-md flex items-center absolute top-0 right-0 mt-4 mr-4">
-        <span className="pl-2">Already purchased?</span>
-        <a
-          href="https://learn.chrisoncode.io/login"
-          className="ml-3 bg-blue-700 text-blue-200 rounded shadow py-2 px-3 hover:bg-blue-600"
-        >
-          Login
-        </a>
-      </div>
+    <SHomeHero className="px-8 pt-20 pb-16 lg:pt-48 lg:pb-48 relative">
+      <LoginButton />
 
-      <div id="stripes">
-        <span className="opacity-0 lg:opacity-75"></span>
-        <span className="opacity-0 lg:opacity-75"></span>
-        <span className="opacity-0 lg:opacity-75"></span>
-        <span className="opacity-0 lg:opacity-75"></span>
-        <span className="opacity-0 lg:opacity-75"></span>
-      </div>
+      <Stripes />
 
       {/* columns */}
       <div className="container mx-auto lg:flex relative z-10">
         <div className="lg:flex-grow">
           <h2 className="home-title relative text-2xl leading-none grid grid-cols-2 grid-rows-3">
             <span className="make fugaz-one text-4xl text-blue-200">Make</span>
-            <span className="react text-white row-start-2 col-span-2 leading-relaxed md:leading-none text-justify">
+            <span className="react text-white row-start-2 col-span-2 leading-none text-justify">
               React
             </span>
             <span className="apps fugaz-one block w-full text-right text-blue-200 text-4xl pr-12 row-start-3 col-start-2">
@@ -65,7 +52,7 @@ export default function MainHero() {
 
       {/* overlay thingy with reasons */}
       <div
-        className="lg:absolute bottom-0 left-0 right-0 z-10"
+        className="lg:absolute bottom-0 left-0 right-0 z-10 mx-8"
         style={{ transform: 'translateY(60%)' }}
       >
         <div className="container mx-auto grid grid-cols-2 md:grid-cols-4 text-center bg-gray-200 rounded-lg shadow gap-4 p-4">
@@ -146,51 +133,5 @@ const SHomeHero = styled.section`
     .apps {
       transform: rotate(-0.02turn);
     }
-  }
-
-  #stripes {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 120%;
-    display: grid;
-    background: linear-gradient(150deg, #142a5b 15%, #142a5b 70%, #142a5b 94%);
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    transform: skewY(-5deg);
-    transform-origin: 0;
-  }
-
-  #stripes span {
-    /* border: 1px solid #c00c00; */
-  }
-
-  #stripes span:first-child {
-    grid-column: span 1;
-    background: #15eaef;
-  }
-
-  #stripes span:nth-child(2) {
-    grid-column: span 2;
-    background: #142a5b;
-  }
-
-  #stripes span:nth-child(3) {
-    grid-column: span 2;
-    background: #5d71ff;
-  }
-
-  #stripes span:nth-child(4) {
-    grid-column: 7;
-    grid-row: 3;
-    background: #15eaef;
-  }
-
-  #stripes span:nth-child(5) {
-    grid-column: span 2;
-    grid-row: 4;
-    background: #5d71ff;
   }
 `

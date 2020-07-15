@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `20 React Apps`,
-        short_name: `20-react-apps`,
+        name: `Make React Apps`,
+        short_name: `make-react-apps`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,

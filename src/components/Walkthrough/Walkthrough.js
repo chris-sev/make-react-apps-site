@@ -70,13 +70,13 @@ function Loader({ even }) {
       initial={{ rotate: 10, scale: 0 }}
       animate={{ rotate: 0, scale: 1 }}
     >
-      <div style={{ width: '55px' }} />
+      <div className="hidden md:block" style={{ width: '55px' }} />
       <div className={`loader ${even ? 'ml-3 mr-auto' : 'mr-3 ml-auto'}`}>
         <div />
         <div />
         <div />
       </div>
-      <div style={{ width: '55px' }} />
+      <div className="hidden md:block" style={{ width: '55px' }} />
     </motion.div>
   )
 }
@@ -84,11 +84,11 @@ function Loader({ even }) {
 function Message({ data, even, message }) {
   return (
     <motion.div
-      className="message mb-3"
+      className="message block md:grid mb-3"
       initial={{ rotate: -5, scale: 0 }}
       animate={{ rotate: 0, scale: 1 }}
     >
-      <div>
+      <div className="hidden md:block">
         <Img
           style={{ width: '45px' }}
           fluid={data.kapehe.childImageSharp.fluid}
@@ -103,7 +103,7 @@ function Message({ data, even, message }) {
       >
         {message.text}
       </div>
-      <div>
+      <div className="hidden md:block">
         <Img
           style={{ width: '45px' }}
           fluid={data.chris.childImageSharp.fluid}

@@ -292,43 +292,19 @@ const secondSection = [
   },
 ]
 
-export default function LessonList({
-  whichSeriesToShow,
-  setWhichSeriesToShow,
-}) {
+export default function LessonList({ whichCourse = 'a' }) {
   return (
     <div className="lesson-list bg-white text-gray-800 py-32 px-6 lg:px-24 lg:pt-32 lg:pb-40">
       <div className="container mx-auto">
-        <h2 className="fugaz-one text-2xl lg:text-4xl mb-10 text-center">
+        <h2 className="fugaz-one text-2xl lg:text-4xl text-center mb-2">
           Videos List
         </h2>
-
-        {/* buttons */}
-        <div className="flex items-center justify-center mb-10">
-          <button
-            onClick={() => setWhichSeriesToShow('a')}
-            className={`text-xl py-3 px-8 border-2 rounded-lg mr-4 transition-all duration-150 ease-linear outline-none ${
-              whichSeriesToShow === 'a'
-                ? 'bg-blue-300 border-blue-500 text-blue-800 shadow-2xl'
-                : 'bg-transparent hover:bg-blue-200 border-gray-400 text-blue-500'
-            }`}
-          >
-            Apps in Series A
-          </button>
-          <button
-            onClick={() => setWhichSeriesToShow('b')}
-            className={`text-xl py-3 px-8 border-2 rounded-lg mr-4 transition-all duration-150 ease-linear outline-none ${
-              whichSeriesToShow === 'b'
-                ? 'bg-purple-300 border-purple-500 text-purple-800 shadow-2xl'
-                : 'bg-transparent hover:bg-purple-200 border-gray-400 text-purple-500'
-            }`}
-          >
-            Apps in Series B
-          </button>
-        </div>
+        <h3 className="arial text-center text-xl mb-10 text-gray-600">
+          49 videos. 6 hours of learning
+        </h3>
 
         {/* show the lists */}
-        {whichSeriesToShow === 'a' &&
+        {whichCourse === 'a' &&
           firstSection.map((section, index) => (
             <LessonSection
               key={index}
@@ -338,7 +314,7 @@ export default function LessonList({
             />
           ))}
 
-        {whichSeriesToShow === 'b' &&
+        {whichCourse === 'b' &&
           secondSection.map((section, index) => (
             <LessonSection
               key={index}

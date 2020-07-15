@@ -9,6 +9,8 @@ import {
   faWatch,
   faPlus,
   faEquals,
+  faArrowRight,
+  faCheck,
 } from '@fortawesome/pro-duotone-svg-icons'
 
 library.add(
@@ -20,5 +22,7 @@ library.add(
   faCameraHome,
   faWatch,
   faPlus,
-  faEquals
+  faEquals,
+  faArrowRight,
+  faCheck
 )

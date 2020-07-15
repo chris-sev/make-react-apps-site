@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     question: `Is there purchase parity for my country?`,
-    answer: `Yup <strong class="font-bold">50% off</strong>! Email me at <a class="text-blue-600 underline" href="mailto:hey@chrisoncode.io">hey@chrisoncode.io</a> and I'll send you a discount code.`,
+    answer: `Yup! Email me at <a class="text-blue-600 underline" href="mailto:hey@chrisoncode.io">hey@chrisoncode.io</a> and I'll send you a purchase power parity code.`,
   },
   {
     question: `Is there an affiliate program?`,
@@ -62,7 +62,7 @@ export default function FAQ() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {faqs.map((faq, index) => (
             <div key={index} className="bg-white rounded shadow-lg p-6 lg:p-12">
-              <h4 className="russo text-lg lg:text-xl mb-2 text-gray-800 leading-snug tracking-wide">
+              <h4 className="arial font-bold text-lg lg:text-xl mb-2 text-gray-700 leading-snug">
                 {faq.question}
               </h4>
 

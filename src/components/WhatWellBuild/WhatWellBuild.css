@@ -13,7 +13,7 @@
 
 .number text {
   stroke-width: 0.5px;
-  fill: transparent;
+  fill: #333;
   stroke-dasharray: 1000;
   stroke-dashoffset: 0;
 }
@@ -24,32 +24,11 @@
 }
 
 .number .number-gray {
-  stroke: #fff;
+  stroke: #333;
 }
 
 .app-container:hover .number .number-colored {
   animation: dash 4s linear infinite;
-}
-
-/* @media screen and (min-width: 1280px) {
-  .app-video {
-    max-width: 500px;
-  }
-} */
-
-.app-container .demo-button,
-.app-container .preview-button {
-  transition: 0.3s ease all;
-}
-
-.app-container:hover .preview-button {
-  background: #ed8936 !important;
-  color: #f8ddae !important;
-}
-
-.app-container:hover .demo-button {
-  background: #f6e05e !important;
-  color: #865625 !important;
 }
 
 @keyframes dash {
