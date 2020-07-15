@@ -21,7 +21,7 @@ export default function Courses() {
             className="lg:mr-10 xl:mr-20 bg-black"
             link="/10-react-apps-series-a"
             title="Series A"
-            image="https://scotch-res.cloudinary.com/image/upload/v1594571945/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7_evfnlk.png"
+            image="https://scotch-res.cloudinary.com/image/upload/q_auto/v1594571945/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7_evfnlk.png"
             paragraph="Build 10 practical and real-world apps."
             price="47"
             color="blue"
@@ -31,7 +31,7 @@ export default function Courses() {
           <Course
             link="/10-react-apps-series-b"
             title="Series B"
-            image="https://scotch-res.cloudinary.com/image/upload/v1594571945/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7_1_nq11gx.png"
+            image="https://scotch-res.cloudinary.com/image/upload/q_auto/v1594571945/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7_1_nq11gx.png"
             paragraph="Learn React by building even moar apps."
             price="47"
             color="purple"

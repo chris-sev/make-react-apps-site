@@ -14,7 +14,7 @@ export default function Bundle() {
           {/* series a */}
           <div className="col-span-3 bg-blue-100 rounded-lg">
             <img
-              src="https://scotch-res.cloudinary.com/image/upload/v1594571945/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7_evfnlk.png"
+              src="https://scotch-res.cloudinary.com/image/upload/q_auto/v1594571945/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7_evfnlk.png"
               alt="10 React Apps Series A"
               className="rounded-t-lg"
             />
@@ -32,7 +32,7 @@ export default function Bundle() {
           {/* series b */}
           <div className="col-span-3 bg-purple-100 rounded-lg">
             <img
-              src="https://scotch-res.cloudinary.com/image/upload/v1594571945/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7_1_nq11gx.png"
+              src="https://scotch-res.cloudinary.com/image/upload/q_auto/v1594571945/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7_1_nq11gx.png"
               alt="10 React Apps Series A"
               className="rounded-t-lg"
             />
