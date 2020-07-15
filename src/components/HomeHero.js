@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { AnchorLink } from 'gatsby-plugin-anchor-links'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Walkthrough from './Walkthrough/Walkthrough'
 import LoginButton from './LoginButton'
@@ -34,15 +35,15 @@ export default function MainHero() {
               job, in side projects, and in any React app.
             </p>
 
-            <a
-              href="#courses"
+            <AnchorLink
+              to="/#courses"
               className="block text-center text-lg bg-yellow-400 hover:bg-yellow-300 text-yellow-900 shadow-2xl rounded-lg p-5 cursor-pointer w-full xl:w-2/3 transition-colors duration-300 ease-in"
             >
               <span role="img" aria-label="Spock Hand" className="mr-1">
                 ⚛️
               </span>{' '}
               See the Courses
-            </a>
+            </AnchorLink>
           </div>
         </div>
         <div className="flex items-center justify-center lg:flex-shrink lg:pl-20">

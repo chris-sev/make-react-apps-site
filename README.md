@@ -1,6 +1,6 @@
 # Make 20 React Apps Site
 
-This is the code for the sales site for [20ReactApps.com](https://20ReactApps.com).
+This is the code for the sales site for [MakeReactApps.com](https://MakeReactApps.com).
 
 Making this a public repo so you can take a look at how I made the site. It uses:
 

@@ -24,11 +24,19 @@ export default function Course({
       <div className="p-6">
         {/* header */}
         <h2
-          className={`fugaz-one mb-4 text-2xl block text-center leading-tight lg:leading-none text-${color}-800`}
+          className={`fugaz-one mb-4 text-2xl block text-center leading-tight lg:leading-none ${
+            color === 'blue' ? 'text-blue-800' : 'text-purple-800'
+          }`}
         >
           <Link to={link} className="block text-center">
             Make 10 React Apps{' '}
-            <span className={`text-${color}-600 opacity-75 ml-2`}>{title}</span>
+            <span
+              className={`opacity-75 ml-2 ${
+                color === 'blue' ? 'text-blue-600' : 'text-purple-600'
+              }`}
+            >
+              {title}
+            </span>
           </Link>
         </h2>
 
@@ -70,11 +78,21 @@ export default function Course({
           <div className="col-span-2 xl:col-span-3">
             <Link
               to={link}
-              className={`flex items-center justify-center h-full border-2 border-${color}-300 bg-${color}-100 text-${color}-900 rounded-lg px-6 py-6 cursor-pointer hover:bg-${color}-200 w-full transition-colors duration-150`}
+              className={`flex items-center justify-center h-full border-2 rounded-lg px-6 py-6 cursor-pointer transition duration-150 ${
+                color === 'blue'
+                  ? 'border-blue-300 bg-blue-100 text-blue-900 hover:bg-blue-200'
+                  : 'border-purple-300 bg-purple-100 text-purple-900 hover:bg-purple-200'
+              }`}
               style={{ boxShadow: `3px 3px 0 ${primaryColor}` }}
             >
               <strong className="font-bold mr-3">View Course</strong>
-              <span className={`text-${color}-900`}>${price}</span>
+              <span
+                className={`${
+                  color === 'blue' ? 'text-blue-900' : 'text-purple-900'
+                }`}
+              >
+                ${price}
+              </span>
             </Link>
           </div>
         </div>

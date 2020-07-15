@@ -1,7 +1,10 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import usePodia from './usePodia'
 
 export default function Bundle() {
+  usePodia()
+
   return (
     <div className="bg-green-200 text-green-800 px-6 py-32">
       <div className="container mx-auto">
@@ -14,7 +17,7 @@ export default function Bundle() {
           {/* series a */}
           <div className="col-span-3 bg-blue-100 rounded-lg">
             <img
-              src="https://scotch-res.cloudinary.com/image/upload/v1594571945/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7_evfnlk.png"
+              src="https://scotch-res.cloudinary.com/image/upload/q_auto/v1594571945/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7_evfnlk.png"
               alt="10 React Apps Series A"
               className="rounded-t-lg"
             />
@@ -32,7 +35,7 @@ export default function Bundle() {
           {/* series b */}
           <div className="col-span-3 bg-purple-100 rounded-lg">
             <img
-              src="https://scotch-res.cloudinary.com/image/upload/v1594571945/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7_1_nq11gx.png"
+              src="https://scotch-res.cloudinary.com/image/upload/q_auto/v1594571945/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7_1_nq11gx.png"
               alt="10 React Apps Series A"
               className="rounded-t-lg"
             />
