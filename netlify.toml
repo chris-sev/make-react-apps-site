@@ -2,3 +2,13 @@
   from = "/*"
   to = "https://makereactapps.com"
   status = 301
+
+[[redirects]]
+  from = "https://20reactapps.com"
+  to = "https://makereactapps.com"
+  status = 301
+
+[[redirects]]
+  from = "https://20reactapps.com/*"
+  to = "https://makereactapps.com"
+  status = 301
