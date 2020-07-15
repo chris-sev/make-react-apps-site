@@ -18,7 +18,10 @@ export default function usePodia() {
     document.body.appendChild(script)
 
     return () => {
-      document.body.removeChild(script)
+      script.parentNode.removeChild(script)
+
+      const podiaScript = document.getElementById('podia-embed-script')
+      podiaScript.parentNode.removeChild(podiaScript)
     }
   }, [])
 }
