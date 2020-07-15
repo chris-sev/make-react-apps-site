@@ -63,7 +63,7 @@ export default function Pricing({ whichCourse = 'a' }) {
             >
               <div>
                 <span className="mr-1 opacity-50">$</span>
-                <span>55</span>
+                <span>47</span>
               </div>
             </div>
             <p className="mt-6 text-lg text-gray-600">
@@ -161,7 +161,7 @@ function UpsellDialog({ isShowing, url, close }) {
       onDismiss={close}
     >
       <h2 className="arial text-2xl lg:text-4xl text-gray-700">
-        Get a 2nd Course for <strong className="text-gray-800">50% Off</strong>
+        Get a 2nd Course for <strong className="text-gray-800">30% Off</strong>
       </h2>
       <p className="text-lg mb-10 text-gray-700">
         Bundle two courses together and{' '}
@@ -202,7 +202,7 @@ function UpsellDialog({ isShowing, url, close }) {
       >
         <span>
           Buy Bundle{' '}
-          <span className="line-through ml-2 mr-1 opacity-75">$110</span>
+          <span className="line-through ml-2 mr-1 opacity-75">$94</span>
           <strong className="text-white">$79</strong>
         </span>
         <span className="block mt-1 opacity-50 text-xs">
