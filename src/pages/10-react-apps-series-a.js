@@ -19,7 +19,10 @@ export default function ReactApps() {
     <>
       <SEO title="Make 10 React Apps (Series A) - Practical React Learning" />
 
-      <FloatingButton isShowing={showFloatingButton} />
+      <FloatingButton
+        isShowing={showFloatingButton}
+        url="/10-react-apps-series-a#pricing"
+      />
 
       <div ref={topRef}>
         <AppsHero />
@@ -30,7 +33,7 @@ export default function ReactApps() {
       <LessonList />
       <WhoAmI />
       <FAQ />
-      <Bundle />
+      {/* <Bundle /> */}
       <Footer />
     </>
   )

@@ -1,4 +1,5 @@
 import React from 'react'
+import { AnchorLink } from 'gatsby-plugin-anchor-links'
 import './LessonList.css'
 
 const gettingStartedSection = {
@@ -293,6 +294,9 @@ const secondSection = [
 ]
 
 export default function LessonList({ whichCourse = 'a' }) {
+  const url =
+    whichCourse === 'a' ? '/10-react-apps-series-a' : '/10-react-apps-series-b'
+
   return (
     <div className="lesson-list bg-white text-gray-800 py-32 px-6 lg:px-24 lg:pt-32 lg:pb-40">
       <div className="container mx-auto">
@@ -310,6 +314,7 @@ export default function LessonList({ whichCourse = 'a' }) {
           firstSection.map((section, index) => (
             <LessonSection
               key={index}
+              url={url}
               section={section}
               index={index}
               isLast={index + 1 === 10}
@@ -320,6 +325,7 @@ export default function LessonList({ whichCourse = 'a' }) {
           secondSection.map((section, index) => (
             <LessonSection
               key={index}
+              url={url}
               section={section}
               index={index}
               isLast={index + 1 === 10}
@@ -330,7 +336,7 @@ export default function LessonList({ whichCourse = 'a' }) {
   )
 }
 
-function LessonSection({ section, index, isLast }) {
+function LessonSection({ section, index, isLast, url }) {
   return (
     <div className="bg-white text-gray-600 rounded-lg shadow mb-8 w-full lg:w-4/5 mx-auto leading-relaxed">
       <div className="flex justify-between bg-gray-200 py-3 px-4 border rounded-t-lg">
@@ -379,12 +385,12 @@ function LessonSection({ section, index, isLast }) {
               </a>
             )}
             {!lesson.previewLink && (
-              <a
-                href="#pricing"
+              <AnchorLink
+                to={`${url}#pricing`}
                 className="py-2 px-4 rounded shadow bg-gray-400 hover:bg-gray-300 text-white w-full text-xs md:text-sm transition-colors"
               >
                 Get Access
-              </a>
+              </AnchorLink>
             )}
           </div>
         </div>

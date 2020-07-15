@@ -1,11 +1,13 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { AnchorLink } from 'gatsby-plugin-anchor-links'
 import Stripes from './Stripes'
 import { seriesAApps, seriesBApps } from './WhatWellBuild/WhatWellBuild'
 import BackHomeButton from './GoHomeButton'
 import LoginButton from './LoginButton'
 
 export default function Hero({ whichCourse = 'a' }) {
+  const url =
+    whichCourse === 'a' ? '/10-react-apps-series-a' : '/10-react-apps-series-b'
   const series = whichCourse === 'a' ? seriesAApps : seriesBApps
   const randomApp = series[Math.floor(Math.random() * series.length)]
 
@@ -57,18 +59,18 @@ export default function Hero({ whichCourse = 'a' }) {
 
           {/* call to action */}
           <div className="lg:w-2/5 mx-auto grid grid-cols-2 col-gap-4 md:text-xl">
-            <a
-              href="#apps"
+            <AnchorLink
+              to={`${url}#apps`}
               className="w-full flex items-center justify-center bg-white text-yellow-700 py-4 px-6 rounded shadow hover:shadow-lg mx-auto transition-all ease-in-out duration-150"
             >
               View the Apps
-            </a>
-            <a
-              href="#pricing"
+            </AnchorLink>
+            <AnchorLink
+              to={`${url}#pricing`}
               className="w-full flex items-center justify-center bg-yellow-400 hover:bg-yellow-300 text-yellow-900 py-4 px-6 rounded shadow hover:shadow-lg mx-auto transition-all ease-in-out duration-150"
             >
               Buy the Course
-            </a>
+            </AnchorLink>
           </div>
         </div>
 

@@ -1,7 +1,10 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import usePodia from './usePodia'
 
 export default function Bundle() {
+  usePodia()
+
   return (
     <div className="bg-green-200 text-green-800 px-6 py-32">
       <div className="container mx-auto">
