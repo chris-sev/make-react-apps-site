@@ -63,7 +63,7 @@ export const seriesAApps = [
       'https://learn.chrisoncode.io/courses/10-react-apps-series-a/348625-06-infinite-image-gallery/992060-00-infinite-image-gallery-preview',
   },
   {
-    title: 'Trivia',
+    title: 'Trivia Game',
     videoSrc:
       'https://scotch-res.cloudinary.com/video/upload/v1592352066/07_-_trivia_s5dp85.mp4',
     numberOfVideos: 6,

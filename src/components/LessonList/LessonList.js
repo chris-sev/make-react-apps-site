@@ -301,8 +301,8 @@ export default function LessonList({ whichCourse = 'a' }) {
         </h2>
         <h3 className="arial text-center text-xl mb-10 text-gray-600">
           {whichCourse === 'a'
-            ? '49 videos. 6 hours of learning'
-            : '32 videos. 5 hours of learning'}
+            ? '49 videos. 6+ hours of learning'
+            : '32 videos. 5+ hours of learning'}
         </h3>
 
         {/* show the lists */}
