@@ -92,7 +92,7 @@ export default function Pricing({ whichCourse = 'a' }) {
                   className="mr-3"
                   style={iconColors}
                 />
-                Get access to 49 videos
+                Get access to {whichCourse === 'a' ? '49 videos' : '32 videos'}
               </div>
 
               <div className="flex items-center">
@@ -101,7 +101,7 @@ export default function Pricing({ whichCourse = 'a' }) {
                   className="mr-3"
                   style={iconColors}
                 />
-                6 hours of learning
+                6+ hours of learning
               </div>
 
               <div className="flex items-center">
