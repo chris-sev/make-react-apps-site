@@ -17,11 +17,14 @@ export default function Hero({ whichCourse = 'a' }) {
     b: { background: '#7f56b2', primary: '#80d7dd', secondary: '#285183' },
   }
 
-  function createGif(url) {
+  const videoSrc =
+    whichCourse === 'a'
+      ? 'https://scotch-res.cloudinary.com/video/upload/v1594830809/series-a-teaser_droxc0.mp4'
+      : randomApp.videoSrc
+
+  function optimizeMedia(url) {
     // optimization thanks to cloudinary
-    return url
-      .replace('/upload/', '/upload/w_1200,fl_animated,f_auto,q_auto/')
-      .replace('.mp4', '.gif')
+    return url.replace('/upload/', '/upload/w_1200,q_auto/')
   }
 
   return (
@@ -76,7 +79,9 @@ export default function Hero({ whichCourse = 'a' }) {
 
         {/* supercut of all apps */}
         <div className="w-full lg:w-4/5 mx-auto rounded-lg shadow-lg relative z-10 transform translate-y-16">
-          <img src={createGif(randomApp.videoSrc)} className="rounded-lg" />
+          <video autoPlay controls className="rounded-lg">
+            <source src={optimizeMedia(videoSrc)} type="video/mp4" />
+          </video>
 
           {/* overlay thingy with reasons */}
           <div className="w-full absolute bottom-0 right-0 transform translate-y-4 translate-x-4">

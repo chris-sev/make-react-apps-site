@@ -33,6 +33,7 @@
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-intersection-observer": "^8.26.2",
+    "react-lazyload": "^3.0.0",
     "styled-components": "^5.1.1",
     "tailwindcss": "^1.4.6"
   },

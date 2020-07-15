@@ -1,4 +1,5 @@
 import React from 'react'
+import LazyLoad from 'react-lazyload'
 import './WhatWellBuild.css'
 
 export const seriesAApps = [
@@ -314,9 +315,12 @@ function Video({ url }) {
     .replace('.mp4', '.gif')
 
   return (
-    <img
-      className="app-video rounded-lg shadow-lg md:mx-auto lg:mr-12 xl:mb-0 w-full"
-      src={optimizedVideoUrl}
-    />
+    <LazyLoad height={300} once>
+      <img
+        className="app-video rounded-lg shadow-lg md:mx-auto lg:mr-12 xl:mb-0 w-full"
+        lazy="true"
+        src={optimizedVideoUrl}
+      />
+    </LazyLoad>
   )
 }
