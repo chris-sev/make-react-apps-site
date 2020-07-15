@@ -139,7 +139,7 @@ export const seriesBApps = [
   {
     title: 'Drag and Drop Math Card',
     videoSrc:
-      'https://learn.chrisoncode.io/courses/10-react-apps-series-b/365604-4-drag-and-drop-math-card/1041039-00-drag-and-drop-math-card-preview',
+      'https://scotch-res.cloudinary.com/video/upload/v1592352062/08-math-cards_ybj27c.mp4',
     numberOfVideos: 4,
     timeToComplete: '30 minutes',
     demoLink: 'https://sj1bd.csb.app/',
@@ -206,7 +206,7 @@ export default function WhatWellBuild({ whichCourse = 'a' }) {
 
         {/* show set b */}
         <div
-          className="grid grid-cols-1 lg:grid-cols-2 row-gap-2 col-gap-6"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-10"
           style={{ display: whichCourse === 'b' ? 'grid' : 'none' }}
         >
           {seriesBApps.map((app, index) => (
