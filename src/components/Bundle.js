@@ -7,7 +7,7 @@ export default function Bundle() {
       <div className="container mx-auto">
         {/* header */}
         <h2 className="russo text-2xl lg:text-4xl mb-10 text-center">
-          Purchase Multiple Courses. Save 30%
+          Purchase Multiple Courses and Save
         </h2>
 
         <div className="grid lg:grid-cols-11 gap-4 text-lg text-gray-600 leading-none relative z-10 text-center bg-green-300 p-8 rounded-lg">
@@ -20,7 +20,7 @@ export default function Bundle() {
             />
             <h2 className="arial text-blue-600 text-xl p-4">
               10 React Apps <span className="ml-2 font-bold">Series A</span>{' '}
-              <span className="ml-2">$55</span>
+              <span className="ml-2">$47</span>
             </h2>
           </div>
 
@@ -38,7 +38,7 @@ export default function Bundle() {
             />
             <h2 className="arial text-purple-600 text-xl p-4">
               10 React Apps <span className="ml-2 font-bold">Series B</span>{' '}
-              <span className="ml-2">$55</span>
+              <span className="ml-2">$47</span>
             </h2>
           </div>
 
@@ -57,7 +57,7 @@ export default function Bundle() {
               Buy the Bundle
             </strong>
             <span>
-              <strong className="line-through opacity-25 mr-2">$110</strong>
+              <strong className="line-through opacity-25 mr-2">$94</strong>
               <span className="text-blue-900">$79</span>
             </span>
           </a>
