@@ -12,7 +12,7 @@ const messages = [
   { text: 'Iono. Just Google it?' },
   { text: 'Oooh! This course looks cool!' },
   { text: 'Send me the link?!' },
-  { text: 'MakeReactApps.com!' },
+  { text: '<span class="underline">MakeReactApps.com</span>!' },
 ]
 
 function isEven(number) {
@@ -100,9 +100,8 @@ function Message({ data, even, message }) {
             ? 'bg-blue-700 text-blue-100'
             : 'bg-blue-900 text-blue-100 justify-end'
         }`}
-      >
-        {message.text}
-      </div>
+        __dangerouslySetInnerHtml={{ html: message.text }}
+      />
       <div className="hidden md:block">
         <Img
           style={{ width: '45px' }}

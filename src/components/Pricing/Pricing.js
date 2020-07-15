@@ -50,16 +50,28 @@ export default function Pricing({ whichCourse = 'a' }) {
         <div className="bg-white rounded-lg shadow-lg w-full md:w-4/5 xl:w-3/5 text-gray-900 mx-auto">
           {/* header */}
           <h3
-            className={`fugaz-one w-full pt-6 pb-4 lg:pt-8 lg:pb-6 px-12 text-xl lg:text-4xl font-bold uppercase rounded-t-lg bg-${color}-200 text-${color}-500`}
+            className={`fugaz-one w-full pt-6 pb-4 lg:pt-8 lg:pb-6 px-12 text-xl lg:text-4xl font-bold uppercase rounded-t-lg ${
+              color === 'blue'
+                ? 'bg-blue-200 text-blue-500'
+                : 'bg-purple-200 text-purple-500'
+            }`}
           >
             Start{' '}
-            <strong className={`text-${color}-700`}>Creating React Apps</strong>
+            <strong
+              className={`${
+                color === 'blue' ? 'text-blue-700' : 'text-purple-700'
+              }`}
+            >
+              Creating React Apps
+            </strong>
           </h3>
 
           <div className="py-10 px-12">
             {/* price info */}
             <div
-              className={`text-${color}-800 flex items-center leading-none text-6xl`}
+              className={`flex items-center leading-none text-6xl ${
+                color === 'blue' ? 'text-blue-800' : 'text-purple-800'
+              }`}
             >
               <div>
                 <span className="mr-1 opacity-50">$</span>
