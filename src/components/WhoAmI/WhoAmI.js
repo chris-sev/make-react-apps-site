@@ -4,8 +4,8 @@ import './WhoAmI.css'
 export default function WhoAmI() {
   return (
     <div className="who-am-i text-gray-300 px-4 py-16 lg:py-24 lg:pb-32">
-      <div className="container mx-auto flex">
-        <div className="bg-gray-900 rounded-lg shadow-lg px-8 lg:px-16 py-12 lg:py-16 flex-grow lg:text-lg leading-relaxed lg:flex">
+      <div className="container mx-auto">
+        <div className="lg:w-4/5 mx-auto bg-gray-900 rounded-lg shadow-lg px-8 lg:px-16 py-12 lg:py-16 lg:text-lg leading-relaxed lg:flex">
           <div className="flex-shrink mr-8 mb-8 lg:mb-0">
             <img
               src="https://scotch-res.cloudinary.com/image/upload/q_auto/v1594056697/gytymTwZ_400x400_qu49vx.jpg"

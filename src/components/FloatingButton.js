@@ -10,11 +10,8 @@ export default function FloatingButton({ isShowing }) {
     >
       <a
         href="#pricing"
-        className="inline-block bg-yellow-400 hover:bg-yellow-300 text-yellow-900 shadow-2xl rounded-lg py-3 px-6 transition-colors"
+        className="text-sm inline-block bg-yellow-400 hover:bg-yellow-300 text-yellow-900 shadow-xl rounded py-3 px-4 transition-colors"
       >
-        <span role="img" aria-label="Spock Hand" className="mr-1">
-          ⚛️
-        </span>{' '}
         Buy the Course
       </a>
     </SFloatingButton>

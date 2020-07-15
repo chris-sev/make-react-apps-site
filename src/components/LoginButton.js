@@ -2,14 +2,16 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 export default function LoginButton({ color = 'blue' }) {
+  const styles =
+    color === 'blue'
+      ? 'bg-blue-700 text-blue-200 hover:bg-blue-600'
+      : 'bg-purple-700 text-purple-200 hover:bg-purple-600'
+
   return (
-    <div
-      className={`bg-${color}-900 bg-opacity-50 text-${color}-100 text-xs py-1 px-1 rounded-md flex items-center absolute top-0 right-0 mt-2 mr-2`}
-    >
-      <span className="pl-2">Already purchased?</span>
+    <div className="absolute top-0 right-0 mt-2 mr-2">
       <a
         href="https://learn.chrisoncode.io/login"
-        className={`ml-3 bg-${color}-700 text-${color}-200 rounded shadow py-2 px-3 hover:bg-${color}-600`}
+        className={`text-xs rounded shadow py-2 px-3 ${styles}`}
       >
         Login
       </a>

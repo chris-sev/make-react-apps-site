@@ -38,7 +38,7 @@ export default function Course({
         </p>
 
         {/* icon grid */}
-        <div className=" text-lg lg:text-xl grid grid-cols-5 gap-6 px-6 text-center text-gray-600 leading-none">
+        <div className="text-lg lg:text-xl grid grid-cols-2 xl:grid-cols-5 gap-6 px-6 text-center text-gray-600 leading-none">
           <div className="flex flex-col justify-center">
             <div>
               <FontAwesomeIcon
@@ -50,10 +50,8 @@ export default function Course({
                 }}
               />
               49
-              <strong className="block text-lg text-gray-400 mt-3">
-                videos
-              </strong>
             </div>
+            <strong className="block text-lg text-gray-400 mt-3">videos</strong>
           </div>
           <div className="flex flex-col justify-center">
             <div>
@@ -66,12 +64,10 @@ export default function Course({
                 }}
               />
               6
-              <strong className="block text-lg text-gray-400 mt-3">
-                hours
-              </strong>
             </div>
+            <strong className="block text-lg text-gray-400 mt-3">hours</strong>
           </div>
-          <div className="col-span-3">
+          <div className="col-span-2 xl:col-span-3">
             <Link
               to={link}
               className={`flex items-center justify-center h-full border-2 border-${color}-300 bg-${color}-100 text-${color}-900 rounded-lg px-6 py-6 cursor-pointer hover:bg-${color}-200 w-full transition-colors duration-150`}

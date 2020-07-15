@@ -1,7 +1,9 @@
-import React from 'react'
-import usePodia from '../usePodia'
+import React, { useState } from 'react'
 import styled from 'styled-components'
+import { Dialog } from '@reach/dialog'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import usePodia from '../usePodia'
+import '@reach/dialog/styles.css'
 
 const wordsAreHard = {
   a: {
@@ -15,7 +17,10 @@ const wordsAreHard = {
 }
 
 export default function Pricing({ whichCourse = 'a' }) {
-  usePodia()
+  const [showDialog, setShowDialog] = useState(true)
+
+  const open = () => setShowDialog(true)
+  const close = () => setShowDialog(false)
 
   const { url } = wordsAreHard[whichCourse]
 
@@ -36,6 +41,8 @@ export default function Pricing({ whichCourse = 'a' }) {
       id="pricing"
       className="bg-green-600 text-gray-300 py-32 px-6 lg:px-24 lg:pb-40"
     >
+      <UpsellDialog isShowing={showDialog} close={close} url={url} />
+
       <div className="container mx-auto">
         {/* pricing box ==================================================== */}
         <div className="bg-white rounded-lg shadow-lg w-full md:w-4/5 xl:w-3/5 text-gray-900 mx-auto">
@@ -121,9 +128,8 @@ export default function Pricing({ whichCourse = 'a' }) {
             </p>
 
             <SCheckoutButton
-              href={url}
-              data-podia-embed="link"
-              className="checkout-button overflow-hidden flex items-center justify-between lg:text-2xl bg-yellow-400 text-yellow-700 shadow hover:shadow-lg rounded px-6 py-5 cursor-pointer w-full transition-all ease-in duration-150"
+              onClick={open}
+              className="overflow-hidden flex items-center justify-between lg:text-2xl bg-yellow-400 text-yellow-700 shadow hover:shadow-lg rounded px-6 py-5 cursor-pointer w-full transition-all ease-in duration-150"
             >
               <span>
                 Buy 10 React Apps{' '}
@@ -140,6 +146,84 @@ export default function Pricing({ whichCourse = 'a' }) {
         </div>
       </div>
     </SPricing>
+  )
+}
+
+function UpsellDialog({ isShowing, url, close }) {
+  usePodia()
+
+  return (
+    <Dialog
+      className="z-50 p-10 rounded shadow-xl text-center w-4/5 lg:w-1/2"
+      isOpen={isShowing}
+      onDismiss={close}
+    >
+      <h2 className="arial text-2xl lg:text-4xl text-gray-700">
+        Get a 2nd Course for <strong className="text-gray-800">50% Off</strong>
+      </h2>
+      <p className="text-lg mb-10 text-gray-700">
+        Bundle two courses together and{' '}
+        <strong className="text-green-400">save</strong>!
+      </p>
+
+      <div className="lg:w-4/5 mx-auto grid grid-cols-5 col-gap-1 text-gray-600 leading-none mb-10">
+        {/* series a */}
+        <div className="col-span-2 bg-blue-100 rounded-lg">
+          <img
+            src="https://scotch-res.cloudinary.com/image/upload/v1594571945/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7_evfnlk.png"
+            alt="10 React Apps Series A"
+            className="rounded-t-lg"
+          />
+          <h2 className="arial text-blue-600 p-4 leading-snug">
+            Make 10 React Apps <strong className="block">(Series A)</strong>
+          </h2>
+        </div>
+
+        {/* + */}
+        <div className="flex items-center justify-center">
+          <FontAwesomeIcon icon={['fad', 'plus']} size="3x" />
+        </div>
+
+        {/* series b */}
+        <div className="col-span-2 bg-purple-100 rounded-lg">
+          <img
+            src="https://scotch-res.cloudinary.com/image/upload/v1594571945/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7_1_nq11gx.png"
+            alt="10 React Apps Series A"
+            className="rounded-t-lg"
+          />
+          <h2 className="arial text-purple-600 p-4 leading-snug">
+            Make 10 React Apps <strong className="block">(Series B)</strong>
+          </h2>
+        </div>
+      </div>
+
+      {/* purchase the bundle */}
+      <a
+        href="https://learn.chrisoncode.io/make-react-apps-bundle-a-and-b"
+        data-podia-embed="link"
+        onClick={url}
+        className="text-green-100 bg-green-500 block lg:w-1/2 mx-auto py-3 px-6 mb-4 rounded shadow hover:shadow-xl text-xl lg:text-2xl transition duration-75 ease-in"
+      >
+        <span>
+          Buy Bundle{' '}
+          <span className="line-through ml-2 mr-1 opacity-75">$110</span>
+          <strong className="text-white">$79</strong>
+        </span>
+        <span className="block mt-1 opacity-50 text-xs">
+          30-day money back guarantee
+        </span>
+      </a>
+
+      {/* purchase 1 */}
+      <a
+        href={url}
+        data-podia-embed="link"
+        onClick={url}
+        className="text-center block text-gray-700 hover:text-gray-800 hover:underline"
+      >
+        No thanks - Purchase 1 Course
+      </a>
+    </Dialog>
   )
 }
 

@@ -161,26 +161,19 @@ export default function WhatWellBuild({ whichCourse = 'a' }) {
   return (
     <div
       id="apps"
-      className={`what-well-build text-gray-200 px-10 lg:px-20 py-16 lg:py-40 ${
+      className={`what-well-build text-gray-200 px-10 lg:px-20 py-32 lg:py-48 ${
         whichCourse === 'a' ? 'bg-blue-900' : 'bg-purple-900'
       }`}
     >
       <div className="container mx-auto flex flex-col">
         {/* header */}
-        <div className="flex flex-col justify-between mb-16">
-          <div className="flex items-center justify-center">
-            <h2 className="fugaz-one mb text-5xl mr-6">
-              The Apps We&apos;ll Build
-            </h2>
-            <h3 className="arial text-xl text-gray-300">
-              <span className="background-block">Hover</span> to see previews
-            </h3>
-          </div>
-        </div>
+        <h2 className="fugaz-one mb text-5xl mr-6 lg:mb-16 text-center">
+          The Apps We&apos;ll Build
+        </h2>
 
         {/* list of apps */}
         <div
-          className="grid grid-cols-1 lg:grid-cols-2 row-gap-4 col-gap-12"
+          className="grid grid-cols-1 lg:grid-cols-2 row-gap-12 col-gap-16"
           style={{ display: whichCourse === 'a' ? 'grid' : 'none' }}
         >
           {seriesAApps.map((app, index) => (
@@ -262,11 +255,11 @@ function App({ app, number }) {
       </div>
 
       {/* content */}
-      <div className="mt-6 w-full">
+      <div className="mt-4 w-full">
         <h2 className="fugaz-one text-2xl mb-2 text-gray-200">{app.title}</h2>
-        <p className="text-gray-400 text-xl mb-6">
+        {/* <p className="text-gray-400 text-xl mb-6">
           This is a super cool thing where you learn useReducer().
-        </p>
+        </p> */}
       </div>
     </div>
   )
@@ -293,7 +286,7 @@ function Number({ number }) {
     </div>
   )
 }
-;``
+
 
 function Video({ url }) {
   // optimization thanks to cloudinary
