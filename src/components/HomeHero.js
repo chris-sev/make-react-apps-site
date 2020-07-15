@@ -17,7 +17,7 @@ export default function MainHero() {
         <div className="lg:flex-grow">
           <h2 className="home-title relative text-2xl leading-none grid grid-cols-2 grid-rows-3">
             <span className="make fugaz-one text-4xl text-blue-200">Make</span>
-            <span className="react text-white row-start-2 col-span-2 leading-relaxed md:leading-none text-justify">
+            <span className="react text-white row-start-2 col-span-2 leading-none text-justify">
               React
             </span>
             <span className="apps fugaz-one block w-full text-right text-blue-200 text-4xl pr-12 row-start-3 col-start-2">

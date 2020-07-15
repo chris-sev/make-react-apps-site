@@ -33,7 +33,7 @@ export default function Hero({ whichCourse = 'a' }) {
         secondaryColor={colors[whichCourse].secondary}
       />
 
-      <div className="container mx-auto px-8 xl:px-0 pt-16 lg:pt-32 pb-8 lg:pb-0">
+      <div className="container mx-auto px-8 xl:px-0 pt-24 lg:pt-32 pb-8 lg:pb-0">
         {/* left column */}
         <div className="leading-snug text-center">
           {/* header */}
@@ -56,16 +56,16 @@ export default function Hero({ whichCourse = 'a' }) {
           </p>
 
           {/* call to action */}
-          <div className="lg:w-2/5 mx-auto grid grid-cols-2 col-gap-4 text-xl">
+          <div className="lg:w-2/5 mx-auto grid grid-cols-2 col-gap-4 md:text-xl">
             <a
               href="#apps"
-              className="w-full flex items-center justify-center bg-white text-yellow-700 py-6 px-6 rounded shadow hover:shadow-lg mx-auto transition-all ease-in-out duration-150"
+              className="w-full flex items-center justify-center bg-white text-yellow-700 py-4 px-6 rounded shadow hover:shadow-lg mx-auto transition-all ease-in-out duration-150"
             >
               View the Apps
             </a>
             <a
               href="#pricing"
-              className="w-full flex items-center justify-center bg-yellow-400 hover:bg-yellow-300 text-yellow-900 py-6 px-6 rounded shadow hover:shadow-lg mx-auto transition-all ease-in-out duration-150"
+              className="w-full flex items-center justify-center bg-yellow-400 hover:bg-yellow-300 text-yellow-900 py-4 px-6 rounded shadow hover:shadow-lg mx-auto transition-all ease-in-out duration-150"
             >
               Buy the Course
             </a>
@@ -79,14 +79,14 @@ export default function Hero({ whichCourse = 'a' }) {
           {/* overlay thingy with reasons */}
           <div className="w-full absolute bottom-0 right-0 transform translate-y-4 translate-x-4">
             <div
-              className={`w-3/5 lg:w-2/5 ml-auto grid grid-cols-3 text-center rounded-lg shadow-xl col-gap-4 py-6 px-4 leading-none text-2xl bg-white font-bold ${
+              className={`w-3/5 lg:w-2/5 ml-auto grid grid-cols-3 text-center rounded-lg shadow-xl col-gap-4 py-3 md:py-6 px-4 leading-none md:text-2xl bg-white font-bold ${
                 color === 'blue' ? 'text-blue-600' : 'text-purple-600'
               }`}
             >
               <div className="flex flex-col items-center justify-center">
                 <p>
                   10{' '}
-                  <strong className="block mt-2 opacity-75 text-lg text-gray-700">
+                  <strong className="block mt-2 opacity-75 text-xs md:text-lg text-gray-700">
                     Apps
                   </strong>
                 </p>
@@ -94,7 +94,7 @@ export default function Hero({ whichCourse = 'a' }) {
               <div className="flex flex-col items-center justify-center">
                 <p>
                   49{' '}
-                  <strong className="block mt-2 opacity-75 text-lg text-gray-700">
+                  <strong className="block mt-2 opacity-75 text-xs md:text-lg text-gray-700">
                     Videos
                   </strong>
                 </p>
@@ -102,7 +102,7 @@ export default function Hero({ whichCourse = 'a' }) {
               <div className="flex flex-col items-center justify-center">
                 <p>
                   6+{' '}
-                  <strong className="block mt-2 opacity-75 text-lg text-gray-700">
+                  <strong className="block mt-2 opacity-75 text-xs md:text-lg text-gray-700">
                     Hours
                   </strong>
                 </p>

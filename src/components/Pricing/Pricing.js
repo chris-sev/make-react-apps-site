@@ -41,14 +41,16 @@ export default function Pricing({ whichCourse = 'a' }) {
       id="pricing"
       className="bg-green-600 text-gray-300 py-32 px-6 lg:px-24 lg:pb-40"
     >
-      <UpsellDialog isShowing={showDialog} close={close} url={url} />
+      {showDialog && (
+        <UpsellDialog isShowing={showDialog} close={close} url={url} />
+      )}
 
       <div className="container mx-auto">
         {/* pricing box ==================================================== */}
         <div className="bg-white rounded-lg shadow-lg w-full md:w-4/5 xl:w-3/5 text-gray-900 mx-auto">
           {/* header */}
           <h3
-            className={`fugaz-one w-full pt-6 pb-4 lg:pt-8 lg:pb-6 px-12 text-2xl lg:text-4xl font-bold uppercase rounded-t-lg bg-${color}-200 text-${color}-500`}
+            className={`fugaz-one w-full pt-6 pb-4 lg:pt-8 lg:pb-6 px-12 text-xl lg:text-4xl font-bold uppercase rounded-t-lg bg-${color}-200 text-${color}-500`}
           >
             Start{' '}
             <strong className={`text-${color}-700`}>Creating React Apps</strong>
@@ -154,7 +156,7 @@ function UpsellDialog({ isShowing, url, close }) {
 
   return (
     <Dialog
-      className="z-50 p-10 rounded shadow-xl text-center w-4/5 lg:w-1/2"
+      className="z-50 p-10 rounded shadow-xl text-center w-5/6 lg:w-1/2"
       isOpen={isShowing}
       onDismiss={close}
     >
@@ -166,9 +168,9 @@ function UpsellDialog({ isShowing, url, close }) {
         <strong className="text-green-400">save</strong>!
       </p>
 
-      <div className="lg:w-4/5 mx-auto grid grid-cols-5 col-gap-1 text-gray-600 leading-none mb-10">
+      <div className="lg:w-4/5 mx-auto grid grid-cols-2 col-gap-1 text-gray-600 leading-none mb-10">
         {/* series a */}
-        <div className="col-span-2 bg-blue-100 rounded-lg">
+        <div className="bg-blue-100 rounded-lg">
           <img
             src="https://scotch-res.cloudinary.com/image/upload/v1594571945/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7_evfnlk.png"
             alt="10 React Apps Series A"
@@ -179,13 +181,8 @@ function UpsellDialog({ isShowing, url, close }) {
           </h2>
         </div>
 
-        {/* + */}
-        <div className="flex items-center justify-center">
-          <FontAwesomeIcon icon={['fad', 'plus']} size="3x" />
-        </div>
-
         {/* series b */}
-        <div className="col-span-2 bg-purple-100 rounded-lg">
+        <div className="bg-purple-100 rounded-lg">
           <img
             src="https://scotch-res.cloudinary.com/image/upload/v1594571945/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7_1_nq11gx.png"
             alt="10 React Apps Series A"
@@ -201,8 +198,7 @@ function UpsellDialog({ isShowing, url, close }) {
       <a
         href="https://learn.chrisoncode.io/make-react-apps-bundle-a-and-b"
         data-podia-embed="link"
-        onClick={url}
-        className="text-green-100 bg-green-500 block lg:w-1/2 mx-auto py-3 px-6 mb-4 rounded shadow hover:shadow-xl text-xl lg:text-2xl transition duration-75 ease-in"
+        className="text-green-100 bg-green-500 block xl:w-1/2 mx-auto py-3 px-6 mb-4 rounded shadow hover:shadow-xl text-xl lg:text-2xl transition duration-75 ease-in"
       >
         <span>
           Buy Bundle{' '}
@@ -218,7 +214,6 @@ function UpsellDialog({ isShowing, url, close }) {
       <a
         href={url}
         data-podia-embed="link"
-        onClick={url}
         className="text-center block text-gray-700 hover:text-gray-800 hover:underline"
       >
         No thanks - Purchase 1 Course

@@ -167,13 +167,13 @@ export default function WhatWellBuild({ whichCourse = 'a' }) {
     >
       <div className="container mx-auto flex flex-col">
         {/* header */}
-        <h2 className="fugaz-one mb text-5xl mr-6 lg:mb-16 text-center">
+        <h2 className="fugaz-one text-4xl lg:text-5xl mr-6 lg:mb-16 text-center">
           The Apps We&apos;ll Build
         </h2>
 
         {/* list of apps */}
         <div
-          className="grid grid-cols-1 lg:grid-cols-2 row-gap-12 col-gap-16"
+          className="grid grid-cols-1 lg:grid-cols-2 row-gap-4 lg:row-gap-12 col-gap-16"
           style={{ display: whichCourse === 'a' ? 'grid' : 'none' }}
         >
           {seriesAApps.map((app, index) => (
@@ -255,7 +255,7 @@ function App({ app, number }) {
       </div>
 
       {/* content */}
-      <div className="mt-4 w-full">
+      <div className="mt-3 w-full">
         <h2 className="fugaz-one text-2xl mb-2 text-gray-200">{app.title}</h2>
         {/* <p className="text-gray-400 text-xl mb-6">
           This is a super cool thing where you learn useReducer().
@@ -296,7 +296,7 @@ function Video({ url }) {
 
   return (
     <img
-      className="app-video rounded-lg shadow-lg md:mx-auto lg:mr-12 mb-6 xl:mb-0 w-full"
+      className="app-video rounded-lg shadow-lg md:mx-auto lg:mr-12 xl:mb-0 w-full"
       src={optimizedVideoUrl}
     />
   )

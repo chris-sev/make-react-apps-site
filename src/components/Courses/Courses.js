@@ -1,11 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import usePodia from '../usePodia'
 import Course from './Course'
 
 export default function Courses() {
-  usePodia()
-
   return (
     <SCourses id="courses" className="course-section pb-40 pt-48 px-8">
       <div className="container mx-auto">
