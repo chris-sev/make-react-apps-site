@@ -17,7 +17,7 @@ const wordsAreHard = {
 }
 
 export default function Pricing({ whichCourse = 'a' }) {
-  const [showDialog, setShowDialog] = useState(true)
+  const [showDialog, setShowDialog] = useState(false)
 
   const open = () => setShowDialog(true)
   const close = () => setShowDialog(false)
