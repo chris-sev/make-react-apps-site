@@ -12,7 +12,7 @@ const messages = [
   { text: 'Iono. Just Google it?' },
   { text: 'Oooh! This course looks cool!' },
   { text: 'Send me the link?!' },
-  { text: '20ReactApps.com!' },
+  { text: 'MakeReactApps.com!' },
 ]
 
 function isEven(number) {
