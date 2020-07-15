@@ -10,7 +10,7 @@ export const seriesAApps = [
     timeToComplete: '26 minutes',
     demoLink: 'https://r36qd.codesandbox.io/',
     previewLink:
-      'https://learn.chrisoncode.io/courses/make-20-react-apps/249106-pomodoro/748623-00-pomodoro-preview',
+      'https://learn.chrisoncode.io/courses/10-react-apps-series-a/348620-01-pomodoro/992082-00-pomodoro-preview',
   },
   {
     title: 'Markdown Editor',
@@ -20,7 +20,7 @@ export const seriesAApps = [
     timeToComplete: '17 minutes',
     demoLink: 'https://391jg.codesandbox.io/',
     previewLink:
-      'https://learn.chrisoncode.io/courses/make-20-react-apps/249710-markdown-editor/748732-00-markdown-editor-preview',
+      'https://learn.chrisoncode.io/courses/10-react-apps-series-a/348621-02-markdown-editor/992079-00-markdown-editor-preview',
   },
   {
     title: 'Browser Tabs and Routing',
@@ -30,7 +30,7 @@ export const seriesAApps = [
     timeToComplete: '43 minutes',
     demoLink: 'https://yyhfg.codesandbox.io/',
     previewLink:
-      'https://learn.chrisoncode.io/courses/make-20-react-apps/249108-browser-tabs/748775-00-browser-tabs-preview',
+      'https://learn.chrisoncode.io/courses/10-react-apps-series-a/348622-03-highlight-tabs/992072-00-browser-tabs-preview',
   },
   {
     title: 'Paper Rock Scissors',
@@ -40,7 +40,7 @@ export const seriesAApps = [
     timeToComplete: '39 minutes',
     demoLink: 'https://njpw4.codesandbox.io/',
     previewLink:
-      'https://learn.chrisoncode.io/courses/make-20-react-apps/249667-paper-rock-scissors/748691-00-paper-rock-scissors-preview',
+      'https://learn.chrisoncode.io/courses/10-react-apps-series-a/348623-04-paper-rock-scissors/992070-00-paper-rock-scissors-preview',
   },
   {
     title: 'Moving Link Across a <canvas>',
@@ -50,7 +50,7 @@ export const seriesAApps = [
     timeToComplete: '32 minutes',
     demoLink: 'https://405hq.codesandbox.io/',
     previewLink:
-      'https://learn.chrisoncode.io/courses/make-20-react-apps/250927-moving-boxes-and-zelda/748714-00-moving-boxes-and-link-preview',
+      'https://learn.chrisoncode.io/courses/10-react-apps-series-a/348624-05-moving-boxes-and-zelda/992093-00-moving-boxes-and-link-preview',
   },
   {
     title: 'Infinite Image Gallery',
@@ -60,7 +60,7 @@ export const seriesAApps = [
     timeToComplete: '52 minutes',
     demoLink: 'https://e9ucz.csb.app/',
     previewLink:
-      'https://learn.chrisoncode.io/courses/make-20-react-apps/257611-infinite-image-gallery/748761-00-infinite-image-gallery-preview',
+      'https://learn.chrisoncode.io/courses/10-react-apps-series-a/348625-06-infinite-image-gallery/992060-00-infinite-image-gallery-preview',
   },
   {
     title: 'Trivia',
@@ -70,17 +70,17 @@ export const seriesAApps = [
     timeToComplete: '57 minutes',
     demoLink: 'https://qlb3o.csb.app/',
     previewLink:
-      'https://learn.chrisoncode.io/courses/make-20-react-apps/271017-07-trivia/783724-00-trivia-preview',
+      'https://learn.chrisoncode.io/courses/10-react-apps-series-a/348626-07-trivia/992056-00-trivia-preview',
   },
   {
-    title: 'Drag and Drop Math Card',
+    title: 'Authentication',
     videoSrc:
-      'https://scotch-res.cloudinary.com/video/upload/v1592352062/08-math-cards_ybj27c.mp4',
-    numberOfVideos: 4,
-    timeToComplete: '30 minutes',
-    demoLink: 'https://sj1bd.csb.app/',
+      'https://scotch-res.cloudinary.com/video/upload/v1592352072/16_-_authentication_tm16s4.mp4',
+    numberOfVideos: 7,
+    timeToComplete: '54 minutes',
+    demoLink: undefined, // auth doesnt work in codesandbox :shrug:
     previewLink:
-      'https://learn.chrisoncode.io/courses/make-20-react-apps/329060-14-drag-and-drop-math-card/938167-00-drag-and-drop-math-card-preview',
+      'https://learn.chrisoncode.io/courses/10-react-apps-series-a/348627-08-authentication/992048-00-authentication-preview',
   },
   {
     title: 'Web Speech and Timers',
@@ -90,7 +90,7 @@ export const seriesAApps = [
     timeToComplete: '30 minutes',
     demoLink: 'https://4jfqj.csb.app/',
     previewLink:
-      'https://learn.chrisoncode.io/courses/make-20-react-apps/286509-09-web-speech-and-timers/825083-00-web-speech-and-timers-preview',
+      'https://learn.chrisoncode.io/courses/10-react-apps-series-a/348628-09-web-speech-and-timers/992042-00-web-speech-and-timers-preview',
   },
   {
     title: 'Calendar Picker',
@@ -100,7 +100,7 @@ export const seriesAApps = [
     timeToComplete: '33 minutes',
     demoLink: 'https://d4vfr.csb.app/',
     previewLink:
-      'https://learn.chrisoncode.io/courses/make-20-react-apps/302585-10-calendar-picker/864913-00-calendar-picker-preview',
+      'https://learn.chrisoncode.io/courses/10-react-apps-series-a/348629-10-calendar-picker/992041-00-calendar-picker-preview',
   },
 ]
 
@@ -113,7 +113,7 @@ export const seriesBApps = [
     timeToComplete: '22 minutes',
     demoLink: 'https://9lrdz.csb.app/',
     previewLink:
-      'https://learn.chrisoncode.io/courses/make-20-react-apps/325003-11-animated-chat-box/927294-00-chat-box-preview',
+      'https://learn.chrisoncode.io/courses/10-react-apps-series-b/365601-1-animated-chat-box/1041046-00-chat-box-preview',
   },
   {
     title: 'Multi-Step Form',
@@ -123,7 +123,7 @@ export const seriesBApps = [
     timeToComplete: '52 minutes',
     demoLink: 'https://hbkbf.csb.app/',
     previewLink:
-      'https://learn.chrisoncode.io/courses/make-20-react-apps/325871-12-multi-step-form/929787-00-multi-step-form-preview',
+      'https://learn.chrisoncode.io/courses/10-react-apps-series-b/365602-2-multi-step-form/1041044-00-multi-step-form-preview',
   },
   {
     title: 'Memory Matching Game',
@@ -133,7 +133,17 @@ export const seriesBApps = [
     timeToComplete: '27 minutes',
     demoLink: 'https://0dsop.csb.app/',
     previewLink:
-      'https://learn.chrisoncode.io/courses/make-20-react-apps/326011-13-memory-matching-game/930017-00-memory-matching-preview',
+      'https://learn.chrisoncode.io/courses/10-react-apps-series-b/365603-3-memory-matching-game/1041042-00-memory-matching-preview',
+  },
+  {
+    title: 'Drag and Drop Math Card',
+    videoSrc:
+      'https://learn.chrisoncode.io/courses/10-react-apps-series-b/365604-4-drag-and-drop-math-card/1041039-00-drag-and-drop-math-card-preview',
+    numberOfVideos: 4,
+    timeToComplete: '30 minutes',
+    demoLink: 'https://sj1bd.csb.app/',
+    previewLink:
+      'https://learn.chrisoncode.io/courses/10-react-apps-series-b/365604-4-drag-and-drop-math-card/1041039-00-drag-and-drop-math-card-preview',
   },
   {
     title: 'Browser',
@@ -143,17 +153,27 @@ export const seriesBApps = [
     timeToComplete: '53 minutes',
     demoLink: 'https://e7ws4.csb.app/',
     previewLink:
-      'https://learn.chrisoncode.io/courses/make-20-react-apps/334917-15-browser/954260-00-browser-browser-preview',
+      'https://learn.chrisoncode.io/courses/10-react-apps-series-b/365605-5-browser/1041032-00-browser-browser-preview',
   },
   {
-    title: 'Authentication',
+    title: 'Real-Time Search',
     videoSrc:
-      'https://scotch-res.cloudinary.com/video/upload/v1592352072/16_-_authentication_tm16s4.mp4',
-    numberOfVideos: 7,
-    timeToComplete: '54 minutes',
-    demoLink: undefined, // auth doesnt work in codesandbox :shrug:
+      'https://scotch-res.cloudinary.com/video/upload/v1592352067/14-browser_bnbowp.mp4',
+    numberOfVideos: 3,
+    timeToComplete: '24 minutes',
+    demoLink: 'https://707yr.csb.app/',
     previewLink:
-      'https://learn.chrisoncode.io/courses/make-20-react-apps/284972-08-authentication/821360-00-authentication-preview',
+      'https://learn.chrisoncode.io/courses/10-react-apps-series-b/365606-6-real-time-search/1041031-00-real-time-search-preview',
+  },
+  {
+    title: 'Charting the Weather',
+    videoSrc:
+      'https://scotch-res.cloudinary.com/video/upload/v1592352067/14-browser_bnbowp.mp4',
+    numberOfVideos: 5,
+    timeToComplete: '53 minutes',
+    demoLink: 'https://v2dmf.csb.app/',
+    previewLink:
+      'https://learn.chrisoncode.io/courses/10-react-apps-series-b/365607-7-charting-the-weather/1041029-00-weather-chart-preview',
   },
 ]
 
@@ -286,7 +306,6 @@ function Number({ number }) {
     </div>
   )
 }
-
 
 function Video({ url }) {
   // optimization thanks to cloudinary
