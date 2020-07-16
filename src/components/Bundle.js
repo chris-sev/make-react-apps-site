@@ -1,9 +1,9 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import usePodia from './usePodia'
+// import usePodia from './usePodia'
 
 export default function Bundle() {
-  usePodia()
+  // usePodia()
 
   return (
     <div className="bg-green-200 text-green-800 px-6 py-32">
@@ -52,8 +52,7 @@ export default function Bundle() {
 
           {/* bundle */}
           <a
-            href="https://learn.chrisoncode.io/make-react-apps-bundle-a-and-b"
-            data-podia-embed="link"
+            href="https://learn.chrisoncode.io/make-react-apps-bundle-a-and-b/buy"
             className="col-span-3 flex flex-col items-center justify-center h-full text-3xl lg:text-4xl border-2 border-yellow-300 bg-yellow-300 text-yellow-800 rounded-lg px-6 py-6 cursor-pointer hover:bg-yellow-200 w-full transition-colors duration-150"
           >
             <strong className="block text-lg mb-3 text-yellow-700">

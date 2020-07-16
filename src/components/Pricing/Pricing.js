@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import { Dialog } from '@reach/dialog'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import usePodia from '../usePodia'
+// import usePodia from '../usePodia'
 import '@reach/dialog/styles.css'
 
 const wordsAreHard = {
@@ -164,7 +164,7 @@ export default function Pricing({ whichCourse = 'a' }) {
 }
 
 function UpsellDialog({ isShowing, url, close }) {
-  usePodia()
+  // usePodia()
 
   return (
     <Dialog
@@ -208,8 +208,7 @@ function UpsellDialog({ isShowing, url, close }) {
 
       {/* purchase the bundle */}
       <a
-        href="https://learn.chrisoncode.io/make-react-apps-bundle-a-and-b"
-        data-podia-embed="link"
+        href="https://learn.chrisoncode.io/make-react-apps-bundle-a-and-b/buy"
         className="text-green-100 bg-green-500 block xl:w-1/2 mx-auto py-3 px-6 mb-4 rounded shadow hover:shadow-xl text-xl lg:text-2xl transition duration-75 ease-in"
       >
         <span>
@@ -224,8 +223,7 @@ function UpsellDialog({ isShowing, url, close }) {
 
       {/* purchase 1 */}
       <a
-        href={url}
-        data-podia-embed="link"
+        href={`${url}/buy`}
         className="text-center block text-gray-700 hover:text-gray-800 hover:underline"
       >
         No thanks - Purchase 1 Course
