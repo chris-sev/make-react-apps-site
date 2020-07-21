@@ -75,7 +75,7 @@ export default function Pricing({ whichCourse = 'a' }) {
             >
               <div>
                 <span className="mr-1 opacity-50">$</span>
-                <span>47</span>
+                <span>59</span>
               </div>
             </div>
             <p className="mt-6 text-lg text-gray-600">
@@ -213,8 +213,8 @@ function UpsellDialog({ isShowing, url, close }) {
       >
         <span>
           Buy Bundle{' '}
-          <span className="line-through ml-2 mr-1 opacity-75">$94</span>
-          <strong className="text-white">$79</strong>
+          <span className="line-through ml-2 mr-1 opacity-75">$118</span>
+          <strong className="text-white">$99</strong>
         </span>
         <span className="block mt-1 opacity-50 text-xs">
           30-day money back guarantee

@@ -23,7 +23,7 @@ export default function Bundle() {
             />
             <h2 className="arial text-blue-600 text-xl p-4">
               10 React Apps <span className="ml-2 font-bold">Series A</span>{' '}
-              <span className="ml-2">$47</span>
+              <span className="ml-2">$59</span>
             </h2>
           </div>
 
@@ -41,7 +41,7 @@ export default function Bundle() {
             />
             <h2 className="arial text-purple-600 text-xl p-4">
               10 React Apps <span className="ml-2 font-bold">Series B</span>{' '}
-              <span className="ml-2">$47</span>
+              <span className="ml-2">$59</span>
             </h2>
           </div>
 
@@ -59,8 +59,8 @@ export default function Bundle() {
               Buy the Bundle
             </strong>
             <span>
-              <strong className="line-through opacity-25 mr-2">$94</strong>
-              <span className="text-blue-900">$79</span>
+              <strong className="line-through opacity-25 mr-2">$118</strong>
+              <span className="text-blue-900">$99</span>
             </span>
           </a>
         </div>

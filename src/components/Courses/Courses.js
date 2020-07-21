@@ -23,7 +23,7 @@ export default function Courses() {
             title="Series A"
             image="https://scotch-res.cloudinary.com/image/upload/q_auto/v1594571945/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7_evfnlk.png"
             paragraph="Build 10 practical and real-world apps."
-            price="47"
+            price="59"
             color="blue"
           />
 
@@ -33,7 +33,7 @@ export default function Courses() {
             title="Series B"
             image="https://scotch-res.cloudinary.com/image/upload/q_auto/v1594571945/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7_1_nq11gx.png"
             paragraph="Learn React by building even moar apps."
-            price="47"
+            price="59"
             color="purple"
             primaryColor="#553b9a"
             secondaryColor="#9f85e0"
