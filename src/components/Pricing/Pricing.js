@@ -119,7 +119,7 @@ export default function Pricing({ whichCourse = 'a' }) {
                   className="mr-3"
                   style={iconColors}
                 />
-                Access to messaging me
+                Access to exclusive Discord community for support
               </div>
 
               <div className="flex items-center">

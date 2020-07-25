@@ -7,6 +7,10 @@ const faqs = [
     answer: `This course is for beginners to intermediate devs that are familiar with and have used React. I'll be creating a beginner React course shortly for those looking to learn React from scratch!`,
   },
   {
+    question: `Is there course support?`,
+    answer: `You can email me directly at any time and we also have a <a href="https://discord.gg/WVyUrcS">Discord community</a> where you gain exclusive channel access.`,
+  },
+  {
     question: `Do these videos expire? Is there a monthly subscription?`,
     answer: `Pay once and <strong class="font-bold">have access forever</strong>. Updates are free and you'll always get them.`,
   },
