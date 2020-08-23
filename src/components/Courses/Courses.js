@@ -20,20 +20,19 @@ export default function Courses() {
           <Course
             className="lg:mr-10 xl:mr-20 bg-black"
             link="/10-react-apps-series-a"
-            title="Series A"
             image="https://scotch-res.cloudinary.com/image/upload/q_auto/v1594571945/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7_evfnlk.png"
             paragraph="Build 10 practical and real-world apps."
-            price="59"
+            price="49"
             color="blue"
           />
 
           {/* course 2 */}
           <Course
             link="/10-react-apps-series-b"
-            title="Series B"
+            title="Part 2"
             image="https://scotch-res.cloudinary.com/image/upload/q_auto/v1594571945/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7_1_nq11gx.png"
             paragraph="Learn React by building even moar apps."
-            price="59"
+            price="49"
             color="purple"
             primaryColor="#553b9a"
             secondaryColor="#9f85e0"

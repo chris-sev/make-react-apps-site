@@ -47,10 +47,12 @@ export default function Hero({ whichCourse = 'a' }) {
               whichCourse === 'a' ? 'text-blue-100' : 'text-purple-100'
             }`}
           >
-            Make 10 React Apps:{' '}
-            <span className="text-white capitalize underline opacity-75">
-              Series {whichCourse}
-            </span>
+            Make 10 React Apps
+            {whichCourse === 'b' && (
+              <span className="text-white capitalize underline opacity-75">
+                : Part 2
+              </span>
+            )}
           </h1>
 
           {/* teaser */}

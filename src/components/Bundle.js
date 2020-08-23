@@ -14,16 +14,16 @@ export default function Bundle() {
         </h2>
 
         <div className="grid lg:grid-cols-11 gap-4 text-lg text-gray-600 leading-none relative z-10 text-center bg-green-300 p-8 rounded-lg">
-          {/* series a */}
+          {/* part 1 */}
           <div className="col-span-3 bg-blue-100 rounded-lg">
             <img
               src="https://scotch-res.cloudinary.com/image/upload/q_auto/v1594571945/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7_evfnlk.png"
-              alt="10 React Apps Series A"
+              alt="10 React Apps"
               className="rounded-t-lg"
             />
             <h2 className="arial text-blue-600 text-xl p-4">
-              10 React Apps <span className="ml-2 font-bold">Series A</span>{' '}
-              <span className="ml-2">$59</span>
+              10 React Apps
+              <span className="ml-2">$49</span>
             </h2>
           </div>
 
@@ -32,16 +32,16 @@ export default function Bundle() {
             <FontAwesomeIcon icon={['fad', 'plus']} size="3x" />
           </div>
 
-          {/* series b */}
+          {/* part 2 */}
           <div className="col-span-3 bg-purple-100 rounded-lg">
             <img
               src="https://scotch-res.cloudinary.com/image/upload/q_auto/v1594571945/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7_1_nq11gx.png"
-              alt="10 React Apps Series A"
+              alt="10 React Apps Part 2"
               className="rounded-t-lg"
             />
             <h2 className="arial text-purple-600 text-xl p-4">
-              10 React Apps <span className="ml-2 font-bold">Series B</span>{' '}
-              <span className="ml-2">$59</span>
+              10 React Apps <span className="ml-2 font-bold">Part 2</span>{' '}
+              <span className="ml-2">$49</span>
             </h2>
           </div>
 
@@ -59,8 +59,8 @@ export default function Bundle() {
               Buy the Bundle
             </strong>
             <span>
-              <strong className="line-through opacity-25 mr-2">$118</strong>
-              <span className="text-blue-900">$99</span>
+              <strong className="line-through opacity-25 mr-2">$99</strong>
+              <span className="text-blue-900">$79</span>
             </span>
           </a>
         </div>

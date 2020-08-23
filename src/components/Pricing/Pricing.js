@@ -7,11 +7,11 @@ import '@reach/dialog/styles.css'
 
 const wordsAreHard = {
   a: {
-    title: '10 React Apps (Series A)',
+    title: '10 React Apps (Part 1)',
     url: 'https://learn.chrisoncode.io/10-react-apps-series-a',
   },
   b: {
-    title: '10 React Apps (Series B)',
+    title: '10 React Apps (Part 2)',
     url: 'https://learn.chrisoncode.io/10-react-apps-series-b',
   },
 }
@@ -75,7 +75,7 @@ export default function Pricing({ whichCourse = 'a' }) {
             >
               <div>
                 <span className="mr-1 opacity-50">$</span>
-                <span>59</span>
+                <span>49</span>
               </div>
             </div>
             <p className="mt-6 text-lg text-gray-600">
@@ -147,9 +147,11 @@ export default function Pricing({ whichCourse = 'a' }) {
             >
               <span>
                 Buy 10 React Apps{' '}
-                <strong className="text-yellow-800 capitalize">
-                  (Series {whichCourse})
-                </strong>
+                {whichCourse === 'b' && (
+                  <strong className="text-yellow-800 capitalize">
+                    (Part 2)
+                  </strong>
+                )}
               </span>
               <FontAwesomeIcon
                 icon={['fad', 'arrow-right']}
@@ -173,7 +175,7 @@ function UpsellDialog({ isShowing, url, close }) {
       onDismiss={close}
     >
       <h2 className="arial text-2xl lg:text-4xl text-gray-700">
-        Get a 2nd Course for <strong className="text-gray-800">30% Off</strong>
+        Get a 2nd Course for <strong className="text-gray-800">40% Off</strong>
       </h2>
       <p className="text-lg mb-10 text-gray-700">
         Bundle two courses together and{' '}
@@ -181,27 +183,27 @@ function UpsellDialog({ isShowing, url, close }) {
       </p>
 
       <div className="lg:w-4/5 mx-auto grid grid-cols-2 col-gap-1 text-gray-600 leading-none mb-10">
-        {/* series a */}
+        {/* part 1 */}
         <div className="bg-blue-100 rounded-lg">
           <img
             src="https://scotch-res.cloudinary.com/image/upload/v1594571945/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7_evfnlk.png"
-            alt="10 React Apps Series A"
+            alt="10 React Apps Part 1"
             className="rounded-t-lg"
           />
           <h2 className="arial text-blue-600 p-4 leading-snug">
-            Make 10 React Apps <strong className="block">(Series A)</strong>
+            Make 10 React Apps <strong className="block">(Part 1)</strong>
           </h2>
         </div>
 
-        {/* series b */}
+        {/* part 2 */}
         <div className="bg-purple-100 rounded-lg">
           <img
             src="https://scotch-res.cloudinary.com/image/upload/v1594571945/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7_1_nq11gx.png"
-            alt="10 React Apps Series A"
+            alt="10 React Apps Part 2"
             className="rounded-t-lg"
           />
           <h2 className="arial text-purple-600 p-4 leading-snug">
-            Make 10 React Apps <strong className="block">(Series B)</strong>
+            Make 10 React Apps <strong className="block">(Part 2)</strong>
           </h2>
         </div>
       </div>
@@ -213,8 +215,8 @@ function UpsellDialog({ isShowing, url, close }) {
       >
         <span>
           Buy Bundle{' '}
-          <span className="line-through ml-2 mr-1 opacity-75">$118</span>
-          <strong className="text-white">$99</strong>
+          <span className="line-through ml-2 mr-1 opacity-75">$99</span>
+          <strong className="text-white">$79</strong>
         </span>
         <span className="block mt-1 opacity-50 text-xs">
           30-day money back guarantee

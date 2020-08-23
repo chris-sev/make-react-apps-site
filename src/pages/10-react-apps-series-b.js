@@ -17,7 +17,7 @@ export default function ReactApps() {
 
   return (
     <>
-      <SEO title="Make 10 React Apps (Series B) - Practical React Learning" />
+      <SEO title="Make 10 React Apps - Practical React Learning" />
 
       <FloatingButton
         isShowing={showFloatingButton}

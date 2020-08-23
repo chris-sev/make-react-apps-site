@@ -21,7 +21,7 @@ export default function Course({
         <img src={image} alt="Course cover image" />
       </Link>
 
-      <div className="p-6">
+      <div className="py-8 px-6">
         {/* header */}
         <h2
           className={`fugaz-one mb-4 text-2xl block text-center leading-tight lg:leading-none ${
