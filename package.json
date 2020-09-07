@@ -35,7 +35,7 @@
     "react-intersection-observer": "^8.26.2",
     "react-lazyload": "^3.0.0",
     "styled-components": "^5.1.1",
-    "tailwindcss": "^1.4.6"
+    "tailwindcss": "^1.8.4"
   },
   "devDependencies": {
     "prettier": "^2.0.5"

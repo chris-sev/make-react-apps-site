@@ -102,7 +102,7 @@ export default function Hero({ whichCourse = 'a' }) {
               </div>
               <div className="flex flex-col items-center justify-center">
                 <p>
-                  49{' '}
+                  47{' '}
                   <strong className="block mt-2 opacity-75 text-xs md:text-lg text-gray-700">
                     Videos
                   </strong>

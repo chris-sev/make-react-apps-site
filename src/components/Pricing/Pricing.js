@@ -75,7 +75,7 @@ export default function Pricing({ whichCourse = 'a' }) {
             >
               <div>
                 <span className="mr-1 opacity-50">$</span>
-                <span>49</span>
+                <span>47</span>
               </div>
             </div>
             <p className="mt-6 text-lg text-gray-600">

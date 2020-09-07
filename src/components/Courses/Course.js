@@ -57,7 +57,7 @@ export default function Course({
                   '--fa-secondary-color': secondaryColor,
                 }}
               />
-              49
+              47
             </div>
             <strong className="block text-lg text-gray-400 mt-3">videos</strong>
           </div>

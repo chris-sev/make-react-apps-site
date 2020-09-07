@@ -23,7 +23,7 @@ export default function Bundle() {
             />
             <h2 className="arial text-blue-600 text-xl p-4">
               10 React Apps
-              <span className="ml-2">$49</span>
+              <span className="ml-2">$47</span>
             </h2>
           </div>
 
@@ -41,7 +41,7 @@ export default function Bundle() {
             />
             <h2 className="arial text-purple-600 text-xl p-4">
               10 React Apps <span className="ml-2 font-bold">Part 2</span>{' '}
-              <span className="ml-2">$49</span>
+              <span className="ml-2">$47</span>
             </h2>
           </div>
 
