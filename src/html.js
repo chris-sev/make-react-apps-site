@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
 export default function HTML(props) {
   return (
     <html {...props.htmlAttributes}>
@@ -24,6 +23,14 @@ export default function HTML(props) {
             `,
           }}
         />
+
+        {/* fathom */}
+        <script
+          src="https://wildcat.codesalt.io/script.js"
+          data-spa="auto"
+          data-site="SYKMYUND"
+          defer
+        ></script>
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
