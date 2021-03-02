@@ -36,27 +36,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-146126191-1',
-        head: true,
-        allowLinker: true,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-facebook-pixel`,
-      options: {
-        pixelId: '992053144150851',
-      },
-    },
-    // {
-    //   resolve: `gatsby-plugin-hotjar`,
-    //   options: {
-    //     id: 1777232,
-    //     sv: 6,
-    //   },
-    // },
-    {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {

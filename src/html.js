@@ -12,18 +12,6 @@ export default function HTML(props) {
         />
         {props.headComponents}
 
-        {/* google analytics linker */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              if (window.ga) {
-                ga('require', 'linker');
-                ga('linker:autoLink', ['learn.chrisoncode.io', '20reactapps.com', 'makereactapps.com']);
-              }
-            `,
-          }}
-        />
-
         {/* fathom */}
         <script
           src="https://wildcat.codesalt.io/script.js"
