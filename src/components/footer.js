@@ -22,10 +22,10 @@ export default function Footer() {
           </a>
           CodeRight © CopyWrong ©{' '}
           <a
-            href="https://twitter.com/chrisoncode"
+            href="https://twitter.com/chris__sev"
             className="underline hover:text-blue-100 text-blue-300"
           >
-            Chris on Code
+            Chris Sev
           </a>{' '}
           1756
         </div>
