@@ -13,18 +13,18 @@ export default function WhoAmI() {
               alt="Chris Avatar"
             />
             <a
-              href="https://twitter.com/chrisoncode"
+              href="https://twitter.com/chris__sev"
               className="mb-2 text-center block bg-blue-700 rounded py-2 px-4 text-blue-200 hover:text-blue-100 hover:bg-blue-600 text-xs"
             >
-              Follow @chrisoncode
+              Follow @chris__sev
             </a>
           </div>
           <div>
             <h2 className="fugaz-one text-2xl lg:text-4xl mb-4">
-              Meet Chris on Code
+              Meet Chris Sev
             </h2>
             <p className="mb-6">
-              Chris on Code is the founder of{' '}
+              Chris Sev is the founder of{' '}
               <a
                 className="underline text-blue-200 hover:text-blue-300"
                 href="https://scotch.io"
