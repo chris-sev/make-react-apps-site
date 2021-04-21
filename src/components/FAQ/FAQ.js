@@ -24,31 +24,31 @@ const faqs = [
   },
   {
     question: `What other courses do you have?`,
-    answer: `All my courses will be found on my Courses site. <a class="text-blue-600 underline" href="https://learn.chrisoncode.io">learn.chrisoncode.io</a>.`,
+    answer: `All my courses will be found on my Courses site. <a class="text-blue-600 underline" href="https://learn.better.dev">learn.better.dev</a>.`,
   },
   {
     question: `How do I login and view the course?`,
-    answer: `You can login at <a class="text-blue-600 underline" href="https://learn.chrisoncode.io">learn.chrisoncode.io</a>. Use the login button in the top right.`,
+    answer: `You can login at <a class="text-blue-600 underline" href="https://learn.better.dev">learn.better.dev</a>. Use the login button in the top right.`,
   },
   {
     question: `Are there refunds?`,
-    answer: `Yup! I want to stand by the quality of these courses. If you don't feel they gave you value and were not up to par, I'm happy to provide a refund. Email me at <a class="text-blue-600 underline" href="mailto:hey@chrisoncode.io">hey@chrisoncode.io</a>.`,
+    answer: `Yup! I want to stand by the quality of these courses. If you don't feel they gave you value and were not up to par, I'm happy to provide a refund. Email me at <a class="text-blue-600 underline" href="mailto:chris@better.dev">chris@better.dev</a>.`,
   },
   {
     question: `Is there a student discount?`,
-    answer: `Yup <strong class="font-bold">50% off</strong>! Email me at <a class="text-blue-600 underline" href="mailto:hey@chrisoncode.io">hey@chrisoncode.io</a> with your student id and I'll send you a discount code.`,
+    answer: `Yup <strong class="font-bold">50% off</strong>! Email me at <a class="text-blue-600 underline" href="mailto:chris@better.dev">chris@better.dev</a> with your student id and I'll send you a discount code.`,
   },
   {
     question: `Is there purchase parity for my country?`,
-    answer: `Yup! Email me at <a class="text-blue-600 underline" href="mailto:hey@chrisoncode.io">hey@chrisoncode.io</a> and I'll send you a purchase power parity code.`,
+    answer: `Yup! Email me at <a class="text-blue-600 underline" href="mailto:chris@better.dev">chris@better.dev</a> and I'll send you a purchase power parity code.`,
   },
   {
     question: `Is there an affiliate program?`,
-    answer: `Yup! You get 50% of every sale that you bring in. You can sign up for a course and turn on affiliate mode from your dashboard at <a class="text-blue-600 underline" href="https://learn.chrisoncode.io">learn.chrisoncode.io</a>. Or you can email me at <a class="text-blue-600 underline" href="mailto:hey@chrisoncode.io">hey@chrisoncode.io</a>.`,
+    answer: `Yup! You get 50% of every sale that you bring in. You can sign up for a course and turn on affiliate mode from your dashboard at <a class="text-blue-600 underline" href="https://learn.better.dev">learn.better.dev</a>. Or you can email me at <a class="text-blue-600 underline" href="mailto:chris@better.dev">chris@better.dev</a>.`,
   },
   {
     question: `I have more questions!`,
-    answer: `Drop me an email at <a class="text-blue-600 underline" href="mailto:hey@chrisoncode.io">hey@chrisoncode.io</a>. Let's chat.`,
+    answer: `Drop me an email at <a class="text-blue-600 underline" href="mailto:chris@better.dev">chris@better.dev</a>. Let's chat.`,
   },
 ]
 

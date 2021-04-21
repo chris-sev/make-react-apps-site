@@ -6,10 +6,10 @@ export default function Header() {
       <div className="mr-4">
         By{" "}
         <a
-          href="https://twitter.com/chrisoncode"
+          href="https://twitter.com/chris__sev"
           className="text-blue-700 hover:text-blue-100 hover:underline"
         >
-          @ChrisOnCode
+          @chris__sev
         </a>
         , the creator of{" "}
         <a
@@ -19,11 +19,11 @@ export default function Header() {
           Scotch.io
         </a>
       </div>
-      {/* <a href="https://learn.chrisoncode.io/">Purchase</a> */}
+      {/* <a href="https://learn.better.dev/">Purchase</a> */}
       <div className="bg-blue-300 text-blue-600 py-1 px-1 rounded-md flex items-center">
         <span className="pl-2">Already purchased?</span>
         <a
-          href="https://learn.chrisoncode.io/login"
+          href="https://learn.better.dev/login"
           className="ml-3 bg-blue-700 text-blue-200 rounded shadow py-2 px-3 hover:bg-blue-600"
         >
           Login

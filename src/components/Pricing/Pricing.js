@@ -8,11 +8,11 @@ import '@reach/dialog/styles.css'
 const wordsAreHard = {
   a: {
     title: '10 React Apps (Part 1)',
-    url: 'https://learn.chrisoncode.io/10-react-apps-series-a',
+    url: 'https://learn.better.dev/10-react-apps-series-a',
   },
   b: {
     title: '10 React Apps (Part 2)',
-    url: 'https://learn.chrisoncode.io/10-react-apps-series-b',
+    url: 'https://learn.better.dev/10-react-apps-series-b',
   },
 }
 
@@ -210,7 +210,7 @@ function UpsellDialog({ isShowing, url, close }) {
 
       {/* purchase the bundle */}
       <a
-        href="https://learn.chrisoncode.io/make-react-apps-bundle-a-and-b/buy"
+        href="https://learn.better.dev/make-react-apps-bundle-a-and-b/buy"
         className="text-green-100 bg-green-500 block xl:w-1/2 mx-auto py-3 px-6 mb-4 rounded shadow hover:shadow-xl text-xl lg:text-2xl transition duration-75 ease-in"
       >
         <span>
