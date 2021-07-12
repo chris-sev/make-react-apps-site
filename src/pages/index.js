@@ -1,23 +1,40 @@
 import React from 'react'
-import Layout from '../components/layout'
-import Courses from '../components/Courses/Courses'
-// import FooterNewsletter from '../components/FooterNewsletter'
+import { useInView } from 'react-intersection-observer'
+import AppsHero from '../components/AppsHero'
+import WhatWellBuild from '../components/WhatWellBuild/WhatWellBuild'
 import WhoAmI from '../components/WhoAmI/WhoAmI'
+import Pricing from '../components/Pricing/Pricing'
+import LessonList from '../components/LessonList/LessonList'
 import Footer from '../components/footer'
-import HomeHero from '../components/HomeHero'
+// import Bundle from '../components/Bundle'
+import FAQ from '../components/FAQ/FAQ'
+import FloatingButton from '../components/FloatingButton'
 import SEO from '../components/seo'
-import Bundle from '../components/Bundle'
 
-export default function IndexPage() {
+export default function ReactApps() {
+  const [topRef, topInView] = useInView()
+  const showFloatingButton = !topInView
+
   return (
-    <Layout>
-      <SEO title="Make React Apps - Practical React Learning" />
-      <HomeHero />
-      <Courses />
+    <>
+      <SEO title="Make 10 React Apps - Practical React Learning" />
+
+      <FloatingButton
+        isShowing={showFloatingButton}
+        url="/10-react-apps-series-a#pricing"
+      />
+
+      <div ref={topRef}>
+        <AppsHero />
+      </div>
+
+      <WhatWellBuild />
+      <Pricing />
+      <LessonList />
       <WhoAmI />
-      {/* <FooterNewsletter /> */}
-      <Bundle />
+      <FAQ />
+      {/* <Bundle /> */}
       <Footer />
-    </Layout>
+    </>
   )
 }
