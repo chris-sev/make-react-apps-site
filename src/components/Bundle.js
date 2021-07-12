@@ -1,12 +1,12 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FaPlus, FaEquals } from 'react-icons/fa'
 // import usePodia from './usePodia'
 
 export default function Bundle() {
   // usePodia()
 
   return (
-    <div className="bg-green-200 text-green-800 px-6 py-32">
+    <div className="bg-green-50 text-green-800 px-6 py-32">
       <div className="container mx-auto">
         {/* header */}
         <h2 className="russo text-2xl lg:text-4xl mb-10 text-center">
@@ -29,7 +29,7 @@ export default function Bundle() {
 
           {/* + */}
           <div className="col-span-3 lg:col-span-1 flex items-center justify-center">
-            <FontAwesomeIcon icon={['fad', 'plus']} size="3x" />
+            <FaPlus />
           </div>
 
           {/* part 2 */}
@@ -47,7 +47,7 @@ export default function Bundle() {
 
           {/* = */}
           <div className="col-span-3 lg:col-span-1 flex items-center justify-center">
-            <FontAwesomeIcon icon={['fad', 'equals']} size="3x" />
+            <FaEquals />
           </div>
 
           {/* bundle */}

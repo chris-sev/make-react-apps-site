@@ -1,13 +1,13 @@
-import React, { useState } from "react"
-import useInterval from "@use-it/interval"
+import React, { useState } from 'react'
+import useInterval from '@use-it/interval'
 // import Newsletter from "../newsletter"
-import Walkthrough from "../Walkthrough/Walkthrough"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import Walkthrough from '../Walkthrough/Walkthrough'
+import { FaReact } from 'react-icons/fa'
 // import "./MainHero.css"
 
 function getRandomColor() {
-  const letters = "0123456789ABCDEF"
-  let color = "#"
+  const letters = '0123456789ABCDEF'
+  let color = '#'
   for (let i = 0; i < 6; i++) {
     color += letters[Math.floor(Math.random() * 16)]
   }
@@ -31,13 +31,13 @@ export default function MainHero() {
         <div className="lg:flex-grow">
           <h2
             className="main-title relative text-2xl leading-tight"
-            style={{ width: "400px" }}
+            style={{ width: '400px' }}
           >
             <span
               className="fugaz-one block text-4xl text-yellow-200 mr-3 absolute top-0"
               style={{
-                transform: "rotate(-0.02turn)",
-                top: "25px",
+                transform: 'rotate(-0.02turn)',
+                top: '25px',
               }}
             >
               Make
@@ -53,8 +53,8 @@ export default function MainHero() {
             <span
               className="fugaz-one block text-yellow-200 text-4xl ml-3 absolute bottom-0"
               style={{
-                transform: "rotate(-0.02turn)",
-                right: "-30px",
+                transform: 'rotate(-0.02turn)',
+                right: '-30px',
               }}
             >
               React Apps
@@ -77,7 +77,7 @@ export default function MainHero() {
               <div>
                 <span role="img" aria-label="Spock Hand" className="mr-1">
                   ⚛️
-                </span>{" "}
+                </span>{' '}
                 Buy the Course
               </div>
             </a>
@@ -101,21 +101,16 @@ function ReactIcons({ count }) {
   return (
     <div
       className="fixed left-0 right-0 top-0 bottom-0 z-0 grid grid-cols-4 grid-cols-4 pointer-events-none"
-      style={{ zIndex: "-1" }}
+      style={{ zIndex: '-1' }}
     >
       {Array.apply(null, Array(20)).map((value, index) => (
         <div
           key={index}
           className={`flex items-center justify-center p-4 ${
-            index > count ? "opacity-0" : ""
+            index > count ? 'opacity-0' : ''
           }`}
         >
-          <FontAwesomeIcon
-            key={index}
-            icon={["fab", "react"]}
-            size="9x"
-            color="#46C4F6"
-          />
+          <FaReact className="text-blue-700" />
         </div>
       ))}
     </div>

@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { Dialog } from '@reach/dialog'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import usePodia from '../usePodia'
+import { FaCheck } from 'react-icons/fa'
 import '@reach/dialog/styles.css'
 
 const wordsAreHard = {
@@ -87,56 +86,32 @@ export default function Pricing({ whichCourse = 'a' }) {
             {/* main info */}
             <p className="leading-loose mb-8 font-normal">
               <div className="flex items-center">
-                <FontAwesomeIcon
-                  icon={['fad', 'check']}
-                  className="mr-3"
-                  style={iconColors}
-                />
+                <FaCheck className="mr-3" style={iconColors} />
                 Get access to {whichCourse === 'a' ? '49 videos' : '32 videos'}
               </div>
 
               <div className="flex items-center">
-                <FontAwesomeIcon
-                  icon={['fad', 'check']}
-                  className="mr-3"
-                  style={iconColors}
-                />
+                <FaCheck className="mr-3" style={iconColors} />
                 6+ hours of learning
               </div>
 
               <div className="flex items-center">
-                <FontAwesomeIcon
-                  icon={['fad', 'check']}
-                  className="mr-3"
-                  style={iconColors}
-                />
+                <FaCheck className="mr-3" style={iconColors} />
                 Source code for the apps
               </div>
 
               <div className="flex items-center">
-                <FontAwesomeIcon
-                  icon={['fad', 'check']}
-                  className="mr-3"
-                  style={iconColors}
-                />
+                <FaCheck className="mr-3" style={iconColors} />
                 Access to exclusive Discord community for support
               </div>
 
               <div className="flex items-center">
-                <FontAwesomeIcon
-                  icon={['fad', 'check']}
-                  className="mr-3"
-                  style={iconColors}
-                />
+                <FaCheck className="mr-3" style={iconColors} />
                 Use the code for your own projects
               </div>
 
               <div className="flex items-center">
-                <FontAwesomeIcon
-                  icon={['fad', 'check']}
-                  className="mr-3"
-                  style={iconColors}
-                />
+                <FaCheck className="mr-3" style={iconColors} />
                 Unlimited updates
               </div>
             </p>
@@ -153,10 +128,7 @@ export default function Pricing({ whichCourse = 'a' }) {
                   </strong>
                 )}
               </span>
-              <FontAwesomeIcon
-                icon={['fad', 'arrow-right']}
-                className="opacity-75"
-              />
+              <FaCheck className="opacity-75" />
             </SCheckoutButton>
           </div>
         </div>

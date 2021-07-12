@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { AnchorLink } from 'gatsby-plugin-anchor-links'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Walkthrough from './Walkthrough/Walkthrough'
 import LoginButton from './LoginButton'
 import Stripes from './Stripes'
@@ -58,7 +58,7 @@ export default function MainHero() {
       >
         <div className="container mx-auto grid grid-cols-2 md:grid-cols-4 text-center bg-gray-200 rounded-lg shadow gap-4 p-4">
           <div className="bg-gray-100 text-gray-600 p-4 rounded flex flex-col items-center justify-center">
-            <FontAwesomeIcon
+            {/* <FontAwesomeIcon
               icon={['fad', 'atom']}
               size="2x"
               className="mt-1 mb-3"
@@ -66,11 +66,11 @@ export default function MainHero() {
                 '--fa-primary-color': '#4b5ed4',
                 '--fa-secondary-color': '#19b9ca',
               }}
-            />
+            /> */}
             <p className="m-0">Made w/ Modern React</p>
           </div>
           <div className="bg-gray-100 text-gray-600 p-4 rounded flex flex-col items-center justify-center">
-            <FontAwesomeIcon
+            {/* <FontAwesomeIcon
               icon={['fad', 'field-hockey']}
               size="2x"
               className="mt-1 mb-3"
@@ -78,11 +78,11 @@ export default function MainHero() {
                 '--fa-primary-color': '#764ea1',
                 '--fa-secondary-color': '#ff824b',
               }}
-            />
+            /> */}
             <p className="m-0">Learn React Hooks</p>
           </div>
           <div className="bg-gray-100 text-gray-600 p-4 rounded flex flex-col items-center justify-center">
-            <FontAwesomeIcon
+            {/* <FontAwesomeIcon
               icon={['fad', 'treasure-chest']}
               size="2x"
               className="mt-1 mb-3"
@@ -90,11 +90,11 @@ export default function MainHero() {
                 '--fa-primary-color': '#4c5dd4',
                 '--fa-secondary-color': '#89b9d4',
               }}
-            />
+            /> */}
             <p className="m-0">Projects for your Portfolio</p>
           </div>
           <div className="bg-gray-100 text-gray-600 p-4 rounded flex flex-col items-center justify-center">
-            <FontAwesomeIcon
+            {/* <FontAwesomeIcon
               icon={['fad', 'film']}
               size="2x"
               className="mt-1 mb-3"
@@ -102,7 +102,7 @@ export default function MainHero() {
                 '--fa-primary-color': '#fe535b',
                 '--fa-secondary-color': '#0c0710',
               }}
-            />
+            /> */}
             <p className="m-0">High Quality Videos</p>
           </div>
         </div>
