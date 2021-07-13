@@ -19,7 +19,7 @@ export default function Courses() {
           {/* course 1 */}
           <Course
             className="lg:mr-10 xl:mr-20 bg-black"
-            link="/10-react-apps-series-a"
+            link="/"
             image="https://scotch-res.cloudinary.com/image/upload/q_auto/v1594571945/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7_evfnlk.png"
             paragraph="Build 10 practical and real-world apps"
             price="47"

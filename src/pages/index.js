@@ -21,7 +21,7 @@ export default function ReactApps() {
 
       <FloatingButton
         isShowing={showFloatingButton}
-        url="/10-react-apps-series-a#pricing"
+        url="/#pricing"
       />
 
       <div ref={topRef}>

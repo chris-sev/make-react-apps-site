@@ -6,8 +6,7 @@ import BackHomeButton from './GoHomeButton'
 import LoginButton from './LoginButton'
 
 export default function Hero({ whichCourse = 'a' }) {
-  const url =
-    whichCourse === 'a' ? '/10-react-apps-series-a' : '/10-react-apps-series-b'
+  const url = whichCourse === 'a' ? '/' : '/10-react-apps-series-b'
   const series = whichCourse === 'a' ? seriesAApps : seriesBApps
   const randomApp = series[Math.floor(Math.random() * series.length)]
 

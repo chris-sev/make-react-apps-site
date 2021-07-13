@@ -7,7 +7,7 @@ import '@reach/dialog/styles.css'
 const wordsAreHard = {
   a: {
     title: '10 React Apps (Part 1)',
-    url: 'https://learn.better.dev/10-react-apps-series-a',
+    url: 'https://learn.better.dev',
   },
   b: {
     title: '10 React Apps (Part 2)',
